@@ -3,17 +3,19 @@ import React from 'react'
 const ProgressBar = ({ name, progress } ) => {
 
 
-    const progressStyle = {
+    const progressbarStyle = {
         height: '100%',
         width: `${progress}%`,
-        backgroundColor: 'blue'
+        backgroundColor: 'blue',
+        borderRadius: '99px',
+        textAlign: 'center'
     }
     
 
     return (
         <div className='progress__container'>
             <h3 className='progress__title'>{name}</h3>
-            <div style={progressStyle}>
+            <div style={progressbarStyle}>
                 <span className='progress__label'>{`${progress}%`}</span>
             </div>
         </div>
