@@ -10,6 +10,7 @@ function Navbar() {
       <nav>
         <NavLink to={"/"}>Home</NavLink>
         <NavLink to={"/ImageGenerator"}>Image Generator</NavLink>
+        <NavLink to={"/Game"}>Game</NavLink>
       </nav>
     </>
   );

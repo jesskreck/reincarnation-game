@@ -3,6 +3,7 @@ import { Route, Routes } from 'react-router-dom'
 
 import Homepage from './pages/Homepage'
 import ImageGenerator from './pages/ImageGenerator'
+import Game from './pages/Game.tsx'
 import Error404 from './pages/Error404'
 import Navbar from './components/Navbar'
 
@@ -15,6 +16,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="ImageGenerator" element={<ImageGenerator />} />
+        <Route path="Game" element={<Game />} />
         <Route path="*" element={<Error404 />} />
 
       </Routes>
