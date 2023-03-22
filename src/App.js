@@ -15,9 +15,11 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Homepage />} />
-        <Route path="ImageGenerator" element={<ImageGenerator />} />
-        <Route path="Game" element={<Game />} />
         <Route path="*" element={<Error404 />} />
+
+        <Route path="ImageGenerator" element={<ImageGenerator />} />
+        
+        {/* <Route path="Game" element={<Game />} /> */}
 
       </Routes>
     </>

@@ -7,13 +7,6 @@ import "../styles/game.css"
 
 
 
-let testData: { name: string; progress: number }[] = [
-  { name: "Attractiveness", progress: 50 },
-  { name: "Mental stability", progress: 50 },
-  { name: "Education level", progress: 50 },
-  { name: "Wealth", progress: 50 },
-  { name: "Social relationships", progress: 50 },
-]
 
 type progressChange = {
   Attractiveness?: number;
@@ -81,11 +74,11 @@ function Game() {
 
       
     {/* PROGRESS BAR ON THE RIGHT */}
-      <div className='game__progress__panel'>
+      {/* <div className='game__progress__panel'>
         {testData.map((item, index) => (
           <ProgressBar key={index} name={item.name} progress={item.progress} />
         ))}
-      </div>
+      </div> */}
 
 
 
