@@ -1,22 +1,64 @@
+.game__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "header"
+        "selection"
+        "progress"
+}
 
-.game__progress__panel{
+@media (min-width: 576px) {
+    .game__container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "header header"
+            "selection progress"
+    }
+}
+
+@media (min-width: 992px) {
+    .game__container {
+        grid-template-columns: 2fr 1fr;
+        grid-template-areas:
+            "header header header"
+            "selection progress"
+    }
+}
+
+.game__header {
+    grid-area: header;
+}
+
+.game__selection__panel {
+    background-color: pink;
+    grid-area: selection;
+
+    display: grid;
+    gap: 1rem;
+    padding: 2rem;
+}
+
+
+
+.game__progress__panel {
     background-color: lightblue;
+    grid-area: progress;
+
+    padding: 2rem;
+
+    display: grid;
+    gap: 2rem;
 }
 
-
-
-
-/************************* PROGRESSBAR.JSX *************************/
-.progress__container{
-    /* width: '100%'; */
-}
-
-/* .progress__bar is inside ProgressBar.jsx in order to easily manipulate length of progressbar accordding to percentage */
-
-.progress__title{
-    color: blue;
+.progress__container h3{
+    margin: 0;
 }
 
 .progress__label {
+    color: blue;
+}
+
+.progress__value {
     color: white;
 }
+
