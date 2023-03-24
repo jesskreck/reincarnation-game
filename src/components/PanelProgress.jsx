@@ -1,29 +1,16 @@
 import React from 'react'
+import ProgressBar from './ProgressBar'
 
-const ProgressBar = ({ label, value } ) => {
-
-
-    const progressbarStyle = {
-        width: `${value}%`,
-        backgroundColor: 'blue',
-        borderRadius: '99px',
-        textAlign: 'center',
-        transition: 'all .6s cubic-bezier(0.4, 0.0, 0.2, 1)'
-    }
-    
-
+function PanelProgress({ player }) {
     return (
-        <div className='progress__container'>
-            <p className='progress__label'>{label}</p>
-            <div style={progressbarStyle}>
-                <span className='progress__value'>
-                    {`${value}
-                        ${label === "age" ? "" : "%"}
-                    `}
-                </span>
-            </div>
-        </div>
-    )
+      
+    <div className='game__progress__panel'>
+
+        {/* note: The Object.entries() function returns an array of arrays, with each inner array containing a key-value pair [key, value] */}
+        {Object.entries(player).map(([key, value]) => (
+          <ProgressBar key={key} label={key} value={value} />
+        ))}
+      </div>  )
 }
 
-export default ProgressBar
+export default PanelProgress

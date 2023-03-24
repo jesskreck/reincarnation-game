@@ -3,14 +3,16 @@ import React, { useState, useEffect } from 'react';
 
 import { PlayerObject, ActionObject } from "../types/types";
 
-import ProgressBar from '../components/PanelProgress';
-import ActionButtons from '../components/PanelActionButtons';
-
+import PanelProgress from '../components/PanelProgress';
+import PanelActions from '../components/PanelActions';
+import PhotoBooth from './PhotoBooth';
 
 import { getRandomActions } from '../utils/getRandomActions';
 
 import "../styles/game.css"
 import { handleActionClick } from '../utils/handleActionClick';
+
+
 
 
 const newPlayer: PlayerObject = {
@@ -35,6 +37,9 @@ function Game() {
   const [actions, setActions] = useState<ActionObject[]>([]);
 
 
+  // manage display of PhotoBooth
+  const [showPhotoBooth, setShowPhotoBooth] = useState(false);
+
   // set initial actions when component mounts
   useEffect(() => {
     setActions(getRandomActions());
@@ -48,32 +53,35 @@ function Game() {
         <h1>Game</h1>
       </div>
 
-      
-      {/* TEXT SELECTION PANEL ON THE LEFT */}
-      <ActionButtons
-        actions={actions}
-        player={player}
-        setPlayer={setPlayer}
-        setActions={setActions}
-        getRandomActions={getRandomActions}
-        handleActionClick={handleActionClick}/>
+      {showPhotoBooth
+        ? (
+          <div>
+            <PhotoBooth
+              player={player} actions={actions} />
+          </div>
+        )
+        : (
+          <>
+            <PanelActions
+              actions={actions}
+              player={player}
+              setPlayer={setPlayer}
+              setActions={setActions}
+              setShowPhotoBooth={setShowPhotoBooth}
+              getRandomActions={getRandomActions}
+              handleActionClick={handleActionClick}
+          />
 
-      
-    {/* PROGRESS BAR ON THE RIGHT */}
-      <div className='game__progress__panel'>
-
-        {/* note: The Object.entries() function returns an array of arrays, with each inner array containing a key-value pair [key, value] */}
-        {Object.entries(player).map(([key, value]) => (
-          <ProgressBar key={key} label={key} value={value} />
-        ))}
-      </div>
-
-
+            <PanelProgress
+              player={player}
+            />
+          </>
+        )}
 
     </div>
 
-
   );
+
 }
 
 export default Game;

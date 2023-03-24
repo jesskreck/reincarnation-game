@@ -9,6 +9,7 @@ import Game from './pages/Game.tsx'
 import Error404 from './pages/Error404'
 
 import "../src/styles/app.css"
+import PhotoBooth from './pages/PhotoBooth'
 
 function App() {
   return (
@@ -20,11 +21,17 @@ function App() {
           <Route path="*" element={<Error404 />} />
 
           <Route path="ImageGenerator" element={<ImageGenerator />} />
+
           
-          <Route path="Game" element={<Game />} />
+          <Route path="Game" element={<Game />} >
+
+            <Route path="Photobooth" element={<PhotoBooth />} />
+
+          </Route>
+          
 
         </Routes>
-        </div>
+      </div>
     </>
   );
 }
