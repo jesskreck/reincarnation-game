@@ -1,38 +1,74 @@
 import { Configuration, OpenAIApi } from "openai";
 
-import { React, useState } from "react";
+import { React, useEffect, useState } from "react";
+
+import "../styles/photobooth.css"
 
 
-export default function PhotoBooth({ actions, player } ) {
+export default function PhotoBooth({ player, selectedAction, setShowPhotoBooth }) {
+
+    // everything regarding the fetch....
 
     const [prompt, setPrompt] = useState("");
+    const [result, setResult] = useState("");
+
+    useEffect(() => {
+        const newPrompt = `Polaroid of ${player.age} year old woman who likes to ${selectedAction.text}`;
+
+        // setPrompt might be redunant - check if I use the newPrompt from within the state somewhere else 
+        setPrompt(newPrompt);
+
+        generateImage(newPrompt);
+    }, [selectedAction])
+
+
 
     const configuration = new Configuration({
         apiKey: process.env.REACT_APP_API_KEY,
     });
 
+
     const openai = new OpenAIApi(configuration);
 
-    const [result, setResult] = useState("");
 
-
-    const generateImage = async () => {
+    const generateImage = async (imagePrompt) => {
         const res = await openai.createImage({
-            prompt: prompt,
+            prompt: imagePrompt,
             n: 1,
-            size: "1024x1024",
+            size: "512x512",
         });
 
         setResult(res.data.data[0].url);
-        console.log('setResult :>> ', setResult);
-        console.log('result :>> ', result);
     };
 
 
+
+    // closing the photo booth
+    const handleClosePhotoBooth = () => {
+        setShowPhotoBooth(false)
+    }
+
+
     return (
-        <>
-            <div>PhotoBooth</div>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos aliquid molestiae corrupti vel, quibusdam natus rem fugit architecto hic! Nemo ipsum, voluptate modi quis explicabo et magni, velit debitis molestiae ipsa dignissimos eligendi, sunt quam eveniet aperiam nam sapiente nihil sed hic illo. Aliquam voluptatum quasi quos tenetur labore doloremque repellendus, debitis laboriosam quo expedita porro minima veritatis distinctio, quam dolorem aut itaque officiis necessitatibus voluptas. Perferendis veniam necessitatibus laudantium a tempore temporibus, voluptas molestiae magnam consequatur natus quasi quam, nulla obcaecati inventore enim! Reprehenderit, excepturi asperiores? Quis maiores ad unde voluptatem ratione dolorum sed. Natus dolor cumque sunt nisi.</p>
-        </>
+            <div className="photobooth__container">
+                <div className="photobooth__header">
+                    <h2>Photo Booth</h2>
+                    <p>Look at you! A memory of the {player.age} year old you who liked to {selectedAction.text}.</p>
+                    <button onClick={handleClosePhotoBooth}>Add to memories</button>
+                </div>
+                <div className="photobooth__polaroid">{
+                    result && <img src={result} alt={prompt} />}
+                </div>
+                <div className="photobooth__summary">
+                    <h3>This phase brought you...</h3>
+                    <div>
+                        {Object.entries(selectedAction).map(([key, value], index) => (
+                            <p key={index}>
+                                {key}: {value}
+                            </p>
+                        ))}
+                    </div>
+                </div>
+            </div>
     )
 }

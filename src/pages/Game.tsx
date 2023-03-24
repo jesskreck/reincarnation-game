@@ -10,7 +10,6 @@ import PhotoBooth from './PhotoBooth';
 import { getRandomActions } from '../utils/getRandomActions';
 
 import "../styles/game.css"
-import { handleActionClick } from '../utils/handleActionClick';
 
 
 
@@ -37,6 +36,9 @@ function Game() {
   const [actions, setActions] = useState<ActionObject[]>([]);
 
 
+  // save the selected action
+  const [selectedAction, setSelectedAction] = useState([]);
+
   // manage display of PhotoBooth
   const [showPhotoBooth, setShowPhotoBooth] = useState(false);
 
@@ -57,7 +59,7 @@ function Game() {
         ? (
           <div>
             <PhotoBooth
-              player={player} actions={actions} />
+              player={player} selectedAction={selectedAction} setShowPhotoBooth={setShowPhotoBooth} />
           </div>
         )
         : (
@@ -69,7 +71,8 @@ function Game() {
               setActions={setActions}
               setShowPhotoBooth={setShowPhotoBooth}
               getRandomActions={getRandomActions}
-              handleActionClick={handleActionClick}
+              selectedAction={selectedAction}
+              setSelectedAction={setSelectedAction}
           />
 
             <PanelProgress

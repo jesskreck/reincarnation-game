@@ -1,13 +1,15 @@
 import React from 'react';
 import ActionButton from './ActionButton';
+import { handleActionClick } from '../utils/handleActionClick';
 
 
-export default function PanelActions({ actions, player, setPlayer, setActions, handleActionClick, getRandomActions, setShowPhotoBooth }) {
+
+export default function PanelActions({ actions, player, setPlayer, setActions, getRandomActions, setShowPhotoBooth, selectedAction, setSelectedAction }) {
 
 
     // define onClickHandler here to have more control over the props to send
     const onClickHandler = (action) => {
-        handleActionClick(action, player, setPlayer, setActions, getRandomActions, setShowPhotoBooth)
+        handleActionClick(action, player, setPlayer, setActions, getRandomActions, setShowPhotoBooth, selectedAction, setSelectedAction)
     }
 
     return (

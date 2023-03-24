@@ -1,10 +1,8 @@
 
-export const handleActionClick = (action, player, setPlayer, setActions, getRandomActions, setShowPhotoBooth) => {
+export const handleActionClick = (action, player, setPlayer, setActions, getRandomActions, setShowPhotoBooth, selectedAction, setSelectedAction) => {
     
     const progressedPlayer = { ...player };
-    console.log('action :>> ', action);
-
-    console.log('progressedPlayer :>> ', progressedPlayer);
+    
 
     // make player older
     progressedPlayer.age += 10;
@@ -27,9 +25,12 @@ export const handleActionClick = (action, player, setPlayer, setActions, getRand
         }
     }
 
-
-    setShowPhotoBooth(true);
+   
     setPlayer(progressedPlayer);
     setActions(getRandomActions);
+    setSelectedAction(action);
+    // console.log('selectedAction :>> ', selectedAction);
+    // console.log('action :>> ', action);
+    setShowPhotoBooth(true);
 
 }

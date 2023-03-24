@@ -23,11 +23,7 @@ function App() {
           <Route path="ImageGenerator" element={<ImageGenerator />} />
 
           
-          <Route path="Game" element={<Game />} >
-
-            <Route path="Photobooth" element={<PhotoBooth />} />
-
-          </Route>
+          <Route path="Game" element={<Game />} />
           
 
         </Routes>
