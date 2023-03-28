@@ -1,6 +1,6 @@
 import React from 'react';
-import ActionButton from './ActionButton';
-import { handleActionClick } from '../utils/handleActionClick';
+import ActionButton from '../child/ActionButton';
+import { handleActionClick } from '../../utils/handleActionClick';
 
 
 

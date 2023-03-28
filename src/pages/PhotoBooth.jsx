@@ -25,6 +25,7 @@ export default function PhotoBooth({ player, selectedAction, setShowPhotoBooth }
 
     const configuration = new Configuration({
         apiKey: process.env.REACT_APP_API_KEY,
+
     });
 
 
@@ -39,6 +40,7 @@ export default function PhotoBooth({ player, selectedAction, setShowPhotoBooth }
         });
 
         setResult(res.data.data[0].url);
+        console.log('setResult :>> ', setResult);
     };
 
 
@@ -50,10 +52,10 @@ export default function PhotoBooth({ player, selectedAction, setShowPhotoBooth }
 
 
     return (
-            <div className="photobooth__container">
+            <>
                 <div className="photobooth__header">
                     <h2>Photo Booth</h2>
-                    <p>Look at you! A memory of the {player.age} year old you who liked to {selectedAction.text}.</p>
+                    <p>Look at you! A memory of when you used to be {player.age} years old and liked to {selectedAction.text}.</p>
                     <button onClick={handleClosePhotoBooth}>Add to memories</button>
                 </div>
                 <div className="photobooth__polaroid">{
@@ -69,6 +71,6 @@ export default function PhotoBooth({ player, selectedAction, setShowPhotoBooth }
                         ))}
                     </div>
                 </div>
-            </div>
+            </>
     )
 }

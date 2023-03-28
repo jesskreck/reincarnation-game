@@ -16,7 +16,7 @@ html {
   scroll-behavior: smooth;
 }
 
-.content{
+.page{
   max-width: 1200px;
   margin: auto;
 }

@@ -14,9 +14,6 @@ function ImageGenerator() {
 
   const [result, setResult] = useState("");
 
-  console.log(process.env);
-  console.log(process.env.REACT_APP_API_KEY);
-
 
   const generateImage = async () => {
     const res = await openai.createImage({
@@ -31,7 +28,7 @@ function ImageGenerator() {
   };
 
   return (
-    <div className="container">
+    <div className="page container">
       <>
         <h2>Generate an Image using Open AI API</h2>
 

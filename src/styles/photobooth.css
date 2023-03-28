@@ -29,15 +29,12 @@
 
 .photobooth__header{
     grid-area: header;
-    background-color: red;
 }
 
 .photobooth__polaroid{
     grid-area: polaroid;
-    background-color: blue;
 }
 
 .photobooth__summary {
     grid-area: summary;
-    background-color: green;
 }

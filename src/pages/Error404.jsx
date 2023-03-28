@@ -30,7 +30,7 @@ function Error404() {
   }
 
   return (
-    <div className='container'>
+    <div className='page container'>
       { redirect ? <Navigate to={"/"} replace={true} /> : null }
       <h1>Error404 Page not found :/</h1>
       <p>Redirecting in {countdown} seconds</p>

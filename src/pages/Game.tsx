@@ -3,13 +3,14 @@ import React, { useState, useEffect } from 'react';
 
 import { PlayerObject, ActionObject } from "../types/types";
 
-import PanelProgress from '../components/PanelProgress';
-import PanelActions from '../components/PanelActions';
+import PanelProgress from '../components/parent/PanelProgress';
+import PanelActions from '../components/parent/PanelActions';
 import PhotoBooth from './PhotoBooth';
 
 import { getRandomActions } from '../utils/getRandomActions';
 
 import "../styles/game.css"
+
 
 
 
@@ -39,6 +40,8 @@ function Game() {
   // save the selected action
   const [selectedAction, setSelectedAction] = useState([]);
 
+
+
   // manage display of PhotoBooth
   const [showPhotoBooth, setShowPhotoBooth] = useState(false);
 
@@ -50,7 +53,7 @@ function Game() {
 
 
   return (
-    <div className='game__container'>
+    <div className='page game__container'>
       <div className="game__header">
         <h1>Game</h1>
       </div>
@@ -78,6 +81,8 @@ function Game() {
             <PanelProgress
               player={player}
             />
+
+         
           </>
         )}
 
