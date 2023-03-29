@@ -7,7 +7,7 @@ function ImageGenerator() {
   const [prompt, setPrompt] = useState("");
 
   const configuration = new Configuration({
-    apiKey: process.env.REACT_APP_API_KEY,
+    apiKey: process.env.REACT_APP_API_KEY_2,
   });
 
   const openai = new OpenAIApi(configuration);
@@ -16,6 +16,9 @@ function ImageGenerator() {
 
 
   const generateImage = async () => {
+    console.log('process.env.REACT_APP_API_KEY_3 :>> ', process.env.REACT_APP_API_KEY_3);
+    console.log('process.env.REACT_APP_API_KEY :>> ', process.env.REACT_APP_API_KEY);
+
     const res = await openai.createImage({
       prompt: prompt,
       n: 1,
@@ -25,6 +28,7 @@ function ImageGenerator() {
     setResult(res.data.data[0].url);
     console.log('setResult :>> ', setResult);
     console.log('result :>> ', result);
+    console.log('process.env.REACT_APP_API_KEY_3 :>> ', process.env.REACT_APP_API_KEY_3);
   };
 
   return (

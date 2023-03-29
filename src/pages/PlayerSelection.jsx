@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+import { NavLink } from 'react-router-dom'
+
 
 const player1 = {
   name: "Shitty Player",
@@ -76,8 +78,10 @@ export default function PlayerSelection() {
         />
         <label htmlFor="player3">{player3.name}</label>
       </div>
-
-      <button onClick={() => console.log(selectedPlayer)}>Select Player</button>
+      <NavLink to="/Game/Start">
+        <button onClick={() => console.log(selectedPlayer)}>Select Player</button>
+      </NavLink>
+      
     </div>
   );
 }

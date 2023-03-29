@@ -27,13 +27,14 @@ function Navbar() {
         <NavLink to={"/Start"}>Start</NavLink>
 
         {/* why are the nested routes not working? */}
-        {/* { location.pathname.includes("Game") ? 
+        { location.pathname.includes("Game") ? 
             <>
               - 
+              <NavLink to="/Game">Intro</NavLink>
               <NavLink to="/Game/PlayerSelection">Player Selection</NavLink>
               <NavLink to="/Game/Start">Start</NavLink>
             </> 
-          : null} */}
+          : null}
 
 
         <button onClick={() => setShowModal(true)}>Login</button>
@@ -43,11 +44,6 @@ function Navbar() {
           <AuthFeedback />
         </Modal>
 
-
-
-        <button onClick={() => setUser("Adam")}>Set user to Adam</button>
-        {/* profile page not set up yet */}
-        {/* {user && <NavLink to={"/Profile"}>{user}</NavLink>} */}
 
       </nav>
     </>

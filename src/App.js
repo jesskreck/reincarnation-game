@@ -34,14 +34,15 @@ function App() {
 
           <Route path="ImageGenerator" element={ <ImageGenerator /> } />
 
-
+          {/* why is nested route not working? */}
           <Route path='Game' element={ <GameIntro /> } >
             <Route path='PlayerSelection' element={ < PlayerSelection /> } />
             <Route path='Start' element={ <Game /> } />
           </Route>
 
-            <Route path="PlayerSelection" element={ < PlayerSelection /> } />
-            <Route path="Start" element={ <Game /> } />
+          {/* delete the following when nested is working */}
+            {/* <Route path="PlayerSelection" element={ < PlayerSelection /> } />
+            <Route path="Start" element={ <Game /> } /> */}
 
         </Routes>
 
