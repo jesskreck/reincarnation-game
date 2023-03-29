@@ -23,17 +23,14 @@ function Navbar() {
         <NavLink to={"/"}>Home</NavLink>
         <NavLink to={"/ImageGenerator"}>Image Generator</NavLink>
         <NavLink to={"/Game"}>Game</NavLink>
-        <NavLink to={"/PlayerSelection"}>Player</NavLink>
-        <NavLink to={"/Start"}>Start</NavLink>
 
-        {/* why are the nested routes not working? */}
-        { location.pathname.includes("Game") ? 
-            <>
-              - 
-              <NavLink to="/Game">Intro</NavLink>
-              <NavLink to="/Game/PlayerSelection">Player Selection</NavLink>
-              <NavLink to="/Game/Start">Start</NavLink>
-            </> 
+
+        {location.pathname.includes("Game") ?
+          <>
+            -
+            <NavLink to="/Game/PlayerSelection">Player</NavLink>
+            <NavLink to="/Game/Start">Start</NavLink>
+          </>
           : null}
 
 
@@ -44,6 +41,7 @@ function Navbar() {
           <AuthFeedback />
         </Modal>
 
+        {/* import switch for language */}
 
       </nav>
     </>

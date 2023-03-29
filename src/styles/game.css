@@ -5,6 +5,7 @@
         "header"
         "selection"
         "progress"
+        "album"
 }
 
 @media (min-width: 576px) {
@@ -13,6 +14,7 @@
         grid-template-areas:
             "header header"
             "selection progress"
+            "album album"
     }
 }
 
@@ -22,12 +24,16 @@
         grid-template-areas:
             "header header header"
             "selection progress"
+            "album album album"
     }
 }
 
 .game__header {
     grid-area: header;
 }
+
+
+/* SELECTION */
 
 .game__selection__panel {
     background-color: pink;
@@ -39,6 +45,7 @@
 }
 
 
+/* PROGRESS */
 
 .game__progress__panel {
     background-color: lightblue;
@@ -62,3 +69,13 @@
     color: white;
 }
 
+
+/* ALBUM */
+
+.game__album__panel {
+    border: green 2px solid;
+    grid-area: album;
+    padding: 1em;
+    gap: 1em;
+    display: flex;
+}

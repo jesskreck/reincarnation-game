@@ -17,3 +17,12 @@ export interface ActionObject {
     wealth?: number;
     social?: number;
 }
+
+export interface AlbumObject {
+    photos?: Photo[];
+}
+
+export interface Photo {
+    url: string;
+    action: ActionObject;
+}

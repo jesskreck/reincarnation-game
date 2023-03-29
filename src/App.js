@@ -17,6 +17,7 @@ import Error404 from './pages/Error404'
 
 
 import "../src/styles/app.css"
+import { PanelAlbum } from './components/parent/PanelAlbum';
 
 
 function App() {
@@ -34,15 +35,11 @@ function App() {
 
           <Route path="ImageGenerator" element={ <ImageGenerator /> } />
 
-          {/* why is nested route not working? */}
           <Route path='Game' element={ <GameIntro /> } >
             <Route path='PlayerSelection' element={ < PlayerSelection /> } />
-            <Route path='Start' element={ <Game /> } />
+            <Route path='Start' element={<Game />} />
+            <Route path='Album' element={<PanelAlbum />} />
           </Route>
-
-          {/* delete the following when nested is working */}
-            {/* <Route path="PlayerSelection" element={ < PlayerSelection /> } />
-            <Route path="Start" element={ <Game /> } /> */}
 
         </Routes>
 
