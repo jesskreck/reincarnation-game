@@ -18,6 +18,7 @@ import { PanelAlbum } from '../components/parent/PanelAlbum';
 
 const newPlayer: PlayerObject = {
   age: 20,
+  reincarnate: false,
   attractiveness: 50,
   mental: 50,
   education: 50,

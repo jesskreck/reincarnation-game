@@ -79,3 +79,17 @@
     gap: 1em;
     display: flex;
 }
+
+
+/* Player Selection */
+.players_container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2em;
+
+}
+
+.playercard{
+    border: black 2px solid
+}

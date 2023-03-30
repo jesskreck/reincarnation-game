@@ -3,6 +3,7 @@ import React from 'react'
 import { Route, Routes } from 'react-router-dom';
 
 import { AuthContextProvider } from './contexts/AuthContext';
+import { LanguageProvider } from './contexts/LanguageContext';
 
 
 import Navbar from './components/parent/Navbar'
@@ -26,24 +27,24 @@ function App() {
 
   return (
     <>
-      <AuthContextProvider>
-        <Navbar />
+      <LanguageProvider>
+        <AuthContextProvider>
+          <Navbar />
 
-        <Routes>
-          <Route path="/" element={ <Homepage /> } />
-          <Route path="*" element={ <Error404 /> } />
+          <Routes>
+            <Route path="/" element={<Homepage />} />
+            <Route path="*" element={<Error404 />} />
 
-          <Route path="ImageGenerator" element={ <ImageGenerator /> } />
+            <Route path="ImageGenerator" element={<ImageGenerator />} />
 
-          <Route path='Game' element={ <GameIntro /> } >
-            <Route path='PlayerSelection' element={ < PlayerSelection /> } />
-            <Route path='Start' element={<Game />} />
-            <Route path='Album' element={<PanelAlbum />} />
-          </Route>
+            <Route path='GameIntro' element={<GameIntro />} />
+            <Route path='PlayerSelection' element={< PlayerSelection />} />
+            <Route path='Game' element={<Game />} />
 
-        </Routes>
+          </Routes>
 
-      </AuthContextProvider>
+        </AuthContextProvider>
+      </LanguageProvider>
     </>
   );
 }

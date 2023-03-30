@@ -1,0 +1,146 @@
+{
+  "navbar": {
+    "game": {
+      "en": "Game",
+      "de": "Spiel"
+    },
+    "player": {
+      "en": "Player",
+      "de": "Spieler"
+    },
+    "start": {
+      "en": "Start",
+      "de": "Starten"
+    },
+    "login": {
+      "en": "Login",
+      "de": "Einloggen"
+    }
+  },
+  "instruction": {
+    "header": {
+      "en": "Game",
+      "de": "Spiel"
+    },
+    "subheader": {
+      "en": "Start Page with instruction",
+      "de": "Startseite mit Anweisungen"
+    },
+    "paragraph": {
+      "en": "Reeeeadddy?!? Instructions will follow in future",
+      "de": "Bereit?!? Anweisungen folgen in Kürze"
+    },
+    "button": {
+      "en": "Let's begin!",
+      "de": "Los geht's!"
+    }
+  },
+  "player": {
+    "instruction": {
+      "en": "Select a player",
+      "de": "Spieler auswählen"
+    },
+    "button": {
+      "en": "Start with selected player",
+      "de": "Mit ausgewähltem Spieler starten"
+    }
+  },
+  "dashboard": {
+    "age": {
+      "en": "Age",
+      "de": "Alter"
+    },
+    "attractiveness": {
+      "en": "Attractiveness",
+      "de": "Attraktivität"
+    },
+    "mental": {
+      "en": "Mental Stability",
+      "de": "Mentale Stabilität\r"
+    },
+    "education": {
+      "en": "Educational Level",
+      "de": "Bildungsstand"
+    },
+    "wealth": {
+      "en": "Wealth",
+      "de": "Reichtum"
+    },
+    "social": {
+      "en": "Social Relationships",
+      "de": "Soziale Beziehungen"
+    }
+  },
+  "photobooth": {
+    "loading-header": {
+      "en": "What a plan!",
+      "de": "Was für ein Plan!"
+    },
+    "loading-paragraph": {
+      "en": "Wait a moment and see how that turned out for you...",
+      "de": "Warte einen Moment und schau, wie sich das für dich entwickelt hat..."
+    },
+    "header": {
+      "en": "Look at you! ",
+      "de": "Sieh einer an!"
+    },
+    "paragraph1": {
+      "en": "A memory of when you used to be",
+      "de": "Eine Erinnerung an die Zeit als du"
+    },
+    "paragraph2": {
+      "en": "years old and wanted nothing more than: ",
+      "de": "Jahre alt warst und nichts lieber wolltest als: "
+    },
+    "result": {
+      "en": "This phase brought you...",
+      "de": "Entwicklungen in dieser Phase..."
+    },
+    "button": {
+      "en": "Add to memories",
+      "de": "zu Erinnerungen hinzufügen"
+    }
+  },
+  "reincarnation": {
+    "q1": {
+      "en": "During your life, how many people did you charm with your irresistible looks?",
+      "de": "Wie viele Menschen hast du während deines Lebens mit deinem unwiderstehlichen Aussehen verzaubert?"
+    },
+    "q2": {
+      "en": "How many past lives' worth of therapy did you need?",
+      "de": "Wie viele Lebenstherapien im Wert der Vergangenheit hast du benötigt?"
+    },
+    "q3": {
+      "en": "How many times were you considered a wise sage in your past lives?",
+      "de": "Wie oft wurdest du in vergangenen Leben als weiser Seher betrachtet?"
+    },
+    "q4": {
+      "en": "How many connections did you make in the Spirit World Social Club?",
+      "de": "Wie viele Verbindungen hast du im Spirit World Social Club geknüpft?"
+    },
+    "q5": {
+      "en": "In how many lives were you filthy rich?",
+      "de": "In wie vielen Leben warst du stinkreich?"
+    },
+    "q6": {
+      "en": "As a mythical creature, what was your attractiveness level?",
+      "de": "Als mythisches Wesen, wie hoch war dein Attraktivitätslevel?"
+    },
+    "q7": {
+      "en": "How many lives did you spend meditating on a mountaintop?",
+      "de": "Wie viele Leben hast du damit verbracht, auf einem Berggipfel zu meditieren?"
+    },
+    "q8": {
+      "en": "How many ancient civilizations' languages did you master?",
+      "de": "Wie viele Sprachen antiker Zivilisationen hast du gemeistert?"
+    },
+    "q9": {
+      "en": "How many legendary parties did you attend across all your lives?",
+      "de": "Wie viele legendäre Partys hast du in all deinen Leben besucht?"
+    },
+    "q10": {
+      "en": "How many treasure troves did you accumulate throughout your lives?",
+      "de": "Wie viele Schatzkammern hast du im Laufe deiner Leben angesammelt?"
+    }
+  }
+}

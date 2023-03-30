@@ -1,5 +1,6 @@
 export interface PlayerObject {
     age: number;
+    reincarnate: boolean;
     attractiveness: number;
     mental: number;
     education: number;
