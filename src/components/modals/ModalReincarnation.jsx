@@ -1,29 +1,33 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
+import { PlayerContext } from '../../contexts/PlayerContext';
 
-const q1 = "During your life, how many people did you charm with your irresistible looks? (0-10)";
-const q2 = "How many past lives' worth of therapy did you need? (0-10)";
-const q3 = "How many times were you considered a wise sage in your past lives? (0-10)";
-const q4 = "How many connections did you make in the Spirit World Social Club? (0-100)";
-const q5 = "In how many lives were you filthy rich? (0-10)";
-const q6 = "As a mythical creature, what was your attractiveness level? (0-10)";
-const q7 = "How many lives did you spend meditating on a mountaintop? (0-10)";
-const q8 = "How many ancient civilizations' languages did you master? (0-10)";
-const q9 = "How many legendary parties did you attend across all your lives? (0-10)";
-const q10 = "How many treasure troves did you accumulate throughout your lives? (0-10)";
+const q1 = "During your life, how many people did you charm with your irresistible looks?";
+const q2 = "How many past lives' worth of therapy did you need?";
+const q3 = "How many times were you considered a wise sage in your past lives?";
+const q4 = "How many connections did you make in the Spirit World Social Club?";
+const q5 = "In how many lives were you filthy rich?";
+const q6 = "As a mythical creature, what was your attractiveness level?";
+const q7 = "How many lives did you spend meditating on a mountaintop?";
+const q8 = "How many ancient civilizations' languages did you master?";
+const q9 = "How many legendary parties did you attend across all your lives?";
+const q10 = "How many treasure troves did you accumulate throughout your lives?";
 
 const questions = [q1, q2, q3, q4, q5, q6, q7, q8, q9, q10];
 
-const categories = ['Attractiveness', 'Mental Health', 'Educational Level', 'Social Relationships', 'Wealth'];
+const categories = ['attractiveness', 'mental', 'education', 'social', 'wealth'];
 
 export const ModalReincarnation = () => {
 
+    const {activePlayer, setActivePlayer} = useContext(PlayerContext)
+
     const [currentQuestion, setCurrentQuestion] = useState(0);
+
     const [scores, setScores] = useState({
-        Attractiveness: 0,
-        MentalHealth: 0,
-        EducationalLevel: 0,
-        SocialRelationships: 0,
-        Wealth: 0
+        attractiveness: 0,
+        mental: 0,
+        education: 0,
+        social: 0,
+        wealth: 0
     });
     const [showResults, setShowResults] = useState(false);
 
@@ -43,12 +47,14 @@ export const ModalReincarnation = () => {
         } else {
             updatedScores[currentCategory] = Math.round(((updatedScores[currentCategory] + (answer * scalingFactor)) / 2) * 10);
         }
-        setScores(updatedScores);
+        setScores(updatedScores); 
+        
 
         if (currentQuestion < questions.length - 1) {
             setCurrentQuestion(currentQuestion + 1);
         } else {
             setShowResults(true);
+            setActivePlayer({...activePlayer, progress: scores})
         }
 
     };
@@ -59,10 +65,9 @@ export const ModalReincarnation = () => {
 
     return (
         <div className="App">
-            <h1>Reincarnation Survey</h1>
             {!showResults ? (
                 <div>
-                    <p>{getQuestion(currentQuestion)}</p>
+                    <h2>{getQuestion(currentQuestion)}</h2>
                     <div>
                         {[...Array(currentQuestion === 3 ? 11 : 11).keys()]
                             .slice(1)
@@ -81,6 +86,7 @@ export const ModalReincarnation = () => {
                             {category}: {Math.min(scores[category], 100)}/100
                         </p>
                     ))}
+                        <button>Finish Reincarnation</button>
                 </div>
             )}
         </div>

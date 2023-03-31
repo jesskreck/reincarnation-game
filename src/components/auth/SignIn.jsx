@@ -1,28 +1,21 @@
-import React, { useState } from 'react'
-import { signInWithEmailAndPassword } from 'firebase/auth';
-import { auth } from '../../fbConfig';
+import React, { useContext, useState } from 'react'
+import { AuthContext } from '../../contexts/AuthContext';
+
+
 
 export const SignIn = () => {
 
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("")
 
-    const signIn = (e) => {
-        // prevents setting input to default when page is reloaded for a small second
-        e.preventDefault();
-        // signIn function is coming from firebase! check imports in header
-        signInWithEmailAndPassword(auth, email, password)
-            .then((userCredential) => {
-                console.log(userCredential)
-            })
-            .catch((error) => {
-                console.log(error)
-            });
-    };
+    const {signIn} = useContext(AuthContext)
 
 return (
     <div>
-        <form onSubmit={signIn}>
+        <form onSubmit={(e) => {
+            e.preventDefault();
+            signIn(email, password)
+        }}>
             <h1>Log in to your account</h1>
             <input
                 type="email"
