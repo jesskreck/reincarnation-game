@@ -30,8 +30,7 @@ export default function PanelProgress() {
   return (
 
     <div className='game__progress__panel'>
-
-      <p>{activePlayer.age} years</p>
+      <p>{activePlayer.name}, {activePlayer.age} years</p>
 
       {/* note: The Object.entries() function returns an array of arrays, with each inner array containing a key-value pair [key, value] */}
       {Object.entries(activePlayer.progress).map(([key, value]) => (

@@ -9,7 +9,8 @@ export const PlayerProvider = ({children}) => {
 
     const [defaultPlayers, setDefaultPlayers] = useState(defaultPlayersData);
     const [customPlayers, setCustomPlayers] = useState(null);
-    const [activePlayer, setActivePlayer] = useState(null)
+    const [activePlayer, setActivePlayer] = useState(null);
+    const [album, setAlbum] = useState([]);
 
     const data = {
         defaultPlayers,
@@ -18,7 +19,10 @@ export const PlayerProvider = ({children}) => {
         setCustomPlayers,
 
         activePlayer,
-        setActivePlayer
+        setActivePlayer,
+
+        album,
+        setAlbum
     }
 
 

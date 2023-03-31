@@ -1,18 +1,9 @@
-import React, { useContext, useState } from 'react'
-import { PlayerContext } from '../contexts/PlayerContext'
+import React from 'react'
 import PanelActions from '../components/parent/PanelActions'
 import PanelProgress from '../components/parent/PanelProgress'
 import { PanelAlbum } from '../components/parent/PanelAlbum'
 
 export const Dashboard = () => {
-
-  const { activePlayer, setActivePlayer } = useContext(PlayerContext)
-
-  const [album, setAlbum] = useState([])
-
-  const [selectedAction, setSelectedAction] = useState([])
-
-
 
   return (
 
@@ -24,9 +15,7 @@ export const Dashboard = () => {
 
       <PanelProgress />
 
-      <PanelAlbum
-        album={album}
-      />
+      <PanelAlbum />
     </div>
 
   )

@@ -11,15 +11,29 @@ const ProgressBar = ({ label, value } ) => {
         transition: 'all .6s cubic-bezier(0.4, 0.0, 0.2, 1)'
     }
     
+    const LabelText = (label) => {
+        switch (label) {
+            case "attractiveness":
+                return "🤳 Attractiveness";
+            case "mental":
+                return "🤪 Mental Stability";
+            case "education":
+                return "🎓 Educational Level";
+            case "wealth":
+                return "💸 Wealth";
+            case "social":
+                return "💛 Social Relationships";
+            default:
+                return "";
+        }
+    }
 
     return (
         <div className='progress__container'>
-            <p className='progress__label'>{label}</p>
+            <p className='progress__label'>{LabelText(label)}</p>
             <div style={progressbarStyle}>
                 <span className='progress__value'>
-                    {`${value}
-                        ${label === "age" ? "" : "%"}
-                    `}
+                    {`${value}%`}
                 </span>
             </div>
         </div>

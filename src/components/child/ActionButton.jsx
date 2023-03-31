@@ -1,10 +1,14 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
 import { PlayerContext } from '../../contexts/PlayerContext';
+import Modal from '../modals/Modal';
+import { ModalGeneratingPhoto } from '../modals/ModalGeneratingPhoto';
 
 
 export const ActionButton = ({ action }) => {
 
-  const {activePlayer, setActivePlayer} = useContext(PlayerContext)
+  const { activePlayer, setActivePlayer } = useContext(PlayerContext)
+  const [showModal, setShowModal] = useState(false)
+  const [selectedAction, setSelectedAction] = useState(null)
 
   const CategoryLogo = (category) => {
     switch (category) {
@@ -27,8 +31,11 @@ export const ActionButton = ({ action }) => {
 
   const handleActionClick = () => {
 
+    setSelectedAction(action);
+    setShowModal(true);
+
     console.log("click");
-    console.log('action :>> ', action);
+    console.log("action in handleclick", action);
 
     // make player older
     setActivePlayer({ ...activePlayer, age: activePlayer.age + 10 });
@@ -61,17 +68,16 @@ export const ActionButton = ({ action }) => {
 
 
   return (
+    <>
+      <button style={{ fontSize: 'large' }} onClick={handleActionClick}>
+        {action.text} {CategoryLogo(action.category)}
+      </button>
 
-    <button
-      style={{ fontSize: 'large' }}
-      onClick={handleActionClick}
-    >
 
-      {/* Content of the button: */}
-      {action.text} {CategoryLogo(action.category)}
-
-    </button>
-
+      <Modal open={showModal} close={() => setShowModal(false)}>
+        <ModalGeneratingPhoto action={selectedAction} setShowModal={setShowModal} /> 
+      </Modal>
+    </>
   )
 }
 
