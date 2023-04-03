@@ -13,6 +13,7 @@ export const ModalRescueSoul = ({setShowModal}) => {
         default: false,
         sex: "",
         reincarnate: false,
+        prevReincar: 0,
         age: 20,
         progress: {},
     });

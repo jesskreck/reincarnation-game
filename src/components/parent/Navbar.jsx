@@ -1,40 +1,36 @@
-import React, { useContext, useState } from "react";
-import { NavLink, useLocation } from "react-router-dom";
+import React, { useContext } from "react";
+import { NavLink } from "react-router-dom";
 import { AuthContext } from "../../contexts/AuthContext";
-import "../../styles/navbar.css";
 import { LoginButton } from "../child/LoginButton";
 
 import LanguageSwitch from "./LanguageSwitch";
+import { AuthFeedback } from "../auth/AuthFeedback";
 
+import "../../styles/navbar.css";
 
 function Navbar() {
-  const { user, setUser } = useContext(AuthContext)
-
-  const location = useLocation();
-
   
+  const { user } = useContext(AuthContext)
 
 
 
   return (
     <>
       <nav>
-        <LanguageSwitch/>
+        <LanguageSwitch />
         <NavLink to={"/"}>Home</NavLink>
         <NavLink to={"/ImageGenerator"}>Image Generator</NavLink>
-        
+
         <NavLink to={"/PlayerSelection"}>Player Selection</NavLink>
         <NavLink to={"/Dashboard"}>Dashboard</NavLink>
 
-        <LoginButton label={"Check Login Status"}/>
+        <div className="nav__profile">
+          {user
+            ? <AuthFeedback />
+            : <LoginButton label={"Login"} />
+          }
+        </div>
 
-        {/* {location.pathname.includes("Game") ?
-          <>
-            -
-            <NavLink to="/Game/PlayerSelection">Player</NavLink>
-            <NavLink to="/Game/Start">Start</NavLink>
-          </>
-          : null} */}
 
       </nav>
     </>

@@ -83,13 +83,11 @@
 
 /* Player Selection */
 .players_container{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2em;
-
+    display: grid;
+    grid-gap: 2em;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
 
 .playercard{
-    border: black 2px solid
+    border: black 2px solid;
 }

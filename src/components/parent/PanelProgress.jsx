@@ -3,28 +3,10 @@ import ProgressBar from '../child/ProgressBar.jsx'
 import { PlayerContext } from '../../contexts/PlayerContext.js'
 
 
-const testPlayer = {
-    name: "Little young noob",
-    reincarnate: false,
-    age: 20,
-    progress: {
-      attractiveness: 10,
-      mental: 10,
-      education: 10,
-      wealth: 10,
-      social: 10,
-    }
-  }
-
 
 export default function PanelProgress() {
 
   const { activePlayer, setActivePlayer } = useContext(PlayerContext);
-
-     // TO DO: put function here that prompts user to go back to player selection and choose player before starting (just a modal)
-    useEffect(() => {
-      setActivePlayer(testPlayer)
-    }, [])
 
 
   return (

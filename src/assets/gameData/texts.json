@@ -1,4 +1,26 @@
 {
+  "main": {
+    "progress1": {
+      "en": "Attractiveness",
+      "de": ""
+    },
+    "progress2": {
+      "en": "Mental Stability",
+      "de": ""
+    },
+    "progress3": {
+      "en": "Educational Level",
+      "de": ""
+    },
+    "progress4": {
+      "en": "Social Relationships",
+      "de": ""
+    },
+    "progress5": {
+      "en": "Wealth",
+      "de": ""
+    }
+  },
   "navbar": {
     "game": {
       "en": "Game",
@@ -35,14 +57,30 @@
       "de": "Los geht's!"
     }
   },
-  "player": {
-    "instruction": {
-      "en": "Select a player",
-      "de": "Spieler auswählen"
+  "playerselection": {
+    "header": {
+      "en": "Which soul's consciousness would you like to embody?",
+      "de": "Das Bewusstsein welcher Seele willst du verköpern?"
     },
-    "button": {
-      "en": "Start with selected player",
-      "de": "Mit ausgewähltem Spieler starten"
+    "button1": {
+      "en": "Take over soul",
+      "de": "Seele übernehmen"
+    },
+    "button2": {
+      "en": "Rescue a lost soul",
+      "de": "Verlorene Seele retten"
+    },
+    "button2b": {
+      "en": "Login to rescue lost souls",
+      "de": "Einloggen um verlorene Seelen zu retten"
+    },
+    "moreplayers": {
+      "en": "You want new players? Log in to get access to the \"Rescue lost souls\" feature and unleash your inner cosmic hero! The universe is overflowing with confused spirits just begging for a wild ride into reincarnation.",
+      "de": "Du möchtest neue Spieler? Melde dich an um das \"Verlorene Seelen retten\" Feature nutzen zu können und entfessle deinen inneren kosmischen Helden! Das Universum ist voll von verwirrten Geistern, die nur darauf warten, auf eine wilde Reise in die Reinkarnation geschickt zu werden."
+    },
+    "login": {
+      "en": "In order to use the \"Rescue lost souls\" feature you need to be logged in.",
+      "de": "Um das \"Verlorene Seelen retten\" Feature nutzen zu können, musst du eingeloggt sein."
     }
   },
   "dashboard": {
@@ -141,6 +179,28 @@
     "q10": {
       "en": "How many treasure troves did you accumulate throughout your lives?",
       "de": "Wie viele Schatzkammern hast du im Laufe deiner Leben angesammelt?"
+    },
+    "scores": {
+      "en": "Your scores are:",
+      "de": "Dein Gesamtergebnis:"
+    },
+    "finish": {
+      "en": "Finish reincarnation",
+      "de": "Reinkarnation abschließen"
+    }
+  },
+  "playercard": {
+    "age": {
+      "en": "Age",
+      "de": "Alter"
+    },
+    "prevrein": {
+      "en": "times reincarnated",
+      "de": "Male reinkarniert"
+    },
+    "rein": {
+      "en": "Reincarnation happening!",
+      "de": "Reinkarnierung beginnt!"
     }
   }
 }

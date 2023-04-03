@@ -1,5 +1,5 @@
-import { createContext, useState } from "react";
-import { signInWithEmailAndPassword } from 'firebase/auth';
+import { createContext, useEffect, useState } from "react";
+import { onAuthStateChanged, signInWithEmailAndPassword } from 'firebase/auth';
 import { createUserWithEmailAndPassword } from 'firebase/auth';
 
 import { app, auth } from "../fbConfig";
@@ -44,6 +44,25 @@ export const AuthContextProvider = ({ children }) => {
   };
 
 
+
+    useEffect(() => {
+    const unsubscribe = onAuthStateChanged(auth, (user) => {
+      if (user) {
+        setUser(user); // Set the user state when the authentication state changes
+      } else {
+        setUser(null);
+      }
+    });
+
+    return () => {
+      unsubscribe(); // Clean up the listener when the component unmounts
+    };
+  }, []);
+
+
+
+
+
   const data = {
     user,
     setUser,
@@ -57,3 +76,9 @@ export const AuthContextProvider = ({ children }) => {
     </AuthContext.Provider>
   )
 }
+
+
+
+
+
+// to do: Get the currently signed-in user

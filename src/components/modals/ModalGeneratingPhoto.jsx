@@ -7,7 +7,7 @@ import ProgressBar from '../child/ProgressBar';
 export const ModalGeneratingPhoto = ({ action, setShowModal }) => {
 
     
-    const { activePlayer, setActivePlayer } = useContext(PlayerContext)
+    const { activePlayer } = useContext(PlayerContext)
     const { album, setAlbum } = useContext(PlayerContext);
     console.log('album :>> ', album);
 
@@ -27,7 +27,7 @@ export const ModalGeneratingPhoto = ({ action, setShowModal }) => {
 
 
     useEffect(() => {
-        const newPrompt = `sharp photo of ${activePlayer.age} year old woman who likes to ${action.text}, shot on Polaroid BigShot`;
+        const newPrompt = `sharp photo of ${activePlayer.age} year old ${activePlayer.sex} who likes to ${action.text}, shot on Polaroid BigShot`;
 
         // setPrompt might be redunant - check if I use the newPrompt from within the state somewhere else 
         setPrompt(newPrompt);

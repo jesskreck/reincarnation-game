@@ -8,15 +8,19 @@ import { ModalReincarnation } from '../components/modals/ModalReincarnation';
 import { AuthContext } from '../contexts/AuthContext';
 import { PlayerContext } from '../contexts/PlayerContext';
 import { ModalRescueSoul } from '../components/modals/ModalRescueSoul';
+import { LanguageContext } from '../contexts/LanguageContext';
 
+import texts from "../assets/gameData/texts.json"
 
+import '../styles/game.css'
 
 
 export default function PlayerSelection() {
 
+  const { language } = useContext(LanguageContext);
   const [showModal, setShowModal] = useState(false);
   const [childModal, setChildModal] = useState(null);
-  const { defaultPlayers, activePlayer, setActivePlayer } = useContext(PlayerContext);
+  const { defaultPlayers, customPlayers, activePlayer, setActivePlayer } = useContext(PlayerContext);
   const { user } = useContext(AuthContext);
 
 
@@ -29,7 +33,7 @@ export default function PlayerSelection() {
   const handleTakeSoul = () => {
     setShowModal(true);
     setChildModal(<ModalReincarnation setShowModal={setShowModal} />)
-   }
+  }
 
   const handleRescueSoul = () => {
     setShowModal(true);
@@ -38,11 +42,11 @@ export default function PlayerSelection() {
 
   return (
     <>
-      <div>
-        <h2>Which soul's consciousness would you like to embody? Das Bewusstsein welcher Seele willst du verköpern?</h2>
+      <div className="container">
+        <h2>{texts.playerselection.header[language]}</h2>
 
-        
-        {/* PLAYER CARDS */}
+
+        {/* DEFAULT PLAYER CARDS */}
         <div className="players_container">
           {defaultPlayers.map((player, index) => (
             <PlayerCard
@@ -51,32 +55,50 @@ export default function PlayerSelection() {
               togglePlayer={() => togglePlayer(player)}
             />
           ))}
+
+
+          {/* CUSTOM PLAYER CARDS */}
+          {customPlayers && customPlayers.length === 0
+            ? <div className="playercard">
+              <p>{texts.playerselection.moreplayers[language]}</p>
+            </div>
+            : customPlayers.map((player, index) => (
+              <PlayerCard
+                key={index}
+                player={player}
+                togglePlayer={() => togglePlayer(player)}
+              />
+            ))
+          }
+
         </div>
 
-        
+
         {/* BUTTON SELECT PLAYER */}
         <div>
           {activePlayer
             ?
             activePlayer.reincarnate
-              ? <button onClick={handleTakeSoul}>Take over Soul / Seele übernehmen</button>
-              : <Link to="/Dashboard"><button>Take over Soul / Seele übernehmen</button></Link>
-            : <button disabled>Take over soul / Seele übernehmen</button>
+              ? <button onClick={handleTakeSoul}>{texts.playerselection.button1[language]}</button>
+              : <Link to="/Dashboard"><button>{texts.playerselection.button1[language]}</button></Link>
+            : <button disabled>{texts.playerselection.button1[language]}</button>
           }
         </div>
 
 
         {/* BUTTON CREATE NEW PLAYER */}
         <div>
+          <hr />
           {user
-            ? <button onClick={handleRescueSoul}>Rescue a lost soul</button>
-            : <LoginButton label={"Login to rescue lost souls"} />
+            ? <button onClick={handleRescueSoul}>{texts.playerselection.button2[language]}</button>
+            : <><p>{texts.playerselection.login[language]}</p>
+              <button disabled>{texts.playerselection.button2[language]}</button></>
           }
         </div>
 
       </div>
 
-      
+
       {/* MODAL */}
       <Modal open={showModal} close={() => setShowModal(false)}>
         {childModal}

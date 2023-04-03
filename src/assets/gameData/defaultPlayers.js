@@ -4,6 +4,7 @@ const defaultPlayersData = [
     default: true,
     sex: "woman",
     reincarnate: false,
+    prevReincar: 0,
     age: 20,
     progress: {
       attractiveness: 10,
@@ -20,6 +21,7 @@ const defaultPlayersData = [
     reincarnate: true,
     sex: "man",
     age: 80,
+    prevReincar: 0,
     progress: {
       attractiveness: 50,
       mental: 50,

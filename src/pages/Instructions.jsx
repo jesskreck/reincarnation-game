@@ -10,7 +10,6 @@ import texts from "../assets/gameData/texts.json"
 export default function Instructions() {
   
   const { language } = useContext(LanguageContext);
-  console.log('language :>> ', language);
 
 
   return (
