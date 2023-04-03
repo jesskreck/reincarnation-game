@@ -14,7 +14,7 @@ return (
             e.preventDefault();
             signUp(email, password);
         }}>
-            <h1>Create an Account</h1>
+            <h2>Create an Account</h2>
             <input
                 type="email"
                 placeholder="Enter your email"

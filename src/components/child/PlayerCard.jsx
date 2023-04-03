@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const PlayerCard = ({ player, handleSelection }) => {
+export const PlayerCard = ({ player, togglePlayer }) => {
 
 
     return (
@@ -8,8 +8,8 @@ export const PlayerCard = ({ player, handleSelection }) => {
         <div>
             <h3>{player.name}</h3>
             <p>Age: {player.age}</p>
-            {player.reincarnate && <p style={{ color: "blue" }}>Reincarnation happening!</p>}
-            <input type="radio" name="player" onChange={handleSelection} />
+            {player.reincarnate && <p style={{ color: "blue" }}>Reincarnating!</p>}
+            <input type="radio" name="player" onChange={togglePlayer} />
         </div>
     )
 }

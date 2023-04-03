@@ -16,7 +16,7 @@ return (
             e.preventDefault();
             signIn(email, password)
         }}>
-            <h1>Log in to your account</h1>
+            <h2>Log in to your account</h2>
             <input
                 type="email"
                 placeholder="Enter your email"

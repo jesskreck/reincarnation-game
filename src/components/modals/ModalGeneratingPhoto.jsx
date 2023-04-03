@@ -27,7 +27,7 @@ export const ModalGeneratingPhoto = ({ action, setShowModal }) => {
 
 
     useEffect(() => {
-        const newPrompt = `high quality photo of ${activePlayer.age} year old woman who likes to ${action.text}, shot on Polaroid BigShot`;
+        const newPrompt = `sharp photo of ${activePlayer.age} year old woman who likes to ${action.text}, shot on Polaroid BigShot`;
 
         // setPrompt might be redunant - check if I use the newPrompt from within the state somewhere else 
         setPrompt(newPrompt);
@@ -74,7 +74,7 @@ export const ModalGeneratingPhoto = ({ action, setShowModal }) => {
         <>
             <div className="photobooth__container">
                 <div className="photobooth__header">
-                    <h2>Photo Booth</h2>
+                    <h2>Generating Memory</h2>
                     <p>Look at you! A memory of when you used to be {activePlayer.age} years old and liked to {action.text}.</p>
                     <button onClick={handleAddToAlbum}>Add to album</button>
                 </div>

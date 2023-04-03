@@ -1,6 +1,8 @@
 const defaultPlayersData = [
   {
     name: "Little young noob",
+    default: true,
+    sex: "woman",
     reincarnate: false,
     age: 20,
     progress: {
@@ -14,7 +16,9 @@ const defaultPlayersData = [
   },
   {
     name: "Old bastard",
+    default: true,
     reincarnate: true,
+    sex: "man",
     age: 80,
     progress: {
       attractiveness: 50,

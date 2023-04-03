@@ -16,9 +16,9 @@ const questions = [q1, q2, q3, q4, q5, q6, q7, q8, q9, q10];
 
 const categories = ['attractiveness', 'mental', 'education', 'social', 'wealth'];
 
-export const ModalReincarnation = () => {
+export const ModalReincarnation = ({setShowModal}) => {
 
-    const {activePlayer, setActivePlayer} = useContext(PlayerContext)
+    const { activePlayer, setActivePlayer, defaultPlayers, setDefaultPlayers, customPlayers, setCustomPlayers } = useContext(PlayerContext)
 
     const [currentQuestion, setCurrentQuestion] = useState(0);
 
@@ -41,20 +41,20 @@ export const ModalReincarnation = () => {
         const updatedScores = { ...scores };
         const isFirstQuestionInCategory = questionIndex % 2 === 0;
         const scalingFactor = categoryIndex === 3 ? 10 : 1; // Scale the answer of the 4th question (index 3)
-        
+
         if (isFirstQuestionInCategory) {
             updatedScores[currentCategory] = (answer * scalingFactor);
         } else {
             updatedScores[currentCategory] = Math.round(((updatedScores[currentCategory] + (answer * scalingFactor)) / 2) * 10);
         }
-        setScores(updatedScores); 
-        
+        setScores(updatedScores);
+
 
         if (currentQuestion < questions.length - 1) {
             setCurrentQuestion(currentQuestion + 1);
         } else {
             setShowResults(true);
-            setActivePlayer({...activePlayer, progress: scores})
+            setActivePlayer({ ...activePlayer, progress: scores })
         }
 
     };
@@ -63,32 +63,54 @@ export const ModalReincarnation = () => {
         return questions[index];
     }
 
+
+    const handleFinish = () => {
+        const updatedPlayer = { ...activePlayer, reincarnate: false };
+        setActivePlayer(updatedPlayer); 
+        if (activePlayer.default) {
+            const playerIndex = defaultPlayers.findIndex(player => player.name === activePlayer.name);
+            const updatedPlayers = [...defaultPlayers];
+            updatedPlayers[playerIndex] = activePlayer;
+            setDefaultPlayers(updatedPlayers);
+        } else {
+            const playerIndex = customPlayers.findIndex(player => player.name === activePlayer.name);
+            const updatedPlayers = [...customPlayers];
+            updatedPlayers[playerIndex] = activePlayer;
+            setCustomPlayers(updatedPlayers);
+        }
+        setShowModal(false);
+    }
+
     return (
         <div className="App">
-            {!showResults ? (
-                <div>
-                    <h2>{getQuestion(currentQuestion)}</h2>
+            {!showResults
+                ? (
                     <div>
-                        {[...Array(currentQuestion === 3 ? 11 : 11).keys()]
-                            .slice(1)
-                            .map((num) => (
-                                <button key={num} onClick={() => handleAnswer(num)}>
-                                    {num}
-                                </button>
-                            ))}
+                        <h2>{getQuestion(currentQuestion)}</h2>
+                        <div>
+                            {[...Array(currentQuestion === 3 ? 11 : 11).keys()]
+                                .slice(1)
+                                .map((num) => (
+                                    <button key={num} onClick={() => handleAnswer(num)}>
+                                        {num}
+                                    </button>
+                                ))}
+                        </div>
                     </div>
-                </div>
-            ) : (
-                <div>
-                    <h2>Your scores are:</h2>
-                    {categories.map((category) => (
-                        <p key={category}>
-                            {category}: {Math.min(scores[category], 100)}/100
-                        </p>
-                    ))}
-                        <button>Finish Reincarnation</button>
-                </div>
-            )}
+                )
+
+                : (
+                    <div>
+                        <h2>Your scores are:</h2>
+                        {categories.map((category) => (
+                            <p key={category}>
+                                {category}: {Math.min(scores[category], 100)}/100
+                            </p>
+                        ))}
+                        <button onClick={handleFinish}>Finish Reincarnation</button>
+                    </div>
+                )}
+
         </div>
     )
 }

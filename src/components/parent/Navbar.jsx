@@ -22,11 +22,11 @@ function Navbar() {
         <LanguageSwitch/>
         <NavLink to={"/"}>Home</NavLink>
         <NavLink to={"/ImageGenerator"}>Image Generator</NavLink>
-        <NavLink to={"/GameIntro"}>Game Intro</NavLink>
+        
         <NavLink to={"/PlayerSelection"}>Player Selection</NavLink>
-        <NavLink to={"/Game"}>Game</NavLink>
+        <NavLink to={"/Dashboard"}>Dashboard</NavLink>
 
-        <LoginButton label={"Login"}/>
+        <LoginButton label={"Check Login Status"}/>
 
         {/* {location.pathname.includes("Game") ?
           <>
