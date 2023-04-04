@@ -1,44 +1,44 @@
-import React, { useContext, useState } from 'react'
-import { Link } from 'react-router-dom';
-
-import { LoginButton } from '../components/child/LoginButton';
-import { PlayerCard } from '../components/child/PlayerCard';
-import Modal from '../components/modals/Modal';
-import { ModalReincarnation } from '../components/modals/ModalReincarnation';
-import { AuthContext } from '../contexts/AuthContext';
-import { PlayerContext } from '../contexts/PlayerContext';
-import { ModalRescueSoul } from '../components/modals/ModalRescueSoul';
-import { LanguageContext } from '../contexts/LanguageContext';
-
-import texts from "../assets/gameData/texts.json"
-
 import '../styles/game.css'
+import { AuthContext } from '../contexts/AuthContext';
+import { LanguageContext } from '../contexts/LanguageContext';
+import { Link } from 'react-router-dom';
+import { ModalReincarnation } from '../components/modals/ModalReincarnation';
+import { ModalRescueSoul } from '../components/modals/ModalRescueSoul';
+import { PlayerCard } from '../components/child/PlayerCard';
+import { PlayerContext } from '../contexts/PlayerContext';
+import Modal from '../components/modals/Modal';
+import React, { useContext, useState } from 'react'
+import texts from "../assets/gameData/texts.json"
 
 
 export default function PlayerSelection() {
 
+  const { user } = useContext(AuthContext);
   const { language } = useContext(LanguageContext);
+  const { defaultPlayers, customPlayers, activePlayer, setActivePlayer } = useContext(PlayerContext);
+
   const [showModal, setShowModal] = useState(false);
   const [childModal, setChildModal] = useState(null);
-  const { defaultPlayers, customPlayers, activePlayer, setActivePlayer } = useContext(PlayerContext);
-  const { user } = useContext(AuthContext);
-
-
-
+  
+  
+  // radio button input on playercard sets activePlayer
   const togglePlayer = (player) => {
     setActivePlayer(player);
   };
 
 
+  // select player with reincarnation true
   const handleTakeSoul = () => {
     setShowModal(true);
     setChildModal(<ModalReincarnation setShowModal={setShowModal} />)
   }
 
+  // create new player
   const handleRescueSoul = () => {
     setShowModal(true);
     setChildModal(<ModalRescueSoul setShowModal={setShowModal} />)
   }
+
 
   return (
     <>
@@ -70,7 +70,6 @@ export default function PlayerSelection() {
               />
             ))
           }
-
         </div>
 
 
@@ -81,7 +80,8 @@ export default function PlayerSelection() {
             activePlayer.reincarnate
               ? <button onClick={handleTakeSoul}>{texts.playerselection.button1[language]}</button>
               : <Link to="/Dashboard"><button>{texts.playerselection.button1[language]}</button></Link>
-            : <button disabled>{texts.playerselection.button1[language]}</button>
+            : <><p>{texts.playerselection.prompt1[language]}</p>
+              <button disabled>{texts.playerselection.button1[language]}</button></>
           }
         </div>
 
@@ -91,7 +91,7 @@ export default function PlayerSelection() {
           <hr />
           {user
             ? <button onClick={handleRescueSoul}>{texts.playerselection.button2[language]}</button>
-            : <><p>{texts.playerselection.login[language]}</p>
+            : <><p>{texts.playerselection.prompt2[language]}</p>
               <button disabled>{texts.playerselection.button2[language]}</button></>
           }
         </div>

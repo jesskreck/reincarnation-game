@@ -4,23 +4,28 @@ import { PlayerContext } from '../../contexts/PlayerContext';
 import texts from "../../assets/gameData/texts.json"
 import { LanguageContext } from '../../contexts/LanguageContext';
 
+import switchLabeltext from '../../utils/switchLabeltext';
+import { db } from '../../fbConfig';
 
-
-
-
-
-
+import { addDoc, collection } from "firebase/firestore"
+import { AuthContext } from '../../contexts/AuthContext';
 
 export const ModalReincarnation = ({ setShowModal }) => {
 
 
     const { language } = useContext(LanguageContext);
-
+    const { user } = useContext(AuthContext)
+    
     const { activePlayer, setActivePlayer, defaultPlayers, setDefaultPlayers, customPlayers, setCustomPlayers } = useContext(PlayerContext)
 
     const [currentQuestion, setCurrentQuestion] = useState(0);
 
-    const categories = [`${texts.dashboard.attractiveness[language]}`, `${texts.dashboard.mental[language]}`, `${texts.dashboard.education[language]}`, `${texts.dashboard.social[language]}`, `${texts.dashboard.wealth[language]}`];
+    const categories = [
+        'attractiveness',
+        'mental',
+        'education',
+        'wealth',
+        'social'];
 
     
     const questions = [
@@ -41,8 +46,8 @@ export const ModalReincarnation = ({ setShowModal }) => {
         attractiveness: 0,
         mental: 0,
         education: 0,
-        social: 0,
-        wealth: 0
+        wealth: 0,
+        social: 0
     });
     const [showResults, setShowResults] = useState(false);
 
@@ -75,13 +80,23 @@ export const ModalReincarnation = ({ setShowModal }) => {
     }
 
 
+    const savePlayerOnFirestore = async (player) => {
+        try {
+            const playerRef = collection(db, "users", user.uid, "customPlayers");
+            await addDoc(playerRef, player);
+            console.log("player saved successsful on uid", user.uid);
+        } catch (error) {
+            console.log("error saving player", error);
+        }
+    }
+
     const handleFinish = () => {
         const updatedPlayer = {
             ...activePlayer,
             reincarnate: false,
+            age: 20,
             prevReincar: activePlayer.prevReincar + 1
         };
-        console.log('activePlayer.prevReincar :>> ', activePlayer.prevReincar);
         setActivePlayer(updatedPlayer);
         if (activePlayer.default) {
             const playerIndex = defaultPlayers.findIndex(player => player.name === activePlayer.name);
@@ -93,9 +108,11 @@ export const ModalReincarnation = ({ setShowModal }) => {
             const updatedPlayers = [...customPlayers];
             updatedPlayers.splice(playerIndex, 1, updatedPlayer);
             setCustomPlayers(updatedPlayers);
+            savePlayerOnFirestore(updatedPlayer)
         }
         setShowModal(false);
     }
+
 
     return (
         <div className="App">
@@ -120,7 +137,7 @@ export const ModalReincarnation = ({ setShowModal }) => {
                         <h2>{texts.reincarnation.scores[language]}</h2>
                         {categories.map((category) => (
                             <p key={category}>
-                                {category}: {Math.min(scores[category], 100)}/100
+                                {switchLabeltext(category, language, texts)}: {Math.min(scores[category], 100)}/100
                             </p>
                         ))}
                         <button onClick={handleFinish}>{texts.reincarnation.finish[language]}</button>

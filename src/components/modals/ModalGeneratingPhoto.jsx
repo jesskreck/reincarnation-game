@@ -3,29 +3,20 @@ import { PlayerContext } from '../../contexts/PlayerContext';
 import { Configuration, OpenAIApi } from "openai";
 import "../../styles/photobooth.css"
 import ProgressBar from '../child/ProgressBar';
+import texts from "../../assets/gameData/texts.json"
+import { LanguageContext } from '../../contexts/LanguageContext';
 
 export const ModalGeneratingPhoto = ({ action, setShowModal }) => {
 
     
     const { activePlayer } = useContext(PlayerContext)
     const { album, setAlbum } = useContext(PlayerContext);
-    console.log('album :>> ', album);
-
-    // everything regarding the fetch....
+    const {language} = useContext(LanguageContext)
 
     const [prompt, setPrompt] = useState("");
     const [result, setResult] = useState(null);
 
-
-    // saving progress of action into new array to map over it for displaying numbers
-    const newProgress = {};
-    for (let prop in action) {
-        if (typeof action[prop] === "number") {
-            newProgress[prop] = action[prop]
-        }
-    }
-
-
+    // OPENAI FETCH 
     useEffect(() => {
         const newPrompt = `sharp photo of ${activePlayer.age} year old ${activePlayer.sex} who likes to ${action.text}, shot on Polaroid BigShot`;
 
@@ -35,15 +26,11 @@ export const ModalGeneratingPhoto = ({ action, setShowModal }) => {
         generateImage(newPrompt);
     }, [action]) // but I only want it to refresh when this one refreshes??
 
-
     const configuration = new Configuration({
         apiKey: process.env.REACT_APP_API_KEY,
-
     });
 
-
     const openai = new OpenAIApi(configuration);
-
 
     const generateImage = async (imagePrompt) => {
         const res = await openai.createImage({
@@ -51,11 +38,18 @@ export const ModalGeneratingPhoto = ({ action, setShowModal }) => {
             n: 1,
             size: "512x512",
         });
-
         setResult(res.data.data[0].url);
         console.log('result :>> ', result);
     };
 
+
+    // saving progress of clicked action item into new array to map over it in modal, displaying progress change 
+    const newProgress = {};
+    for (let prop in action) {
+        if (typeof action[prop] === "number") {
+            newProgress[prop] = action[prop]
+        }
+    }
 
     // saving photo into album
     const handleAddToAlbum = () => {
@@ -74,17 +68,16 @@ export const ModalGeneratingPhoto = ({ action, setShowModal }) => {
         <>
             <div className="photobooth__container">
                 <div className="photobooth__header">
-                    <h2>Generating Memory</h2>
-                    <p>Look at you! A memory of when you used to be {activePlayer.age} years old and liked to {action.text}.</p>
-                    <button onClick={handleAddToAlbum}>Add to album</button>
+                    <h2>{texts.photobooth.header[language]}</h2>
+                    <p>{texts.photobooth.paragraph1[language]} {activePlayer.age} {texts.photobooth.paragraph2[language]} {action.text}.</p>
+                    <button onClick={handleAddToAlbum}>{texts.photobooth.button[language]}</button>
                 </div>
                 <div className="photobooth__polaroid">{
                     result && <img src={result} alt={prompt} />}
                 </div>
                 <div className="photobooth__summary">
-                    <h3>This phase brought you...</h3>
+                    <h3>{texts.photobooth.result[language]}</h3>
                     <div>
-                        {/* mapping over all entries in selectedAction to show effects on progressbars */}
                         {Object.entries(newProgress).map(([key, value]) => (
                             <ProgressBar key={key} label={key} value={value} />
                         ))}

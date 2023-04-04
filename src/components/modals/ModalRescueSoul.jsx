@@ -1,15 +1,18 @@
 import React, { useContext, useState } from "react";
 import { PlayerContext } from "../../contexts/PlayerContext";
-import Modal from "./Modal";
 import { ModalReincarnation } from "./ModalReincarnation";
+import { getRandomSoulName } from "../../utils/getRandomSoulName";
+import "../../utils/getRandomSoulName"
+
 
 export const ModalRescueSoul = ({setShowModal}) => {
 
     const [checkSubmit, setCheckSubmit] = useState(false);
 
     const { customPlayers, setCustomPlayers, activePlayer, setActivePlayer } = useContext(PlayerContext);
+
     const [newPlayer, setNewPlayer] = useState({
-        name: "",
+        name: getRandomSoulName(),
         default: false,
         sex: "",
         reincarnate: false,
@@ -31,8 +34,8 @@ export const ModalRescueSoul = ({setShowModal}) => {
         setCustomPlayers([...customPlayers, newPlayer]);
         setCheckSubmit(true);
         setActivePlayer(newPlayer);
+        
     }
-
 
 
     return (
@@ -50,7 +53,7 @@ export const ModalRescueSoul = ({setShowModal}) => {
 
                     <label>
                         Give that poor soul a name:
-                        <input type="text" value={newPlayer.name} onChange={handleNameChange} />
+                        <input type="text" value={newPlayer.name} onChange={handleNameChange}/>
                     </label>
 
                     <div>

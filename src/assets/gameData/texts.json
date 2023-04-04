@@ -2,23 +2,23 @@
   "main": {
     "progress1": {
       "en": "Attractiveness",
-      "de": ""
+      "de": "Attraktivität"
     },
     "progress2": {
       "en": "Mental Stability",
-      "de": ""
+      "de": "Mentale Stabilität\r"
     },
     "progress3": {
       "en": "Educational Level",
-      "de": ""
+      "de": "Bildungsstand"
     },
     "progress4": {
-      "en": "Social Relationships",
-      "de": ""
+      "en": "Wealth",
+      "de": "Reichtum"
     },
     "progress5": {
-      "en": "Wealth",
-      "de": ""
+      "en": "Social Relationships",
+      "de": "Soziale Beziehungen"
     }
   },
   "navbar": {
@@ -70,43 +70,35 @@
       "en": "Rescue a lost soul",
       "de": "Verlorene Seele retten"
     },
-    "button2b": {
-      "en": "Login to rescue lost souls",
-      "de": "Einloggen um verlorene Seelen zu retten"
-    },
     "moreplayers": {
       "en": "You want new players? Log in to get access to the \"Rescue lost souls\" feature and unleash your inner cosmic hero! The universe is overflowing with confused spirits just begging for a wild ride into reincarnation.",
       "de": "Du möchtest neue Spieler? Melde dich an um das \"Verlorene Seelen retten\" Feature nutzen zu können und entfessle deinen inneren kosmischen Helden! Das Universum ist voll von verwirrten Geistern, die nur darauf warten, auf eine wilde Reise in die Reinkarnation geschickt zu werden."
     },
-    "login": {
+    "prompt1": {
       "en": "In order to use the \"Rescue lost souls\" feature you need to be logged in.",
       "de": "Um das \"Verlorene Seelen retten\" Feature nutzen zu können, musst du eingeloggt sein."
+    },
+    "prompt2": {
+      "en": "Select a player from above to take over its soul.",
+      "de": "Wähle einen Player von oben aus um seine Seele zu übernehmen."
     }
   },
   "dashboard": {
-    "age": {
-      "en": "Age",
-      "de": "Alter"
+    "header": {
+      "en": "Time to play",
+      "de": "Zeit zum Spielen"
     },
-    "attractiveness": {
-      "en": "Attractiveness",
-      "de": "Attraktivität"
+    "prompt": {
+      "en": "You need to select a player before you can start playing.",
+      "de": "Du musst einen Player auswählen bevor du spielen kannst."
     },
-    "mental": {
-      "en": "Mental Stability",
-      "de": "Mentale Stabilität\r"
+    "button": {
+      "en": "Go to player selection",
+      "de": "Gehe zu Playerauswahl"
     },
-    "education": {
-      "en": "Educational Level",
-      "de": "Bildungsstand"
-    },
-    "wealth": {
-      "en": "Wealth",
-      "de": "Reichtum"
-    },
-    "social": {
-      "en": "Social Relationships",
-      "de": "Soziale Beziehungen"
+    "": {
+      "en": "",
+      "de": ""
     }
   },
   "photobooth": {

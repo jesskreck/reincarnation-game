@@ -7,10 +7,12 @@ import { ModalGeneratingPhoto } from '../modals/ModalGeneratingPhoto';
 export const ActionButton = ({ action }) => {
 
   const { activePlayer, setActivePlayer } = useContext(PlayerContext)
+
   const [showModal, setShowModal] = useState(false)
   const [selectedAction, setSelectedAction] = useState(null)
 
-  const CategoryLogo = (category) => {
+  
+  const switchCategoryLogo = (category) => {
     switch (category) {
       case "attractiveness":
         return "🤳";
@@ -33,9 +35,6 @@ export const ActionButton = ({ action }) => {
 
     setSelectedAction(action);
     setShowModal(true);
-
-    console.log("click");
-    console.log("action in handleclick", action);
 
     // make player older
     setActivePlayer({ ...activePlayer, age: activePlayer.age + 10 });
@@ -70,7 +69,7 @@ export const ActionButton = ({ action }) => {
   return (
     <>
       <button style={{ fontSize: 'large' }} onClick={handleActionClick}>
-        {action.text} {CategoryLogo(action.category)}
+        {action.text} {switchCategoryLogo(action.category)}
       </button>
 
 

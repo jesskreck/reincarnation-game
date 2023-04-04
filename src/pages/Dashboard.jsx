@@ -1,41 +1,40 @@
-import React, { useContext, useState } from 'react'
-import PanelActions from '../components/parent/PanelActions'
-import PanelProgress from '../components/parent/PanelProgress'
-import { PanelAlbum } from '../components/parent/PanelAlbum'
-import Modal from '../components/modals/Modal'
-import { Link } from 'react-router-dom'
-import { PlayerContext } from '../contexts/PlayerContext'
-
+import { Link } from "react-router-dom";
+import { PanelAlbum } from "../components/parent/PanelAlbum";
+import { PlayerContext } from "../contexts/PlayerContext";
+import Modal from "../components/modals/Modal";
+import PanelActions from "../components/parent/PanelActions";
+import PanelProgress from "../components/parent/PanelProgress";
+import React, { useContext, useState } from "react";
+import { LanguageContext } from "../contexts/LanguageContext";
+import texts from "../assets/gameData/texts.json";
 
 export const Dashboard = () => {
+  const { activePlayer } = useContext(PlayerContext);
+  const { language } = useContext(LanguageContext);
 
-  const { activePlayer } = useContext(PlayerContext)
-  const [showModal, setShowModal] = useState(true)
-
+  const [showModal, setShowModal] = useState(true);
 
   return (
-
     <>
-      {activePlayer ? (
-      <div className='page game__container'>
-        <div className="game__header">
-          <h2>Time to play</h2>
+      {activePlayer
+        ? (
+        <div className="page game__container">
+          <div className="game__header">
+            <h2>{texts.dashboard.header[language]}</h2>
+          </div>
+          <PanelActions />
+          <PanelProgress />
+          <PanelAlbum />
         </div>
-        <PanelActions />
-        <PanelProgress />
-        <PanelAlbum />
-      </div>
-      ) : (
+        )
+        : (
         <Modal open={showModal} close={() => setShowModal(false)}>
-          You need to select a player before you can start playing.
-          <Link to="/PlayerSelection"><button>Go to player selection</button></Link>
+          {texts.dashboard.prompt[language]}
+          <Link to="/PlayerSelection">
+            <button>{texts.dashboard.button[language]}</button>
+          </Link>
         </Modal>
       )}
-
-
-      
-
     </>
-
-  )
-}
+  );
+};

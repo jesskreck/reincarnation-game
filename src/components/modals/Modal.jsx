@@ -13,8 +13,10 @@ export default function Modal({ open, children, close }) {
             <div className="modal">
                 <div className="overlay"></div>
                 <div className="modal-content">
+
                     {children}
                     <button onClick={close}>Close (on generic modal)</button>
+                    
                 </div>
             </div>
 
