@@ -4,7 +4,7 @@ import Modal from '../modals/Modal';
 import { ModalGeneratingPhoto } from '../modals/ModalGeneratingPhoto';
 
 
-export const ActionButton = ({ action }) => {
+export const ActionButton = ({ action, uniqueClassName }) => {
 
   const { activePlayer, setActivePlayer } = useContext(PlayerContext)
 
@@ -68,12 +68,12 @@ export const ActionButton = ({ action }) => {
 
   return (
     <>
-      <button style={{ fontSize: 'large' }} onClick={handleActionClick}>
+      <button className={`${uniqueClassName}`} onClick={handleActionClick}>
         {action.text} {switchCategoryLogo(action.category)}
       </button>
 
 
-      <Modal open={showModal} close={() => setShowModal(false)}>
+      <Modal open={showModal}>
         <ModalGeneratingPhoto action={selectedAction} setShowModal={setShowModal} /> 
       </Modal>
     </>

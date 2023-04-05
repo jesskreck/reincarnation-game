@@ -3,15 +3,10 @@ nav {
     justify-content: space-between;
     gap: 1rem;
     padding: 1rem 5rem 1rem 5rem;
-    background: rgb(222, 8, 147);
+    background: rgb(18, 18, 18);
 }
 
 nav a {
     text-decoration: none;
     color: pink;
 }
-
-nav a.active{
-    color: white;
-}
-

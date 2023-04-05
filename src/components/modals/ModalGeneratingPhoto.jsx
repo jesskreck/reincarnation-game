@@ -39,7 +39,6 @@ export const ModalGeneratingPhoto = ({ action, setShowModal }) => {
             size: "512x512",
         });
         setResult(res.data.data[0].url);
-        console.log('result :>> ', result);
     };
 
 
@@ -58,7 +57,7 @@ export const ModalGeneratingPhoto = ({ action, setShowModal }) => {
             action: `${activePlayer.age} year old me as I ${action.text} `,
         };
 
-        setAlbum(prevAlbum => [...album, newPhoto]);
+        setAlbum([...album, newPhoto]);
         console.log('album :>> ', album);
         setShowModal(false);
     };
@@ -70,7 +69,7 @@ export const ModalGeneratingPhoto = ({ action, setShowModal }) => {
                 <div className="photobooth__header">
                     <h2>{texts.photobooth.header[language]}</h2>
                     <p>{texts.photobooth.paragraph1[language]} {activePlayer.age} {texts.photobooth.paragraph2[language]} {action.text}.</p>
-                    <button onClick={handleAddToAlbum}>{texts.photobooth.button[language]}</button>
+
                 </div>
                 <div className="photobooth__polaroid">{
                     result && <img src={result} alt={prompt} />}
@@ -83,6 +82,7 @@ export const ModalGeneratingPhoto = ({ action, setShowModal }) => {
                         ))}
                     </div>
                 </div>
+                <button onClick={handleAddToAlbum} className='btn--reincarnation-finish'>{texts.photobooth.button[language]}</button>
             </div>
         </>
     )

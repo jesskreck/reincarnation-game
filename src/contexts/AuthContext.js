@@ -77,8 +77,3 @@ export const AuthContextProvider = ({ children }) => {
   )
 }
 
-
-
-
-
-// to do: Get the currently signed-in user

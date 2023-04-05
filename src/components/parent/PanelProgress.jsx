@@ -1,18 +1,21 @@
 import React, { useContext, useEffect, useState } from 'react'
 import ProgressBar from '../child/ProgressBar.jsx'
 import { PlayerContext } from '../../contexts/PlayerContext.js'
+import { LanguageContext } from '../../contexts/LanguageContext.js';
+import texts from "../../assets/gameData/texts.json"
 
 
 
 export default function PanelProgress() {
 
-  const { activePlayer, setActivePlayer } = useContext(PlayerContext);
+  const { activePlayer } = useContext(PlayerContext);
+  const {language} = useContext(LanguageContext)
 
 
   return (
 
     <div className='game__progress__panel'>
-      <p>{activePlayer.name}, {activePlayer.age} years</p>
+      <h2>{activePlayer.name}, {activePlayer.age} {texts.main.age[language]}</h2>
 
       {/* note: The Object.entries() function returns an array of arrays, with each inner array containing a key-value pair [key, value] */}
       {Object.entries(activePlayer.progress).map(([key, value]) => (

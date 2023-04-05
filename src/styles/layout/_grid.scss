@@ -32,23 +32,11 @@
     grid-area: header;
 }
 
-
-/* SELECTION */
-
-.game__selection__panel {
-    background-color: pink;
+.grid__actions {
     grid-area: selection;
-
-    display: grid;
-    gap: 1rem;
-    padding: 2rem;
 }
 
-
-/* PROGRESS */
-
 .game__progress__panel {
-    background-color: lightblue;
     grid-area: progress;
 
     padding: 2rem;
@@ -57,37 +45,18 @@
     gap: 2rem;
 }
 
-.progress__container h3{
+.progress__container h3 {
     margin: 0;
 }
 
-.progress__label {
-    color: blue;
-}
-
-.progress__value {
-    color: white;
-}
 
 
 /* ALBUM */
 
 .game__album__panel {
-    border: green 2px solid;
+    // @extend .pixel-box--warning;
     grid-area: album;
     padding: 1em;
     gap: 1em;
     display: flex;
-}
-
-
-/* Player Selection */
-.players_container{
-    display: grid;
-    grid-gap: 2em;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-}
-
-.playercard{
-    border: black 2px solid;
 }

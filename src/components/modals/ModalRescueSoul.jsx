@@ -42,30 +42,32 @@ export const ModalRescueSoul = ({setShowModal}) => {
         <>
             {!checkSubmit
                 
-                ? <>
-                    <div>
-                        Hey there, Reincarnation Rookie! You're about to save a lost soul and
-                        toss it into a ridiculous new life. Pick a name, gender, and answer some
-                        nutty questions about its past. Your answers will mess with their mental
-                        stability, hotness, cash flow, smarts, and friendships. So, loosen up
-                        and prepare for some side-splitting cosmic chaos!
+                ? <div className="modal--child">
+                    <div className="modal--content">
+                        <p>
+                            Hey there, Reincarnation Rookie! You're about to save a lost soul and
+                            toss it into a ridiculous new life. Pick a name, gender, and answer some
+                            nutty questions about its past. Your answers will mess with their mental
+                            stability, hotness, cash flow, smarts, and friendships. So, loosen up
+                            and prepare for some side-splitting cosmic chaos!
+                        </p>
                     </div>
 
                     <label>
-                        Give that poor soul a name:
+                        <h4>Give that poor soul a name:</h4>
                         <input type="text" value={newPlayer.name} onChange={handleNameChange}/>
                     </label>
 
                     <div>
-                        Into what sex will it reincarnate?
+                        <h4>Into what sex will it reincarnate?</h4>
                         <label>Man<input type="radio" name="sex" value="man" onChange={handleSexChange} /></label>
                         <label>Woman<input type="radio" name="sex" value="woman" onChange={handleSexChange} /></label>
                     </div>
 
-                    <button onClick={handleSubmit}>
+                    <button onClick={handleSubmit} className="btn--reincarnation-scores">
                         Answer questions about its past
                     </button>
-                </>
+                </div>
 
                 : <ModalReincarnation setShowModal={setShowModal} />
             }

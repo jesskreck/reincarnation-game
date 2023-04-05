@@ -5,11 +5,13 @@ import actionDataEN from "../../assets/gameData/actionDataEN.json"
 import actionDataDE from "../../assets/gameData/actionDataDE.json";
 
 import { LanguageContext } from '../../contexts/LanguageContext';
+import texts from "../../assets/gameData/texts.json"
+
 
 
 export default function PanelActions() {
 
-    const { activePlayer, setActivePlayer } = useContext(PlayerContext);
+    const { activePlayer } = useContext(PlayerContext);
     const [actionsOnScreen, setActionsOnScreen] = useState([]);
     const { language } = useContext(LanguageContext)
 
@@ -27,7 +29,7 @@ export default function PanelActions() {
 
         // old algorithm
         const shuffledActions = actionData.sort(
-        () => Math.random() - 0.5
+            () => Math.random() - 0.5
         );
 
         // new algorithm for picking random items from array
@@ -36,7 +38,6 @@ export default function PanelActions() {
         //     const seed = now.getSeconds() + now.getMilliseconds() / 1000;
         //     return Math.sin(seed) * 10000 - Math.floor(Math.sin(seed) * 10000);
         // });
-
 
         return shuffledActions.slice(0, 4);
     }
@@ -50,12 +51,17 @@ export default function PanelActions() {
 
 
     return (
-
-        <div className="game__selection__panel">
+        <div className="grid__actions">
+            <div className="grid__actions--center">
+                <h2>{texts.actions.header1[language]} {activePlayer.name}{texts.actions.header2[language]}</h2>
+            </div>
             {actionsOnScreen.map((action, index) => (
-                <ActionButton key={index} action={action} />
+                <ActionButton
+                    key={index}
+                    action={action}
+                    uniqueClassName={`grid__actions--btn${index}`}
+                />
             ))}
         </div>
-
-    )
+    );
 }

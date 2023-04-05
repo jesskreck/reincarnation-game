@@ -11,11 +11,12 @@ export const LoginButton = ({ label }) => {
 
     return (
         <div>
-            <button onClick={() => setShowModal(true)}>{label}</button>
+            <button onClick={() => setShowModal(true)} className='btn--nav'>{label}</button>
             <Modal open={showModal} close={() => setShowModal(false)}>
                 <SignIn />
                 <SignUp />
                 <AuthFeedback />
+                <button onClick={() => setShowModal(false)}>Close Login Modal</button>
             </Modal>
         </div>
     )

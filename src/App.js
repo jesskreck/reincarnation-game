@@ -1,24 +1,16 @@
 import React from 'react'
-
-import { Route, Routes } from 'react-router-dom';
-
-import { AuthContextProvider } from './contexts/AuthContext';
-import { LanguageProvider } from './contexts/LanguageContext';
-import { PlayerProvider } from './contexts/PlayerContext';
-
-
-
-import Navbar from './components/parent/Navbar'
-
-import Homepage from './pages/Homepage'
-import ImageGenerator from './pages/ImageGenerator'
 import PlayerSelection from './pages/PlayerSelection'
+import Navbar from './components/parent/Navbar'
+import ImageGenerator from './pages/ImageGenerator'
+import Homepage from './pages/Homepage'
 import Error404 from './pages/Error404'
-
-
-
-import "../src/styles/app.css"
+import { Route, Routes } from 'react-router-dom';
+import { PlayerProvider } from './contexts/PlayerContext';
+import { LanguageProvider } from './contexts/LanguageContext';
 import { Dashboard } from './pages/Dashboard';
+import { AuthContextProvider } from './contexts/AuthContext';
+
+import "../src/styles/main.scss"
 
 
 function App() {
@@ -38,9 +30,10 @@ function App() {
               <Route path="*" element={<Error404 />} />
               <Route path="ImageGenerator" element={<ImageGenerator />} />
 
-              <Route path="Playerselection" element={< PlayerSelection />} />
-              <Route path="Dashboard" element={< Dashboard />} />
+              <Route path="Players" element={<PlayerSelection/>} />
+              <Route path="Actions" element={< Dashboard />} />
 
+              
             </Routes>
 
           </PlayerProvider>

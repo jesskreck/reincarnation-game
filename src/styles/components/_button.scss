@@ -1,0 +1,48 @@
+.btn--primary{
+    @include font;
+    @extend .pixel-box--primary; 
+    @extend h3;
+    padding: 0.5em 1.5em 0.5em 1.5em;
+    margin: 0;
+    color: white;
+
+}
+
+.btn--primary:disabled{
+    @extend .pixel-box--light;
+    color: lightgrey;
+    
+}
+
+.btn--reincarnation-scores{
+    @extend .pixel-box--warning;
+    font-family: $font-family-base;
+    font-weight: bolder;
+    font-size:larger;
+    color: darken($color-warning, 25);
+    padding: 1em;
+}
+
+.btn--reincarnation-finish{
+    @include font;
+    @extend .pixel-box--warning;
+    @extend h3;
+    padding: 0.5em 1.5em 0.5em 1.5em;
+    margin: 0;
+}
+
+.btn--action{
+    @extend .pixel-box--primary;
+    @extend h5;
+    font-weight: 500;
+    color: white;
+    padding: 0 2em;
+}
+
+.btn--nav{
+    @include font;
+    @extend .pixel-box--primary;
+    padding: 0 1em;
+    text-align: center; 
+    color: white;
+}

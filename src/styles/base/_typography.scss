@@ -1,0 +1,84 @@
+// import fonts
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
+
+
+// Set base font settings
+@mixin font {
+    font-family: $font-family-base;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    line-height: 1.5;
+}
+
+// Set headings styles
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    @include font;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    color: $color-dark;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.75em;
+}
+
+h4 {
+    font-size: 1.5em;
+}
+
+h5 {
+    font-size: 1.25em;
+}
+
+h6 {
+    font-size: 1em;
+}
+
+// Set paragraph styles
+p {
+    @include font;
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+.prompt {
+    @include font;
+    font-size: smaller;
+    color: darkgrey;
+    text-align: center;
+    padding: 1em;
+    margin-bottom: 0.5em;
+}
+
+.warning {
+    @include font;
+    font-weight: bolder;
+    color: $color-danger;
+}
+
+
+// Style links
+a {
+    @include font;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+        font-weight: bold;
+    }
+}

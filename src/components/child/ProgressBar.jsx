@@ -4,14 +4,13 @@ import { LanguageContext } from '../../contexts/LanguageContext'
 
 import switchLabeltext from '../../utils/switchLabeltext'
 
+
 const ProgressBar = ({ label, value } ) => {
 
     const { language } = useContext(LanguageContext)
     
-    const progressbarStyle = {
+    const adaptWidthStyle = {
         width: `${value}%`,
-        backgroundColor: 'blue',
-        borderRadius: '99px',
         textAlign: 'center',
         transition: 'all .6s cubic-bezier(0.4, 0.0, 0.2, 1)'
     }
@@ -19,11 +18,13 @@ const ProgressBar = ({ label, value } ) => {
 
     return (
         <div className='progress__container'>
-            <p className='progress__label'>{switchLabeltext(label, language, texts)}</p>
-            <div style={progressbarStyle}>
-                <span className='progress__value'>
-                    {`${value}%`}
-                </span>
+            <h6 className='progress__label'>{switchLabeltext(label, language, texts)}</h6>
+            <div className='progress__bar' >
+                <div className="progress__fill" style={adaptWidthStyle}>
+                    <span>
+                        {`${value}%`}
+                    </span>
+                </div>
             </div>
         </div>
     )
@@ -31,7 +32,3 @@ const ProgressBar = ({ label, value } ) => {
 
 export default ProgressBar
 
-
-
-// TO DOS
-// create separate progressbar for age. Call them individually in PanelProgress.

@@ -4,7 +4,7 @@ import { PlayerContext } from "../../contexts/PlayerContext";
 
 export const PanelAlbum = () => {
 
-    const {album, setAlbum} = useContext(PlayerContext)
+    const { album } = useContext(PlayerContext)
 
     
     return (

@@ -115,16 +115,19 @@ export const ModalReincarnation = ({ setShowModal }) => {
 
 
     return (
-        <div className="App">
+        <div className='modal--child'>
+            <h4>{texts.reincarnation.header[language]}</h4>
+            <p>{texts.reincarnation.subheader[language]}</p>
+
             {!showResults
                 ? (
-                    <div>
+                    <div className='container_reincarnation'>
                         <h2>{getQuestion(currentQuestion)}</h2>
-                        <div>
+                        <div className='container_reincarnation--btn'>
                             {[...Array(currentQuestion === 3 ? 11 : 11).keys()]
                                 .slice(1)
                                 .map((num) => (
-                                    <button key={num} onClick={() => handleAnswer(num)}>
+                                    <button key={num} onClick={() => handleAnswer(num)} className='btn--reincarnation-scores'>
                                         {num}
                                     </button>
                                 ))}
@@ -134,13 +137,13 @@ export const ModalReincarnation = ({ setShowModal }) => {
 
                 : (
                     <div>
-                        <h2>{texts.reincarnation.scores[language]}</h2>
+                        <h3>{texts.reincarnation.scores[language]}</h3>
                         {categories.map((category) => (
                             <p key={category}>
                                 {switchLabeltext(category, language, texts)}: {Math.min(scores[category], 100)}/100
                             </p>
                         ))}
-                        <button onClick={handleFinish}>{texts.reincarnation.finish[language]}</button>
+                        <button onClick={handleFinish} className='btn--reincarnation-finish'>{texts.reincarnation.finish[language]}</button>
                     </div>
                 )}
 

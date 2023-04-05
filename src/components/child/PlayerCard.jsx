@@ -6,15 +6,29 @@ import { LanguageContext } from '../../contexts/LanguageContext'
 export const PlayerCard = ({ player, togglePlayer }) => {
 
     const { language } = useContext(LanguageContext)
-    
+
     return (
 
-        <div className="playercard">
-            <h3>{player.name}</h3>
-            <p>{texts.playercard.age[language]}: {player.age}</p>
-            <p>{player.prevReincar} {texts.playercard.prevrein[language]}</p>
-            {player.reincarnate && <p style={{ color: "blue" }}>{texts.playercard.rein[language]}</p>}
-            <input type="radio" name="player" onChange={togglePlayer} />
-        </div>
+        // clicking the label will trigger the radio button's input event. div would not work!
+        // for the css sibling selector to work, input must be before the  
+        <label className="playercard-holder">
+            <input type="radio" name="player" onChange={togglePlayer} className="visually-hidden" />
+            
+            <div className="playercard">
+                <h3>{player.name}</h3>
+                <p>
+                    {texts.playercard.age[language]}: {player.age}
+                </p>
+                <p>
+                    {player.prevReincar} {texts.playercard.prevrein[language]}
+                </p>
+                {/* notification if reincarnation needed */}
+                {player.reincarnate && (
+                    <p className='warning'>{texts.playercard.rein[language]}</p>
+                )}
+            </div>
+
+           
+        </label>
     )
 }

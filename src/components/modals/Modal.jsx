@@ -1,8 +1,6 @@
 import React from 'react'
 import ReactDom from 'react-dom';
 
-import "../../styles/modal.css"
-
 
 export default function Modal({ open, children, close }) {
 
@@ -15,7 +13,6 @@ export default function Modal({ open, children, close }) {
                 <div className="modal-content">
 
                     {children}
-                    <button onClick={close}>Close (on generic modal)</button>
                     
                 </div>
             </div>

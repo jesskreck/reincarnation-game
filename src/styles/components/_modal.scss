@@ -5,8 +5,7 @@
     font-size: 18px;
 }
 
-.modal,
-.overlay {
+@mixin overlay{
     width: 100vw;
     height: 100vh;
     top: 0;
@@ -16,18 +15,30 @@
     position: fixed;
     display: grid;
     place-items: center;
-
 }
 
 .overlay {
-    background: rgba(  0, 0, 0, 0.5);
+    @include overlay;
+    background: rgba(0, 0, 0, 0.75);
 }
 
+.modal {
+    @include overlay;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
 .modal-content {
+    @extend .pixel-box--warning;
+    margin: 5%;
     position: absolute;
-    line-height: 1.4;
-    background: #f1f1f1;
-    padding: 2em;
+    background-color: lighten($color-warning, 25)!important;
+    padding: 3em;
+    
+    h4, p{
+        color: darken($color-warning, 25);
+    }
 }
 
 .close-modal {

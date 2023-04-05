@@ -6,7 +6,6 @@ import { LoginButton } from "../child/LoginButton";
 import LanguageSwitch from "./LanguageSwitch";
 import { AuthFeedback } from "../auth/AuthFeedback";
 
-import "../../styles/navbar.css";
 
 function Navbar() {
   
@@ -21,12 +20,14 @@ function Navbar() {
         <NavLink to={"/"}>Home</NavLink>
         <NavLink to={"/ImageGenerator"}>Image Generator</NavLink>
 
-        <NavLink to={"/PlayerSelection"}>Player Selection</NavLink>
-        <NavLink to={"/Dashboard"}>Dashboard</NavLink>
+        <NavLink to={"/Players"}>Player Selection</NavLink>
+        <NavLink to={"/Actions"}>Dashboard</NavLink>
 
         <div className="nav__profile">
           {user
-            ? <AuthFeedback />
+            ? <div className="btn--nav">
+              <AuthFeedback />
+            </div>
             : <LoginButton label={"Login"} />
           }
         </div>

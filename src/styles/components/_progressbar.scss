@@ -1,0 +1,23 @@
+.progressbar {
+    @extend .pixel-box--light;
+    text-align: center;
+    transition: all .6s cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+
+.progress__bar{
+    @extend .pixel-box--light;
+    width: 100%;
+    background-color: red;
+}
+
+.progress__fill{
+    background-color: $color-success;
+    @include font
+}
+
+
+.game__progress__panel{
+    @extend .pixel-box--success;
+    background-color: lighten($color-success, 30)!important;
+}
