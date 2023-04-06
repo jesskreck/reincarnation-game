@@ -1,10 +1,16 @@
 .photobooth__container{
     display: grid;
+    gap: 1em;
     grid-template-columns: 1fr;
     grid-template-areas:
         "header"
         "polaroid"
         "summary"
+}
+
+.photobooth__container h3, h6{
+    margin: 0;
+    padding-bottom: 1em;
 }
 
 

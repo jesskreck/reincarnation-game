@@ -1,6 +1,6 @@
 import React from 'react'
 import PlayerSelection from './pages/PlayerSelection'
-import Navbar from './components/parent/Navbar'
+import Navbar from './components/navbar/Navbar'
 import ImageGenerator from './pages/ImageGenerator'
 import Homepage from './pages/Homepage'
 import Error404 from './pages/Error404'

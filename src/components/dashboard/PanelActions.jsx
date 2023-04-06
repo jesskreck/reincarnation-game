@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react';
-import { ActionButton } from '../child/ActionButton';
+import { ActionButton } from "./children/ActionButton"; 
 import { PlayerContext } from '../../contexts/PlayerContext';
 import actionDataEN from "../../assets/gameData/actionDataEN.json"
 import actionDataDE from "../../assets/gameData/actionDataDE.json";
@@ -51,15 +51,15 @@ export default function PanelActions() {
 
 
     return (
-        <div className="grid__actions">
-            <div className="grid__actions--center">
+        <div className="dashboard__actions">
+            <div className="dashboard__actions--prompt">
                 <h2>{texts.actions.header1[language]} {activePlayer.name}{texts.actions.header2[language]}</h2>
             </div>
             {actionsOnScreen.map((action, index) => (
                 <ActionButton
                     key={index}
                     action={action}
-                    uniqueClassName={`grid__actions--btn${index}`}
+                    uniqueClassName={`dashboard__actions--btn${index}`}
                 />
             ))}
         </div>

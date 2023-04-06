@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
-import texts from "../../assets/gameData/texts.json"
-import { LanguageContext } from '../../contexts/LanguageContext'
+import texts from "../../../assets/gameData/texts.json"
+import { LanguageContext } from '../../../contexts/LanguageContext'
 
 
 export const PlayerCard = ({ player, togglePlayer }) => {

@@ -105,8 +105,8 @@
   },
   "dashboard": {
     "header": {
-      "en": "Time to play",
-      "de": "Zeit zum Spielen"
+      "en": "Time to collect some memories for this soul!",
+      "de": "Zeit Erfahrungen für diese Seele zu sammeln!"
     },
     "prompt": {
       "en": "You need to select a player before you can start playing.",
@@ -217,6 +217,16 @@
     "rein": {
       "en": "Reincarnation starting!",
       "de": "Reinkarnation beginnt!"
+    }
+  },
+  "gameover": {
+    "text1": {
+      "en": "Oh oh... You died at the age of",
+      "de": "Oh oh... du bist mit"
+    },
+    "text2": {
+      "en": ". Perhaps this soul was not in the best hands after all... Fortunately, there is life after death! Whether it becomes more worth living, however, will only become apparent after reincarnation.",
+      "de": "Jahren gestorben. Vielleicht war diese Seele doch nicht in den besten Händen... Zum Glück gibt es ein Leben danach! Ob das so viel lebenswerter wird, zeigt sich aber erst nach der Reinkarnation."
     }
   }
 }

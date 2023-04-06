@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
-import { Photo } from "../child/Photo";
+import { Photo } from "./children/Photo";
 import { PlayerContext } from "../../contexts/PlayerContext";
 
-export const PanelAlbum = () => {
+export default function PanelAlbum() {
 
     const { album } = useContext(PlayerContext)
 

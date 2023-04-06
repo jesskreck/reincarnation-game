@@ -1,23 +1,24 @@
-import { AuthContext } from '../contexts/AuthContext';
-import { LanguageContext } from '../contexts/LanguageContext';
-import { Link } from 'react-router-dom';
-import { ModalReincarnation } from '../components/modals/ModalReincarnation';
-import { ModalRescueSoul } from '../components/modals/ModalRescueSoul';
-import { PlayerCard } from '../components/child/PlayerCard';
-import { PlayerContext } from '../contexts/PlayerContext';
-import Modal from '../components/modals/Modal';
-import React, { useContext, useEffect, useState } from 'react';
 import texts from "../assets/gameData/texts.json";
+import React, { useContext, useEffect, useState } from 'react';
+import Modal from '../components/modals/Modal';
+import { PlayerContext } from '../contexts/PlayerContext';
+import { PlayerCard } from '../components/players/children/PlayerCard';
+import { ModalRescueSoul } from '../components/players/ModalRescueSoul';
+import { ModalReincarnation } from '../components/players/ModalReincarnation';
+import { useNavigate } from 'react-router-dom';
+import { LanguageContext } from '../contexts/LanguageContext';
 import { db } from "../fbConfig";
 import { collection, getDocs, query } from "firebase/firestore"
+import { AuthContext } from '../contexts/AuthContext';
 
 
 
 export default function PlayerSelection() {
 
+  const navigate = useNavigate();
   const { user } = useContext(AuthContext);
   const { language } = useContext(LanguageContext);
-  const { defaultPlayers, customPlayers, activePlayer, setActivePlayer } = useContext(PlayerContext);
+  const { defaultPlayers, customPlayers, activePlayer, setActivePlayer, setAlbum } = useContext(PlayerContext);
 
   const [showModal, setShowModal] = useState(false);
   const [childModal, setChildModal] = useState(null);
@@ -41,6 +42,12 @@ export default function PlayerSelection() {
   const handleRescueSoul = () => {
     setShowModal(true);
     setChildModal(<ModalRescueSoul setShowModal={setShowModal} />)
+  }
+
+  // go to dashboard
+  const handleGoToActions = () => {
+    setAlbum([]);
+    navigate("/Actions");
   }
 
   // get customPlayers array from firestore
@@ -116,7 +123,7 @@ export default function PlayerSelection() {
               // scenario 1: player selected, needs reincarnation
               ? <button className='btn--primary' onClick={handleTakeSoul}>{texts.playerselection.button1[language]}</button>
               // scenario 2: player selected, no reincarnation
-              : <Link to="/Actions"><button className='btn--primary'>{texts.playerselection.button1[language]}</button></Link>
+              : <button className='btn--primary' onClick={handleGoToActions}>{texts.playerselection.button1[language]}</button>
             // scenario 3: no player selected
             : <><p className='prompt'>{texts.playerselection.prompt1[language]}</p>
               <button className='btn--primary' disabled>{texts.playerselection.button1[language]}</button></>
@@ -140,8 +147,7 @@ export default function PlayerSelection() {
       </div>
 
 
-      {/* MODAL */}
-      <Modal open={showModal} close={() => setShowModal(false)}>
+      <Modal open={showModal}>
         {childModal}
       </Modal>
 

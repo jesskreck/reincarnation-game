@@ -1,11 +1,9 @@
 import React, { useContext } from 'react'
-import texts from "../../assets/gameData/texts.json"
-import { LanguageContext } from '../../contexts/LanguageContext'
+import { LanguageContext } from '../../../contexts/LanguageContext'
+import switchLabeltext from '../../../utils/switchLabeltext'
+import texts from "../../../assets/gameData/texts.json"
 
-import switchLabeltext from '../../utils/switchLabeltext'
-
-
-const ProgressBar = ({ label, value } ) => {
+export const ProgressBar = ({ label, value } ) => {
 
     const { language } = useContext(LanguageContext)
     
@@ -30,5 +28,4 @@ const ProgressBar = ({ label, value } ) => {
     )
 }
 
-export default ProgressBar
 

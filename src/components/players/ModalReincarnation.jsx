@@ -90,6 +90,7 @@ export const ModalReincarnation = ({ setShowModal }) => {
         }
     }
 
+    // to do: outsource! its also used in gameOver component
     const handleFinish = () => {
         const updatedPlayer = {
             ...activePlayer,

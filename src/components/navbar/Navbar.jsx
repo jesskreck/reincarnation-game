@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { NavLink } from "react-router-dom";
 import { AuthContext } from "../../contexts/AuthContext";
-import { LoginButton } from "../child/LoginButton";
+import { LoginButton } from "./LoginButton";
 
 import LanguageSwitch from "./LanguageSwitch";
 import { AuthFeedback } from "../auth/AuthFeedback";
@@ -18,7 +18,7 @@ function Navbar() {
       <nav>
         <LanguageSwitch />
         <NavLink to={"/"}>Home</NavLink>
-        <NavLink to={"/ImageGenerator"}>Image Generator</NavLink>
+        <NavLink to={"/ImageGenerator"}>DALL·E</NavLink>
 
         <NavLink to={"/Players"}>Player Selection</NavLink>
         <NavLink to={"/Actions"}>Dashboard</NavLink>

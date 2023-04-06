@@ -2,11 +2,14 @@ import React, { useContext, useEffect, useState } from 'react'
 import { PlayerContext } from '../../contexts/PlayerContext';
 import { Configuration, OpenAIApi } from "openai";
 import "../../styles/photobooth.css"
-import ProgressBar from '../child/ProgressBar';
+
 import texts from "../../assets/gameData/texts.json"
 import { LanguageContext } from '../../contexts/LanguageContext';
+import { ProgressBar } from '../dashboard/children/ProgressBar';
+import { ProgressInfo } from '../dashboard/children/ProgressInfo';
 
-export const ModalGeneratingPhoto = ({ action, setShowModal }) => {
+
+export default function ModalGeneratingPhoto ({ action, setShowModal }) {
 
     
     const { activePlayer } = useContext(PlayerContext)
@@ -58,7 +61,6 @@ export const ModalGeneratingPhoto = ({ action, setShowModal }) => {
         };
 
         setAlbum([...album, newPhoto]);
-        console.log('album :>> ', album);
         setShowModal(false);
     };
 
@@ -78,7 +80,7 @@ export const ModalGeneratingPhoto = ({ action, setShowModal }) => {
                     <h3>{texts.photobooth.result[language]}</h3>
                     <div>
                         {Object.entries(newProgress).map(([key, value]) => (
-                            <ProgressBar key={key} label={key} value={value} />
+                            <ProgressInfo key={key} label={key} value={value} />
                         ))}
                     </div>
                 </div>

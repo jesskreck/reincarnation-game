@@ -26,44 +26,5 @@ img {
     padding: 2em 5em 2em 5em;
 }
 
-.grid__actions{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    align-content: space-evenly;
-    align-items: center;
-    gap: 2em;
-    margin: 2em;
-    grid-template-areas:
-        ". btn0 ."
-        "btn1 center btn2"
-        ". btn3 ."
-}
 
-.grid__actions--center{
-    grid-area: center;
-    text-align: center;
-}
 
-@mixin action--btn{
-    @extend .pixel-box--primary;
-    @extend h5;
-    padding: 0.5em 1.5em;
-    color: white;
-}
-
-.grid__actions--btn0{
-    grid-area: btn0;
-    @include action--btn;
-}
-.grid__actions--btn1 {
-    grid-area: btn1;
-    @include action--btn;
-}
-.grid__actions--btn2 {
-    grid-area: btn2;
-    @include action--btn;
-}
-.grid__actions--btn3 {
-    grid-area: btn3;
-    @include action--btn;
-}

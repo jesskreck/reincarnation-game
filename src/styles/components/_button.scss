@@ -46,3 +46,10 @@
     text-align: center; 
     color: white;
 }
+
+@mixin action--btn {
+    @extend .pixel-box--primary;
+    @extend h5;
+    padding: 0.5em 1.5em;
+    color: white;
+}

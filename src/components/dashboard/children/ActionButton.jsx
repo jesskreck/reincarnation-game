@@ -1,7 +1,9 @@
-import React, { useContext, useState } from 'react'
-import { PlayerContext } from '../../contexts/PlayerContext';
-import Modal from '../modals/Modal';
-import { ModalGeneratingPhoto } from '../modals/ModalGeneratingPhoto';
+import React, { useContext, useEffect, useState } from 'react'
+import ModalGeneratingPhoto from '../../modals/ModalGeneratingPhoto';
+import Modal from '../../modals/Modal';
+import { PlayerContext } from '../../../contexts/PlayerContext';
+import switchCategoryLogo from "../../../utils/switchCategoryLogo"
+import ModalGameOver from '../../modals/ModalGameOver';
 
 
 export const ActionButton = ({ action, uniqueClassName }) => {
@@ -9,32 +11,26 @@ export const ActionButton = ({ action, uniqueClassName }) => {
   const { activePlayer, setActivePlayer } = useContext(PlayerContext)
 
   const [showModal, setShowModal] = useState(false)
-  const [selectedAction, setSelectedAction] = useState(null)
-
-  
-  const switchCategoryLogo = (category) => {
-    switch (category) {
-      case "attractiveness":
-        return "🤳";
-      case "mental":
-        return "🤪";
-      case "education":
-        return "🎓";
-      case "wealth":
-        return "💸";
-      case "social":
-        return "💛";
-      default:
-        return "";
-    }
-  }
+  const [childModal, setChildModal] = useState(null)
+  const [firstVisit, setFirstVisit] = useState(true)
 
 
 
   const handleActionClick = () => {
-
-    setSelectedAction(action);
+    setFirstVisit(false);
     setShowModal(true);
+    setChildModal(<ModalGeneratingPhoto action={action} setShowModal={setShowModal} />)
+  }
+
+  const gameOver = () => {
+    setTimeout(() => {
+      setShowModal(true);
+      setChildModal(<ModalGameOver setShowModal={setShowModal} />)
+    }, 1500);
+  }
+
+
+  const handleUpdate = () => {
 
     // make player older
     setActivePlayer({ ...activePlayer, age: activePlayer.age + 10 });
@@ -44,13 +40,15 @@ export const ActionButton = ({ action, uniqueClassName }) => {
 
       // deconstructing progress in order to loop over it 
       const progress = { ...prevPlayer.progress };
+      console.log('ACTION progress :>> ', progress);
+      console.log('ACTION action :>> ', action);
 
       for (const prop in action) {
         if (prop !== "text" && prop !== "category" && prop !== "subcategory") {
           progress[prop] += action[prop];
           if (progress[prop] < 0) {
             progress[prop] = 0;
-            // ADD GAME OVER FUNCTION HERE!!!!!!!!!!!!!!!!
+            gameOver();
           }
           if (progress[prop] > 100) {
             progress[prop] = 100;
@@ -63,8 +61,15 @@ export const ActionButton = ({ action, uniqueClassName }) => {
       }
     }
     setActivePlayer(updateActivePlayer);
+
   }
 
+  useEffect(() => {
+    if (!firstVisit && !showModal) {
+      handleUpdate()
+    }
+  }, [showModal])
+  
 
   return (
     <>
@@ -74,7 +79,7 @@ export const ActionButton = ({ action, uniqueClassName }) => {
 
 
       <Modal open={showModal}>
-        <ModalGeneratingPhoto action={selectedAction} setShowModal={setShowModal} /> 
+        {childModal} 
       </Modal>
     </>
   )

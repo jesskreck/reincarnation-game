@@ -1,5 +1,5 @@
-import React, { useContext, useEffect, useState } from 'react'
-import ProgressBar from '../child/ProgressBar.jsx'
+import React, { useContext } from 'react'
+import { ProgressBar } from './children/ProgressBar.jsx'
 import { PlayerContext } from '../../contexts/PlayerContext.js'
 import { LanguageContext } from '../../contexts/LanguageContext.js';
 import texts from "../../assets/gameData/texts.json"
