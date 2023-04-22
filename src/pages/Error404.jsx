@@ -8,6 +8,7 @@ function Error404() {
   const [countdown, setCountdown] = useState(5);
 
   //NOTE the same as you did are doing in the useEffect in your AuthConext , cleaning the sideeffects inside the useEffect, would be nice if you implemented that here aswell.
+  //NOTE Additonaly , if what you try is to create a countdown, you could do it by taken advantage of how react "reacts" to the state change of countdown together with the use effec. Using only one settimeout, or maybe better, setinterval
   useEffect(() => {
     async function test() {
       timeoutFunction(1000, 4);
