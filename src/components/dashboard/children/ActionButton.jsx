@@ -1,47 +1,43 @@
-import React, { useContext, useEffect, useState } from 'react'
-import ModalGeneratingPhoto from '../../modals/ModalGeneratingPhoto';
-import Modal from '../../modals/Modal';
-import { PlayerContext } from '../../../contexts/PlayerContext';
-import switchCategoryLogo from "../../../utils/switchCategoryLogo"
-import ModalGameOver from '../../modals/ModalGameOver';
-
+import React, { useContext, useEffect, useState } from "react";
+import ModalGeneratingPhoto from "../../modals/ModalGeneratingPhoto";
+import Modal from "../../modals/Modal";
+import { PlayerContext } from "../../../contexts/PlayerContext";
+import switchCategoryLogo from "../../../utils/switchCategoryLogo";
+import ModalGameOver from "../../modals/ModalGameOver";
 
 export const ActionButton = ({ action, uniqueClassName }) => {
+  const { activePlayer, setActivePlayer } = useContext(PlayerContext);
 
-  const { activePlayer, setActivePlayer } = useContext(PlayerContext)
+  const [showModal, setShowModal] = useState(false);
+  const [childModal, setChildModal] = useState(null);
+  const [firstVisit, setFirstVisit] = useState(true);
 
-  const [showModal, setShowModal] = useState(false)
-  const [childModal, setChildModal] = useState(null)
-  const [firstVisit, setFirstVisit] = useState(true)
-
-
-
+  //NOTE this handler has the same name as the handleActionClick.js from your utils folder. Either modify this name, or remove the file from the utils folder.
   const handleActionClick = () => {
     setFirstVisit(false);
     setShowModal(true);
-    setChildModal(<ModalGeneratingPhoto action={action} setShowModal={setShowModal} />)
-  }
+    setChildModal(
+      <ModalGeneratingPhoto action={action} setShowModal={setShowModal} />
+    );
+  };
 
   const gameOver = () => {
     setTimeout(() => {
       setShowModal(true);
-      setChildModal(<ModalGameOver setShowModal={setShowModal} />)
+      setChildModal(<ModalGameOver setShowModal={setShowModal} />);
     }, 1500);
-  }
-
+  };
 
   const handleUpdate = () => {
-
     // make player older
     setActivePlayer({ ...activePlayer, age: activePlayer.age + 10 });
 
     // update progress bar props according to action props
     function updateActivePlayer(prevPlayer) {
-
-      // deconstructing progress in order to loop over it 
+      // deconstructing progress in order to loop over it
       const progress = { ...prevPlayer.progress };
-      console.log('ACTION progress :>> ', progress);
-      console.log('ACTION action :>> ', action);
+      console.log("ACTION progress :>> ", progress);
+      console.log("ACTION action :>> ", action);
 
       for (const prop in action) {
         if (prop !== "text" && prop !== "category" && prop !== "subcategory") {
@@ -57,19 +53,18 @@ export const ActionButton = ({ action, uniqueClassName }) => {
       }
       // since i'm passing prevPlayer in as an argument I also have to return the updated one!
       return {
-        ...prevPlayer, progress
-      }
+        ...prevPlayer,
+        progress,
+      };
     }
     setActivePlayer(updateActivePlayer);
-
-  }
+  };
 
   useEffect(() => {
     if (!firstVisit && !showModal) {
-      handleUpdate()
+      handleUpdate();
     }
-  }, [showModal])
-  
+  }, [showModal]);
 
   return (
     <>
@@ -77,14 +72,7 @@ export const ActionButton = ({ action, uniqueClassName }) => {
         {action.text} {switchCategoryLogo(action.category)}
       </button>
 
-
-      <Modal open={showModal}>
-        {childModal} 
-      </Modal>
+      <Modal open={showModal}>{childModal}</Modal>
     </>
-  )
-}
-
-
-
-
+  );
+};
