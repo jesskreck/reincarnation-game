@@ -36,7 +36,9 @@ export default function PanelActions() {
   };
 
   // update actionsOnScreen everytime activePlayerState or language changes
+  //TODO find new way on how to reload action items 
   //NOTE This state change below is triggered after an active player updates, which is made with a button click. You could trigger the function direcly in the onClick, avoind the creation of a useEffect (the less useEffects, the better)
+  //NOTE on why to stick with useEffect here: New action items should only be loaded when modal is closed. Having the actionsOnScreen state on the actionButton component, would trigger to refresh the items when the modal is opened and when its clicked (?) 
   useEffect(() => {
     setActionsOnScreen(getRandomActions());
   }, [activePlayer, language]);

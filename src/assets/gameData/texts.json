@@ -1,4 +1,3 @@
-
 {
   "main": {
     "progress1": {
@@ -42,6 +41,16 @@
     "login": {
       "en": "Login",
       "de": "Einloggen"
+    }
+  },
+  "home": {
+    "header": {
+      "en": "Welcome, soul traveller!",
+      "de": "Willkommmen, Seelenwanderer!"
+    },
+    "button": {
+      "en": "Give me those souls",
+      "de": "Her mit den Seelen"
     }
   },
   "instruction": {

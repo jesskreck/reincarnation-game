@@ -3,13 +3,10 @@ import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 
-//NOTE although with google credentials is not a big deal, as a habbit would be better to hide all sensible information in the .env file.
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyBoAu-F2QPFOsKaPgLn-auy44SBUWfWEII",
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
   authDomain: "game-6547b.firebaseapp.com",
   projectId: "game-6547b",
   storageBucket: "game-6547b.appspot.com",

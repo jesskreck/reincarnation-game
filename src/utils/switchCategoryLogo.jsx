@@ -1,4 +1,3 @@
-//NOTE nice and funny use of the switch 🤩
 const switchCategoryLogo = (category) => {
   switch (category) {
     case "attractiveness":
