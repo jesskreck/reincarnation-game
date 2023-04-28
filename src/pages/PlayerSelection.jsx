@@ -70,7 +70,8 @@ export default function PlayerSelection() {
     };
     fetchCustomPlayers();
     //NOTE one potential quick (and probably dirty) solution having to refresh to see the new created player in the list is adding customplayers to the dependency array. Test it.
-  }, [user]);
+    //NOTE worked like charm
+  }, [user, customPlayers]);
 
   return (
     <>

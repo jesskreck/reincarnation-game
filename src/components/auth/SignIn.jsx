@@ -2,12 +2,10 @@ import React, { useContext, useState } from 'react'
 import { AuthContext } from '../../contexts/AuthContext';
 
 
-
 export const SignIn = () => {
 
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("")
-
     const {signIn} = useContext(AuthContext)
 
 return (

@@ -12,7 +12,6 @@ export const ActionButton = ({ action, uniqueClassName }) => {
   const [childModal, setChildModal] = useState(null);
   const [firstVisit, setFirstVisit] = useState(true);
 
-  //NOTE this handler has the same name as the handleActionClick.js from your utils folder. Either modify this name, or remove the file from the utils folder.
   const handleActionClick = () => {
     setFirstVisit(false);
     setShowModal(true);

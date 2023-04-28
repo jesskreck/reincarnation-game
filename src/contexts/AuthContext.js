@@ -1,25 +1,13 @@
 import { createContext, useEffect, useState } from "react";
-import { onAuthStateChanged, signInWithEmailAndPassword } from "firebase/auth";
+import { onAuthStateChanged, signInWithEmailAndPassword, signOut } from "firebase/auth";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 
-import { app, auth } from "../fbConfig";
+import { auth } from "../fbConfig";
 
 export const AuthContext = createContext();
 
 export const AuthContextProvider = ({ children }) => {
   const [user, setUser] = useState(null);
-
-  //NOTE if you keep code for future reference, maybe leave a comment to clarify it, otherwise delete unused code to leave your file cleaner.
-  // const signIn = (email, password) => {
-  //   signInWithEmailAndPassword(auth, email, password)
-  //     .then((userCredential) => {
-  //       console.log(userCredential);
-  //       setUser(userCredential.user);
-  //     })
-  //     .catch((error) => {
-  //       console.log(error)
-  //     });
-  // };
 
   const signIn = async (email, password) => {
     try {
@@ -44,6 +32,16 @@ export const AuthContextProvider = ({ children }) => {
       });
   };
 
+  const handleSignOut = async () => {
+    // signOut() is coming from firebase/auth
+    try {
+      await signOut(auth);
+      setUser(null);
+    } catch (error) {
+      console.log("error :>> ", error);
+    }
+  };
+
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (user) => {
       if (user) {
@@ -64,6 +62,7 @@ export const AuthContextProvider = ({ children }) => {
     setUser,
     signIn,
     signUp,
+    handleSignOut
   };
 
   return <AuthContext.Provider value={data}>{children}</AuthContext.Provider>;

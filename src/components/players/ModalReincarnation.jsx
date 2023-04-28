@@ -74,8 +74,7 @@ export const ModalReincarnation = ({ setShowModal }) => {
     setScores(updatedScores);
 
     if (currentQuestion < questions.length - 1) {
-      //NOTE if you use a previous state to modify a state, react gives us the functional update, to always be sure we are modifying the previous value of the sate. Check this out : https://react.dev/reference/react/useState#updating-state-based-on-the-previous-state
-      setCurrentQuestion(currentQuestion + 1);
+      setCurrentQuestion(currentQuestion => currentQuestion + 1);
     } else {
       setShowResults(true);
       setActivePlayer({ ...activePlayer, progress: scores });
