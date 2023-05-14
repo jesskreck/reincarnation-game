@@ -167,8 +167,8 @@
       "de": "Du hast eine Seele ausgewählt, deren irdisches Dasein bereits abgelaufen ist  - wie nobel von dir! Tauche in die Vergangenheit dieser Seele ein und berichte über ihr früheres Leben."
     },
     "q1": {
-      "en": "During your life, how many people did you charm with your irresistible looks?",
-      "de": "Wie viele Menschen hast du während deines Lebens mit deinem unwiderstehlichen Aussehen verzaubert?"
+      "en": "Looking at all of your past lives, how many people did you charm with your irresistible looks?",
+      "de": "Betrachte all deine vergangenen Leben: Wie viele Menschen hast du mit deinem unwiderstehlichen Aussehen verzaubert?"
     },
     "q2": {
       "en": "How many past lives' worth of therapy did you need?",
@@ -183,26 +183,6 @@
       "de": "In wie vielen Leben warst du stinkreich?"
     },
     "q5": {
-      "en": "How many connections did you make in the Spirit World Social Club?",
-      "de": "Wie viele Verbindungen hast du im Spirit World Social Club geknüpft?"
-    },
-    "q6": {
-      "en": "As a mythical creature, what was your attractiveness level?",
-      "de": "Als mythisches Wesen, wie hoch war dein Attraktivitätslevel?"
-    },
-    "q7": {
-      "en": "How many lives did you spend meditating on a mountaintop?",
-      "de": "Wie viele Leben hast du damit verbracht, auf einem Berggipfel zu meditieren?"
-    },
-    "q8": {
-      "en": "How many ancient civilizations' languages did you master?",
-      "de": "Wie viele Sprachen antiker Zivilisationen hast du gemeistert?"
-    },
-    "q9": {
-      "en": "How many treasure troves did you accumulate throughout your lives?",
-      "de": "Wie viele Schatzkammern hast du im Laufe deiner Leben angesammelt?"
-    },
-    "q10": {
       "en": "How many legendary parties did you attend across all your lives?",
       "de": "Wie viele legendäre Partys hast du in all deinen Leben besucht?"
     },
@@ -237,6 +217,20 @@
     "text2": {
       "en": ". Perhaps this soul was not in the best hands after all... Fortunately, there is life after death! Whether it becomes more worth living, however, will only become apparent after reincarnation.",
       "de": "Jahren gestorben. Vielleicht war diese Seele doch nicht in den besten Händen... Zum Glück gibt es ein Leben danach! Ob das so viel lebenswerter wird, zeigt sich aber erst nach der Reinkarnation."
+    }
+  },
+  "generator": {
+    "header": {
+      "en": "Generate an Image using OpenAI API",
+      "de": "Bild erstellen mit OpenAI API"
+    },
+    "button": {
+      "en": "Generate an Image",
+      "de": "Bild erstellen"
+    },
+    "loader": {
+      "en": "Generating image...",
+      "de": "Bild wird erstellt..."
     }
   }
 }

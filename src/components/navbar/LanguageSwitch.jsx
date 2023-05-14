@@ -5,9 +5,11 @@ function LanguageSwitch() {
   const { language, toggleLanguage } = useContext(LanguageContext);
 
   return (
-    <button onClick={toggleLanguage} className='btn--nav'>
-      {language === 'en' ? 'DE' : 'EN'}
-    </button>
+    <>
+      <button onClick={toggleLanguage} className='btn--nav'>
+        {language === 'en' ? 'DE' : 'EN'}
+      </button>
+    </>
   );
 }
 

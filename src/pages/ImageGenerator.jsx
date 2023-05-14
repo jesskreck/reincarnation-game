@@ -1,11 +1,18 @@
 import { Configuration, OpenAIApi } from "openai";
-import { useState } from "react";
+import React, { useContext, useState } from "react";
+import texts from "../assets/gameData/texts.json";
+import { LanguageContext } from "../contexts/LanguageContext";
+
 
 function ImageGenerator() {
+
+  console.log('texts :>> ', texts);
 
   const [prompt, setPrompt] = useState("");
   const [result, setResult] = useState("");
   const [isLoading, setIsLoading] = useState(false); // loader state
+
+  const { language } = useContext(LanguageContext);
 
   const configuration = new Configuration({
     apiKey: process.env.REACT_APP_API_KEY,
@@ -27,18 +34,24 @@ function ImageGenerator() {
 
   return (
     <div className="page container">
-      <h2>Generate an Image using Open AI API</h2>
+      <h2>{texts.generator.header[language]}</h2>
       <textarea
         className="app-input"
-        placeholder="Search Bears with Paint Brushes the Starry Night, painted by Vincent Van Gogh.."
+        placeholder="Tippe ein, was die künstliche Intelligenz Dall-e für ein Bild erstellen soll"
         onChange={(e) => setPrompt(e.target.value)}
         rows="10"
-        cols="40"
+        cols="10"
       />
-      <button onClick={generateImage}>Generate an Image</button>
+      <div>
+        <button className="btn--primary" onClick={generateImage}>{texts.generator.button[language]}</button>
+        <button className="btn--secondary" onClick={generateImage}>{texts.generator.button[language]}</button>
+        <button className="btn--action" onClick={generateImage}>3</button>
+
+      </div>
+      
 
       {isLoading ? (
-        <p>Generating image...</p>
+        <p>{texts.generator.loader[language]}</p>
       ) : result ? (
         <img className="result-image" src={result} alt="result" />
       ) : null}

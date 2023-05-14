@@ -10,7 +10,7 @@ export const LoginButton = ({ label }) => {
     const [showModal, setShowModal] = useState(false);
 
     return (
-        <div>
+        <>
             <button onClick={() => setShowModal(true)} className='btn--nav'>{label}</button>
             <Modal open={showModal} close={() => setShowModal(false)}>
                 <SignIn />
@@ -18,6 +18,6 @@ export const LoginButton = ({ label }) => {
                 <AuthFeedback />
                 <button onClick={() => setShowModal(false)}>Close Login Modal</button>
             </Modal>
-        </div>
+        </>
     )
 }

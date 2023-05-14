@@ -22,16 +22,13 @@ function Navbar() {
 
         <NavLink to={"/Players"}>Player Selection</NavLink>
         <NavLink to={"/Actions"}>Dashboard</NavLink>
-
-        <div className="nav__profile">
+        
           {user
             ? <div className="btn--nav">
               <AuthFeedback />
             </div>
             : <LoginButton label={"Login"} />
           }
-        </div>
-
 
       </nav>
     </>

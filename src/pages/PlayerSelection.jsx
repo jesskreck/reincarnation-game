@@ -4,7 +4,8 @@ import Modal from "../components/modals/Modal";
 import { PlayerContext } from "../contexts/PlayerContext";
 import { PlayerCard } from "../components/players/children/PlayerCard";
 import { ModalRescueSoul } from "../components/players/ModalRescueSoul";
-import { ModalReincarnation } from "../components/players/ModalReincarnation";
+import { ModalReinIntro } from "../components/players/ModalReinIntro";
+
 import { useNavigate } from "react-router-dom";
 import { LanguageContext } from "../contexts/LanguageContext";
 import { db } from "../fbConfig";
@@ -35,7 +36,7 @@ export default function PlayerSelection() {
   // MODAL select player with reincarnation true
   const handleTakeSoul = () => {
     setShowModal(true);
-    setChildModal(<ModalReincarnation setShowModal={setShowModal} />);
+    setChildModal(<ModalReinIntro setChildModal={setChildModal} setShowModal={setShowModal}/>);
   };
 
   // MODAL create new player

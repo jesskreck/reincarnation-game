@@ -2,1000 +2,1111 @@
     {
         "text": "Complete a 12-month marathon training program",
         "category": "attractiveness",
-        "attractiveness": 25,
-        "mental": 0,
-        "education": 0,
-        "wealth": 0,
-        "social": 0
+        "attractiveness": "45",
+        "mental": "15",
+        "education": "-15",
+        "wealth": "15",
+        "impact on": "2",
+        "social": "30"
     },
     {
         "text": "Join a parkour team and master advanced moves",
         "category": "attractiveness",
-        "attractiveness": 25,
-        "mental": 0,
-        "education": 0,
-        "wealth": 0,
-        "social": 0
+        "attractiveness": "45",
+        "mental": "15",
+        "education": "-15",
+        "wealth": "15",
+        "impact on": "1",
+        "social": "15"
     },
     {
         "text": "Become a certified aerial yoga instructor",
         "category": "attractiveness",
-        "attractiveness": 25,
-        "mental": 0,
-        "education": 0,
-        "wealth": 0,
-        "social": 0
+        "attractiveness": "45",
+        "mental": "15",
+        "education": "0",
+        "wealth": "15",
+        "impact on": "2",
+        "social": "30"
     },
     {
         "text": "Achieve a six-pack abs with a strict diet and exercise regimen",
         "category": "attractiveness",
-        "attractiveness": 25,
-        "mental": 0,
-        "education": 0,
-        "wealth": 0,
-        "social": 0
+        "attractiveness": "45",
+        "mental": "15",
+        "education": "-30",
+        "wealth": "15",
+        "impact on": "0",
+        "social": "0"
     },
     {
         "text": "Build endurance by training for a 100-mile bike ride",
         "category": "attractiveness",
-        "attractiveness": 25,
-        "mental": 0,
-        "education": 0,
-        "wealth": 0,
-        "social": 0
+        "attractiveness": "45",
+        "mental": "15",
+        "education": "-15",
+        "wealth": "15",
+        "impact on": "1",
+        "social": "15"
     },
     {
         "text": "Learn how to surf and catch the biggest waves",
         "category": "attractiveness",
-        "attractiveness": 25,
-        "mental": 0,
-        "education": 0,
-        "wealth": 0,
-        "social": 0
+        "attractiveness": "45",
+        "mental": "15",
+        "education": "-15",
+        "wealth": "15",
+        "impact on": "1",
+        "social": "15"
     },
     {
         "text": "Master the art of pole dancing for a full-body workout",
         "category": "attractiveness",
-        "attractiveness": 25,
-        "mental": 0,
-        "education": 0,
-        "wealth": 0,
-        "social": 0
+        "attractiveness": "45",
+        "mental": "15",
+        "education": "-30",
+        "wealth": "-45",
+        "impact on": "2",
+        "social": "30"
     },
     {
         "text": "Participate in a daily hot dog eating contest",
         "category": "attractiveness",
-        "attractiveness": -25,
-        "mental": 0,
-        "education": 0,
-        "wealth": 0,
-        "social": 0
+        "attractiveness": "-30",
+        "mental": "-45",
+        "education": "-45",
+        "wealth": "-45",
+        "impact on": "-2",
+        "social": "-30"
     },
     {
         "text": "Train to become a professional couch potato",
         "category": "attractiveness",
-        "attractiveness": -25,
-        "mental": 0,
-        "education": 0,
-        "wealth": 0,
-        "social": 0
+        "attractiveness": "-45",
+        "mental": "-45",
+        "education": "-45",
+        "wealth": "-45",
+        "impact on": "-2",
+        "social": "-30"
     },
     {
         "text": "Pursue a certification in chain-smoking and heavy drinking",
         "category": "attractiveness",
-        "attractiveness": -25,
-        "mental": 0,
-        "education": 0,
-        "wealth": 0,
-        "social": 0
+        "attractiveness": "-45",
+        "mental": "-45",
+        "education": "-45",
+        "wealth": "-45",
+        "impact on": "-3",
+        "social": "-45"
     },
     {
         "text": "Gain 50 pounds by eating only fast food",
         "category": "attractiveness",
-        "attractiveness": -25,
-        "mental": 0,
-        "education": 0,
-        "wealth": 0,
-        "social": 0
+        "attractiveness": "-45",
+        "mental": "-45",
+        "education": "-45",
+        "wealth": "-45",
+        "impact on": "-2",
+        "social": "-30"
     },
     {
         "text": "Lose all muscle mass by sitting and staring at a wall all day",
         "category": "attractiveness",
-        "attractiveness": -25,
-        "mental": 0,
-        "education": 0,
-        "wealth": 0,
-        "social": 0
+        "attractiveness": "-45",
+        "mental": "-45",
+        "education": "-45",
+        "wealth": "-30",
+        "impact on": "-2",
+        "social": "-30"
     },
     {
         "text": "Master the art of sleeping for 16 hours straight",
         "category": "attractiveness",
-        "attractiveness": -5,
-        "mental": 0,
-        "education": 0,
-        "wealth": 0,
-        "social": 0
+        "attractiveness": "-30",
+        "mental": "-30",
+        "education": "-45",
+        "wealth": "-30",
+        "impact on": "-1",
+        "social": "-15"
     },
     {
         "text": "Become an expert in watching TV for an entire day without moving",
         "category": "attractiveness",
-        "attractiveness": -5,
-        "mental": 0,
-        "education": 0,
-        "wealth": 0,
-        "social": 0
+        "attractiveness": "-30",
+        "mental": "-30",
+        "education": "-45",
+        "wealth": "-15",
+        "impact on": "-1",
+        "social": "-15"
     },
     {
         "text": "Achieve a personal record for binge-watching an entire series in one sitting",
         "category": "attractiveness",
-        "attractiveness": -5,
-        "mental": 0,
-        "education": 0,
-        "wealth": 0,
-        "social": 0
+        "attractiveness": "-15",
+        "mental": "-15",
+        "education": "-30",
+        "wealth": "0",
+        "impact on": "-1",
+        "social": "-15"
     },
     {
         "text": "Transform into a fashion icon for a futuristic cyberpunk aesthetic",
         "category": "attractiveness",
-        "attractiveness": 15,
-        "mental": 0,
-        "education": 0,
-        "wealth": 0,
-        "social": 0
+        "attractiveness": "45",
+        "mental": "0",
+        "education": "-15",
+        "wealth": "15",
+        "impact on": "2",
+        "social": "30"
     },
     {
         "text": "Become an influencer for quirky hat styles on social media",
         "category": "attractiveness",
-        "attractiveness": 15,
-        "mental": 0,
-        "education": 0,
-        "wealth": 0,
-        "social": 0
+        "attractiveness": "30",
+        "mental": "15",
+        "education": "-15",
+        "wealth": "0",
+        "impact on": "2",
+        "social": "30"
     },
     {
         "text": "Save up for a pair of gold-plated dentures",
         "category": "attractiveness",
-        "attractiveness": -5,
-        "mental": 0,
-        "education": 0,
-        "wealth": 0,
-        "social": 0
+        "attractiveness": "15",
+        "mental": "0",
+        "education": "-45",
+        "wealth": "0",
+        "impact on": "1",
+        "social": "15"
     },
     {
         "text": "Commit to a daily facial routine using only diamonds and pearls",
         "category": "attractiveness",
-        "attractiveness": -5,
-        "mental": 0,
-        "education": 0,
-        "wealth": 0,
-        "social": 0
+        "attractiveness": "45",
+        "mental": "0",
+        "education": "-45",
+        "wealth": "-30",
+        "impact on": "1",
+        "social": "15"
     },
     {
         "text": "Transform into a walking fashion disaster with mismatched clothing",
         "category": "attractiveness",
-        "attractiveness": -15,
-        "mental": 0,
-        "education": 0,
-        "wealth": 0,
-        "social": 0
+        "attractiveness": "-30",
+        "mental": "-30",
+        "education": "-45",
+        "wealth": "-15",
+        "impact on": "-1",
+        "social": "-15"
     },
     {
         "text": "Become an influencer for ugly sweater fashion on social media",
         "category": "attractiveness",
-        "attractiveness": 5,
-        "mental": 0,
-        "education": 0,
-        "wealth": 0,
-        "social": 0
+        "attractiveness": "15",
+        "mental": "-15",
+        "education": "-30",
+        "wealth": "-30",
+        "impact on": "1",
+        "social": "15"
     },
     {
         "text": "Save up for the ugliest shoes you can find",
         "category": "attractiveness",
-        "attractiveness": -15,
-        "mental": 0,
-        "education": 0,
-        "wealth": 0,
-        "social": 0
+        "attractiveness": "-30",
+        "mental": "-30",
+        "education": "-45",
+        "wealth": "-45",
+        "impact on": "-1",
+        "social": "-15"
     },
     {
         "text": "Consistently forget to brush your teeth and hair",
         "category": "attractiveness",
-        "attractiveness": -15,
-        "mental": 0,
-        "education": 0,
-        "wealth": 0,
-        "social": 0
+        "attractiveness": "-45",
+        "mental": "-45",
+        "education": "-45",
+        "wealth": "-45",
+        "impact on": "-2",
+        "social": "-30"
     },
     {
         "text": "Consistently skip any skincare routine",
         "category": "attractiveness",
-        "attractiveness": -15,
-        "mental": 0,
-        "education": 0,
-        "wealth": 0,
-        "social": 0
+        "attractiveness": "-30",
+        "mental": "-45",
+        "education": "-45",
+        "wealth": "-45",
+        "impact on": "-2",
+        "social": "-30"
     },
     {
         "text": "Maintain a consistent meditation practice for six months",
         "category": "mental",
-        "attractiveness": 0,
-        "mental": 25,
-        "education": 0,
-        "wealth": 0,
-        "social": 0
+        "attractiveness": "15",
+        "mental": "45",
+        "education": "15",
+        "wealth": "45",
+        "impact on": "3",
+        "social": "45"
     },
     {
         "text": "Take a daily tea ceremony class for stress relief",
         "category": "mental",
-        "attractiveness": 0,
-        "mental": 25,
-        "education": 0,
-        "wealth": 0,
-        "social": 0
+        "attractiveness": "15",
+        "mental": "45",
+        "education": "0",
+        "wealth": "45",
+        "impact on": "3",
+        "social": "45"
     },
     {
         "text": "Devote weekends to hiking and exploring local nature reserves",
         "category": "mental",
-        "attractiveness": 0,
-        "mental": 25,
-        "education": 0,
-        "wealth": 0,
-        "social": 0
+        "attractiveness": "30",
+        "mental": "45",
+        "education": "0",
+        "wealth": "45",
+        "impact on": "3",
+        "social": "45"
     },
     {
         "text": "Establish an unpredictable sleep schedule",
         "category": "mental",
-        "attractiveness": 0,
-        "mental": -15,
-        "education": 0,
-        "wealth": 0,
-        "social": 0
+        "attractiveness": "-15",
+        "mental": "-45",
+        "education": "-30",
+        "wealth": "-45",
+        "impact on": "-1",
+        "social": "-15"
     },
     {
         "text": "Develop stress-inducing habits, like biting nails and tapping feet",
         "category": "mental",
-        "attractiveness": 0,
-        "mental": -15,
-        "education": 0,
-        "wealth": 0,
-        "social": 0
+        "attractiveness": "-30",
+        "mental": "-45",
+        "education": "-30",
+        "wealth": "-45",
+        "impact on": "-1",
+        "social": "-15"
     },
     {
         "text": "Work 24/7 and become a robot",
         "category": "mental",
-        "attractiveness": 0,
-        "mental": -25,
-        "education": 0,
-        "wealth": 0,
-        "social": 0
+        "attractiveness": "-15",
+        "mental": "-45",
+        "education": "-30",
+        "wealth": "-45",
+        "impact on": "-2",
+        "social": "-30"
     },
     {
         "text": "Live without technology for a month",
         "category": "mental",
-        "attractiveness": 0,
-        "mental": 5,
-        "education": 0,
-        "wealth": 0,
-        "social": 0
+        "attractiveness": "-15",
+        "mental": "0",
+        "education": "-45",
+        "wealth": "0",
+        "impact on": "-2",
+        "social": "-30"
     },
     {
         "text": "Eat only pizza for every meal",
         "category": "mental",
-        "attractiveness": 0,
-        "mental": -15,
-        "education": 0,
-        "wealth": 0,
-        "social": 0
+        "attractiveness": "-15",
+        "mental": "-30",
+        "education": "15",
+        "wealth": "-30",
+        "impact on": "-1",
+        "social": "-15"
     },
     {
         "text": "Spend all day scrolling through social media feeds",
         "category": "mental",
-        "attractiveness": 0,
-        "mental": -15,
-        "education": 0,
-        "wealth": 0,
-        "social": 0
+        "attractiveness": "-15",
+        "mental": "-30",
+        "education": "-45",
+        "wealth": "-30",
+        "impact on": "-2",
+        "social": "-30"
     },
     {
         "text": "Pursue a certification in procrastination",
         "category": "mental",
-        "attractiveness": 0,
-        "mental": -25,
-        "education": 0,
-        "wealth": 0,
-        "social": 0
+        "attractiveness": "-15",
+        "mental": "-30",
+        "education": "-45",
+        "wealth": "-30",
+        "impact on": "-2",
+        "social": "-30"
     },
     {
         "text": "Leave your home and wander the streets aimlessly",
         "category": "mental",
-        "attractiveness": 0,
-        "mental": -15,
-        "education": 0,
-        "wealth": 0,
-        "social": 0
+        "attractiveness": "-15",
+        "mental": "-30",
+        "education": "-45",
+        "wealth": "-30",
+        "impact on": "-3",
+        "social": "-45"
     },
     {
         "text": "Become a hermit and avoid all social interactions",
         "category": "mental",
-        "attractiveness": 0,
-        "mental": -15,
-        "education": 0,
-        "wealth": 0,
-        "social": 0
+        "attractiveness": "-15",
+        "mental": "-45",
+        "education": "-45",
+        "wealth": "-45",
+        "impact on": "-3",
+        "social": "-45"
     },
     {
         "text": "Spend all day talking to yourself",
         "category": "mental",
-        "attractiveness": 0,
-        "mental": -5,
-        "education": 0,
-        "wealth": 0,
-        "social": 0
+        "attractiveness": "-15",
+        "mental": "-15",
+        "education": "-45",
+        "wealth": "-15",
+        "impact on": "-1",
+        "social": "-15"
     },
     {
         "text": "Perfect the art of staring blankly into space",
         "category": "mental",
-        "attractiveness": 0,
-        "mental": -5,
-        "education": 0,
-        "wealth": 0,
-        "social": 0
+        "attractiveness": "-15",
+        "mental": "-15",
+        "education": "-45",
+        "wealth": "-15",
+        "impact on": "-1",
+        "social": "-15"
     },
     {
         "text": "Live without any hobbies or interests",
         "category": "mental",
-        "attractiveness": 0,
-        "mental": -15,
-        "education": 0,
-        "wealth": 0,
-        "social": 0
+        "attractiveness": "0",
+        "mental": "-45",
+        "education": "-45",
+        "wealth": "-45",
+        "impact on": "-2",
+        "social": "-30"
     },
     {
         "text": "Attend therapy to work through issues related to childhood trauma",
         "category": "mental",
-        "attractiveness": 0,
-        "mental": -25,
-        "education": 0,
-        "wealth": 0,
-        "social": 0
+        "attractiveness": "15",
+        "mental": "45",
+        "education": "15",
+        "wealth": "45",
+        "impact on": "3",
+        "social": "45"
     },
     {
         "text": "Participate in a mindfulness retreat to develop emotional regulation skills",
         "category": "mental",
-        "attractiveness": 0,
-        "mental": 25,
-        "education": 0,
-        "wealth": 0,
-        "social": 0
+        "attractiveness": "30",
+        "mental": "45",
+        "education": "15",
+        "wealth": "45",
+        "impact on": "3",
+        "social": "45"
     },
     {
         "text": "Establish a gratitude practice to increase overall happiness",
         "category": "mental",
-        "attractiveness": 0,
-        "mental": 25,
-        "education": 0,
-        "wealth": 0,
-        "social": 0
+        "attractiveness": "15",
+        "mental": "45",
+        "education": "15",
+        "wealth": "45",
+        "impact on": "3",
+        "social": "45"
     },
     {
         "text": "Join a support group for individuals with anxiety disorders",
         "category": "mental",
-        "attractiveness": 0,
-        "mental": 25,
-        "education": 0,
-        "wealth": 0,
-        "social": 0
+        "attractiveness": "15",
+        "mental": "45",
+        "education": "15",
+        "wealth": "45",
+        "impact on": "3",
+        "social": "45"
     },
     {
         "text": "Attend group therapy sessions for depression",
         "category": "mental",
-        "attractiveness": 0,
-        "mental": 25,
-        "education": 0,
-        "wealth": 0,
-        "social": 0
+        "attractiveness": "-15",
+        "mental": "45",
+        "education": "15",
+        "wealth": "45",
+        "impact on": "3",
+        "social": "45"
     },
     {
         "text": "Avoid expressing emotions and bottling them up inside",
         "category": "mental",
-        "attractiveness": 0,
-        "mental": -25,
-        "education": 0,
-        "wealth": 0,
-        "social": 0
+        "attractiveness": "-15",
+        "mental": "-45",
+        "education": "-30",
+        "wealth": "-45",
+        "impact on": "-3",
+        "social": "-45"
     },
     {
         "text": "Reject feedback from others and refuse to admit mistakes",
         "category": "mental",
-        "attractiveness": 0,
-        "mental": -15,
-        "education": 0,
-        "wealth": 0,
-        "social": 0
+        "attractiveness": "-30",
+        "mental": "-45",
+        "education": "-30",
+        "wealth": "-45",
+        "impact on": "-2",
+        "social": "-30"
     },
     {
         "text": "Disregard the impact of your actions on others' feelings",
         "category": "mental",
-        "attractiveness": 0,
-        "mental": -15,
-        "education": 0,
-        "wealth": 0,
-        "social": 0
+        "attractiveness": "-30",
+        "mental": "-45",
+        "education": "-30",
+        "wealth": "-45",
+        "impact on": "-2",
+        "social": "-30"
     },
     {
         "text": "Abandon friendships and relationships without explanation or closure",
         "category": "mental",
-        "attractiveness": 0,
-        "mental": -15,
-        "education": 0,
-        "wealth": 0,
-        "social": 0
+        "attractiveness": "-30",
+        "mental": "-45",
+        "education": "-30",
+        "wealth": "-45",
+        "impact on": "-3",
+        "social": "-45"
     },
     {
         "text": "Leave group therapy sessions without engaging or participating",
         "category": "mental",
-        "attractiveness": 0,
-        "mental": -25,
-        "education": 0,
-        "wealth": 0,
-        "social": 0
+        "attractiveness": "0",
+        "mental": "-30",
+        "education": "-30",
+        "wealth": "-30",
+        "impact on": "-3",
+        "social": "-45"
     },
     {
         "text": "Earn a degree in medieval blacksmithing",
         "category": "education",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": 15,
-        "wealth": 0,
-        "social": 0
+        "attractiveness": "15",
+        "mental": "15",
+        "education": "45",
+        "wealth": "15",
+        "impact on": "2",
+        "social": "30"
     },
     {
         "text": "Obtain a professional certification in wine tasting",
         "category": "education",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": 15,
-        "wealth": 0,
-        "social": 0
+        "attractiveness": "15",
+        "mental": "15",
+        "education": "45",
+        "wealth": "15",
+        "impact on": "2",
+        "social": "30"
     },
     {
         "text": "Complete a culinary arts program focused on molecular gastronomy",
         "category": "education",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": 25,
-        "wealth": 0,
-        "social": 0
+        "attractiveness": "15",
+        "mental": "15",
+        "education": "45",
+        "wealth": "15",
+        "impact on": "2",
+        "social": "30"
     },
     {
         "text": "Finish online courses in ancient hieroglyphics",
         "category": "education",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": 15,
-        "wealth": 0,
-        "social": 0
+        "attractiveness": "15",
+        "mental": "15",
+        "education": "45",
+        "wealth": "15",
+        "impact on": "2",
+        "social": "30"
     },
     {
         "text": "Form a study group for classical literature enthusiasts",
         "category": "education",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": 15,
-        "wealth": 0,
-        "social": 0
+        "attractiveness": "15",
+        "mental": "30",
+        "education": "45",
+        "wealth": "30",
+        "impact on": "2",
+        "social": "30"
     },
     {
         "text": "Enroll in a course on how to speak like Yoda",
         "category": "education",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": 5,
-        "wealth": 0,
-        "social": 0
+        "attractiveness": "0",
+        "mental": "15",
+        "education": "15",
+        "wealth": "15",
+        "impact on": "1",
+        "social": "15"
     },
     {
         "text": "Join a philosophy club dedicated to existentialism",
         "category": "education",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": 15,
-        "wealth": 0,
-        "social": 0
+        "attractiveness": "0",
+        "mental": "15",
+        "education": "45",
+        "wealth": "15",
+        "impact on": "1",
+        "social": "15"
     },
     {
         "text": "Embark on a language trip to study Dothraki in Morocco",
         "category": "education",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": 15,
-        "wealth": 0,
-        "social": 0
+        "attractiveness": "-15",
+        "mental": "15",
+        "education": "30",
+        "wealth": "15",
+        "impact on": "1",
+        "social": "15"
     },
     {
         "text": "Attend a 6-month intensive program for professional video gaming",
         "category": "education",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": 15,
-        "wealth": 0,
-        "social": 0
+        "attractiveness": "-30",
+        "mental": "0",
+        "education": "30",
+        "wealth": "0",
+        "impact on": "1",
+        "social": "15"
     },
     {
         "text": "Drop out of school to pursue a career as a professional gamer",
         "category": "education",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": -5,
-        "wealth": 0,
-        "social": 0
+        "attractiveness": "-30",
+        "mental": "-15",
+        "education": "-30",
+        "wealth": "-15",
+        "impact on": "-1",
+        "social": "-15"
     },
     {
         "text": "Let all your skills become rusty and outdated",
         "category": "education",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": -25,
-        "wealth": 0,
-        "social": 0
+        "attractiveness": "-30",
+        "mental": "-30",
+        "education": "-45",
+        "wealth": "-30",
+        "impact on": "-2",
+        "social": "-30"
     },
     {
         "text": "Stop learning anything new and rely on old knowledge",
         "category": "education",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": -25,
-        "wealth": 0,
-        "social": 0
+        "attractiveness": "-30",
+        "mental": "-30",
+        "education": "-45",
+        "wealth": "-30",
+        "impact on": "-2",
+        "social": "-30"
     },
     {
         "text": "Give up on online courses after the first lesson",
         "category": "education",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": -15,
-        "wealth": 0,
-        "social": 0
+        "attractiveness": "-15",
+        "mental": "-30",
+        "education": "-45",
+        "wealth": "-30",
+        "impact on": "-2",
+        "social": "-30"
     },
     {
         "text": "Avoid studying with others and refuse to join study groups",
         "category": "education",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": -15,
-        "wealth": 0,
-        "social": 0
+        "attractiveness": "0",
+        "mental": "-30",
+        "education": "-30",
+        "wealth": "-30",
+        "impact on": "-3",
+        "social": "-45"
     },
     {
         "text": "Plan a language trip but never take action",
         "category": "education",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": -5,
-        "wealth": 0,
-        "social": 0
+        "attractiveness": "15",
+        "mental": "-15",
+        "education": "-30",
+        "wealth": "-15",
+        "impact on": "-3",
+        "social": "-45"
     },
     {
         "text": "Contribute to research projects on the effects of music on plants",
         "category": "education",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": 15,
-        "wealth": 0,
-        "social": 0
+        "attractiveness": "15",
+        "mental": "30",
+        "education": "45",
+        "wealth": "30",
+        "impact on": "2",
+        "social": "30"
     },
     {
         "text": "Write articles for academic journals on the impact of social media on mental health",
         "category": "education",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": 15,
-        "wealth": 0,
-        "social": 0
+        "attractiveness": "15",
+        "mental": "30",
+        "education": "45",
+        "wealth": "30",
+        "impact on": "3",
+        "social": "45"
     },
     {
         "text": "Conduct experiments to disprove established scientific theories",
         "category": "education",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": 5,
-        "wealth": 0,
-        "social": 0
+        "attractiveness": "-30",
+        "mental": "15",
+        "education": "45",
+        "wealth": "15",
+        "impact on": "1",
+        "social": "15"
     },
     {
         "text": "Write articles for academic journals promoting conspiracy theories",
         "category": "education",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": -15,
-        "wealth": 0,
-        "social": 0
+        "attractiveness": "0",
+        "mental": "-15",
+        "education": "-15",
+        "wealth": "-15",
+        "impact on": "-1",
+        "social": "-15"
     },
     {
         "text": "Switch to a job as a hot air balloon tour guide",
         "category": "wealth",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": 0,
-        "wealth": 5,
-        "social": 0
+        "attractiveness": "0",
+        "mental": "0",
+        "education": "0",
+        "wealth": "15",
+        "impact on": "2",
+        "social": "30"
     },
     {
         "text": "Attend conferences and workshops on the art of bonsai tree sculpting",
         "category": "wealth",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": 0,
-        "wealth": 15,
-        "social": 0
+        "attractiveness": "0",
+        "mental": "15",
+        "education": "15",
+        "wealth": "15",
+        "impact on": "2",
+        "social": "30"
     },
     {
         "text": "Switch to a job that fulfills your passion for accounting",
         "category": "wealth",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": 0,
-        "wealth": 15,
-        "social": 0
+        "attractiveness": "15",
+        "mental": "15",
+        "education": "30",
+        "wealth": "30",
+        "impact on": "2",
+        "social": "30"
     },
     {
         "text": "Attend networking events to meet potential investors for your startup",
         "category": "wealth",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": 0,
-        "wealth": 25,
-        "social": 0
+        "attractiveness": "15",
+        "mental": "30",
+        "education": "30",
+        "wealth": "45",
+        "impact on": "2",
+        "social": "30"
     },
     {
         "text": "Develop a marketing plan to launch a new product in the market",
         "category": "wealth",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": 0,
-        "wealth": 25,
-        "social": 0
+        "attractiveness": "15",
+        "mental": "30",
+        "education": "30",
+        "wealth": "45",
+        "impact on": "3",
+        "social": "45"
     },
     {
         "text": "Complete a mentorship program with a successful entrepreneur in your industry",
         "category": "wealth",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": 0,
-        "wealth": 25,
-        "social": 0
+        "attractiveness": "15",
+        "mental": "30",
+        "education": "30",
+        "wealth": "45",
+        "impact on": "3",
+        "social": "45"
     },
     {
         "text": "Hone leadership and management skills by running a non-profit organization",
         "category": "wealth",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": 0,
-        "wealth": 25,
-        "social": 0
+        "attractiveness": "15",
+        "mental": "30",
+        "education": "30",
+        "wealth": "45",
+        "impact on": "3",
+        "social": "45"
     },
     {
         "text": "Become a member of the International Association of Public Speakers",
         "category": "wealth",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": 0,
-        "wealth": 25,
-        "social": 0
+        "attractiveness": "0",
+        "mental": "30",
+        "education": "30",
+        "wealth": "45",
+        "impact on": "1",
+        "social": "15"
     },
     {
         "text": "Attend seminars on financial planning and investment strategies",
         "category": "wealth",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": 0,
-        "wealth": 25,
-        "social": 0
+        "attractiveness": "-30",
+        "mental": "30",
+        "education": "45",
+        "wealth": "45",
+        "impact on": "1",
+        "social": "15"
     },
     {
         "text": "Pursue freelance work as a business consultant",
         "category": "wealth",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": 0,
-        "wealth": 25,
-        "social": 0
+        "attractiveness": "-30",
+        "mental": "30",
+        "education": "45",
+        "wealth": "45",
+        "impact on": "2",
+        "social": "30"
     },
     {
         "text": "Propose innovative ideas to increase sales and revenue in your company",
         "category": "wealth",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": 0,
-        "wealth": 25,
-        "social": 0
+        "attractiveness": "-30",
+        "mental": "30",
+        "education": "45",
+        "wealth": "45",
+        "impact on": "2",
+        "social": "30"
     },
     {
         "text": "Deliberately undermine your co-workers to get ahead",
         "category": "wealth",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": 0,
-        "wealth": -25,
-        "social": 0
+        "attractiveness": "-30",
+        "mental": "-45",
+        "education": "-45",
+        "wealth": "-45",
+        "impact on": "-2",
+        "social": "-30"
     },
     {
         "text": "Avoid setting career goals and remain in the same job for years without progress",
         "category": "wealth",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": 0,
-        "wealth": -15,
-        "social": 0
+        "attractiveness": "-30",
+        "mental": "-45",
+        "education": "-45",
+        "wealth": "-30",
+        "impact on": "-2",
+        "social": "-30"
     },
     {
         "text": "Quit a job without a backup plan",
         "category": "wealth",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": 0,
-        "wealth": -15,
-        "social": 0
+        "attractiveness": "-30",
+        "mental": "-45",
+        "education": "-45",
+        "wealth": "-30",
+        "impact on": "-2",
+        "social": "-30"
     },
     {
         "text": "Ignore opportunities to learn new skills and take on new challenges",
         "category": "wealth",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": 0,
-        "wealth": -15,
-        "social": 0
+        "attractiveness": "-30",
+        "mental": "-45",
+        "education": "-45",
+        "wealth": "-30",
+        "impact on": "-3",
+        "social": "-45"
     },
     {
         "text": "Resign from industry organizations and miss out on valuable networking opportunities",
         "category": "wealth",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": 0,
-        "wealth": -15,
-        "social": 0
+        "attractiveness": "-15",
+        "mental": "-45",
+        "education": "-45",
+        "wealth": "-30",
+        "impact on": "-3",
+        "social": "-45"
     },
     {
         "text": "Avoid attending career fairs and industry events",
         "category": "wealth",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": 0,
-        "wealth": -5,
-        "social": 0
+        "attractiveness": "0",
+        "mental": "-45",
+        "education": "-45",
+        "wealth": "-15",
+        "impact on": "-3",
+        "social": "-45"
     },
     {
         "text": "Refuse to take on extra responsibilities or leadership roles in the workplace",
         "category": "wealth",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": 0,
-        "wealth": -5,
-        "social": 0
+        "attractiveness": "0",
+        "mental": "-45",
+        "education": "-45",
+        "wealth": "-15",
+        "impact on": "-1",
+        "social": "-15"
     },
     {
         "text": "Discourage your team from pursuing innovative ideas and taking risks",
         "category": "wealth",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": 0,
-        "wealth": -25,
-        "social": 0
+        "attractiveness": "15",
+        "mental": "-45",
+        "education": "-45",
+        "wealth": "-45",
+        "impact on": "2",
+        "social": "30"
     },
     {
         "text": "Develop a plan to pay off debt and improve credit score",
         "category": "wealth",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": 0,
-        "wealth": 25,
-        "social": 0
+        "attractiveness": "15",
+        "mental": "45",
+        "education": "15",
+        "wealth": "45",
+        "impact on": "0",
+        "social": "0"
     },
     {
         "text": "Monitor spending habits by keeping a daily journal of expenses",
         "category": "wealth",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": 0,
-        "wealth": 25,
-        "social": 0
+        "attractiveness": "15",
+        "mental": "45",
+        "education": "15",
+        "wealth": "45",
+        "impact on": "0",
+        "social": "0"
     },
     {
         "text": "Set up a retirement account and contribute regularly",
         "category": "wealth",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": 0,
-        "wealth": 25,
-        "social": 0
+        "attractiveness": "15",
+        "mental": "45",
+        "education": "15",
+        "wealth": "45",
+        "impact on": "0",
+        "social": "0"
     },
     {
         "text": "Invest in a diverse portfolio of stocks, mutual funds, and exchange-traded funds",
         "category": "wealth",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": 0,
-        "wealth": 25,
-        "social": 0
+        "attractiveness": "15",
+        "mental": "30",
+        "education": "15",
+        "wealth": "45",
+        "impact on": "0",
+        "social": "0"
     },
     {
         "text": "Buy real estate properties and rent them out for passive income",
         "category": "wealth",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": 0,
-        "wealth": 25,
-        "social": 0
+        "attractiveness": "0",
+        "mental": "30",
+        "education": "15",
+        "wealth": "45",
+        "impact on": "0",
+        "social": "0"
     },
     {
         "text": "Start a side hustle like a food truck or a home-based business",
         "category": "wealth",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": 0,
-        "wealth": 25,
-        "social": 0
+        "attractiveness": "-45",
+        "mental": "30",
+        "education": "15",
+        "wealth": "45",
+        "impact on": "2",
+        "social": "30"
     },
     {
         "text": "Live frugally and save a portion of your income each month",
         "category": "wealth",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": 0,
-        "wealth": 25,
-        "social": 0
+        "attractiveness": "-45",
+        "mental": "45",
+        "education": "15",
+        "wealth": "45",
+        "impact on": "1",
+        "social": "15"
     },
     {
         "text": "Spend excessively on luxury goods without considering the long-term financial impact",
         "category": "wealth",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": 0,
-        "wealth": 25,
-        "social": 0
+        "attractiveness": "-45",
+        "mental": "-45",
+        "education": "-45",
+        "wealth": "45",
+        "impact on": "1",
+        "social": "15"
     },
     {
         "text": "Ignore financial planning and spend impulsively without a budget",
         "category": "wealth",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": 0,
-        "wealth": -25,
-        "social": 0
+        "attractiveness": "-45",
+        "mental": "-45",
+        "education": "-45",
+        "wealth": "-45",
+        "impact on": "1",
+        "social": "15"
     },
     {
         "text": "Withdraw money from retirement accounts before reaching retirement age",
         "category": "wealth",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": 0,
-        "wealth": -25,
-        "social": 0
+        "attractiveness": "-45",
+        "mental": "-45",
+        "education": "-45",
+        "wealth": "-45",
+        "impact on": "2",
+        "social": "30"
     },
     {
         "text": "Make risky investments without proper research or consultation with a financial advisor",
         "category": "wealth",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": 0,
-        "wealth": -25,
-        "social": 0
+        "attractiveness": "-45",
+        "mental": "-45",
+        "education": "-45",
+        "wealth": "-45",
+        "impact on": "1",
+        "social": "15"
     },
     {
         "text": "Rely on one source of income and ignore opportunities to increase earnings",
         "category": "wealth",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": 0,
-        "wealth": -25,
-        "social": 0
+        "attractiveness": "-45",
+        "mental": "-45",
+        "education": "-45",
+        "wealth": "-45",
+        "impact on": "0",
+        "social": "0"
     },
     {
         "text": "Live extravagantly with no regard for financial stability",
         "category": "wealth",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": 0,
-        "wealth": -15,
-        "social": 0
+        "attractiveness": "-45",
+        "mental": "-45",
+        "education": "-45",
+        "wealth": "-30",
+        "impact on": "2",
+        "social": "30"
     },
     {
         "text": "Accumulate unnecessary debt through reckless spending and borrowing",
         "category": "wealth",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": 0,
-        "wealth": -25,
-        "social": 0
+        "attractiveness": "15",
+        "mental": "-45",
+        "education": "-45",
+        "wealth": "-45",
+        "impact on": "1",
+        "social": "15"
     },
     {
         "text": "Attend a weekly meditation group to meet like-minded individuals",
         "category": "social",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": 0,
-        "wealth": 0,
-        "social": 15
+        "attractiveness": "30",
+        "mental": "45",
+        "education": "15",
+        "wealth": "0",
+        "impact on": "3",
+        "social": "45"
     },
     {
         "text": "Engage in a healthy romantic partnership with someone who shares your values and goals",
         "category": "social",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": 0,
-        "wealth": 0,
-        "social": 25
+        "attractiveness": "45",
+        "mental": "45",
+        "education": "15",
+        "wealth": "0",
+        "impact on": "3",
+        "social": "45"
     },
     {
         "text": "Invest time in building strong friendships through shared activities and interests",
         "category": "social",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": 0,
-        "wealth": 0,
-        "social": 25
+        "attractiveness": "30",
+        "mental": "45",
+        "education": "15",
+        "wealth": "0",
+        "impact on": "3",
+        "social": "45"
     },
     {
         "text": "Practice active listening and effective communication in all relationships",
         "category": "social",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": 0,
-        "wealth": 0,
-        "social": 25
+        "attractiveness": "30",
+        "mental": "45",
+        "education": "30",
+        "wealth": "0",
+        "impact on": "3",
+        "social": "45"
     },
     {
         "text": "Participate in volunteer activities with friends and family",
         "category": "social",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": 0,
-        "wealth": 0,
-        "social": 25
+        "attractiveness": "15",
+        "mental": "45",
+        "education": "15",
+        "wealth": "15",
+        "impact on": "3",
+        "social": "45"
     },
     {
         "text": "Destroy healthy relationships through lies and deceit",
         "category": "social",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": 0,
-        "wealth": 0,
-        "social": 25
+        "attractiveness": "-45",
+        "mental": "-45",
+        "education": "-45",
+        "wealth": "0",
+        "impact on": "-3",
+        "social": "-45"
     },
     {
         "text": "Pursue relationships with individuals who do not respect your boundaries or values",
         "category": "social",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": 0,
-        "wealth": 0,
-        "social": -25
+        "attractiveness": "-45",
+        "mental": "-45",
+        "education": "-45",
+        "wealth": "-15",
+        "impact on": "-3",
+        "social": "-45"
     },
     {
         "text": "Neglect existing friendships and let them fade away",
         "category": "social",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": 0,
-        "wealth": 0,
-        "social": -25
+        "attractiveness": "-45",
+        "mental": "-45",
+        "education": "-45",
+        "wealth": "0",
+        "impact on": "-3",
+        "social": "-45"
     },
     {
         "text": "Disregard the importance of compromise and understanding in relationships",
         "category": "social",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": 0,
-        "wealth": 0,
-        "social": -15
+        "attractiveness": "-45",
+        "mental": "-45",
+        "education": "-30",
+        "wealth": "0",
+        "impact on": "-3",
+        "social": "-45"
     },
     {
-        "text": "Withdraw from social activities and isolate yourself from others.",
+        "text": "Withdraw from social activities and isolate yourself from others",
         "category": "social",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": 0,
-        "wealth": 0,
-        "social": -15
+        "attractiveness": "-45",
+        "mental": "-45",
+        "education": "-45",
+        "wealth": "15",
+        "impact on": "-3",
+        "social": "-45"
     }
 ]

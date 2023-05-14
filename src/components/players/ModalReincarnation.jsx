@@ -10,7 +10,7 @@ import { db } from "../../fbConfig";
 import { addDoc, collection } from "firebase/firestore";
 import { AuthContext } from "../../contexts/AuthContext";
 
-export const ModalReincarnation = ({ setShowModal }) => {
+export const ModalReincarnation = ({ setShowModal, setChildModal }) => {
   const { language } = useContext(LanguageContext);
   const { user } = useContext(AuthContext);
 
@@ -39,11 +39,6 @@ export const ModalReincarnation = ({ setShowModal }) => {
     `${texts.reincarnation.q3[language]}`,
     `${texts.reincarnation.q4[language]}`,
     `${texts.reincarnation.q5[language]}`,
-    `${texts.reincarnation.q6[language]}`,
-    `${texts.reincarnation.q7[language]}`,
-    `${texts.reincarnation.q8[language]}`,
-    `${texts.reincarnation.q9[language]}`,
-    `${texts.reincarnation.q10[language]}`,
   ];
 
   const [scores, setScores] = useState({
@@ -53,37 +48,35 @@ export const ModalReincarnation = ({ setShowModal }) => {
     wealth: 0,
     social: 0,
   });
+
   const [showResults, setShowResults] = useState(false);
+  const [sliderValue, setSliderValue] = useState(50);
 
-  const handleAnswer = (answer) => {
-    const questionIndex = currentQuestion;
-    //NOTE what happes if categories.lenght changed?  You might write a bit more of logic to make sure there is no errors in situations in which you are dividing by 0 , or similar.
-    const categoryIndex = questionIndex % categories.length;
-    const currentCategory = categories[categoryIndex];
 
+  const getQuestion = (index) => {
+    return questions[index];
+  };
+
+
+  const updateScores = (category) => {
     const updatedScores = { ...scores };
-    const isFirstQuestionInCategory = questionIndex % 2 === 0;
-
-    if (isFirstQuestionInCategory) {
-      updatedScores[currentCategory] = answer;
-    } else {
-      updatedScores[currentCategory] = Math.round(
-        ((updatedScores[currentCategory] + answer) / 2) * 10
-      );
-    }
+    updatedScores[category] = sliderValue;
     setScores(updatedScores);
+  };
+
+  const handleAnswer = () => {
+    const currentCategory = categories[currentQuestion];
+    updateScores(currentCategory);
+    setSliderValue(50);
 
     if (currentQuestion < questions.length - 1) {
-      setCurrentQuestion(currentQuestion => currentQuestion + 1);
+      setCurrentQuestion(currentQuestion + 1);
     } else {
       setShowResults(true);
       setActivePlayer({ ...activePlayer, progress: scores });
     }
   };
 
-  const getQuestion = (index) => {
-    return questions[index];
-  };
 
   const savePlayerOnFirestore = async (player) => {
     try {
@@ -94,6 +87,7 @@ export const ModalReincarnation = ({ setShowModal }) => {
       console.log("error saving player", error);
     }
   };
+
 
   // to do: outsource! its also used in gameOver component
   const handleFinish = () => {
@@ -132,26 +126,17 @@ export const ModalReincarnation = ({ setShowModal }) => {
       {!showResults ? (
         <div className="container_reincarnation">
           <h2>{getQuestion(currentQuestion)}</h2>
-          <div className="container_reincarnation--btn">
-            {
-              //NOTE it seems like currentQuestion === 3 ? 11 : 11 is always gonna be 11, if that is the case, why not using directly 11?
-            }
-            {console.log(Array(currentQuestion === 3 ? 11 : 11))}
-            {console.log([...Array(currentQuestion === 3 ? 11 : 11).keys()])}
-            {
-              //NOTE check the console.logs , looks like what you create is an array of numbers. And then you access the keys, but since it is just an array of numbers, the numbers are the keys. If you just want to loop that many times, why not writting a simple loop?
-            }
-            {[...Array(currentQuestion === 3 ? 11 : 11).keys()]
-              .slice(1)
-              .map((num) => (
-                <button
-                  key={num}
-                  onClick={() => handleAnswer(num)}
-                  className="btn--reincarnation-scores"
-                >
-                  {num}
-                </button>
-              ))}
+          <div className="container_reincarnation--slider">
+            <input
+              type="range"
+              min="1"
+              max="100"
+              value={sliderValue}
+              className="slider"
+              id="reincarnation-slider"
+              onChange={(e) => setSliderValue(e.target.value)}
+            />
+            <button onClick={handleAnswer} className="btn--modal">Submit</button>
           </div>
         </div>
       ) : (
@@ -163,7 +148,7 @@ export const ModalReincarnation = ({ setShowModal }) => {
               {Math.min(scores[category], 100)}/100
             </p>
           ))}
-          <button onClick={handleFinish} className="btn--reincarnation-finish">
+          <button onClick={handleFinish} className="btn--modal">
             {texts.reincarnation.finish[language]}
           </button>
         </div>

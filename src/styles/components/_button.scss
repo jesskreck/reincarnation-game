@@ -1,35 +1,38 @@
-.btn--primary{
+@mixin btn {
     @include font;
-    @extend .pixel-box--primary; 
-    @extend h3;
-    padding: 0.5em 1.5em 0.5em 1.5em;
-    margin: 0;
-    color: white;
+    color: $color-light;
+}
 
+.btn--primary{
+    @include btn;
+    @extend h3;
+
+    @extend .pixel-box--primary; 
+    padding: 0.5em 1.5em;
+    margin: 0;
 }
 
 .btn--primary:disabled{
-    @extend .pixel-box--light;
-    color: lightgrey;
+    @extend .pixel-box--light;   
+    color: darken($color-light, 30); 
+}
+
+.btn--secondary{
+    @include btn;
+    @extend h5;
+
+    @extend .pixel-box--secondary;
+    padding: 0.3em 1em;
+}
+
+.btn--modal{
+    @include btn;
+    @extend h5;
     
+    @extend .pixel-box--success;
+    padding: 0.3em 1em;
 }
 
-.btn--reincarnation-scores{
-    @extend .pixel-box--warning;
-    font-family: $font-family-base;
-    font-weight: bolder;
-    font-size:larger;
-    color: darken($color-warning, 25);
-    padding: 1em;
-}
-
-.btn--reincarnation-finish{
-    @include font;
-    @extend .pixel-box--warning;
-    @extend h3;
-    padding: 0.5em 1.5em 0.5em 1.5em;
-    margin: 0;
-}
 
 .btn--action{
     @extend .pixel-box--primary;
