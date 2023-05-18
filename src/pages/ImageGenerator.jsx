@@ -24,8 +24,8 @@ function ImageGenerator() {
     setIsLoading(true); // set loading to true when generating image
     const res = await openai.createImage({
       prompt: prompt,
-      n: 1,
-      size: "1024x1024",
+      n: 2,
+      size: "512x512",
     });
 
     setResult(res.data.data[0].url);
