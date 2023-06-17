@@ -1,0 +1,28 @@
+.storybox {
+    @include overlay;
+    display: grid;
+    align-content: end; 
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.storybox-flex {
+    display: flex;
+    flex-wrap: nowrap
+}
+
+.storybox-element {
+    @extend .pixel-box--light;
+    margin: 3%;
+    padding: 3em;
+}
+
+.storybox-photo {
+    @extend .storybox-element;
+    // min-width: 10%;
+}
+
+.storybox-content {
+   @extend .storybox-element;
+   flex-grow: 1;
+}

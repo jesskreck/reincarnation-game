@@ -1,21 +1,28 @@
-.home--bg {
+.start-bg {
     background-image: url(../../assets/images/inkpendude-portal-storm.gif);
     min-height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+}
 
+.start-grid {
+    @extend .start-bg;
     display: grid;
     place-items: center;
 }
 
-.home--intro {
+
+.start-flex {
     margin: 2em;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.home--intro h1 {
+
+.start-flex h1 {
     color: white;
 }
+
+

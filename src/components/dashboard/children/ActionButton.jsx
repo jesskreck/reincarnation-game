@@ -11,6 +11,7 @@ export const ActionButton = ({ action, uniqueClassName }) => {
   const [showModal, setShowModal] = useState(false);
   const [childModal, setChildModal] = useState(null);
   const [firstVisit, setFirstVisit] = useState(true);
+  const [clickedCategory, setClickedCategory] = useState([])
 
   const handleActionClick = () => {
     setFirstVisit(false);
@@ -18,6 +19,8 @@ export const ActionButton = ({ action, uniqueClassName }) => {
     setChildModal(
       <ModalGeneratingPhoto action={action} setShowModal={setShowModal} />
     );
+
+    setClickedCategory([...clickedCategory, action.category])
   };
 
   const gameOver = () => {
@@ -36,11 +39,10 @@ export const ActionButton = ({ action, uniqueClassName }) => {
       // deconstructing progress in order to loop over it
       const progress = { ...prevPlayer.progress };
       console.log("ACTION progress :>> ", progress);
-      console.log("ACTION action :>> ", action);
+      console.log("ACTION action :>> ", action.progress);
 
-      for (const prop in action) {
-        if (prop !== "text" && prop !== "category" && prop !== "subcategory") {
-          progress[prop] += action[prop];
+      for (const prop in action.progress) {
+          progress[prop] += action.progress[prop];
           if (progress[prop] < 0) {
             progress[prop] = 0;
             gameOver();
@@ -48,7 +50,6 @@ export const ActionButton = ({ action, uniqueClassName }) => {
           if (progress[prop] > 100) {
             progress[prop] = 100;
           }
-        }
       }
       // since i'm passing prevPlayer in as an argument I also have to return the updated one!
       return {
@@ -64,6 +65,7 @@ export const ActionButton = ({ action, uniqueClassName }) => {
       handleUpdate();
     }
   }, [showModal]);
+
 
   return (
     <>

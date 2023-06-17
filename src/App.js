@@ -2,7 +2,6 @@ import React from "react";
 import PlayerSelection from "./pages/PlayerSelection";
 import Navbar from "./components/navbar/Navbar";
 import ImageGenerator from "./pages/ImageGenerator";
-import Homepage from "./pages/Homepage";
 import Error404 from "./pages/Error404";
 import { Route, Routes } from "react-router-dom";
 import { PlayerProvider } from "./contexts/PlayerContext";
@@ -11,6 +10,8 @@ import { Dashboard } from "./pages/Dashboard";
 import { AuthContextProvider } from "./contexts/AuthContext";
 
 import "../src/styles/main.scss";
+import Start from "./pages/game_intro/Start";
+import Awake from "./pages/game_intro/Awake";
 
 function App() {
   return (
@@ -21,12 +22,14 @@ function App() {
             <Navbar />
 
             <Routes>
-              <Route path="/" element={<Homepage />} />
+              <Route path="/" element={<Start />} />
               <Route path="*" element={<Error404 />} />
-              <Route path="ImageGenerator" element={<ImageGenerator />} />
+              <Route path="imageGenerator" element={<ImageGenerator />} />
 
-              <Route path="Players" element={<PlayerSelection />} />
-              <Route path="Actions" element={<Dashboard />} />
+              <Route path="awake" element={<Awake />} />
+
+              <Route path="players" element={<PlayerSelection />} />
+              <Route path="actions" element={<Dashboard />} />
             </Routes>
           </PlayerProvider>
         </AuthContextProvider>

@@ -9,7 +9,7 @@ export default function Modal({ open, children, close }) {
     return ReactDom.createPortal(
         <>
             <div className="modal">
-                <div className="overlay"></div>
+                <div className="overlay-dark"></div>
                 <div className="modal-content">
 
                     {children}

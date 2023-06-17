@@ -39,18 +39,16 @@ export default function ModalGeneratingPhoto ({ action, setShowModal }) {
         const res = await openai.createImage({
             prompt: imagePrompt,
             n: 1,
-            size: "512x512",
+            size: "256x256",
         });
         setResult(res.data.data[0].url);
     };
 
 
     // saving progress of clicked action item into new array to map over it in modal, displaying progress change 
-    const newProgress = {};
-    for (let prop in action) {
-        if (typeof action[prop] === "number") {
-            newProgress[prop] = action[prop]
-        }
+    const actionProgress = {};
+    for (let prop in action.progress) {
+        actionProgress[prop] = action.progress[prop]
     }
 
     // saving photo into album
@@ -79,7 +77,7 @@ export default function ModalGeneratingPhoto ({ action, setShowModal }) {
                 <div className="photobooth__summary">
                     <h3>{texts.photobooth.result[language]}</h3>
                     <div>
-                        {Object.entries(newProgress).map(([key, value]) => (
+                        {Object.entries(actionProgress).map(([key, value]) => (
                             <ProgressInfo key={key} label={key} value={value} />
                         ))}
                     </div>
