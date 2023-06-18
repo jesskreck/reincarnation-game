@@ -1,9 +1,9 @@
 import React, { useContext } from 'react'
-import { LanguageContext } from '../../../contexts/LanguageContext'
-import switchLabeltext from '../../../utils/switchLabeltext'
-import texts from "../../../assets/gameData/texts.json"
+import { LanguageContext } from '../../contexts/LanguageContext'
+import switchLabeltext from '../../utils/switchLabeltext'
+import texts from "../../assets/gameData/texts.json"
 
-export const OverallWellBeing = ({ label, value } ) => {
+export const PanelWellBeing = ({ label, value } ) => {
     
     const adaptWidthStyle = {
         width: `${value}%`,

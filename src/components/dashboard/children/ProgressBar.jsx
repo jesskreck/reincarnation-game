@@ -14,18 +14,18 @@ export const ProgressBar = ({ label, value } ) => {
     }
     
     const progressBarClassName =
-        `progress__fill
+        `progress-fill
         ${value < 20 ?
-            'progress__fill--alert'
+            'progress-fill--alert'
             : value > 80 ?
-                'progress__fill--success'
+                'progress-fill--success'
                 : ''}`;
 
 
     return (
-        <div className='progress__container'>
-            <h6 className='progress__label'>{switchLabeltext(label, language, texts)}</h6>
-            <div className='progress__bar' >
+        <div className='container'>
+            <h6 className='progress-label'>{switchLabeltext(label, language, texts)}</h6>
+            <div className='progress-bar' >
                 <div className={progressBarClassName} style={adaptWidthStyle}>
                     <span>
                         {`${value}%`}

@@ -11,7 +11,7 @@ const switchLabeltext = (label, language, texts) => {
         case "social":
             return `💛 ${texts.main.progress5[language]}`;
         default:
-            return "";
+            return label;
     }
 }
 

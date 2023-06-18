@@ -1,8 +1,8 @@
 import texts from "../assets/gameData/texts.json";
 import React, { useContext, useState } from "react";
-import PanelProgress from "../components/dashboard/PanelProgress";
+import PanelProgress from "../components/panel/PanelProgress";
 import PanelAlbum from "../components/dashboard/PanelAlbum";
-import PanelActions from "../components/dashboard/PanelActions";
+import PanelActions from "../components/panel/PanelActions";
 import Modal from "../components/modals/Modal";
 import { PlayerContext } from "../contexts/PlayerContext";
 import { Link } from "react-router-dom";

@@ -10,8 +10,10 @@ export default function Awake() {
   return (
     <div className='start-grid'>
           <div className="start-flex">
-              <h1>TBA animation to show duality principle</h1>
-               <Link to="/players/" className="btn--secondary">Go to Players</Link>
+        <h1>TBA animation to show duality principle</h1>
+        
+        {showText ? null :<Link to="/players/" className="btn--secondary">Go to Players</Link>}
+               
           </div>
 
          

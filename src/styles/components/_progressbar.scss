@@ -1,22 +1,24 @@
-.progress__bar{
+.progress-bar{
     @extend .pixel-box--light;
+    
 }
 
-.progress__fill{
+.progress-label{
+    padding-bottom: 0;
+}
+
+.progress-fill{
     background-color: $color-secondary;
     @include font;
 
     &--alert {
         background-color: $color-danger;
+        -webkit-animation: flicker-1 2s infinite both;
+            animation: flicker-1 2s infinite both
     }
 
     &--success {
         background-color: $color-success;
+        
     }
-}
-
-
-.game__progress__panel{
-    @extend .pixel-box--success;
-    background-color: lighten($color-secondary, 10)!important;
 }

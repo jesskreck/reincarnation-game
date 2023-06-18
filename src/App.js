@@ -12,6 +12,7 @@ import { AuthContextProvider } from "./contexts/AuthContext";
 import "../src/styles/main.scss";
 import Start from "./pages/game_intro/Start";
 import Awake from "./pages/game_intro/Awake";
+import { DashboardV2 } from "./pages/game_play/DashboardV2";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
               <Route path="imageGenerator" element={<ImageGenerator />} />
 
               <Route path="awake" element={<Awake />} />
+              <Route path="game" element={<DashboardV2 />} />
 
               <Route path="players" element={<PlayerSelection />} />
               <Route path="actions" element={<Dashboard />} />

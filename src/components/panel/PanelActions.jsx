@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
-import { ActionButton } from "./children/ActionButton";
+import { ActionButton } from "../dashboard/children/ActionButton";
 import { PlayerContext } from "../../contexts/PlayerContext";
 import actionDataEN from "../../assets/gameData/actionDataEN.json";
 import actionDataDE from "../../assets/gameData/actionDataDE.json";
@@ -45,20 +45,23 @@ export default function PanelActions() {
   //NOTE when putting arrays or objects in the dependecy array, we should check  not the whole object, but a property of it (like if the name changes,), otherwise the useEffect will interpret that as a new object everytime. Check more, and better explanation at the two thirds of this explanation : https://react.dev/learn/removing-effect-dependencies#does-some-reactive-value-change-unintentionally
 
   return (
-    <div className="dashboard__actions">
-      <div className="dashboard__actions--prompt">
-        <h2>
-          {texts.actions.header1[language]} {activePlayer.name}
-          {texts.actions.header2[language]}
+    <div className="">
+        <h5 className="white">
+         Existential Escapades:
+        </h5>
+        <h2 className="white">
+           10-Year Soul Takeover Plan
         </h2>
+
+      <div className="space">
+        {actionsOnScreen.map((action, index) => (
+          <ActionButton
+            key={index}
+            action={action}
+            uniqueClassName={`action-btn${index}`}
+          />
+        ))}
       </div>
-      {actionsOnScreen.map((action, index) => (
-        <ActionButton
-          key={index}
-          action={action}
-          uniqueClassName={`dashboard__actions--btn${index}`}
-        />
-      ))}
     </div>
   );
 }

@@ -42,14 +42,14 @@ export const ActionButton = ({ action, uniqueClassName }) => {
       console.log("ACTION action :>> ", action.progress);
 
       for (const prop in action.progress) {
-          progress[prop] += action.progress[prop];
-          if (progress[prop] < 0) {
-            progress[prop] = 0;
-            gameOver();
-          }
-          if (progress[prop] > 100) {
-            progress[prop] = 100;
-          }
+        progress[prop] += action.progress[prop];
+        if (progress[prop] < 0) {
+          progress[prop] = 0;
+          gameOver();
+        }
+        if (progress[prop] > 100) {
+          progress[prop] = 100;
+        }
       }
       // since i'm passing prevPlayer in as an argument I also have to return the updated one!
       return {
@@ -66,12 +66,36 @@ export const ActionButton = ({ action, uniqueClassName }) => {
     }
   }, [showModal]);
 
+  console.log('action :>> ', action);
+
 
   return (
     <>
-      <button className={`${uniqueClassName}`} onClick={handleActionClick}>
-        {action.text} {switchCategoryLogo(action.category)}
-      </button>
+      <div className={`game-info-counter ${uniqueClassName}`} onClick={handleActionClick}>
+        <div className="action-grid">
+          <div className="action-category">
+            {switchCategoryLogo(action.category)}
+          </div>
+          <div className="action-text">
+            {action.text}
+          </div>
+          <div className="action-progress">
+            {Object.entries(action.progress)
+              .filter(([key, value]) => value !== 0)
+              .map(([key, value]) => (
+                <div className="action-progress-info">
+                  <span>{switchCategoryLogo(key)}</span>
+                  <span className={`action-progress-element ${value > 0 ? 'positive' : 'negative'} `}>{value}</span>
+                </div>
+              )
+              )}
+          </div>
+        </div>
+
+
+
+
+      </div>
 
       <Modal open={showModal}>{childModal}</Modal>
     </>

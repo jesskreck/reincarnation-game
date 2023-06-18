@@ -48,7 +48,7 @@ export default function PlayerSelection() {
   // go to dashboard
   const handleGoToActions = () => {
     setAlbum([]);
-    navigate("/Actions");
+    navigate("/game");
   };
 
   // get customPlayers array from firestore

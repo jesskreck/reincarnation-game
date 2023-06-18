@@ -6,6 +6,8 @@
 // base imports
 @import "./base/reset";
 @import "./base/typography";
+@import "./base/animations";
+@import "./base/shadows";
 
 
 // components imports
@@ -24,7 +26,7 @@
 // pages imports
 @import "./pages/start";
 @import "./pages/imagegenerator";
-
+@import "./pages/game";
 
 
 // themes imports

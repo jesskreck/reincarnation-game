@@ -1,0 +1,118 @@
+.game-bg {
+    background-image: url(../../assets/images/city2.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 60%;
+}
+
+.game-bg-texture {
+    background-color: #5d5b78;
+    background-image: url("https://www.transparenttextures.com/patterns/binding-light.png");
+    background-position: center;
+    min-height: 100vh;
+}
+
+$game-panels: actions, progress, will, manifest, wellbeing;
+
+.grid-game {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    gap: 2rem;
+    margin: 1rem auto;
+    max-width: 1300px;
+    grid-template-areas:
+        "actions actions progress"
+        "will manifest wellbeing"
+}
+
+
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2em;
+}
+
+@each $game-panel in $game-panels {
+    .game-container-#{$game-panel} {
+        @extend .box-shadow;
+        grid-area: #{$game-panel};
+        background-color: $color-light;
+        padding: 2rem;
+        border-radius: 0.35rem;
+        border: $color-dark 0.05rem solid;
+    }
+}
+
+
+.game-avatar {
+    max-height: 12rem;
+    cursor: pointer;
+}
+
+.game-avatar:hover {
+    -webkit-animation: wobble-ver-left 0.8s both;
+    animation: wobble-ver-left 0.8s both;
+}
+
+
+.game-info-container {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: baseline;
+    gap: .5rem;
+}
+
+.game-info-counter {
+    @extend .pixel-box--info-custom;
+    @extend .box-shadow;
+    @include font;
+    @extend h6;
+    text-align: center;
+    padding: .5rem 1rem;
+}
+
+.action-grid {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    align-items: center;
+}
+
+.action-category {
+    font-size: 2.5rem;
+}
+
+.action-text {
+    text-align: left;
+    font-size: 1.2rem;
+    padding-right: 2rem;
+}
+
+.action-progress {
+    display: flex;
+    flex-direction: column;
+}
+
+.action-progress-info{
+    padding-bottom: 0.3rem;
+}
+
+.action-progress-element {
+    text-align: left;
+    vertical-align: super;
+    font-size: 0.6rem;
+
+    &.positive{
+        color: green;
+
+        &::before{
+            content: "+";
+        }
+    }
+
+    &.negative{
+        color: $color-danger;
+    }
+}
+

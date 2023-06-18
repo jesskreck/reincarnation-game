@@ -2,7 +2,6 @@ const defaultPlayersData = [
   {
     name: "Eve Nebular",
     default: true,
-    sex: "woman",
     reincarnate: false,
     prevReincar: 0,
     age: 20,
@@ -12,6 +11,13 @@ const defaultPlayersData = [
       education: 20,
       wealth: 20,
       social: 10,
+    },
+    manifests: {
+      attractiveness: false,
+      mental: true,
+      education: false,
+      wealth: false,
+      social: false
     }
 
   },
@@ -19,7 +25,6 @@ const defaultPlayersData = [
     name: "Adam Celestial",
     default: true,
     reincarnate: true,
-    sex: "man",
     age: 80,
     prevReincar: 0,
     progress: {
