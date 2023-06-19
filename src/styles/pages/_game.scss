@@ -12,26 +12,20 @@
     min-height: 100vh;
 }
 
-$game-panels: actions, progress, will, manifest, wellbeing;
+$game-panels: actions, progress, will, manifest, wellbeing, album;
 
 .grid-game {
     display: grid;
     grid-template-columns: 2fr 1fr 2fr;
     gap: 2rem;
-    margin: 1rem auto;
+    margin: 0 auto;
+    padding-top: 3rem;
+    padding-bottom: 10rem;
     max-width: 1300px;
     grid-template-areas:
         "actions actions progress"
         "will manifest wellbeing"
-}
-
-
-.game-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 2em;
+        "album album album";
 }
 
 @each $game-panel in $game-panels {
@@ -42,6 +36,7 @@ $game-panels: actions, progress, will, manifest, wellbeing;
         padding: 2rem;
         border-radius: 0.35rem;
         border: $color-dark 0.05rem solid;
+        h3{margin-top:0};        
     }
 }
 
@@ -57,62 +52,38 @@ $game-panels: actions, progress, will, manifest, wellbeing;
 }
 
 
-.game-info-container {
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: baseline;
-    gap: .5rem;
-}
-
-.game-info-counter {
+.game-counter {
     @extend .pixel-box--info-custom;
     @extend .box-shadow;
-    @include font;
-    @extend h6;
-    text-align: center;
+    @include font-special;
     padding: .5rem 1rem;
 }
 
-.action-grid {
-    display: grid;
-    grid-template-columns: 1fr 4fr 1fr;
-    align-items: center;
-}
-
-.action-category {
-    font-size: 2.5rem;
-}
-
-.action-text {
-    text-align: left;
-    font-size: 1.2rem;
-    padding-right: 2rem;
-}
-
-.action-progress {
-    display: flex;
-    flex-direction: column;
-}
-
-.action-progress-info{
-    padding-bottom: 0.3rem;
-}
-
-.action-progress-element {
+.game-progress-value {
     text-align: left;
     vertical-align: super;
-    font-size: 0.6rem;
+    @include font-size($font-size-xs);
 
-    &.positive{
+    &.positive {
         color: green;
-
-        &::before{
+        &::before {
             content: "+";
         }
     }
 
-    &.negative{
+    &.negative {
         color: $color-danger;
     }
 }
 
+
+.game-manifests {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.game-willchain {
+    display: flex;
+    justify-content: space-evenly;
+}

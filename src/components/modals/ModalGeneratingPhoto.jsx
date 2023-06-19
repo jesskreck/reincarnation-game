@@ -5,13 +5,12 @@ import "../../styles/photobooth.css"
 
 import texts from "../../assets/gameData/texts.json"
 import { LanguageContext } from '../../contexts/LanguageContext';
-import { ProgressBar } from '../dashboard/children/ProgressBar';
+import { Progressbar } from '../dashboard/children/Progressbar';
 import { ProgressInfo } from '../dashboard/children/ProgressInfo';
-
+import Spinner from '../dashboard/children/Spinner.jsx';
 
 export default function ModalGeneratingPhoto ({ action, setShowModal }) {
 
-    
     const { activePlayer } = useContext(PlayerContext)
     const { album, setAlbum } = useContext(PlayerContext);
     const {language} = useContext(LanguageContext)
@@ -71,8 +70,8 @@ export default function ModalGeneratingPhoto ({ action, setShowModal }) {
                     <p>{texts.photobooth.paragraph1[language]} {activePlayer.age} {texts.photobooth.paragraph2[language]} {action.text}.</p>
 
                 </div>
-                <div className="photobooth__polaroid">{
-                    result && <img src={result} alt={prompt} />}
+                <div className="photobooth__polaroid">
+                    {result ? <img src={result} alt={prompt} /> : <Spinner/> }
                 </div>
                 <div className="photobooth__summary">
                     <h3>{texts.photobooth.result[language]}</h3>

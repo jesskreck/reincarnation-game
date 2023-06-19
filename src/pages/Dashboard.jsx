@@ -1,7 +1,6 @@
 import texts from "../assets/gameData/texts.json";
 import React, { useContext, useState } from "react";
 import PanelProgress from "../components/panel/PanelProgress";
-import PanelAlbum from "../components/dashboard/PanelAlbum";
 import PanelActions from "../components/panel/PanelActions";
 import Modal from "../components/modals/Modal";
 import { PlayerContext } from "../contexts/PlayerContext";
@@ -23,7 +22,6 @@ export const Dashboard = () => {
           </div>
           <PanelActions />
           <PanelProgress />
-          <PanelAlbum />
         </div>
       ) : (
         <Modal open={showModal} close={() => setShowModal(false)}>

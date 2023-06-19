@@ -11,18 +11,14 @@ import { LanguageContext } from "../contexts/LanguageContext";
 import { db } from "../fbConfig";
 import { collection, getDocs, query } from "firebase/firestore";
 import { AuthContext } from "../contexts/AuthContext";
+import { LevelContext } from "../contexts/LevelContext";
 
 export default function PlayerSelection() {
   const navigate = useNavigate();
   const { user } = useContext(AuthContext);
   const { language } = useContext(LanguageContext);
-  const {
-    defaultPlayers,
-    customPlayers,
-    activePlayer,
-    setActivePlayer,
-    setAlbum,
-  } = useContext(PlayerContext);
+  const { defaultPlayers, customPlayers, activePlayer, setActivePlayer, setAlbum } = useContext(PlayerContext);
+  const { setProgress, setTraumas } = useContext(LevelContext)
 
   const [showModal, setShowModal] = useState(false);
   const [childModal, setChildModal] = useState(null);
@@ -47,6 +43,12 @@ export default function PlayerSelection() {
 
   // go to dashboard
   const handleGoToActions = () => {
+    setProgress(activePlayer.progress);
+
+    const traumas = Object.entries(activePlayer.trauma)
+      .filter(([key, value]) => value === true)
+      .map(([key, value]) => key);
+    setTraumas(traumas);
     setAlbum([]);
     navigate("/game");
   };

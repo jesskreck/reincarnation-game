@@ -4,23 +4,27 @@ import Modal from "../../modals/Modal";
 import { PlayerContext } from "../../../contexts/PlayerContext";
 import switchCategoryLogo from "../../../utils/switchCategoryLogo";
 import ModalGameOver from "../../modals/ModalGameOver";
+import { LevelContext } from "../../../contexts/LevelContext";
 
-export const ActionButton = ({ action, uniqueClassName }) => {
+export const ActionButton = ({ action }) => {
   const { activePlayer, setActivePlayer } = useContext(PlayerContext);
+  const { progress, setProgress, setWillChain, traumas } = useContext(LevelContext)
+
 
   const [showModal, setShowModal] = useState(false);
   const [childModal, setChildModal] = useState(null);
-  const [firstVisit, setFirstVisit] = useState(true);
-  const [clickedCategory, setClickedCategory] = useState([])
+
+  //NOTE: this checks if the specific actions category matches the array of trauma strings. If yes, CSS class is added in the return
+  
+  const hasBreakPower = traumas.includes(action.category) && action.breaks;
+  console.log('hasBreakPower, action :>> ', hasBreakPower, action);
 
   const handleActionClick = () => {
-    setFirstVisit(false);
-    setShowModal(true);
-    setChildModal(
-      <ModalGeneratingPhoto action={action} setShowModal={setShowModal} />
-    );
-
-    setClickedCategory([...clickedCategory, action.category])
+    console.log(hasBreakPower);
+    // setShowModal(true);
+    // setChildModal(
+    //   <ModalGeneratingPhoto action={action} setShowModal={setShowModal} />
+    // );
   };
 
   const gameOver = () => {
@@ -30,70 +34,65 @@ export const ActionButton = ({ action, uniqueClassName }) => {
     }, 1500);
   };
 
+
   const handleUpdate = () => {
-    // make player older
-    setActivePlayer({ ...activePlayer, age: activePlayer.age + 10 });
+    updateProgress();
+    setActivePlayer({ ...activePlayer, age: activePlayer.age + 10 });  
+    }
 
-    // update progress bar props according to action props
-    function updateActivePlayer(prevPlayer) {
-      // deconstructing progress in order to loop over it
-      const progress = { ...prevPlayer.progress };
-      console.log("ACTION progress :>> ", progress);
-      console.log("ACTION action :>> ", action.progress);
 
-      for (const prop in action.progress) {
-        progress[prop] += action.progress[prop];
-        if (progress[prop] < 0) {
-          progress[prop] = 0;
+  const updateProgress = () => {  
+    const progressCache = { ...progress };
+      for (const [prop, value] of Object.entries(action.progress)) {
+        progressCache[prop] += value;
+
+        if (progressCache[prop] < 0) {
+          progressCache[prop] = 0;
           gameOver();
         }
-        if (progress[prop] > 100) {
-          progress[prop] = 100;
+
+        if (progressCache[prop] > 100) {
+          progressCache[prop] = 100;
         }
       }
-      // since i'm passing prevPlayer in as an argument I also have to return the updated one!
-      return {
-        ...prevPlayer,
-        progress,
-      };
+      setProgress(progressCache)
     }
-    setActivePlayer(updateActivePlayer);
-  };
 
-  useEffect(() => {
-    if (!firstVisit && !showModal) {
-      handleUpdate();
-    }
-  }, [showModal]);
 
-  console.log('action :>> ', action);
+  // useEffect(() => {
+  //   if (!showModal) {
+  //     handleUpdate();
+  //   }
+  // }, [showModal]);
+
 
 
   return (
     <>
-      <div className={`game-info-counter ${uniqueClassName}`} onClick={handleActionClick}>
-        <div className="action-grid">
-          <div className="action-category">
-            {switchCategoryLogo(action.category)}
-          </div>
-          <div className="action-text">
-            {action.text}
-          </div>
-          <div className="action-progress">
-            {Object.entries(action.progress)
-              .filter(([key, value]) => value !== 0)
-              .map(([key, value]) => (
-                <div className="action-progress-info">
-                  <span>{switchCategoryLogo(key)}</span>
-                  <span className={`action-progress-element ${value > 0 ? 'positive' : 'negative'} `}>{value}</span>
-                </div>
-              )
-              )}
-          </div>
+      <div
+        className="btn-action"
+        onClick={handleActionClick}
+      >
+
+        <div className="big center">
+          {switchCategoryLogo(action.category)} {hasBreakPower}
         </div>
 
+        <p>
+          {action.text}
+        </p>
 
-
+        <div className="center">
+          {Object.entries(action.progress)
+            .filter(([key, value]) => value !== 0)
+            .map(([key, value]) => (
+              <div>
+                <span>{switchCategoryLogo(key)}</span>
+                <span className={`game-progress-value ${value > 0 ? 'positive' : 'negative'} `}>{value}</span>
+              </div>
+            )
+            )}
+        </div>
 
       </div>
 

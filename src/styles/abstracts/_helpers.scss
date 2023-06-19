@@ -16,6 +16,18 @@
     font-size: 2rem;
 }
 
+.center {
+    text-align: center;
+}
+
 .white {
     color: $color-light;
+}
+
+.border {
+    border: yellow 3px solid;
+}
+
+.gap {
+    padding: 1rem;
 }

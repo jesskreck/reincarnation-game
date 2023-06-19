@@ -1,66 +1,78 @@
 // import fonts
 @import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700;900&display=swap');
+@import "../../../node_modules/rfs/scss";
 
+// Typography
+$font-family-base: 'DotGothic16', sans-serif;
 
+$font-size-xs: 0.65rem;
+$font-size-s: 0.85rem;
+$font-size-base: 1rem; // 16px
+$font-size-m: 1.25rem; // 20px
+$font-size-l: 2.5rem;
+$font-size-xl: 4rem;
+
+$font-weight-normal: 400;
+$font-weight-bold: 700;
 
 // Set base font settings
-@mixin font {
-    font-family: $font-family-base;
+@mixin font-special {
+    font-family: 'DotGothic16', sans-serif;
     text-transform: uppercase;
-    letter-spacing: 0.2em;
-    line-height: 1.5;
+    letter-spacing: 0.1em;
 }
 
-// Set headings styles
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    @include font;
-    font-weight: 700;
-    line-height: 1.2;
-    margin-top: 1em;
-    margin-bottom: 0.5em;
-    color: $color-dark;
+@mixin font-text {
+    font-family: 'Inconsolata', monospace;
 }
 
-h1 {
-    font-size: 2.5em;
-}
-
-h2 {
-    font-size: 2em;
-}
-
-h3 {
-    font-size: 1.75em;
-}
-
-h4 {
-    font-size: 1.5em;
-}
-
-h5 {
-    font-size: 1.25em;
-}
-
-h6 {
-    font-size: 1em;
+@mixin font {
+    font-family: 'Inconsolata', monospace;
 }
 
 // Set paragraph styles
 p {
-    @include font;
-    margin-top: 0;
-    margin-bottom: 1em;
+    @include font-text;
+    @include font-size($font-size-base);
 }
+
+h1 {
+    @include font-special;
+    @include font-size($font-size-xl);
+}
+
+h2 {
+    @include font-special;
+    @include font-size($font-size-l);
+}
+
+h3 {
+    @include font-special;
+    @include font-size($font-size-m);
+}
+
+h4 {
+    @include font-special;
+    @include font-size($font-size-base);
+}
+
+h5 {
+    @include font-special;
+    @include font-size($font-size-s);
+    margin-bottom: 0;
+}
+
+h6 {
+    color: red; 
+}
+
+
 
 .prompt {
     @include font;
     font-size: smaller;
-    color: darkgrey;
+    color: red;
     text-align: center;
     padding: 1em;
     margin-bottom: 0.5em;
@@ -69,13 +81,13 @@ p {
 .warning {
     @include font;
     font-weight: bolder;
-    color: $color-danger;
+    color: red;
 }
 
 
 // Style links
 a {
-    @include font;
+    @include font-special;
     text-decoration: none;
 
     &:hover,

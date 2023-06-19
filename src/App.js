@@ -13,6 +13,7 @@ import "../src/styles/main.scss";
 import Start from "./pages/game_intro/Start";
 import Awake from "./pages/game_intro/Awake";
 import { DashboardV2 } from "./pages/game_play/DashboardV2";
+import { LevelProvider } from "./contexts/LevelContext";
 
 function App() {
   return (
@@ -20,19 +21,21 @@ function App() {
       <LanguageProvider>
         <AuthContextProvider>
           <PlayerProvider>
-            <Navbar />
+            <LevelProvider>
+              <Navbar />
 
-            <Routes>
-              <Route path="/" element={<Start />} />
-              <Route path="*" element={<Error404 />} />
-              <Route path="imageGenerator" element={<ImageGenerator />} />
+              <Routes>
+                <Route path="/" element={<Start />} />
+                <Route path="*" element={<Error404 />} />
+                <Route path="imageGenerator" element={<ImageGenerator />} />
 
-              <Route path="awake" element={<Awake />} />
-              <Route path="game" element={<DashboardV2 />} />
+                <Route path="awake" element={<Awake />} />
+                <Route path="game" element={<DashboardV2 />} />
 
-              <Route path="players" element={<PlayerSelection />} />
-              <Route path="actions" element={<Dashboard />} />
-            </Routes>
+                <Route path="players" element={<PlayerSelection />} />
+                <Route path="actions" element={<Dashboard />} />
+              </Routes>
+            </LevelProvider>
           </PlayerProvider>
         </AuthContextProvider>
       </LanguageProvider>

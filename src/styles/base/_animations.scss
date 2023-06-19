@@ -150,3 +150,14 @@
         opacity: 1
     }
 }
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba($color-wellbeing, .6);
+
+    }
+
+    30% {
+        box-shadow: 0 0 3px 6px rgba($color-wellbeing, .2);
+    }
+}

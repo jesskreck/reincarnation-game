@@ -111,8 +111,11 @@
 }
 
 .pixel-box--primary-custom {
-  color: #fff;
-  @include pixel-box($corner-size: 1, $border-size: 4px, $background-color: #209cee, $border-inset: false);
+  @include pixel-box(
+    $corner-size: 2, 
+    $border-size: 2px, 
+    $background-color: $color-light, 
+    $border-color: $color-primary);
 }
 
 .pixel-box--success-custom {
@@ -132,7 +135,7 @@
 .pixel-box--info-custom {
   @include pixel-box(
     $corner-size: 2,
-    $border-size: 3px,
+    $border-size: 2px,
     $background-color: $color-light,
     $border-color: $color-info)
   }

@@ -1,219 +1,89 @@
 [
   {
-    "text": "Werde zertifizierter Aerial-Yoga-Instruktor",
-    "manifest": "schlechtes Körperbild",
-    "breaks": true,
-    "category": "attractiveness",
-    "progress": {
-      "attractiveness": 45,
-      "mental": 15,
-      "education": 0,
-      "wealth": 45,
-      "social": 1
-    }
-  },
-  {
     "text": "Erreiche ein Six-Pack mit einer strengen Diät und Trainingsroutine",
     "manifest": "schlechtes Körperbild",
-    "breaks": true,
+    "breaks": "false",
     "category": "attractiveness",
     "progress": {
       "attractiveness": 45,
       "mental": 15,
       "education": -30,
       "wealth": 0,
-      "social": 1
-    }
-  },
-  {
-    "text": "Steigere deine Ausdauer, indem du für eine 100-Meilen-Fahrradtour trainierst",
-    "manifest": "schlechtes Körperbild",
-    "breaks": true,
-    "category": "attractiveness",
-    "progress": {
-      "attractiveness": 45,
-      "mental": 15,
-      "education": -15,
-      "wealth": 0,
-      "social": 1
-    }
-  },
-  {
-    "text": "Lerne surfen und fange die größten Wellen",
-    "manifest": "schlechtes Körperbild",
-    "breaks": true,
-    "category": "attractiveness",
-    "progress": {
-      "attractiveness": 45,
-      "mental": 15,
-      "education": -15,
-      "wealth": 0,
-      "social": 1
+      "social": 0
     }
   },
   {
     "text": "Meistere die Kunst des Pole-Dancing für ein Ganzkörper-Workout",
     "manifest": "schlechtes Körperbild",
-    "breaks": true,
+    "breaks": "false",
     "category": "attractiveness",
     "progress": {
       "attractiveness": 45,
       "mental": 15,
       "education": -30,
       "wealth": 0,
-      "social": 1
+      "social": 15
     }
   },
   {
-    "text": "Nimm an einem täglichen Hot-Dog-Wettessen teil",
+    "text": "Steigere deine Ausdauer, indem du für eine 100-Meilen-Fahrradtour trainierst",
     "manifest": "schlechtes Körperbild",
-    "breaks": false,
+    "breaks": "false",
     "category": "attractiveness",
     "progress": {
-      "attractiveness": -30,
-      "mental": -30,
-      "education": -15,
-      "wealth": -15,
-      "social": -2
-    }
-  },
-  {
-    "text": "Werde professioneller Stubenhocker",
-    "manifest": "sozial isoliert",
-    "breaks": false,
-    "category": "attractiveness",
-    "progress": {
-      "attractiveness": -15,
-      "mental": -15,
-      "education": -15,
-      "wealth": -30,
-      "social": -1
-    }
-  },
-  {
-    "text": "Werde Profi im Kettenrauchen und starken Trinken",
-    "manifest": "Suchtproblem",
-    "breaks": false,
-    "category": "attractiveness",
-    "progress": {
-      "attractiveness": -30,
-      "mental": -15,
-      "education": -15,
-      "wealth": -30,
-      "social": -1
-    }
-  },
-  {
-    "text": "Nimm 50 Pfund zu, indem du nur Fast Food isst",
-    "manifest": "schlechtes Körperbild",
-    "breaks": false,
-    "category": "attractiveness",
-    "progress": {
-      "attractiveness": -45,
-      "mental": -30,
-      "education": -15,
-      "wealth": -30,
-      "social": -2
-    }
-  },
-  {
-    "text": "Verliere alle Muskelmasse, indem du den ganzen Tag sitzt und auf eine Wand starrst",
-    "manifest": "schlechtes Körperbild",
-    "breaks": false,
-    "category": "attractiveness",
-    "progress": {
-      "attractiveness": -45,
-      "mental": -45,
-      "education": -15,
-      "wealth": 0,
-      "social": -3
-    }
-  },
-  {
-    "text": "Meistere die Kunst, 16 Stunden am Stück zu schlafen",
-    "manifest": "sozial isoliert",
-    "breaks": false,
-    "category": "attractiveness",
-    "progress": {
-      "attractiveness": -15,
-      "mental": -15,
-      "education": -15,
-      "wealth": 0,
-      "social": -1
-    }
-  },
-  {
-    "text": "Werde zum Experten im Fernsehen für einen ganzen Tag, ohne dich zu bewegen",
-    "manifest": "",
-    "breaks": false,
-    "category": "attractiveness",
-    "progress": {
-      "attractiveness": -15,
-      "mental": -30,
-      "education": -15,
-      "wealth": 0,
-      "social": -2
-    }
-  },
-  {
-    "text": "Erreiche einen persönlichen Rekord für das Binge-Watching einer ganzen Serie in einer Sitzung",
-    "manifest": "",
-    "breaks": false,
-    "category": "attractiveness",
-    "progress": {
-      "attractiveness": -15,
-      "mental": 0,
+      "attractiveness": 45,
+      "mental": 15,
       "education": -15,
       "wealth": 0,
       "social": 0
     }
   },
   {
+    "text": "Lerne surfen und fange die größten Wellen",
+    "manifest": "schlechtes Körperbild",
+    "breaks": "false",
+    "category": "attractiveness",
+    "progress": {
+      "attractiveness": 45,
+      "mental": 15,
+      "education": -15,
+      "wealth": 0,
+      "social": 15
+    }
+  },
+  {
     "text": "Verwandle dich in ein Mode-Icon für eine futuristische Cyberpunk-Ästhetik",
-    "manifest": "",
-    "breaks": false,
+    "manifest": "schlechtes Körperbild",
+    "breaks": "false",
     "category": "attractiveness",
     "progress": {
       "attractiveness": 45,
       "mental": 0,
       "education": -15,
       "wealth": 0,
-      "social": 0
+      "social": 30
     }
   },
   {
     "text": "Werde ein Social Media Influencer für skurrile Hutstile",
-    "manifest": "",
-    "breaks": false,
+    "manifest": "schlechtes Körperbild",
+    "breaks": "false",
     "category": "attractiveness",
     "progress": {
       "attractiveness": 30,
       "mental": 0,
       "education": -15,
       "wealth": 15,
-      "social": 0
-    }
-  },
-  {
-    "text": "Spare auf ein Paar vergoldete Zahnprothesen",
-    "manifest": "",
-    "breaks": false,
-    "category": "attractiveness",
-    "progress": {
-      "attractiveness": 15,
-      "mental": 0,
-      "education": 0,
-      "wealth": -30,
-      "social": 0
+      "social": 30
     }
   },
   {
     "text": "Verpflichte dich zu einer täglichen Gesichtsroutine mit Gold und Diamanten",
-    "manifest": "",
-    "breaks": false,
+    "manifest": "schlechtes Körperbild",
+    "breaks": "false",
     "category": "attractiveness",
     "progress": {
-      "attractiveness": 45,
+      "attractiveness": 30,
       "mental": 0,
       "education": 0,
       "wealth": -45,
@@ -221,490 +91,685 @@
     }
   },
   {
-    "text": "Verwandle dich in eine wandelnde Modekatastrophe und trage nur Neonfarben",
-    "manifest": "",
-    "breaks": false,
+    "text": "Spare auf ein Paar vergoldete Zahnprothesen",
+    "manifest": "schlechtes Körperbild",
+    "breaks": "false",
+    "category": "attractiveness",
+    "progress": {
+      "attractiveness": 15,
+      "mental": 0,
+      "education": 0,
+      "wealth": -30,
+      "social": 0
+    }
+  },
+  {
+    "text": "Verwandle dich in eine selbstbewusste Modekatastrophe und trage nur Neonfarben",
+    "manifest": "schlechtes Körperbild",
+    "breaks": "false",
+    "category": "attractiveness",
+    "progress": {
+      "attractiveness": 30,
+      "mental": 0,
+      "education": 0,
+      "wealth": 0,
+      "social": 15
+    }
+  },
+  {
+    "text": "Werde zertifizierter Aerial-Yoga-Instruktor",
+    "manifest": "schlechtes Körperbild",
+    "breaks": "false",
+    "category": "attractiveness",
+    "progress": {
+      "attractiveness": 45,
+      "mental": 15,
+      "education": 0,
+      "wealth": 30,
+      "social": 15
+    }
+  },
+  {
+    "text": "Nimm 50 Pfund zu, indem du nur Fast Food isst",
+    "manifest": "schlechtes Körperbild",
+    "breaks": "true",
+    "category": "attractiveness",
+    "progress": {
+      "attractiveness": -45,
+      "mental": -30,
+      "education": -15,
+      "wealth": -15,
+      "social": 0
+    }
+  },
+  {
+    "text": "Nimm an einem täglichen Hot-Dog-Wettessen teil",
+    "manifest": "schlechtes Körperbild",
+    "breaks": "true",
     "category": "attractiveness",
     "progress": {
       "attractiveness": -30,
-      "mental": -15,
-      "education": -45,
+      "mental": 0,
+      "education": 0,
+      "wealth": -15,
+      "social": 15
+    }
+  },
+  {
+    "text": "Verliere alle Muskelmasse, indem du den ganzen Tag sitzt und auf eine Wand starrst",
+    "manifest": "schlechtes Körperbild",
+    "breaks": "true",
+    "category": "attractiveness",
+    "progress": {
+      "attractiveness": -45,
+      "mental": -30,
+      "education": -15,
       "wealth": 0,
-      "social": -1
+      "social": -30
     }
   },
   {
     "text": "Verabschiede dich von der Routine Zähne zu putzen und Haare zu bürsten",
-    "manifest": "",
-    "breaks": false,
+    "manifest": "schlechtes Körperbild",
+    "breaks": "true",
     "category": "attractiveness",
     "progress": {
       "attractiveness": -45,
       "mental": -15,
-      "education": -45,
+      "education": -15,
       "wealth": 0,
-      "social": -1
+      "social": -30
     }
   },
   {
-    "text": "Behalte eine konsequente Meditationspraxis für sechs Monate bei",
-    "manifest": "Angststörung",
-    "breaks": true,
-    "category": "mental",
+    "text": "Iss nur Pizza zu jeder Mahlzeit",
+    "manifest": "schlechtes Körperbild",
+    "breaks": "true",
+    "category": "attractiveness",
     "progress": {
-      "attractiveness": 15,
-      "mental": 45,
+      "attractiveness": -30,
+      "mental": 0,
       "education": 15,
+      "wealth": -15,
+      "social": 0
+    }
+  },
+  {
+    "text": "Verfolge eine Karriere als professioneller Freelance Gamer ",
+    "manifest": "strukturell benachteiligt",
+    "breaks": "false",
+    "category": "education",
+    "progress": {
+      "attractiveness": 0,
+      "mental": 15,
+      "education": -30,
+      "wealth": 45,
+      "social": -15
+    }
+  },
+  {
+    "text": "Unternimm eine Sprachreise nach Marokko, um Dothraki zu studieren",
+    "manifest": "strukturell benachteiligt",
+    "breaks": "false",
+    "category": "education",
+    "progress": {
+      "attractiveness": 0,
+      "mental": 15,
+      "education": 30,
+      "wealth": -30,
+      "social": 30
+    }
+  },
+  {
+    "text": "Nimm an einem 6-monatigen Intensivprogramm für professionelles Videospielen teil",
+    "manifest": "strukturell benachteiligt",
+    "breaks": "false",
+    "category": "education",
+    "progress": {
+      "attractiveness": 0,
+      "mental": 15,
+      "education": 30,
+      "wealth": -30,
+      "social": -15
+    }
+  },
+  {
+    "text": "Erhalte Zugang zur \"Elite-Schule für Superhelden\" und fühl dich motiviert Fliegen zu lernen",
+    "manifest": "strukturell benachteiligt",
+    "breaks": "false",
+    "category": "education",
+    "progress": {
+      "attractiveness": 0,
+      "mental": 15,
+      "education": 30,
+      "wealth": 30,
+      "social": 15
+    }
+  },
+  {
+    "text": "Erwerbe einen Abschluss in mittelalterlicher Schmiedekunst",
+    "manifest": "strukturell benachteiligt",
+    "breaks": "false",
+    "category": "education",
+    "progress": {
+      "attractiveness": 0,
+      "mental": 15,
+      "education": 45,
+      "wealth": -15,
+      "social": 15
+    }
+  },
+  {
+    "text": "Nimm an einer geheimen \"Bildungsrevolution\" teil und proklamier das Lernen unter Wasser",
+    "manifest": "strukturell benachteiligt",
+    "breaks": "false",
+    "category": "education",
+    "progress": {
+      "attractiveness": 0,
+      "mental": 15,
+      "education": 45,
       "wealth": 0,
-      "social": 3
+      "social": 15
+    }
+  },
+  {
+    "text": "Erhalte ein Stipendium für das \"Institut für magische Künste und Wissenschaften\"",
+    "manifest": "strukturell benachteiligt",
+    "breaks": "false",
+    "category": "education",
+    "progress": {
+      "attractiveness": 0,
+      "mental": 15,
+      "education": 45,
+      "wealth": 30,
+      "social": 15
+    }
+  },
+  {
+    "text": "Versäume die Einschreibung in dein Jura Studium, weil du die bürokratischen Hürden nicht verstehst",
+    "manifest": "strukturell benachteiligt",
+    "breaks": "true",
+    "category": "education",
+    "progress": {
+      "attractiveness": 0,
+      "mental": -30,
+      "education": -45,
+      "wealth": 0,
+      "social": 0
+    }
+  },
+  {
+    "text": "Werde zum Meister des Verlusts von Bildungsgutscheinen vom Job Center",
+    "manifest": "strukturell benachteiligt",
+    "breaks": "true",
+    "category": "education",
+    "progress": {
+      "attractiveness": 0,
+      "mental": -15,
+      "education": -30,
+      "wealth": 0,
+      "social": 0
+    }
+  },
+  {
+    "text": "Bewirb dich ohne Erfolg für finanzielle Unterstützungen für Weiterbildungen",
+    "manifest": "strukturell benachteiligt",
+    "breaks": "true",
+    "category": "education",
+    "progress": {
+      "attractiveness": 0,
+      "mental": -30,
+      "education": -15,
+      "wealth": -15,
+      "social": 0
+    }
+  },
+  {
+    "text": "Gehe mit einem limitierten Einkommen durch die Hölle der Wohnungssuch-Diskriminierung",
+    "manifest": "strukturell benachteiligt",
+    "breaks": "true",
+    "category": "education",
+    "progress": {
+      "attractiveness": 0,
+      "mental": -30,
+      "education": 0,
+      "wealth": -15,
+      "social": 0
+    }
+  },
+  {
+    "text": "Verbringe täglich 3 Stunden in öffentlichen Verkehrsmitteln neben übelriechenden Mitfahrern",
+    "manifest": "strukturell benachteiligt",
+    "breaks": "true",
+    "category": "education",
+    "progress": {
+      "attractiveness": 0,
+      "mental": -30,
+      "education": 0,
+      "wealth": 0,
+      "social": -15
+    }
+  },
+  {
+    "text": "Spüre den Frust finanzieller Sorgen durch überteuerte Schulgebühren und Studienmaterialien",
+    "manifest": "strukturell benachteiligt",
+    "breaks": "true",
+    "category": "education",
+    "progress": {
+      "attractiveness": 0,
+      "mental": -30,
+      "education": 30,
+      "wealth": -30,
+      "social": 0
     }
   },
   {
     "text": "Nimm täglich an einem Tee-Zeremonie-Kurs zur Stressreduzierung teil",
-    "manifest": "",
-    "breaks": false,
+    "manifest": "mental instabil",
+    "breaks": "false",
     "category": "mental",
     "progress": {
-      "attractiveness": 15,
+      "attractiveness": 0,
       "mental": 45,
       "education": 0,
       "wealth": -15,
-      "social": 3
+      "social": 30
     }
   },
   {
     "text": "Widme deine Wochenenden dem Wandern und erkunde lokale Naturschutzgebiete",
-    "manifest": "schlechtes Körperbild",
-    "breaks": true,
+    "manifest": "mental instabil",
+    "breaks": "false",
     "category": "mental",
     "progress": {
       "attractiveness": 30,
       "mental": 30,
       "education": 0,
       "wealth": 0,
-      "social": 2
+      "social": 0
+    }
+  },
+  {
+    "text": "Nimm an einem Achtsamkeits-Retreat teil, um emotionale Regulierungsfähigkeiten zu entwickeln",
+    "manifest": "mental instabil",
+    "breaks": "false",
+    "category": "mental",
+    "progress": {
+      "attractiveness": 0,
+      "mental": 45,
+      "education": 15,
+      "wealth": 0,
+      "social": 45
+    }
+  },
+  {
+    "text": "Behalte eine konsequente Meditationspraxis für sechs Monate bei",
+    "manifest": "mental instabil",
+    "breaks": "false",
+    "category": "mental",
+    "progress": {
+      "attractiveness": 0,
+      "mental": 45,
+      "education": 15,
+      "wealth": 0,
+      "social": 15
+    }
+  },
+  {
+    "text": "Nimm an einer Therapie teil, um Probleme im Zusammenhang mit Kindheitstraumata zu bearbeiten",
+    "manifest": "mental instabil",
+    "breaks": "false",
+    "category": "mental",
+    "progress": {
+      "attractiveness": 0,
+      "mental": 45,
+      "education": 15,
+      "wealth": 0,
+      "social": 45
+    }
+  },
+  {
+    "text": "Übe dich täglich in Dankbarkeit, um dein allgemeines Glück zu steigern",
+    "manifest": "mental instabil",
+    "breaks": "false",
+    "category": "mental",
+    "progress": {
+      "attractiveness": 0,
+      "mental": 45,
+      "education": 15,
+      "wealth": 0,
+      "social": 45
+    }
+  },
+  {
+    "text": "Tritt einer Selbsthilfegruppe für Menschen mit Angststörungen bei",
+    "manifest": "mental instabil",
+    "breaks": "false",
+    "category": "mental",
+    "progress": {
+      "attractiveness": 0,
+      "mental": 45,
+      "education": 15,
+      "wealth": 0,
+      "social": 45
+    }
+  },
+  {
+    "text": "Nimm an Gruppentherapiesitzungen gegen Depressionen teil",
+    "manifest": "mental instabil",
+    "breaks": "false",
+    "category": "mental",
+    "progress": {
+      "attractiveness": 0,
+      "mental": 45,
+      "education": 15,
+      "wealth": 0,
+      "social": 45
+    }
+  },
+  {
+    "text": "Studier \"Quanten-Chemie des Glücks\" und enthülle die Geheimnisse inneren Friedens",
+    "manifest": "mental instabil",
+    "breaks": "false",
+    "category": "mental",
+    "progress": {
+      "attractiveness": 0,
+      "mental": 45,
+      "education": 30,
+      "wealth": 0,
+      "social": 0
     }
   },
   {
     "text": "Erschaffe einen unvorhersehbaren Schlafrhythmus",
-    "manifest": "",
-    "breaks": false,
+    "manifest": "mental instabil",
+    "breaks": "true",
     "category": "mental",
     "progress": {
-      "attractiveness": -15,
+      "attractiveness": -30,
       "mental": -30,
       "education": -30,
       "wealth": 0,
-      "social": -2
+      "social": -15
     }
   },
   {
     "text": "Entwickle stressauslösende Gewohnheiten wie Nägelbeißen und Fußtappen",
-    "manifest": "Angststörung",
-    "breaks": false,
+    "manifest": "mental instabil",
+    "breaks": "true",
     "category": "mental",
     "progress": {
       "attractiveness": -30,
       "mental": -45,
       "education": -30,
       "wealth": 0,
-      "social": -3
+      "social": 0
+    }
+  },
+  {
+    "text": "Vermeide es, Emotionen auszudrücken und unterdrücke sie innerlich",
+    "manifest": "mental instabil",
+    "breaks": "true",
+    "category": "mental",
+    "progress": {
+      "attractiveness": 0,
+      "mental": -45,
+      "education": -30,
+      "wealth": 0,
+      "social": -45
+    }
+  },
+  {
+    "text": "Meistere die Kunst, 16 Stunden am Stück zu schlafen",
+    "manifest": "mental instabil",
+    "breaks": "true",
+    "category": "mental",
+    "progress": {
+      "attractiveness": -15,
+      "mental": -15,
+      "education": -15,
+      "wealth": 0,
+      "social": -15
     }
   },
   {
     "text": "Arbeite rund um die Uhr und werde zum Roboter",
-    "manifest": "",
-    "breaks": false,
+    "manifest": "mental instabil",
+    "breaks": "true",
     "category": "mental",
     "progress": {
       "attractiveness": -15,
       "mental": -30,
       "education": 0,
       "wealth": 45,
-      "social": -2
+      "social": -30
     }
   },
   {
-    "text": "Iss nur Pizza zu jeder Mahlzeit",
-    "manifest": "schlechtes Körperbild",
-    "breaks": false,
-    "category": "mental",
+    "text": "Nimm an einer wöchentlichen Meditationsgruppe teil, um Gleichgesinnte kennenzulernen",
+    "manifest": "sozial isoliert",
+    "breaks": "false",
+    "category": "social",
     "progress": {
-      "attractiveness": -30,
-      "mental": -15,
+      "attractiveness": 0,
+      "mental": 45,
       "education": 15,
-      "wealth": -30,
-      "social": -1
+      "wealth": 0,
+      "social": 30
     }
   },
   {
-    "text": "Verbringe den ganzen Tag damit, durch Social-Media-Feeds zu scrollen",
+    "text": "Gehe eine gesunde romantische Beziehung mit jemandem ein, der deine Werte und Ziele teilt",
     "manifest": "sozial isoliert",
-    "breaks": false,
-    "category": "mental",
+    "breaks": "false",
+    "category": "social",
     "progress": {
-      "attractiveness": 0,
-      "mental": -30,
-      "education": -45,
+      "attractiveness": 30,
+      "mental": 45,
+      "education": 15,
       "wealth": 0,
-      "social": -2
+      "social": 45
     }
   },
   {
-    "text": "Werde ein Eremit und meide alle sozialen Interaktionen",
+    "text": "Nimm an Freiwilligenaktivitäten mit Freunden und Familie teil",
     "manifest": "sozial isoliert",
-    "breaks": false,
-    "category": "mental",
+    "breaks": "false",
+    "category": "social",
     "progress": {
       "attractiveness": 0,
-      "mental": -45,
-      "education": -45,
+      "mental": 15,
+      "education": 15,
       "wealth": 0,
-      "social": -3
+      "social": 45
     }
   },
   {
-    "text": "Verbringe den ganzen Tag damit, mit dir selbst zu sprechen",
+    "text": "Übe aktives Zuhören und effektive Kommunikation in allen Beziehungen",
     "manifest": "sozial isoliert",
-    "breaks": false,
-    "category": "mental",
+    "breaks": "false",
+    "category": "social",
     "progress": {
-      "attractiveness": 0,
-      "mental": -45,
-      "education": -45,
+      "attractiveness": 15,
+      "mental": 30,
+      "education": 30,
       "wealth": 0,
-      "social": -3
+      "social": 45
     }
   },
   {
     "text": "Perfektioniere die Kunst des starrsinnigen Blicks ins Leere",
     "manifest": "sozial isoliert",
-    "breaks": false,
-    "category": "mental",
+    "breaks": "true",
+    "category": "social",
+    "progress": {
+      "attractiveness": 0,
+      "mental": -30,
+      "education": -30,
+      "wealth": 0,
+      "social": -45
+    }
+  },
+  {
+    "text": "Verfolge Beziehungen mit Personen, die deine Grenzen oder Werte nicht respektieren",
+    "manifest": "sozial isoliert",
+    "breaks": "true",
+    "category": "social",
+    "progress": {
+      "attractiveness": 0,
+      "mental": -30,
+      "education": -30,
+      "wealth": 0,
+      "social": -45
+    }
+  },
+  {
+    "text": "Werde professioneller Stubenhocker",
+    "manifest": "sozial isoliert",
+    "breaks": "true",
+    "category": "social",
+    "progress": {
+      "attractiveness": -15,
+      "mental": 0,
+      "education": -15,
+      "wealth": 0,
+      "social": -30
+    }
+  },
+  {
+    "text": "Werde zum Experten zum ganztägigen Fernsehen und ignoriere Anrufe",
+    "manifest": "sozial isoliert",
+    "breaks": "true",
+    "category": "social",
     "progress": {
       "attractiveness": -15,
       "mental": -30,
-      "education": -45,
+      "education": -15,
       "wealth": 0,
-      "social": -2
+      "social": -30
     }
   },
   {
-    "text": "Nimm an einer Therapie teil, um Probleme im Zusammenhang mit Kindheitstraumata zu bearbeiten",
-    "manifest": "Angststörung",
-    "breaks": true,
-    "category": "mental",
-    "progress": {
-      "attractiveness": 15,
-      "mental": 45,
-      "education": 15,
-      "wealth": 0,
-      "social": 3
-    }
-  },
-  {
-    "text": "Nimm an einem Achtsamkeits-Retreat teil, um emotionale Regulierungsfähigkeiten zu entwickeln",
-    "manifest": "Angststörung",
-    "breaks": true,
-    "category": "mental",
-    "progress": {
-      "attractiveness": 15,
-      "mental": 45,
-      "education": 15,
-      "wealth": -15,
-      "social": 3
-    }
-  },
-  {
-    "text": "Übe dich täglich in Dankbarkeit, um dein allgemeines Glück zu steigern",
-    "manifest": "Angststörung",
-    "breaks": true,
-    "category": "mental",
+    "text": "Verbringe den ganzen Tag auf Social Media aber antworte auf keinen persönlichen Nachrichten",
+    "manifest": "sozial isoliert",
+    "breaks": "true",
+    "category": "social",
     "progress": {
       "attractiveness": 0,
-      "mental": 45,
-      "education": 15,
+      "mental": -15,
+      "education": -15,
       "wealth": 0,
-      "social": 3
+      "social": -30
     }
   },
   {
-    "text": "Tritt einer Selbsthilfegruppe für Menschen mit Angststörungen bei",
-    "manifest": "Angststörung",
-    "breaks": true,
-    "category": "mental",
+    "text": "Werde ein Eremit und meide alle sozialen Interaktionen",
+    "manifest": "sozial isoliert",
+    "breaks": "true",
+    "category": "social",
     "progress": {
-      "attractiveness": 0,
-      "mental": 45,
-      "education": 15,
+      "attractiveness": -15,
+      "mental": -30,
+      "education": -15,
       "wealth": 0,
-      "social": 3
-    }
-  },
-  {
-    "text": "Nimm an Gruppentherapiesitzungen gegen Depressionen teil",
-    "manifest": "Angststörung",
-    "breaks": true,
-    "category": "mental",
-    "progress": {
-      "attractiveness": 0,
-      "mental": 45,
-      "education": 15,
-      "wealth": 0,
-      "social": 3
-    }
-  },
-  {
-    "text": "Vermeide es, Emotionen auszudrücken und unterdrücke sie innerlich",
-    "manifest": "",
-    "breaks": false,
-    "category": "mental",
-    "progress": {
-      "attractiveness": 0,
-      "mental": -45,
-      "education": -30,
-      "wealth": 0,
-      "social": -3
+      "social": -45
     }
   },
   {
     "text": "Lehne Rückmeldungen von anderen ab und weigere dich, Fehler zuzugeben",
-    "manifest": "",
-    "breaks": false,
-    "category": "mental",
+    "manifest": "sozial isoliert",
+    "breaks": "true",
+    "category": "social",
     "progress": {
       "attractiveness": -15,
-      "mental": -45,
-      "education": -30,
+      "mental": 0,
+      "education": -15,
       "wealth": 0,
-      "social": -3
+      "social": -45
+    }
+  },
+  {
+    "text": "Verbringe den ganzen Tag damit, mit dir selbst zu sprechen",
+    "manifest": "sozial isoliert",
+    "breaks": "true",
+    "category": "social",
+    "progress": {
+      "attractiveness": -15,
+      "mental": -30,
+      "education": 0,
+      "wealth": 0,
+      "social": -30
     }
   },
   {
     "text": "Ignoriere die Auswirkungen deiner Handlungen auf die Gefühle anderer",
-    "manifest": "",
-    "breaks": false,
-    "category": "mental",
+    "manifest": "sozial isoliert",
+    "breaks": "true",
+    "category": "social",
     "progress": {
       "attractiveness": -15,
-      "mental": -45,
-      "education": -30,
+      "mental": -15,
+      "education": 0,
       "wealth": 0,
-      "social": -3
+      "social": -30
     }
   },
   {
     "text": "Gib Beziehungen und Freundschaften ohne Erklärung oder Abschluss auf",
     "manifest": "sozial isoliert",
-    "breaks": false,
-    "category": "mental",
-    "progress": {
-      "attractiveness": -15,
-      "mental": -45,
-      "education": -30,
-      "wealth": 0,
-      "social": -3
-    }
-  },
-  {
-    "text": "Erwerbe einen Abschluss in mittelalterlicher Schmiedekunst",
-    "manifest": "",
-    "breaks": false,
-    "category": "education",
-    "progress": {
-      "attractiveness": 0,
-      "mental": 0,
-      "education": 45,
-      "wealth": -15,
-      "social": 0
-    }
-  },
-  {
-    "text": "Erwerbe eine professionelle Zertifizierung im Weinverkosten",
-    "manifest": "",
-    "breaks": false,
-    "category": "education",
-    "progress": {
-      "attractiveness": 0,
-      "mental": 0,
-      "education": 45,
-      "wealth": -30,
-      "social": 0
-    }
-  },
-  {
-    "text": "Absolviere ein kulinarisches Kunstprogramm mit Schwerpunkt auf Molekulargastronomie",
-    "manifest": "",
-    "breaks": false,
-    "category": "education",
-    "progress": {
-      "attractiveness": 0,
-      "mental": 0,
-      "education": 45,
-      "wealth": -30,
-      "social": 0
-    }
-  },
-  {
-    "text": "Schließe Online-Kurse in antiken Hieroglyphen ab",
-    "manifest": "",
-    "breaks": false,
-    "category": "education",
-    "progress": {
-      "attractiveness": 0,
-      "mental": 0,
-      "education": 45,
-      "wealth": -15,
-      "social": 0
-    }
-  },
-  {
-    "text": "Bilde eine Lerngruppe für Liebhaber klassischer Literatur",
-    "manifest": "",
-    "breaks": false,
-    "category": "education",
-    "progress": {
-      "attractiveness": 0,
-      "mental": 0,
-      "education": 45,
-      "wealth": 0,
-      "social": 0
-    }
-  },
-  {
-    "text": "Schreibe dich in einen Kurs ein, wie man wie Yoda spricht",
-    "manifest": "",
-    "breaks": false,
-    "category": "education",
-    "progress": {
-      "attractiveness": 0,
-      "mental": 0,
-      "education": 15,
-      "wealth": -15,
-      "social": 0
-    }
-  },
-  {
-    "text": "Tritt einem Philosophieclub bei, der dem Existentialismus gewidmet ist",
-    "manifest": "",
-    "breaks": false,
-    "category": "education",
-    "progress": {
-      "attractiveness": 0,
-      "mental": 0,
-      "education": 45,
-      "wealth": 0,
-      "social": 0
-    }
-  },
-  {
-    "text": "Unternimm eine Sprachreise nach Marokko, um Dothraki zu studieren",
-    "manifest": "",
-    "breaks": false,
-    "category": "education",
-    "progress": {
-      "attractiveness": 0,
-      "mental": 0,
-      "education": 30,
-      "wealth": -30,
-      "social": 0
-    }
-  },
-  {
-    "text": "Nimm an einem 6-monatigen Intensivprogramm für professionelles Videospielen teil",
-    "manifest": "",
-    "breaks": false,
-    "category": "education",
-    "progress": {
-      "attractiveness": 0,
-      "mental": 0,
-      "education": 30,
-      "wealth": -45,
-      "social": 0
-    }
-  },
-  {
-    "text": "Verfolge eine Karriere als professioneller Freelance Gamer ",
-    "manifest": "",
-    "breaks": false,
-    "category": "education",
-    "progress": {
-      "attractiveness": 0,
-      "mental": 0,
-      "education": -30,
-      "wealth": 30,
-      "social": 0
-    }
-  },
-  {
-    "text": "Trage zu Forschungsprojekten über die Auswirkungen von Musik auf Pflanzen bei",
-    "manifest": "",
-    "breaks": false,
-    "category": "education",
-    "progress": {
-      "attractiveness": 0,
-      "mental": 0,
-      "education": 45,
-      "wealth": 15,
-      "social": 0
-    }
-  },
-  {
-    "text": "Führe verrückte Experimente durch, um etablierte wissenschaftliche Theorien zu widerlegen",
-    "manifest": "",
-    "breaks": false,
-    "category": "education",
+    "breaks": "true",
+    "category": "social",
     "progress": {
       "attractiveness": -15,
       "mental": -15,
-      "education": 45,
-      "wealth": -30,
-      "social": -1
+      "education": 0,
+      "wealth": 0,
+      "social": -45
     }
   },
   {
-    "text": "Schreibe Artikel für wissenschaftliche Zeitschriften, die Verschwörungstheorien fördern",
-    "manifest": "",
-    "breaks": false,
-    "category": "education",
+    "text": "Zerstöre gesunde Beziehungen durch Lügen und Betrug",
+    "manifest": "sozial isoliert",
+    "breaks": "true",
+    "category": "social",
     "progress": {
       "attractiveness": -15,
-      "mental": -15,
-      "education": -15,
-      "wealth": -15,
-      "social": -1
+      "mental": -30,
+      "education": 0,
+      "wealth": 0,
+      "social": -45
     }
   },
   {
     "text": "Wechsel zu einem Job als Heißluftballon-Tourguide",
     "manifest": "finanzielle Sorgen",
-    "breaks": true,
+    "breaks": "false",
     "category": "wealth",
     "progress": {
       "attractiveness": 0,
-      "mental": 0,
-      "education": 0,
-      "wealth": 30,
+      "mental": 15,
+      "education": 15,
+      "wealth": 45,
       "social": 0
     }
   },
   {
-    "text": "Nimm an Konferenzen und Workshops zur Kunst des Bonsai-Baum-Skulptierens teil",
-    "manifest": "",
-    "breaks": false,
+    "text": "Zahl die Schulden für deine Privatyacht ab, die nach der ersten Fahrt kenterte",
+    "manifest": "finanzielle Sorgen",
+    "breaks": "false",
     "category": "wealth",
     "progress": {
       "attractiveness": 0,
-      "mental": 0,
+      "mental": -15,
       "education": 15,
-      "wealth": -30,
+      "wealth": -45,
       "social": 0
     }
   },
   {
     "text": "Wechsel zu einem Job, der deine Leidenschaft für Buchhaltung erfüllt",
-    "manifest": "",
-    "breaks": false,
+    "manifest": "finanzielle Sorgen",
+    "breaks": "false",
     "category": "wealth",
     "progress": {
       "attractiveness": 0,
@@ -717,20 +782,20 @@
   {
     "text": "Werde Manager einer gemeinnützigen Organisation, die geflüchteten Menschen hilft",
     "manifest": "finanzielle Sorgen",
-    "breaks": true,
+    "breaks": "false",
     "category": "wealth",
     "progress": {
-      "attractiveness": 15,
+      "attractiveness": 0,
       "mental": 15,
       "education": 30,
       "wealth": 45,
-      "social": 1
+      "social": 15
     }
   },
   {
     "text": "Besuche Seminare über Finanzplanung und Anlagestrategien im Crypto Bereich",
     "manifest": "finanzielle Sorgen",
-    "breaks": true,
+    "breaks": "false",
     "category": "wealth",
     "progress": {
       "attractiveness": 0,
@@ -743,7 +808,7 @@
   {
     "text": "Nimm freiberufliche Aufträge als Berater für OnlyFans Accounts an",
     "manifest": "finanzielle Sorgen",
-    "breaks": true,
+    "breaks": "false",
     "category": "wealth",
     "progress": {
       "attractiveness": 0,
@@ -754,22 +819,9 @@
     }
   },
   {
-    "text": "Untergrabe und mobbe gezielt Kollegen, um voranzukommen",
-    "manifest": "",
-    "breaks": false,
-    "category": "wealth",
-    "progress": {
-      "attractiveness": 0,
-      "mental": -15,
-      "education": 30,
-      "wealth": 15,
-      "social": -1
-    }
-  },
-  {
-    "text": "Vermeide es, Karriereziele zu setzen und bleibe jahrelang in derselben Position",
-    "manifest": "",
-    "breaks": false,
+    "text": "Vermeide es beharrlich, Karriereziele zu setzen, und verharre jahrelang im beruflichen Stillstand",
+    "manifest": "finanzielle Sorgen",
+    "breaks": "true",
     "category": "wealth",
     "progress": {
       "attractiveness": 0,
@@ -780,35 +832,35 @@
     }
   },
   {
-    "text": "Lehne zusätzliche Verantwortlichkeiten am Arbeitsplatz ab und kiffe jede Morgen vor dem Büro",
-    "manifest": "",
-    "breaks": false,
-    "category": "wealth",
-    "progress": {
-      "attractiveness": 0,
-      "mental": -15,
-      "education": -30,
-      "wealth": 15,
-      "social": -1
-    }
-  },
-  {
-    "text": "Zahl die Schulden für deine Privatyacht ab, die nach der ersten Fahrt kenterte",
+    "text": "Gib dein ganzes Geld für Luxusgüter und auf High Society Partys aus",
     "manifest": "finanzielle Sorgen",
-    "breaks": true,
+    "breaks": "true",
     "category": "wealth",
     "progress": {
-      "attractiveness": 0,
+      "attractiveness": 15,
       "mental": -15,
-      "education": 15,
+      "education": 0,
       "wealth": -45,
-      "social": -1
+      "social": 30
     }
   },
   {
-    "text": "Besorge dir einen Food Truck und verkaufe Fish'n'Chips",
-    "manifest": "",
-    "breaks": false,
+    "text": "Nimm an teuren Konferenzen und Workshops zur Kunst des Bonsai-Baum-Skulptierens teil",
+    "manifest": "finanzielle Sorgen",
+    "breaks": "true",
+    "category": "wealth",
+    "progress": {
+      "attractiveness": 0,
+      "mental": 0,
+      "education": 15,
+      "wealth": -30,
+      "social": 15
+    }
+  },
+  {
+    "text": "Investier all dein Geld in einen Food Truck für übersüße Burger-Bomben",
+    "manifest": "finanzielle Sorgen",
+    "breaks": "true",
     "category": "wealth",
     "progress": {
       "attractiveness": 0,
@@ -819,107 +871,17 @@
     }
   },
   {
-    "text": "Gib dein ganzes Geld für Luxusgüter und auf High Society Partys aus",
+    "text": "Untergrabe und mobbe gezielt Kollegen, um auf der Karriereleiter voranzukommen",
     "manifest": "finanzielle Sorgen",
-    "breaks": false,
+    "breaks": "true",
     "category": "wealth",
     "progress": {
-      "attractiveness": 30,
+      "attractiveness": 0,
       "mental": -15,
-      "education": 0,
-      "wealth": -45,
-      "social": -1
-    }
-  },
-  {
-    "text": "Nimm an einer wöchentlichen Meditationsgruppe teil, um Gleichgesinnte kennenzulernen",
-    "manifest": "sozial isoliert",
-    "breaks": true,
-    "category": "social",
-    "progress": {
-      "attractiveness": 15,
-      "mental": 45,
-      "education": 15,
-      "wealth": 0,
-      "social": 3
-    }
-  },
-  {
-    "text": "Gehe eine gesunde romantische Beziehung mit jemandem ein, der deine Werte und Ziele teilt",
-    "manifest": "sozial isoliert",
-    "breaks": true,
-    "category": "social",
-    "progress": {
-      "attractiveness": 45,
-      "mental": 45,
-      "education": 15,
-      "wealth": 0,
-      "social": 3
-    }
-  },
-  {
-    "text": "Übe aktives Zuhören und effektive Kommunikation in allen Beziehungen",
-    "manifest": "sozial isoliert",
-    "breaks": true,
-    "category": "social",
-    "progress": {
-      "attractiveness": 15,
-      "mental": 45,
       "education": 30,
-      "wealth": 0,
-      "social": 3
-    }
-  },
-  {
-    "text": "Nimm an Freiwilligenaktivitäten mit Freunden und Familie teil",
-    "manifest": "sozial isoliert",
-    "breaks": true,
-    "category": "social",
-    "progress": {
-      "attractiveness": 15,
-      "mental": 45,
-      "education": 15,
-      "wealth": 0,
-      "social": 3
-    }
-  },
-  {
-    "text": "Zerstöre gesunde Beziehungen durch Lügen und Betrug",
-    "manifest": "sozial isoliert",
-    "breaks": false,
-    "category": "social",
-    "progress": {
-      "attractiveness": -15,
-      "mental": -45,
-      "education": 0,
-      "wealth": 0,
-      "social": -3
-    }
-  },
-  {
-    "text": "Verfolge Beziehungen mit Personen, die deine Grenzen oder Werte nicht respektieren",
-    "manifest": "sozial isoliert",
-    "breaks": false,
-    "category": "social",
-    "progress": {
-      "attractiveness": -15,
-      "mental": -45,
-      "education": -30,
-      "wealth": 0,
-      "social": -3
-    }
-  },
-  {
-    "text": "",
-    "manifest": "",
-    "breaks": false,
-    "category": "",
-    "progress": {
-      "attractiveness": 90,
-      "mental": -225,
-      "education": 0,
-      "wealth": -210,
-      "social": ""
+      "wealth": 30,
+      "social": -45
     }
   }
+
 ]

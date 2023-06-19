@@ -1,24 +1,29 @@
 import React, { useContext } from 'react'
 import { LanguageContext } from '../../contexts/LanguageContext'
-import switchLabeltext from '../../utils/switchLabeltext'
 import texts from "../../assets/gameData/texts.json"
+import { LevelContext } from '../../contexts/LevelContext'
+import calculateWellbeing from '../../utils/calculateWellbeing'
 
-export const PanelWellBeing = ({ label, value } ) => {
+export const PanelWellBeing = () => {
+    
+    const { progress } = useContext(LevelContext)
+    
+    const wellbeing = calculateWellbeing(progress)
     
     const adaptWidthStyle = {
-        width: `${value}%`,
+        width: `${wellbeing}%`,
         textAlign: 'center',
         transition: 'all .6s cubic-bezier(0.4, 0.0, 0.2, 1)'
     }
     
 
     return (
-        <div className='progress__container'>
-            <h6 className='progress__label'>{label}</h6>
-            <div className='progress__bar' >
-                <div className="progress__fill" style={adaptWidthStyle}>
+        <div className='game-container-wellbeing'>
+            <h3>Wellbeing</h3>
+            <div className='progressbar-outline' >
+                <div className="progressbar-fill" style={adaptWidthStyle}>
                     <span>
-                        {`${value}%`}
+                        {`${wellbeing}%`}
                     </span>
                 </div>
             </div>

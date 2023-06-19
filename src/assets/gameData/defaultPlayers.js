@@ -12,8 +12,8 @@ const defaultPlayersData = [
       wealth: 20,
       social: 10,
     },
-    manifests: {
-      attractiveness: false,
+    trauma: {
+      attractiveness: true,
       mental: true,
       education: false,
       wealth: false,

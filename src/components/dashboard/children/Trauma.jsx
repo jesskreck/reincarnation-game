@@ -1,39 +1,40 @@
 import React, { useContext } from 'react'
 import { PlayerContext } from '../../../contexts/PlayerContext'
 
-export default function Manifest({ label, value }) {
+export default function Trauma({ label, value }) {
 
     const { activePlayer } = useContext(PlayerContext)
+
+    const trauma = activePlayer.trauma;
 
     // const symbol = Object.entries(activePlayer.manifests)
     //     .filter(([key, value]) => value === true)
     //     .map((key) => key);
 
-    console.log(activePlayer.manifests.attractiveness);
 
     const activeManifests = () => {
         const symbol = [];
-        if (activePlayer.manifests.attractiveness) {
+        if (trauma.attractiveness) {
             symbol.push("🤳")
         } else {
             symbol.push("/")
         };
-        if (activePlayer.manifests.mental) {
+        if (trauma.mental) {
             symbol.push("🤪")
         } else {
             symbol.push("/")
         };
-        if (activePlayer.manifests.education) {
+        if (trauma.education) {
             symbol.push("🎓")
         } else {
             symbol.push("/")
         };
-        if (activePlayer.manifests.wealth) {
+        if (trauma.wealth) {
             symbol.push("💸")
         } else {
             symbol.push("/")
         };
-        if (activePlayer.manifests.social) {
+        if (trauma.social) {
             symbol.push("💛")
         } else {
             symbol.push("/")
@@ -42,10 +43,10 @@ export default function Manifest({ label, value }) {
     }
 
     return (
-            <div className='container flex space'>
+            <>
                 {activeManifests().map((key) => (
-                    <div className='game-info-counter'>{key}</div>
+                    <div className='game-counter'>{key}</div>
                 ))}
-            </div>
+            </>
     )
 }

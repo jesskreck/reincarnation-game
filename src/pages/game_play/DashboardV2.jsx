@@ -1,51 +1,44 @@
 import texts from "../../assets/gameData/texts.json";
 import React, { useContext, useState } from "react";
 import PanelProgress from "../../components/panel/PanelProgress";
-import PanelAlbum from "../../components/dashboard/PanelAlbum";
 import PanelActions from "../../components/panel/PanelActions";
-import Modal from "../../components/modals/Modal";
 import { PlayerContext } from "../../contexts/PlayerContext";
 import { Link } from "react-router-dom";
 import { LanguageContext } from "../../contexts/LanguageContext";
-import { ProgressBar } from "../../components/dashboard/children/ProgressBar";
 import { PanelWellBeing } from "../../components/panel/PanelWellBeing";
+import { PanelTrauma } from "../../components/panel/PanelTrauma";
+import { PanelWill } from "../../components/panel/PanelWill";
+import { PanelAlbum } from "../../components/panel/PanelAlbum";
 
 export const DashboardV2 = () => {
   const { activePlayer } = useContext(PlayerContext);
   const { language } = useContext(LanguageContext);
-  const [wellbeing, setWellbeing] = useState(0);
 
   const [showModal, setShowModal] = useState(true);
 
   return (
     <div className="game-bg-texture">
-      <p>test</p>
       <div className="grid-game">
-        <div className="game-container-actions game-bg">
-            <PanelActions />
-        </div>
 
-        <div className="game-container-progress">
-            <PanelProgress />
-        </div>
+        <PanelActions />
 
-        <div className="game-container-will">
-          <ProgressBar label={"will"} />
-        </div>
+        <PanelProgress />
 
-        <div className="game-container-manifest">
-          <ProgressBar label={"manifest"} />
-        </div>
+        <PanelWill />
 
-        <div className="game-container-wellbeing">
-          <p>Wellbeing</p>
-          <PanelWellBeing />
-        </div>
+        <PanelTrauma />
+
+        <PanelWellBeing />
+
+        <PanelAlbum />
+
+        
+
 
       </div>
 
-    
-    {/* <div className="container game-bg">
+
+      {/* <div className="container game-bg">
       {activePlayer ? (
         <div className="dashboard__grid">
           <div className="dashboard__header">
@@ -53,7 +46,6 @@ export const DashboardV2 = () => {
           </div>
         
           
-          <PanelAlbum />
         </div>
       ) : (
         <Modal open={showModal} close={() => setShowModal(false)}>
@@ -67,6 +59,6 @@ export const DashboardV2 = () => {
         </Modal>
       )}
       </div> */}
-      </div>
+    </div>
   );
 };

@@ -6,11 +6,6 @@
 }
 
 
-.playercard--note {
-    @extend .pixel-box--light;
-    @extend .prompt
-}
-
 
 .playercard-holder input[type="radio"]:checked ~ .playercard {
     @extend .pixel-box--success
