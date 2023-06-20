@@ -21,10 +21,10 @@ export const ActionButton = ({ action }) => {
 
   const handleActionClick = () => {
     console.log(hasBreakPower);
-    // setShowModal(true);
-    // setChildModal(
-    //   <ModalGeneratingPhoto action={action} setShowModal={setShowModal} />
-    // );
+    setShowModal(true);
+    setChildModal(
+      <ModalGeneratingPhoto action={action} setShowModal={setShowModal} />
+    );
   };
 
   const gameOver = () => {
@@ -75,7 +75,7 @@ export const ActionButton = ({ action }) => {
       >
 
         <div className="big center">
-          {switchCategoryLogo(action.category)} {hasBreakPower}
+          {switchCategoryLogo(action.category)} 
         </div>
 
         <p>
