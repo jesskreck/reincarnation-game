@@ -1,887 +1,818 @@
 [
   {
     "text": "Achieve a six-pack abs with a strict diet and exercise regimen",
-    "manifest": "schlechtes Körperbild",
-    "breaks": "false",
-    "category": "attractiveness",
     "progress": {
       "attractiveness": 45,
       "mental": 15,
       "education": -30,
       "wealth": 0,
       "social": 0
-    }
+    },
+    "category": "attractiveness",
+    "healing": false
   },
   {
     "text": "Master the art of pole dancing for a full-body workout",
-    "manifest": "schlechtes Körperbild",
-    "breaks": "false",
-    "category": "attractiveness",
     "progress": {
       "attractiveness": 45,
       "mental": 15,
       "education": -30,
       "wealth": 0,
       "social": 15
-    }
+    },
+    "category": "attractiveness",
+    "healing": false
   },
   {
     "text": "Build endurance by training for a 100-mile bike ride",
-    "manifest": "schlechtes Körperbild",
-    "breaks": "false",
-    "category": "attractiveness",
     "progress": {
       "attractiveness": 45,
       "mental": 15,
       "education": -15,
       "wealth": 0,
       "social": 0
-    }
+    },
+    "category": "attractiveness",
+    "healing": false
   },
   {
     "text": "Learn how to surf and catch the biggest waves",
-    "manifest": "schlechtes Körperbild",
-    "breaks": "false",
-    "category": "attractiveness",
     "progress": {
       "attractiveness": 45,
       "mental": 15,
       "education": -15,
       "wealth": 0,
       "social": 15
-    }
+    },
+    "category": "attractiveness",
+    "healing": false
   },
   {
     "text": "Transform into a fashion icon for a futuristic cyberpunk aesthetic",
-    "manifest": "schlechtes Körperbild",
-    "breaks": "false",
-    "category": "attractiveness",
     "progress": {
       "attractiveness": 45,
       "mental": 0,
       "education": -15,
       "wealth": 0,
       "social": 30
-    }
+    },
+    "category": "attractiveness",
+    "healing": false
   },
   {
     "text": "Become an influencer for quirky hat styles on social media",
-    "manifest": "schlechtes Körperbild",
-    "breaks": "false",
-    "category": "attractiveness",
     "progress": {
       "attractiveness": 30,
       "mental": 0,
       "education": -15,
       "wealth": 15,
       "social": 30
-    }
+    },
+    "category": "attractiveness",
+    "healing": false
   },
   {
     "text": "Commit to a daily facial routine using only gold and diamonds",
-    "manifest": "schlechtes Körperbild",
-    "breaks": "false",
-    "category": "attractiveness",
     "progress": {
       "attractiveness": 30,
       "mental": 0,
       "education": 0,
       "wealth": -45,
       "social": 0
-    }
+    },
+    "category": "attractiveness",
+    "healing": false
   },
   {
     "text": "Save up for a pair of gold-plated dentures",
-    "manifest": "schlechtes Körperbild",
-    "breaks": "false",
-    "category": "attractiveness",
     "progress": {
       "attractiveness": 15,
       "mental": 0,
       "education": 0,
       "wealth": -30,
       "social": 0
-    }
+    },
+    "category": "attractiveness",
+    "healing": false
   },
   {
     "text": "Transform yourself into a confident fashion disaster and exclusively wear neon colors",
-    "manifest": "schlechtes Körperbild",
-    "breaks": "false",
-    "category": "attractiveness",
     "progress": {
       "attractiveness": 30,
       "mental": 0,
       "education": 0,
       "wealth": 0,
       "social": 15
-    }
+    },
+    "category": "attractiveness",
+    "healing": false
   },
   {
     "text": "Become a certified aerial yoga instructor",
-    "manifest": "schlechtes Körperbild",
-    "breaks": "false",
-    "category": "attractiveness",
     "progress": {
       "attractiveness": 45,
       "mental": 15,
       "education": 0,
       "wealth": 30,
       "social": 15
-    }
+    },
+    "category": "attractiveness",
+    "healing": false
   },
   {
     "text": "Gain 50 pounds by eating only fast food",
-    "manifest": "schlechtes Körperbild",
-    "breaks": "true",
-    "category": "attractiveness",
     "progress": {
       "attractiveness": -45,
       "mental": -30,
       "education": -15,
       "wealth": -15,
       "social": 0
-    }
+    },
+    "category": "attractiveness",
+    "healing": true
   },
   {
     "text": "Participate in a daily hot dog eating contest",
-    "manifest": "schlechtes Körperbild",
-    "breaks": "true",
-    "category": "attractiveness",
     "progress": {
       "attractiveness": -30,
       "mental": 0,
       "education": 0,
       "wealth": -15,
       "social": 15
-    }
+    },
+    "category": "attractiveness",
+    "healing": true
   },
   {
     "text": "Lose all muscle mass by sitting and staring at a wall all day",
-    "manifest": "schlechtes Körperbild",
-    "breaks": "true",
-    "category": "attractiveness",
     "progress": {
       "attractiveness": -45,
       "mental": -30,
       "education": -15,
       "wealth": 0,
       "social": -30
-    }
+    },
+    "category": "attractiveness",
+    "healing": true
   },
   {
     "text": "Say goodbye to the routine of brushing your teeth and brushing your hair",
-    "manifest": "schlechtes Körperbild",
-    "breaks": "true",
-    "category": "attractiveness",
     "progress": {
       "attractiveness": -45,
       "mental": -15,
       "education": -15,
       "wealth": 0,
       "social": -30
-    }
+    },
+    "category": "attractiveness",
+    "healing": true
   },
   {
     "text": "Eat only pizza for every meal",
-    "manifest": "schlechtes Körperbild",
-    "breaks": "true",
-    "category": "attractiveness",
     "progress": {
       "attractiveness": -30,
       "mental": 0,
       "education": 15,
       "wealth": -15,
       "social": 0
-    }
+    },
+    "category": "attractiveness",
+    "healing": true
   },
   {
     "text": "Pursue a career as a professional freelance gamer",
-    "manifest": "strukturell benachteiligt",
-    "breaks": "false",
-    "category": "education",
     "progress": {
       "attractiveness": 0,
       "mental": 15,
       "education": -30,
       "wealth": 45,
       "social": -15
-    }
+    },
+    "category": "education",
+    "healing": false
   },
   {
     "text": "Embark on a language trip to study Dothraki in Morocco",
-    "manifest": "strukturell benachteiligt",
-    "breaks": "false",
-    "category": "education",
     "progress": {
       "attractiveness": 0,
       "mental": 15,
       "education": 30,
       "wealth": -30,
       "social": 30
-    }
+    },
+    "category": "education",
+    "healing": false
   },
   {
     "text": "Attend a 6-month intensive program for professional video gaming",
-    "manifest": "strukturell benachteiligt",
-    "breaks": "false",
-    "category": "education",
     "progress": {
       "attractiveness": 0,
       "mental": 15,
       "education": 30,
       "wealth": -30,
       "social": -15
-    }
+    },
+    "category": "education",
+    "healing": false
   },
   {
     "text": "Get access to the \"Elite School for Superheroes\" and feel motivated to learn how to fly",
-    "manifest": "strukturell benachteiligt",
-    "breaks": "false",
-    "category": "education",
     "progress": {
       "attractiveness": 0,
       "mental": 15,
       "education": 30,
       "wealth": 30,
       "social": 15
-    }
+    },
+    "category": "education",
+    "healing": false
   },
   {
     "text": "Earn a degree in medieval blacksmithing",
-    "manifest": "strukturell benachteiligt",
-    "breaks": "false",
-    "category": "education",
     "progress": {
       "attractiveness": 0,
       "mental": 15,
       "education": 45,
       "wealth": -15,
       "social": 15
-    }
+    },
+    "category": "education",
+    "healing": false
   },
   {
     "text": "Take part in a secret \"education revolution\" and proclaim learning underwater",
-    "manifest": "strukturell benachteiligt",
-    "breaks": "false",
-    "category": "education",
     "progress": {
       "attractiveness": 0,
       "mental": 15,
       "education": 45,
       "wealth": 0,
       "social": 15
-    }
+    },
+    "category": "education",
+    "healing": false
   },
   {
     "text": "Receive a scholarship for the \"Institute of Magical Arts and Sciences\"",
-    "manifest": "strukturell benachteiligt",
-    "breaks": "false",
-    "category": "education",
     "progress": {
       "attractiveness": 0,
       "mental": 15,
       "education": 45,
       "wealth": 30,
       "social": 15
-    }
+    },
+    "category": "education",
+    "healing": false
   },
   {
     "text": "Miss the enrollment for your law studies because you don't understand the bureaucratic obstacles",
-    "manifest": "strukturell benachteiligt",
-    "breaks": "true",
-    "category": "education",
     "progress": {
       "attractiveness": 0,
       "mental": -30,
       "education": -45,
       "wealth": 0,
       "social": 0
-    }
+    },
+    "category": "education",
+    "healing": true
   },
   {
     "text": "Become a master of handling education vouchers from the job center",
-    "manifest": "strukturell benachteiligt",
-    "breaks": "true",
-    "category": "education",
     "progress": {
       "attractiveness": 0,
       "mental": -15,
       "education": -30,
       "wealth": 0,
       "social": 0
-    }
+    },
+    "category": "education",
+    "healing": true
   },
   {
     "text": "Apply for financial support for further education without success",
-    "manifest": "strukturell benachteiligt",
-    "breaks": "true",
-    "category": "education",
     "progress": {
       "attractiveness": 0,
       "mental": -30,
       "education": -15,
       "wealth": -15,
       "social": 0
-    }
+    },
+    "category": "education",
+    "healing": true
   },
   {
     "text": "Going through the hell of housing discrimination with a limited income",
-    "manifest": "strukturell benachteiligt",
-    "breaks": "true",
-    "category": "education",
     "progress": {
       "attractiveness": 0,
       "mental": -30,
       "education": 0,
       "wealth": -15,
       "social": 0
-    }
+    },
+    "category": "education",
+    "healing": true
   },
   {
     "text": "Spend 3 hours daily in public transport next to smelly fellow passengers",
-    "manifest": "strukturell benachteiligt",
-    "breaks": "true",
-    "category": "education",
     "progress": {
       "attractiveness": 0,
       "mental": -30,
       "education": 0,
       "wealth": 0,
       "social": -15
-    }
+    },
+    "category": "education",
+    "healing": true
   },
   {
     "text": "Feel the frustration of financial worries caused by overpriced school fees and study materials",
-    "manifest": "strukturell benachteiligt",
-    "breaks": "true",
-    "category": "education",
     "progress": {
       "attractiveness": 0,
       "mental": -30,
       "education": 30,
       "wealth": -30,
       "social": 0
-    }
+    },
+    "category": "education",
+    "healing": true
   },
   {
     "text": "Take a daily tea ceremony class for stress relief",
-    "manifest": "mental instabil",
-    "breaks": "false",
-    "category": "mental",
     "progress": {
       "attractiveness": 0,
       "mental": 45,
       "education": 0,
       "wealth": -15,
       "social": 30
-    }
+    },
+    "category": "mental",
+    "healing": false
   },
   {
     "text": "Devote weekends to hiking and exploring local nature reserves",
-    "manifest": "mental instabil",
-    "breaks": "false",
-    "category": "mental",
     "progress": {
       "attractiveness": 30,
       "mental": 30,
       "education": 0,
       "wealth": 0,
       "social": 0
-    }
+    },
+    "category": "mental",
+    "healing": false
   },
   {
     "text": "Participate in a mindfulness retreat to develop emotional regulation skills",
-    "manifest": "mental instabil",
-    "breaks": "false",
-    "category": "mental",
     "progress": {
       "attractiveness": 0,
       "mental": 45,
       "education": 15,
       "wealth": 0,
       "social": 45
-    }
+    },
+    "category": "mental",
+    "healing": false
   },
   {
     "text": "Maintain a consistent meditation practice for six months",
-    "manifest": "mental instabil",
-    "breaks": "false",
-    "category": "mental",
     "progress": {
       "attractiveness": 0,
       "mental": 45,
       "education": 15,
       "wealth": 0,
       "social": 15
-    }
+    },
+    "category": "mental",
+    "healing": false
   },
   {
     "text": "Attend therapy to work through issues related to childhood trauma",
-    "manifest": "mental instabil",
-    "breaks": "false",
-    "category": "mental",
     "progress": {
       "attractiveness": 0,
       "mental": 45,
       "education": 15,
       "wealth": 0,
       "social": 45
-    }
+    },
+    "category": "mental",
+    "healing": false
   },
   {
     "text": "Practice gratitude daily to increase your overall happiness",
-    "manifest": "mental instabil",
-    "breaks": "false",
-    "category": "mental",
     "progress": {
       "attractiveness": 0,
       "mental": 45,
       "education": 15,
       "wealth": 0,
       "social": 45
-    }
+    },
+    "category": "mental",
+    "healing": false
   },
   {
     "text": "Join a support group for individuals with anxiety disorders",
-    "manifest": "mental instabil",
-    "breaks": "false",
-    "category": "mental",
     "progress": {
       "attractiveness": 0,
       "mental": 45,
       "education": 15,
       "wealth": 0,
       "social": 45
-    }
+    },
+    "category": "mental",
+    "healing": false
   },
   {
     "text": "Attend group therapy sessions for depression",
-    "manifest": "mental instabil",
-    "breaks": "false",
-    "category": "mental",
     "progress": {
       "attractiveness": 0,
       "mental": 45,
       "education": 15,
       "wealth": 0,
       "social": 45
-    }
+    },
+    "category": "mental",
+    "healing": false
   },
   {
     "text": "Study \"Quantum Chemistry of Happiness\" and reveal the secrets of inner peace",
-    "manifest": "mental instabil",
-    "breaks": "false",
-    "category": "mental",
     "progress": {
       "attractiveness": 0,
       "mental": 45,
       "education": 30,
       "wealth": 0,
       "social": 0
-    }
+    },
+    "category": "mental",
+    "healing": false
   },
   {
     "text": "Establish an unpredictable sleep schedule",
-    "manifest": "mental instabil",
-    "breaks": "true",
-    "category": "mental",
     "progress": {
       "attractiveness": -30,
       "mental": -30,
       "education": -30,
       "wealth": 0,
       "social": -15
-    }
+    },
+    "category": "mental",
+    "healing": true
   },
   {
     "text": "Develop stress-inducing habits, like biting nails and tapping feet",
-    "manifest": "mental instabil",
-    "breaks": "true",
-    "category": "mental",
     "progress": {
       "attractiveness": -30,
       "mental": -45,
       "education": -30,
       "wealth": 0,
       "social": 0
-    }
+    },
+    "category": "mental",
+    "healing": true
   },
   {
     "text": "Avoid expressing emotions and bottle them up inside",
-    "manifest": "mental instabil",
-    "breaks": "true",
-    "category": "mental",
     "progress": {
       "attractiveness": 0,
       "mental": -45,
       "education": -30,
       "wealth": 0,
       "social": -45
-    }
+    },
+    "category": "mental",
+    "healing": true
   },
   {
     "text": "Master the art of sleeping for 16 hours straight",
-    "manifest": "mental instabil",
-    "breaks": "true",
-    "category": "mental",
     "progress": {
       "attractiveness": -15,
       "mental": -15,
       "education": -15,
       "wealth": 0,
       "social": -15
-    }
+    },
+    "category": "mental",
+    "healing": true
   },
   {
     "text": "Work 24/7 and become a robot",
-    "manifest": "mental instabil",
-    "breaks": "true",
-    "category": "mental",
     "progress": {
       "attractiveness": -15,
       "mental": -30,
       "education": 0,
       "wealth": 45,
       "social": -30
-    }
+    },
+    "category": "mental",
+    "healing": true
   },
   {
     "text": "Attend a weekly meditation group to meet like-minded individuals",
-    "manifest": "sozial isoliert",
-    "breaks": "false",
-    "category": "social",
     "progress": {
       "attractiveness": 0,
       "mental": 45,
       "education": 15,
       "wealth": 0,
       "social": 30
-    }
+    },
+    "category": "social",
+    "healing": false
   },
   {
     "text": "Engage in a healthy romantic partnership with someone who shares your values and goals",
-    "manifest": "sozial isoliert",
-    "breaks": "false",
-    "category": "social",
     "progress": {
       "attractiveness": 30,
       "mental": 45,
       "education": 15,
       "wealth": 0,
       "social": 45
-    }
+    },
+    "category": "social",
+    "healing": false
   },
   {
     "text": "Participate in volunteer activities with friends and family",
-    "manifest": "sozial isoliert",
-    "breaks": "false",
-    "category": "social",
     "progress": {
       "attractiveness": 0,
       "mental": 15,
       "education": 15,
       "wealth": 0,
       "social": 45
-    }
+    },
+    "category": "social",
+    "healing": false
   },
   {
     "text": "Practice active listening and effective communication in all relationships",
-    "manifest": "sozial isoliert",
-    "breaks": "false",
-    "category": "social",
     "progress": {
       "attractiveness": 15,
       "mental": 30,
       "education": 30,
       "wealth": 0,
       "social": 45
-    }
+    },
+    "category": "social",
+    "healing": false
   },
   {
     "text": "Perfect the art of staring blankly into space",
-    "manifest": "sozial isoliert",
-    "breaks": "true",
-    "category": "social",
     "progress": {
       "attractiveness": 0,
       "mental": -30,
       "education": -30,
       "wealth": 0,
       "social": -45
-    }
+    },
+    "category": "social",
+    "healing": true
   },
   {
     "text": "Pursue relationships with individuals who do not respect your boundaries or values",
-    "manifest": "sozial isoliert",
-    "breaks": "true",
-    "category": "social",
     "progress": {
       "attractiveness": 0,
       "mental": -30,
       "education": -30,
       "wealth": 0,
       "social": -45
-    }
+    },
+    "category": "social",
+    "healing": true
   },
   {
     "text": "Become a professional couch potato",
-    "manifest": "sozial isoliert",
-    "breaks": "true",
-    "category": "social",
     "progress": {
       "attractiveness": -15,
       "mental": 0,
       "education": -15,
       "wealth": 0,
       "social": -30
-    }
+    },
+    "category": "social",
+    "healing": true
   },
   {
     "text": "Become an expert in all-day television watching and ignore phone calls",
-    "manifest": "sozial isoliert",
-    "breaks": "true",
-    "category": "social",
     "progress": {
       "attractiveness": -15,
       "mental": -30,
       "education": -15,
       "wealth": 0,
       "social": -30
-    }
+    },
+    "category": "social",
+    "healing": true
   },
   {
     "text": "Spend the entire day on social media but do not respond to any personal messages",
-    "manifest": "sozial isoliert",
-    "breaks": "true",
-    "category": "social",
     "progress": {
       "attractiveness": 0,
       "mental": -15,
       "education": -15,
       "wealth": 0,
       "social": -30
-    }
+    },
+    "category": "social",
+    "healing": true
   },
   {
     "text": "Become a hermit and avoid all social interactions",
-    "manifest": "sozial isoliert",
-    "breaks": "true",
-    "category": "social",
     "progress": {
       "attractiveness": -15,
       "mental": -30,
       "education": -15,
       "wealth": 0,
       "social": -45
-    }
+    },
+    "category": "social",
+    "healing": true
   },
   {
     "text": "Reject feedback from others and refuse to admit mistakes",
-    "manifest": "sozial isoliert",
-    "breaks": "true",
-    "category": "social",
     "progress": {
       "attractiveness": -15,
       "mental": 0,
       "education": -15,
       "wealth": 0,
       "social": -45
-    }
+    },
+    "category": "social",
+    "healing": true
   },
   {
     "text": "Spend all day talking to yourself",
-    "manifest": "sozial isoliert",
-    "breaks": "true",
-    "category": "social",
     "progress": {
       "attractiveness": -15,
       "mental": -30,
       "education": 0,
       "wealth": 0,
       "social": -30
-    }
+    },
+    "category": "social",
+    "healing": true
   },
   {
     "text": "Disregard the impact of your actions on others' feelings",
-    "manifest": "sozial isoliert",
-    "breaks": "true",
-    "category": "social",
     "progress": {
       "attractiveness": -15,
       "mental": -15,
       "education": 0,
       "wealth": 0,
       "social": -30
-    }
+    },
+    "category": "social",
+    "healing": true
   },
   {
     "text": "Abandon friendships and relationships without explanation or closure",
-    "manifest": "sozial isoliert",
-    "breaks": "true",
-    "category": "social",
     "progress": {
       "attractiveness": -15,
       "mental": -15,
       "education": 0,
       "wealth": 0,
       "social": -45
-    }
+    },
+    "category": "social",
+    "healing": true
   },
   {
     "text": "Destroy healthy relationships through lies and deceit",
-    "manifest": "sozial isoliert",
-    "breaks": "true",
-    "category": "social",
     "progress": {
       "attractiveness": -15,
       "mental": -30,
       "education": 0,
       "wealth": 0,
       "social": -45
-    }
+    },
+    "category": "social",
+    "healing": true
   },
   {
     "text": "Switch to a job as a hot air balloon tour guide",
-    "manifest": "finanzielle Sorgen",
-    "breaks": "false",
-    "category": "wealth",
     "progress": {
       "attractiveness": 0,
       "mental": 15,
       "education": 15,
       "wealth": 45,
       "social": 0
-    }
+    },
+    "category": "wealth",
+    "healing": false
   },
   {
     "text": "Pay off the debts for your private yacht that capsized after its first voyage",
-    "manifest": "finanzielle Sorgen",
-    "breaks": "false",
-    "category": "wealth",
     "progress": {
       "attractiveness": 0,
       "mental": -15,
       "education": 15,
       "wealth": -45,
       "social": 0
-    }
+    },
+    "category": "wealth",
+    "healing": false
   },
   {
     "text": "Switch to a job that fulfills your passion for accounting",
-    "manifest": "finanzielle Sorgen",
-    "breaks": "false",
-    "category": "wealth",
     "progress": {
       "attractiveness": 0,
       "mental": 0,
       "education": 30,
       "wealth": 30,
       "social": 0
-    }
+    },
+    "category": "wealth",
+    "healing": false
   },
   {
     "text": "Become the manager of a nonprofit organization that assists refugees",
-    "manifest": "finanzielle Sorgen",
-    "breaks": "false",
-    "category": "wealth",
     "progress": {
       "attractiveness": 0,
       "mental": 15,
       "education": 30,
       "wealth": 45,
       "social": 15
-    }
+    },
+    "category": "wealth",
+    "healing": false
   },
   {
     "text": "Attend seminars on financial planning and investment strategies in the crypto field",
-    "manifest": "finanzielle Sorgen",
-    "breaks": "false",
-    "category": "wealth",
     "progress": {
       "attractiveness": 0,
       "mental": 0,
       "education": 45,
       "wealth": 45,
       "social": 0
-    }
+    },
+    "category": "wealth",
+    "healing": false
   },
   {
     "text": "Take freelance assignments as a consultant for OnlyFans accounts",
-    "manifest": "finanzielle Sorgen",
-    "breaks": "false",
-    "category": "wealth",
     "progress": {
       "attractiveness": 0,
       "mental": 0,
       "education": 45,
       "wealth": 45,
       "social": 0
-    }
+    },
+    "category": "wealth",
+    "healing": false
   },
   {
-    "text": "Avoid persistently setting career goals and remaining stagnant in your professional life for years.",
-    "manifest": "finanzielle Sorgen",
-    "breaks": "true",
-    "category": "wealth",
+    "text": "Avoid persistently setting career goals and remain in professional stagnation for years.",
     "progress": {
       "attractiveness": 0,
       "mental": 0,
       "education": -45,
       "wealth": -30,
       "social": 0
-    }
+    },
+    "category": "wealth",
+    "healing": true
   },
   {
     "text": "Spend all your money on luxury goods and high society parties",
-    "manifest": "finanzielle Sorgen",
-    "breaks": "true",
-    "category": "wealth",
     "progress": {
       "attractiveness": 15,
       "mental": -15,
       "education": 0,
       "wealth": -45,
       "social": 30
-    }
+    },
+    "category": "wealth",
+    "healing": true
   },
   {
     "text": "Attend conferences and workshops on the art of bonsai tree sculpting",
-    "manifest": "finanzielle Sorgen",
-    "breaks": "true",
-    "category": "wealth",
     "progress": {
       "attractiveness": 0,
       "mental": 0,
       "education": 15,
       "wealth": -30,
       "social": 15
-    }
+    },
+    "category": "wealth",
+    "healing": true
   },
   {
     "text": "Invest all your money in a food truck for super sweet burger bombs",
-    "manifest": "finanzielle Sorgen",
-    "breaks": "true",
-    "category": "wealth",
     "progress": {
       "attractiveness": 0,
       "mental": 0,
       "education": 15,
       "wealth": 30,
       "social": 0
-    }
+    },
+    "category": "wealth",
+    "healing": true
   },
   {
     "text": "Undermine and bully colleagues systematically to advance on the career ladder",
-    "manifest": "finanzielle Sorgen",
-    "breaks": "true",
-    "category": "wealth",
     "progress": {
       "attractiveness": 0,
       "mental": -15,
       "education": 30,
       "wealth": 30,
       "social": -45
-    }
+    },
+    "category": "wealth",
+    "healing": true
   }
-  
 ]
