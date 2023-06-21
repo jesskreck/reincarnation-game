@@ -107,7 +107,8 @@
     $corner-size: 2, 
     $border-size: 4px, 
     $background-color: $color-light, 
-    $border-color: $color-primary)
+    $border-color: $color-primary
+    )
 }
 
 .pixel-box--primary-custom {
@@ -115,7 +116,8 @@
     $corner-size: 2, 
     $border-size: 2px, 
     $background-color: $color-light, 
-    $border-color: $color-primary);
+    // $border-color: $color-primary
+    );
 }
 
 .pixel-box--success-custom {
@@ -137,5 +139,6 @@
     $corner-size: 2,
     $border-size: 2px,
     $background-color: $color-light,
-    $border-color: $color-info)
+    $border-color: $color-info
+    )
   }

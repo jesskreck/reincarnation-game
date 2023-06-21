@@ -1,41 +1,57 @@
 import { atom } from 'recoil';
 
-const attracAtom = atom({
+export const statusAtom = atom({
+    key: 'status',
+    default: 'action'
+});
+
+export const clickedActionAtom = atom({
+    key: 'clickedAction',
+    default: {}
+});
+
+export const attracAtom = atom({
     key: 'attrac',
     default: 0
 });
 
-const mentalAtom = atom({
+export const mentalAtom = atom({
     key: 'mental',
     default: 0
 });
 
-const educAtom = atom({
+export const educAtom = atom({
     key: 'educ',
     default: 0
 });
 
-const wealthAtom = atom({
+export const wealthAtom = atom({
     key: 'wealth',
     default: 0
 });
 
-const socialAtom = atom({
+export const socialAtom = atom({
     key: 'social',
     default: 0
 });
 
-const willchainAtom = atom({
-    key: 'willchain',
-    default: ["⚪️","⚪️","⚪️"]
+export const unhealedTraumasAtom = atom({
+    key: 'unhealedTraumas',
+    default: []
 });
 
-const healedAtom = atom({
+
+export const willchainAtom = atom({
+    key: 'willchain',
+    default: []
+});
+
+export const healedAtom = atom({
     key: 'healed',
     default: false
 });
 
-const albumAtom = atom({
+export const albumAtom = atom({
     key: 'album',
     default: []
 });

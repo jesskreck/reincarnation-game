@@ -1,16 +1,16 @@
 import { atom } from 'recoil';
 
-const ageAtom = atom({
+export const ageAtom = atom({
     key: 'age',
     default: 20
 });
 
-const reincarnationAtom = atom({
+export const reincarnationAtom = atom({
     key: 'reincarnation',
     default: 0
 });
 
-const progressAtom = atom({
+export const progressAtom = atom({
     key: 'progress',
     default: {
         "attrac": 0,
@@ -21,13 +21,3 @@ const progressAtom = atom({
     }
 });
 
-const traumaAtom = atom({
-    key: 'trauma',
-    default: {
-        "attrac": false,
-        "mental": false,
-        "educ": false,
-        "wealth": false,
-        "social": false,
-    }
-});

@@ -1,5 +1,27 @@
+$background-gifs: (
+    'https://wallpaperaccess.com/full/5927911.gif',
+    'https://wallpaperaccess.com/full/7824075.gif',
+    'https://wallpaperaccess.com/full/6604090.gif',
+    "https://wallpaperaccess.com/full/2641099.gif",
+    "https://wallpaperaccess.com/full/8351160.gif",
+    "https://wallpaperaccess.com/full/8351164.gif",
+    "https://wallpaperaccess.com/full/8351163.gif",
+    "https://wallpaperaccess.com/full/6640411.gif",
+    "https://wallpaperaccess.com/full/8351233.gif",
+    "https://wallpaperaccess.com/full/8351295.gif"
+);
+
+@function random-background-gif() {
+    $random-index: random(length($background-gifs));
+    @return nth($background-gifs, $random-index);
+}
+
+$random-background: random-background-gif();
+
+
 .game-bg {
-    background-image: url(../../assets/images/city2.gif);
+    --background-url: url('#{$random-background}');
+    background-image: var(--background-url);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 60%;
@@ -62,7 +84,8 @@ $game-panels: actions, progress, will, manifest, wellbeing, album;
 .game-progress-value {
     text-align: left;
     vertical-align: super;
-    @include font-size($font-size-xs);
+    @include font-text;
+    @include font-size($font-size-s);
 
     &.positive {
         color: green;
@@ -81,6 +104,10 @@ $game-panels: actions, progress, will, manifest, wellbeing, album;
     display: flex;
     justify-content: space-between;
     margin-top: 2rem;
+}
+
+.healing {
+    background-color: lighten($color-success, 20) !important;
 }
 
 .game-willchain {
