@@ -25,3 +25,5 @@ yarn-error.log*
 
 #API Key
 .env
+/_reincarnation-vite/.env
+

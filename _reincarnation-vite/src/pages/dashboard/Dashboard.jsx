@@ -22,11 +22,13 @@ import actionDataEN from "../../assets/gameData/actionDataEN.json"
 import actionDataDE from "../../assets/gameData/actionDataDE.json"
 import switchCategoryLogo from '../../utils/switchCategoryLogo'
 import { AIphoto } from '../../components/AIphoto/AIphoto'
+import { Typewriter } from 'react-simple-typewriter'
 
 const examplePlayer = {
     name: 'Eve Nebular',
     avatar: "URL goes here",
     age: 20,
+    sex: "woman",
     reincarnation: 1,
     progress: {
         attrac: 60,
@@ -104,11 +106,7 @@ export default function Dashboard() {
     }
 
 
-    const addToHealing = (action) => {
-        if (unhealedTraumas.includes(action.category) && action.healing) {
-            setHealed(true);
-        }
-    }
+
 
 
     const addToWillchain = (category) => {
@@ -184,7 +182,19 @@ export default function Dashboard() {
         <div className='game-bg-texture'>
             <div className='grid-game'>
 
-                {/*SECTION ACTION PANEL STARTS HERE */}
+                {/*SECTION INSTRUCTIONS */}
+                {/* <div className="game-container-instructor instructor-bg">
+                </div>
+
+                <div className="game-container-text">
+                    <p>
+                            <Typewriter words={["Hier kommt später der Erklärtext rein"]} cursor={true} />
+                    </p>
+
+                </div> */}
+
+
+                {/*SECTION ACTION */}
                 {status === "action" &&
                     <div className='game-container-actions game-bg'>
 
@@ -216,13 +226,13 @@ export default function Dashboard() {
                     </div>
                 }
                 {status === "memory" &&
-                    <AIphoto action={clickedAction} player={activePlayer.name} />
+                    <AIphoto action={clickedAction} player={activePlayer} traumas={unhealedTraumas} />
                 }
 
 
 
 
-                {/*SECTION PROGRESS PANEL STARTS HERE */}
+                {/*SECTION PROGRESS*/}
                 <div className="game-container-progress" >
                     <div className="">
                         <div>
@@ -274,7 +284,7 @@ export default function Dashboard() {
                     </div>
                 </div>
 
-                {/*SECTION WILL PANEL STARTS HERE */}
+                {/*SECTION WILL */}
                 <div className="game-container-will">
                     <h3>Will Power</h3>
                     {willchain}
@@ -282,7 +292,7 @@ export default function Dashboard() {
 
 
 
-                {/*SECTION HEALING PANEL STARTS HERE */}
+                {/*SECTION HEALING */}
                 {/* FIXME - change classname */}
                 <div className="game-container-manifest">
                     <h3>Healing Love</h3>
@@ -291,7 +301,7 @@ export default function Dashboard() {
 
 
 
-                {/*SECTION WELLBEING PANEL STARTS HERE */}
+                {/*SECTION WELLBEING */}
                 <div className="game-container-wellbeing">
                     <h3>Wellbeing</h3>
                     <div className="progressbar-outline">
@@ -301,7 +311,13 @@ export default function Dashboard() {
                     </div>
                 </div>
 
-                {/*SECTION ALBUM PANEL STARTS HERE */}
+                {/*SECTION ALBUM */}
+                <div className="game-container-album">
+                    <h3>Album</h3>
+                    {album && album.map((photo, index) => (
+                        <img src={photo} key={index} alt="album" />
+                    ))}
+                </div>
 
             </div>
         </div>
