@@ -179,27 +179,30 @@ export default function Dashboard() {
 
     return (
 
-        <div className='game-bg-texture'>
-            <div className='grid-game'>
+        <div className='main game-bg-texture'>
+            {/* <div className='grid-game'> */}
 
-                {/*SECTION INSTRUCTIONS */}
-                {/* <div className="game-container-instructor instructor-bg">
-                </div>
+            {/* SECTION INSTRUCTIONS */}
+            <div className="grid-container-header">
+                <div className="instructor-bg">p</div>
 
-                <div className="game-container-text">
+
+                <div className="instructor-text">
                     <p>
-                            <Typewriter words={["Hier kommt später der Erklärtext rein"]} cursor={true} />
+                        <Typewriter words={["Hier kommt später der Erklärtext rein"]} cursor={true} />
                     </p>
 
-                </div> */}
+                </div>
+            </div>
 
+            <div className="grid-container-main">
 
                 {/*SECTION ACTION */}
                 {status === "action" &&
-                    <div className='game-container-actions game-bg'>
+                    <div className='game-bg'>
 
                         <h2>10-year Soul Takeover Plan</h2>
-                        <div className="box">
+                        <div className="">
                             {actionsOnScreen.map((action, index) => (
                                 <div
                                     className={`btn-action ${unhealedTraumas.includes(action.category) && action.healing ? 'healing' : ''}`}
@@ -233,7 +236,7 @@ export default function Dashboard() {
 
 
                 {/*SECTION PROGRESS*/}
-                <div className="game-container-progress" >
+                <div className="" >
                     <div className="">
                         <div>
                             <h2>{activePlayer.name}</h2>
@@ -283,26 +286,23 @@ export default function Dashboard() {
                         }
                     </div>
                 </div>
+            </div>
 
+            <div className="grid-container-footer">
+                
                 {/*SECTION WILL */}
-                <div className="game-container-will">
+                <div className="">
                     <h3>Will Power</h3>
                     {willchain}
                 </div>
-
-
-
                 {/*SECTION HEALING */}
                 {/* FIXME - change classname */}
-                <div className="game-container-manifest">
+                <div className="">
                     <h3>Healing Love</h3>
                     {healed ? <p>💖</p> : <p>💔</p>}
                 </div>
-
-
-
                 {/*SECTION WELLBEING */}
-                <div className="game-container-wellbeing">
+                <div className="">
                     <h3>Wellbeing</h3>
                     <div className="progressbar-outline">
                         <div className="progressbar-fill" style={getWidth(wellbeing)}>
@@ -310,16 +310,20 @@ export default function Dashboard() {
                         </div>
                     </div>
                 </div>
-
-                {/*SECTION ALBUM */}
-                <div className="game-container-album">
-                    <h3>Album</h3>
-                    {album && album.map((photo, index) => (
-                        <img src={photo} key={index} alt="album" />
-                    ))}
-                </div>
-
             </div>
+
+
+
+            {/*SECTION ALBUM */}
+            <div className="grid-container-album">
+                <h3>Album</h3>
+                {album && album.map((photo, index) => (
+                    <img src={photo} key={index} alt="album" />
+                ))}
+            </div>
+
+
+            {/* </div> */}
         </div>
 
     )

@@ -33,6 +33,13 @@ $random-background: random-background-gif();
     background-position: 60%;
 }
 
+.main {
+    display: flex;
+    flex-direction: column;
+    cursor: url("../../assets/images/Black-Pixel-Mouse-Cursor-Arow-Fixed.svg"), auto;
+    padding: 5rem;
+}
+
 .game-bg-texture {
     background-color: #5d5b78;
     background-image: url("https://www.transparenttextures.com/patterns/binding-light.png");
@@ -41,6 +48,98 @@ $random-background: random-background-gif();
 }
 
 $game-panels: instructor, text, actions, progress, will, manifest, wellbeing, album;
+
+@mixin NEWgrid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 2rem;
+    padding-bottom: 2rem;
+}
+
+@mixin panel {
+    @extend .box-shadow;
+    background-color: $color-light;
+    padding: 2rem;
+    border-radius: 0.35rem;
+    border: $color-dark 0.05rem solid;
+
+    h3 {
+        margin-top: 0
+    }
+}
+
+.grid-container-header {
+    @include NEWgrid();
+
+    //NOTE these selectors work really well if there are only 2 divs without own divs as children
+    div {
+        &:first-child {
+            @include panel;
+            grid-column: span 2;
+        }
+
+        &:nth-child(2) {
+            @include panel;
+            grid-column: span 8;
+        }
+    }
+}
+
+.grid-container-main {
+    @include NEWgrid();
+
+    //NOTE if the first level divs have second level divs selector needs to be ">"
+    >div {
+        &:first-child {
+            @include panel;
+            grid-column: span 6;
+        }
+
+        &:nth-child(2) {
+            @include panel;
+            grid-column: span 4;
+        }
+    }
+}
+
+.grid-container-footer {
+    @include NEWgrid();
+
+    >div {
+        &:first-child {
+            @include panel;
+            grid-column: span 4;
+        }
+
+        &:nth-child(2) {
+            @include panel;
+            grid-column: span 2;
+        }
+
+        &:nth-child(3) {
+            @include panel;
+            grid-column: span 4;
+        }
+    }
+}
+
+.grid-container-album {
+    @include NEWgrid();
+    @include panel;
+}
+
+.NEWgame-container-text {
+    @include NEWgrid();
+    grid-column: 6/12;
+}
+
+.NEWgame-container-actions {
+    @include NEWgrid();
+    grid-column: 1/12;
+}
+
+
+
 
 .grid-game {
     display: grid;

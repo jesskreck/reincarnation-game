@@ -123,7 +123,7 @@ export const AIphoto = ({ action, player, traumas }) => {
     return (
         <div
             style={AIphotoURL ? aiBG : loadingBG}
-            className="game-container-actions"
+            className=""
         >
             <h2>Look what you did!</h2>
             <p>
