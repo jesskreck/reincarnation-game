@@ -1,0 +1,32 @@
+.progressbar-outline {
+    @include pixelbox;
+    @include margin-bottom($space-xs);
+    white-space: nowrap;
+}
+
+@supports (border-image-source: none) {
+    .pixel-box--light {
+        border-radius: 14px;
+    }
+}
+
+.progressbar-fill {
+    @include progressbar-value-font;
+    background-color: $color-secondary;
+    transition: all .6s cubic-bezier(0.4, 0.0, 0.2, 1);
+
+    &.warning {
+        background-color: $color-warning;
+        animation: flicker-1 1.5s infinite both;
+    }
+
+    &.success {
+        background-color: $color-success;
+        animation: pulse 3s infinite;
+    }
+
+    p {
+        @include progressbar-value-font;
+    }
+
+}

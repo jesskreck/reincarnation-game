@@ -13,7 +13,6 @@ export const AIphoto = ({ action, player, traumas }) => {
 
     const [collected, setCollected] = useState([])
     const [toBeCollected, setToBeCollected] = useState(1)
-    console.log(toBeCollected);
     const [AIphotoURL, setAIphotoURL] = useState(null)
     const [showHealing, setShowHealing] = useState(false)
 
@@ -87,6 +86,7 @@ export const AIphoto = ({ action, player, traumas }) => {
 
 
     const generateImage = async (player, action) => {
+        // console.log("generating image deactived");
         const configuration = new Configuration({
             apiKey: import.meta.env.VITE_REACT_OPENAI_API_KEY,
         });
@@ -120,31 +120,39 @@ export const AIphoto = ({ action, player, traumas }) => {
 
 
 
+
+
+
+
+
+
+
+    
     return (
         <div
             style={AIphotoURL ? aiBG : loadingBG}
-            className=""
+            className="photo-container"
         >
-            <h2>Look what you did!</h2>
+            {/* <h2>Look what you did!</h2>
             <p>
                 You made {player.name} {action.text}.
             </p>
-            <p>Time to reap the rewards!</p>
+            <p>Time to reap the rewards!</p> */}
 
-            <div className="">
+            <div className="container-rewards">
                 {Object.entries(action.progress)
                     .filter(([key, value]) => value !== 0)
                     .map(([key, value]) => (
                         <div
                             key={key}
                             onClick={() => handleKeyClick(key)}
-                            className={`big ${collected.includes(key) ? "hidden" : ""}`}
+                            className={`btn-emoji ${collected.includes(key) ? "hidden" : ""}`}
                         >
                             {switchCategoryLogo(key)}
                         </div>
                     ))}
                 <div
-                    className={`big ${collected.includes("📸") ? "hidden" : ""}`}
+                    className={`btn-emoji ${collected.includes("📸") ? "hidden" : ""}`}
                     onClick={handlePhotoClick}
                 >
                     📸
@@ -152,7 +160,7 @@ export const AIphoto = ({ action, player, traumas }) => {
 
                 {showHealing && (
                     <div
-                        className={`big ${collected.includes("💖") ? "hidden" : ""}`}
+                        className={`btn-emoji ${collected.includes("💖") ? "hidden" : ""}`}
                         onClick={handleHealingClick}
                     >
                         💖

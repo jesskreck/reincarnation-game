@@ -96,13 +96,25 @@ $game-panels: instructor, text, actions, progress, will, manifest, wellbeing, al
         }
 
         &:nth-child(2) {
-            @include panel;
             grid-column: span 4;
+            display: flex;
+            gap: 2rem;
+            flex-direction: column;
+
+            >div {
+                    &:first-child {
+                        @include panel;
+                    }
+            
+                    &:nth-child(2) {
+                        @include panel;
+                    }
+                }
         }
     }
 }
 
-.grid-container-footer {
+.grid-container-level {
     @include NEWgrid();
 
     >div {
@@ -125,53 +137,15 @@ $game-panels: instructor, text, actions, progress, will, manifest, wellbeing, al
 
 .grid-container-album {
     @include NEWgrid();
-    @include panel;
-}
 
-.NEWgame-container-text {
-    @include NEWgrid();
-    grid-column: 6/12;
-}
-
-.NEWgame-container-actions {
-    @include NEWgrid();
-    grid-column: 1/12;
-}
-
-
-
-
-.grid-game {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 2rem;
-    margin: 0 auto;
-    padding-top: 3rem;
-    padding-bottom: 10rem;
-    max-width: 1300px;
-    grid-template-areas:
-        "instructor text text text text"
-        "actions actions actions progress progress"
-        "will will manifest wellbeing wellbeing"
-        "album album album album album";
-}
-
-@each $game-panel in $game-panels {
-    .game-container-#{$game-panel} {
-        @extend .box-shadow;
-        grid-area: #{$game-panel};
-        background-color: $color-light;
-        padding: 2rem;
-        border-radius: 0.35rem;
-        border: $color-dark 0.05rem solid;
-
-        h3 {
-            margin-top: 0
+    >div {
+        &:first-child {
+            @include panel;
+            grid-column: span 10;
         }
-
-        ;
     }
 }
+
 
 
 .game-avatar {
@@ -226,3 +200,4 @@ $game-panels: instructor, text, actions, progress, will, manifest, wellbeing, al
     display: flex;
     justify-content: space-evenly;
 }
+

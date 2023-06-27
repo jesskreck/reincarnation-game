@@ -1,0 +1,104 @@
+.app {
+    background-color: #5d5b78;
+    background-image: url("https://www.transparenttextures.com/patterns/binding-light.png");
+    background-position: center;
+    min-height: 100vh;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    padding: 5rem;
+    max-width: 1500px;
+    margin: 0 auto;
+
+}
+
+.instructor {
+    background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/bf739ed7-d95b-43c2-8868-1a88a5829ce5/dckci8i-f4a6b793-cf38-4e9e-844f-5a541b17f602.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2JmNzM5ZWQ3LWQ5NWItNDNjMi04ODY4LTFhODhhNTgyOWNlNVwvZGNrY2k4aS1mNGE2Yjc5My1jZjM4LTRlOWUtODQ0Zi01YTU0MWIxN2Y2MDIuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.Kswt6g4ucZMuWwH8gPj5IoC5LKCEDaoavB5aWmUDZqY");
+    background-size: cover;
+    background-position: 0% 30%;
+}
+
+
+
+.container-actions {
+    --background-url: url('#{$random-background}');
+    background-image: var(--background-url);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 60%;
+
+    display: flex;
+    flex-direction: column;
+
+    @include padding($space-xl);
+    gap: $space;
+}
+
+
+.action-value {
+    @include action-value-font;
+
+    &.positive {
+        color: $color-success;
+    }
+
+    &.negative {
+        color: $color-warning;
+    }
+}
+
+.container-playerinfo {
+    @include padding-right($space);
+    @include padding-left($space);
+    @include padding-top($space-s);
+    @include padding-bottom($space-s);
+}
+
+
+.container-progress {
+    @include padding($space);
+}
+
+.container-traumas {
+    display: flex;
+    gap: $space;
+    @include font-size($font-l);
+    @include padding-top($space-xs);
+    @include padding-bottom($space-xs);
+    @include pixelbox;
+    justify-content: center;
+}
+
+.container-leveltask {
+    @include padding($space-s);
+    text-align: center;
+}
+
+
+.emoji-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    transition: all .6s cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+.counter {
+    @include padding(0.25rem 0.75rem);
+    // background-color: $color-secondary;
+    // border-radius: 0.3rem;
+    @include pixelbox;
+    max-width: fit-content;
+
+    p {
+        font-family: $font-special;
+        @include font-size($font-s);
+        letter-spacing: 0.1rem;
+    }
+}
+
+.healing {
+    animation: pulse 2s infinite ease-in-out;
+    // background-color: red;
+}
