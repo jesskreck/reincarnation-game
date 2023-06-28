@@ -10,6 +10,7 @@
 
 .btn-action {
     cursor: pointer;
+    flex-grow: 1;
     animation-name: bounceIn;
     animation-duration: .75s;
     animation-fill-mode: both;

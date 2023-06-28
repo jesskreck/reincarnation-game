@@ -160,7 +160,7 @@ export default function Dashboard() {
 
   useEffect(() => {
     console.log("fire1 start");
-    shuffleActionData("en")
+    shuffleActionData("de")
     setUnhealedTraumas(getUnhealedTraumas)
     setAge(activePlayer.age)
     setReincarnation(activePlayer.reincarnation)
