@@ -1,1001 +1,818 @@
-﻿[
-    {
-        "text": "Absolvieren Sie ein 12-monatiges Marathon-Trainingsprogramm.",
-        "category": "attractiveness",
-        "attractiveness": 25,
-        "mental": 0,
-        "education": 0,
-        "wealth": 0,
-        "social": 0
-    },
-    {
-        "text": "Trete einem Parkour-Team bei und meistere fortgeschrittene Bewegungen.",
-        "category": "attractiveness",
-        "attractiveness": 25,
-        "mental": 0,
-        "education": 0,
-        "wealth": 0,
-        "social": 0
-    },
-    {
-        "text": "Werden Sie zertifizierter Aerial-Yoga-Instruktor.",
-        "category": "attractiveness",
-        "attractiveness": 25,
-        "mental": 0,
-        "education": 0,
-        "wealth": 0,
-        "social": 0
-    },
-    {
-        "text": "Erreiche ein Six-Pack mit einer strengen Diät und Trainingsroutine.",
-        "category": "attractiveness",
-        "attractiveness": 25,
-        "mental": 0,
-        "education": 0,
-        "wealth": 0,
-        "social": 0
-    },
-    {
-        "text": "Steigere deine Ausdauer, indem du für eine 100-Meilen-Fahrradtour trainierst.",
-        "category": "attractiveness",
-        "attractiveness": 25,
-        "mental": 0,
-        "education": 0,
-        "wealth": 0,
-        "social": 0
-    },
-    {
-        "text": "Lerne surfen und fange die größten Wellen.",
-        "category": "attractiveness",
-        "attractiveness": 25,
-        "mental": 0,
-        "education": 0,
-        "wealth": 0,
-        "social": 0
-    },
-    {
-        "text": "Meistere die Kunst des Pole-Dancing für ein Ganzkörper-Workout.",
-        "category": "attractiveness",
-        "attractiveness": 25,
-        "mental": 0,
-        "education": 0,
-        "wealth": 0,
-        "social": 0
-    },
-    {
-        "text": "Nehmen Sie an einem täglichen Hot-Dog-Wettessen teil.",
-        "category": "attractiveness",
-        "attractiveness": -25,
-        "mental": 0,
-        "education": 0,
-        "wealth": 0,
-        "social": 0
-    },
-    {
-        "text": "Trainiere, um ein professioneller Stubenhocker zu werden.",
-        "category": "attractiveness",
-        "attractiveness": -25,
-        "mental": 0,
-        "education": 0,
-        "wealth": 0,
-        "social": 0
-    },
-    {
-        "text": "Verfolgen Sie eine Zertifizierung im Kettenrauchen und starken Trinken.",
-        "category": "attractiveness",
-        "attractiveness": -25,
-        "mental": 0,
-        "education": 0,
-        "wealth": 0,
-        "social": 0
-    },
-    {
-        "text": "Nehmen Sie 50 Pfund zu, indem Sie nur Fast Food essen.",
-        "category": "attractiveness",
-        "attractiveness": -25,
-        "mental": 0,
-        "education": 0,
-        "wealth": 0,
-        "social": 0
-    },
-    {
-        "text": "Verliere alle Muskelmasse, indem du den ganzen Tag sitzt und an eine Wand starrst.",
-        "category": "attractiveness",
-        "attractiveness": -25,
-        "mental": 0,
-        "education": 0,
-        "wealth": 0,
-        "social": 0
-    },
-    {
-        "text": "Meistere die Kunst, 16 Stunden am Stück zu schlafen.",
-        "category": "attractiveness",
-        "attractiveness": -5,
-        "mental": 0,
-        "education": 0,
-        "wealth": 0,
-        "social": 0
-    },
-    {
-        "text": "Werden Sie zum Experten im Fernsehen für einen ganzen Tag, ohne sich zu bewegen.",
-        "category": "attractiveness",
-        "attractiveness": -5,
-        "mental": 0,
-        "education": 0,
-        "wealth": 0,
-        "social": 0
-    },
-    {
-        "text": "Erreiche einen persönlichen Rekord für das Binge-Watching einer ganzen Serie in einer Sitzung.",
-        "category": "attractiveness",
-        "attractiveness": -5,
-        "mental": 0,
-        "education": 0,
-        "wealth": 0,
-        "social": 0
-    },
-    {
-        "text": "Verwandeln Sie sich in ein Mode-Icon für eine futuristische Cyberpunk-Ästhetik.",
-        "category": "attractiveness",
-        "attractiveness": 15,
-        "mental": 0,
-        "education": 0,
-        "wealth": 0,
-        "social": 0
-    },
-    {
-        "text": "Werde ein Influencer für skurrile Hutstile in den sozialen Medien",
-        "category": "attractiveness",
-        "attractiveness": 15,
-        "mental": 0,
-        "education": 0,
-        "wealth": 0,
-        "social": 0
-    },
-    {
-        "text": "Spare auf ein Paar vergoldete Zahnprothesen.",
-        "category": "attractiveness",
-        "attractiveness": -5,
-        "mental": 0,
-        "education": 0,
-        "wealth": 0,
-        "social": 0
-    },
-    {
-        "text": "Verpflichte dich zu einer täglichen Gesichtsroutine, die nur Diamanten und Perlen verwendet.",
-        "category": "attractiveness",
-        "attractiveness": -5,
-        "mental": 0,
-        "education": 0,
-        "wealth": 0,
-        "social": 0
-    },
-    {
-        "text": "Verwandele dich in eine wandelnde Modekatastrophe mit unpassender Kleidung.",
-        "category": "attractiveness",
-        "attractiveness": -15,
-        "mental": 0,
-        "education": 0,
-        "wealth": 0,
-        "social": 0
-    },
-    {
-        "text": "Werde ein Influencer für hässliche Pullover-Mode auf Social Media",
-        "category": "attractiveness",
-        "attractiveness": 5,
-        "mental": 0,
-        "education": 0,
-        "wealth": 0,
-        "social": 0
-    },
-    {
-        "text": "Spare auf die hässlichsten Schuhe, die du finden kannst.",
-        "category": "attractiveness",
-        "attractiveness": -15,
-        "mental": 0,
-        "education": 0,
-        "wealth": 0,
-        "social": 0
-    },
-    {
-        "text": "Vergessen Sie regelmäßig, Ihre Zähne und Haare zu putzen.",
-        "category": "attractiveness",
-        "attractiveness": -15,
-        "mental": 0,
-        "education": 0,
-        "wealth": 0,
-        "social": 0
-    },
-    {
-        "text": "Konsequent jede Hautpflegeroutine auslassen.",
-        "category": "attractiveness",
-        "attractiveness": -15,
-        "mental": 0,
-        "education": 0,
-        "wealth": 0,
-        "social": 0
-    },
-    {
-        "text": "Behalte eine konsequente Meditationspraxis für sechs Monate bei.",
-        "category": "mental",
-        "attractiveness": 0,
-        "mental": 25,
-        "education": 0,
-        "wealth": 0,
-        "social": 0
-    },
-    {
-        "text": "Nehmen Sie täglich an einem Tee-Zeremonie-Kurs zur Stressreduzierung teil.",
-        "category": "mental",
-        "attractiveness": 0,
-        "mental": 25,
-        "education": 0,
-        "wealth": 0,
-        "social": 0
-    },
-    {
-        "text": "Widme deine Wochenenden dem Wandern und der Erkundung lokaler Naturschutzgebiete.",
-        "category": "mental",
-        "attractiveness": 0,
-        "mental": 25,
-        "education": 0,
-        "wealth": 0,
-        "social": 0
-    },
-    {
-        "text": "Schaffen Sie einen unvorhersehbaren Schlafrhythmus",
-        "category": "mental",
-        "attractiveness": 0,
-        "mental": -15,
-        "education": 0,
-        "wealth": 0,
-        "social": 0
-    },
-    {
-        "text": "Entwickeln Sie stressauslösende Gewohnheiten wie Nägelbeißen und Fußtappen.",
-        "category": "mental",
-        "attractiveness": 0,
-        "mental": -15,
-        "education": 0,
-        "wealth": 0,
-        "social": 0
-    },
-    {
-        "text": "Arbeite rund um die Uhr und werde zum Roboter.",
-        "category": "mental",
-        "attractiveness": 0,
-        "mental": -25,
-        "education": 0,
-        "wealth": 0,
-        "social": 0
-    },
-    {
-        "text": "Lebe einen Monat lang ohne Technologie",
-        "category": "mental",
-        "attractiveness": 0,
-        "mental": 5,
-        "education": 0,
-        "wealth": 0,
-        "social": 0
-    },
-    {
-        "text": "Essen Sie nur Pizza zu jeder Mahlzeit",
-        "category": "mental",
-        "attractiveness": 0,
-        "mental": -15,
-        "education": 0,
-        "wealth": 0,
-        "social": 0
-    },
-    {
-        "text": "Den ganzen Tag damit verbringen, durch Social-Media-Feeds zu scrollen.",
-        "category": "mental",
-        "attractiveness": 0,
-        "mental": -15,
-        "education": 0,
-        "wealth": 0,
-        "social": 0
-    },
-    {
-        "text": "Erwerben Sie eine Zertifizierung in Prokrastination",
-        "category": "mental",
-        "attractiveness": 0,
-        "mental": -25,
-        "education": 0,
-        "wealth": 0,
-        "social": 0
-    },
-    {
-        "text": "Verlasse dein Zuhause und schlendere ziellos durch die Straßen.",
-        "category": "mental",
-        "attractiveness": 0,
-        "mental": -15,
-        "education": 0,
-        "wealth": 0,
-        "social": 0
-    },
-    {
-        "text": "Werde ein Eremit und meide alle sozialen Interaktionen.",
-        "category": "mental",
-        "attractiveness": 0,
-        "mental": -15,
-        "education": 0,
-        "wealth": 0,
-        "social": 0
-    },
-    {
-        "text": "Verbringe den ganzen Tag damit, mit dir selbst zu sprechen.",
-        "category": "mental",
-        "attractiveness": 0,
-        "mental": -5,
-        "education": 0,
-        "wealth": 0,
-        "social": 0
-    },
-    {
-        "text": "Perfektioniere die Kunst des starrsinnigen Blicks ins Leere",
-        "category": "mental",
-        "attractiveness": 0,
-        "mental": -5,
-        "education": 0,
-        "wealth": 0,
-        "social": 0
-    },
-    {
-        "text": "Lebe ohne Hobbys oder Interessen",
-        "category": "mental",
-        "attractiveness": 0,
-        "mental": -15,
-        "education": 0,
-        "wealth": 0,
-        "social": 0
-    },
-    {
-        "text": "Nehmen Sie an einer Therapie teil, um Probleme im Zusammenhang mit Kindheitstraumata zu bearbeiten",
-        "category": "mental",
-        "attractiveness": 0,
-        "mental": -25,
-        "education": 0,
-        "wealth": 0,
-        "social": 0
-    },
-    {
-        "text": "Nehmen Sie an einem Achtsamkeits-Retreat teil, um emotionale Regulierungsfähigkeiten zu entwickeln.",
-        "category": "mental",
-        "attractiveness": 0,
-        "mental": 25,
-        "education": 0,
-        "wealth": 0,
-        "social": 0
-    },
-    {
-        "text": "Richte eine Dankbarkeitspraxis ein, um das allgemeine Glück zu steigern.",
-        "category": "mental",
-        "attractiveness": 0,
-        "mental": 25,
-        "education": 0,
-        "wealth": 0,
-        "social": 0
-    },
-    {
-        "text": "Tritt einer Selbsthilfegruppe für Menschen mit Angststörungen bei.",
-        "category": "mental",
-        "attractiveness": 0,
-        "mental": 25,
-        "education": 0,
-        "wealth": 0,
-        "social": 0
-    },
-    {
-        "text": "Nehmen Sie an Gruppentherapiesitzungen gegen Depressionen teil",
-        "category": "mental",
-        "attractiveness": 0,
-        "mental": 25,
-        "education": 0,
-        "wealth": 0,
-        "social": 0
-    },
-    {
-        "text": "Vermeide es, Emotionen auszudrücken und sie innerlich zu unterdrücken.",
-        "category": "mental",
-        "attractiveness": 0,
-        "mental": -25,
-        "education": 0,
-        "wealth": 0,
-        "social": 0
-    },
-    {
-        "text": "Lehne Rückmeldungen von anderen ab und weigere dich, Fehler zuzugeben.",
-        "category": "mental",
-        "attractiveness": 0,
-        "mental": -15,
-        "education": 0,
-        "wealth": 0,
-        "social": 0
-    },
-    {
-        "text": "Ignoriere die Auswirkungen deiner Handlungen auf die Gefühle anderer",
-        "category": "mental",
-        "attractiveness": 0,
-        "mental": -15,
-        "education": 0,
-        "wealth": 0,
-        "social": 0
-    },
-    {
-        "text": "Beziehungen und Freundschaften ohne Erklärung oder Abschluss aufgeben",
-        "category": "mental",
-        "attractiveness": 0,
-        "mental": -15,
-        "education": 0,
-        "wealth": 0,
-        "social": 0
-    },
-    {
-        "text": "Verlassen Sie Gruppentherapiesitzungen, ohne sich zu beteiligen oder teilzunehmen.",
-        "category": "mental",
-        "attractiveness": 0,
-        "mental": -25,
-        "education": 0,
-        "wealth": 0,
-        "social": 0
-    },
-    {
-        "text": "Erwerbe einen Abschluss in mittelalterlicher Schmiedekunst",
-        "category": "education",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": 15,
-        "wealth": 0,
-        "social": 0
-    },
-    {
-        "text": "Erwerben Sie eine professionelle Zertifizierung im Weinverkosten.",
-        "category": "education",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": 15,
-        "wealth": 0,
-        "social": 0
-    },
-    {
-        "text": "Absolvieren Sie ein kulinarisches Kunstprogramm mit Schwerpunkt auf Molekulargastronomie.",
-        "category": "education",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": 25,
-        "wealth": 0,
-        "social": 0
-    },
-    {
-        "text": "Abschließen von Online-Kursen in antiken Hieroglyphen",
-        "category": "education",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": 15,
-        "wealth": 0,
-        "social": 0
-    },
-    {
-        "text": "Bilden Sie eine Lerngruppe für Liebhaber klassischer Literatur.",
-        "category": "education",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": 15,
-        "wealth": 0,
-        "social": 0
-    },
-    {
-        "text": "Schreiben Sie sich in einen Kurs ein, wie man wie Yoda spricht.",
-        "category": "education",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": 5,
-        "wealth": 0,
-        "social": 0
-    },
-    {
-        "text": "Tritt einem Philosophieclub bei, der dem Existentialismus gewidmet ist.",
-        "category": "education",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": 15,
-        "wealth": 0,
-        "social": 0
-    },
-    {
-        "text": "Unternimm eine Sprachreise nach Marokko, um Dothraki zu studieren.",
-        "category": "education",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": 15,
-        "wealth": 0,
-        "social": 0
-    },
-    {
-        "text": "Nehmen Sie an einem 6-monatigen Intensivprogramm für professionelles Videospielen teil.",
-        "category": "education",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": 15,
-        "wealth": 0,
-        "social": 0
-    },
-    {
-        "text": "Verlasse die Schule, um eine Karriere als professioneller Gamer zu verfolgen.",
-        "category": "education",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": -5,
-        "wealth": 0,
-        "social": 0
-    },
-    {
-        "text": "Lasse alle deine Fähigkeiten rostig und veraltet werden.",
-        "category": "education",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": -25,
-        "wealth": 0,
-        "social": 0
-    },
-    {
-        "text": "Hören Sie auf, etwas Neues zu lernen und verlassen Sie sich auf altes Wissen.",
-        "category": "education",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": -25,
-        "wealth": 0,
-        "social": 0
-    },
-    {
-        "text": "Gib nach der ersten Lektion bei Online-Kursen auf.",
-        "category": "education",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": -15,
-        "wealth": 0,
-        "social": 0
-    },
-    {
-        "text": "Vermeide es, mit anderen zu lernen und lehne es ab, an Lerngruppen teilzunehmen.",
-        "category": "education",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": -15,
-        "wealth": 0,
-        "social": 0
-    },
-    {
-        "text": "Plane eine Sprachreise, aber setze es nie in die Tat um.",
-        "category": "education",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": -5,
-        "wealth": 0,
-        "social": 0
-    },
-    {
-        "text": "Tragen Sie zu Forschungsprojekten über die Auswirkungen von Musik auf Pflanzen bei.",
-        "category": "education",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": 15,
-        "wealth": 0,
-        "social": 0
-    },
-    {
-        "text": "Schreiben Sie Artikel für akademische Zeitschriften über die Auswirkungen von sozialen Medien auf die psychische Gesundheit.",
-        "category": "education",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": 15,
-        "wealth": 0,
-        "social": 0
-    },
-    {
-        "text": "Führen Sie Experimente durch, um etablierte wissenschaftliche Theorien zu widerlegen.",
-        "category": "education",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": 5,
-        "wealth": 0,
-        "social": 0
-    },
-    {
-        "text": "Schreiben Sie Artikel für wissenschaftliche Zeitschriften, die Verschwörungstheorien fördern",
-        "category": "education",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": -15,
-        "wealth": 0,
-        "social": 0
-    },
-    {
-        "text": "Wechseln Sie zu einem Job als Heißluftballon-Tourguide.",
-        "category": "wealth",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": 0,
-        "wealth": 5,
-        "social": 0
-    },
-    {
-        "text": "Nehmen Sie an Konferenzen und Workshops zur Kunst des Bonsai-Baum-Skulptierens teil.",
-        "category": "wealth",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": 0,
-        "wealth": 15,
-        "social": 0
-    },
-    {
-        "text": "Wechsel zu einem Job, der deine Leidenschaft für Buchhaltung erfüllt.",
-        "category": "wealth",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": 0,
-        "wealth": 15,
-        "social": 0
-    },
-    {
-        "text": "Nehmen Sie an Networking-Veranstaltungen teil, um potenzielle Investoren für Ihr Startup kennenzulernen.",
-        "category": "wealth",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": 0,
-        "wealth": 25,
-        "social": 0
-    },
-    {
-        "text": "Entwickeln Sie einen Marketingplan zur Markteinführung eines neuen Produkts.",
-        "category": "wealth",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": 0,
-        "wealth": 25,
-        "social": 0
-    },
-    {
-        "text": "Absolvieren Sie ein Mentorenprogramm mit einem erfolgreichen Unternehmer in Ihrer Branche.",
-        "category": "wealth",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": 0,
-        "wealth": 25,
-        "social": 0
-    },
-    {
-        "text": "Verbessern Sie Ihre Führungs- und Managementfähigkeiten, indem Sie eine gemeinnützige Organisation leiten.",
-        "category": "wealth",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": 0,
-        "wealth": 25,
-        "social": 0
-    },
-    {
-        "text": "Werde Mitglied der Internationalen Vereinigung öffentlicher Redner",
-        "category": "wealth",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": 0,
-        "wealth": 25,
-        "social": 0
-    },
-    {
-        "text": "Besuchen Sie Seminare über Finanzplanung und Anlagestrategien",
-        "category": "wealth",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": 0,
-        "wealth": 25,
-        "social": 0
-    },
-    {
-        "text": "Verfolgen Sie freiberufliche Arbeit als Unternehmensberater",
-        "category": "wealth",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": 0,
-        "wealth": 25,
-        "social": 0
-    },
-    {
-        "text": "Schlagen Sie innovative Ideen vor, um den Umsatz und die Einnahmen in Ihrem Unternehmen zu steigern.",
-        "category": "wealth",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": 0,
-        "wealth": 25,
-        "social": 0
-    },
-    {
-        "text": "Gezielt Kollegen untergraben, um voranzukommen",
-        "category": "wealth",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": 0,
-        "wealth": -25,
-        "social": 0
-    },
-    {
-        "text": "Vermeide es, Karriereziele zu setzen und jahrelang in derselben Stelle ohne Fortschritt zu bleiben.",
-        "category": "wealth",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": 0,
-        "wealth": -15,
-        "social": 0
-    },
-    {
-        "text": "Einen Job ohne Backup-Plan kündigen",
-        "category": "wealth",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": 0,
-        "wealth": -15,
-        "social": 0
-    },
-    {
-        "text": "Ignoriere Möglichkeiten, neue Fähigkeiten zu erlernen und sich neuen Herausforderungen zu stellen.",
-        "category": "wealth",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": 0,
-        "wealth": -15,
-        "social": 0
-    },
-    {
-        "text": "Verzichte auf Industrieorganisationen und verpasse wertvolle Networking-Möglichkeiten.",
-        "category": "wealth",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": 0,
-        "wealth": -15,
-        "social": 0
-    },
-    {
-        "text": "Vermeiden Sie die Teilnahme an Karrieremessen und Branchenveranstaltungen.",
-        "category": "wealth",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": 0,
-        "wealth": -5,
-        "social": 0
-    },
-    {
-        "text": "Lehnen Sie zusätzliche Verantwortlichkeiten oder Führungspositionen am Arbeitsplatz ab.",
-        "category": "wealth",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": 0,
-        "wealth": -5,
-        "social": 0
-    },
-    {
-        "text": "Entmutigen Sie Ihr Team davon, innovative Ideen zu verfolgen und Risiken einzugehen.",
-        "category": "wealth",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": 0,
-        "wealth": -25,
-        "social": 0
-    },
-    {
-        "text": "Entwickeln Sie einen Plan, um Schulden abzuzahlen und die Kreditwürdigkeit zu verbessern.",
-        "category": "wealth",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": 0,
-        "wealth": 25,
-        "social": 0
-    },
-    {
-        "text": "Überwachen Sie Ihre Ausgaben, indem Sie ein tägliches Tagebuch Ihrer Ausgaben führen.",
-        "category": "wealth",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": 0,
-        "wealth": 25,
-        "social": 0
-    },
-    {
-        "text": "Richten Sie ein Ruhestands-Konto ein und leisten Sie regelmäßige Beiträge.",
-        "category": "wealth",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": 0,
-        "wealth": 25,
-        "social": 0
-    },
-    {
-        "text": "Investieren Sie in ein diversifiziertes Portfolio aus Aktien, Investmentfonds und börsengehandelten Fonds.",
-        "category": "wealth",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": 0,
-        "wealth": 25,
-        "social": 0
-    },
-    {
-        "text": "Kaufen Sie Immobilien und vermieten Sie sie zur passiven Einkommensgenerierung.",
-        "category": "wealth",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": 0,
-        "wealth": 25,
-        "social": 0
-    },
-    {
-        "text": "Starte einen Nebenjob wie einen Food Truck oder ein Home-Based Business",
-        "category": "wealth",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": 0,
-        "wealth": 25,
-        "social": 0
-    },
-    {
-        "text": "Lebe sparsam und spare jeden Monat einen Teil deines Einkommens.",
-        "category": "wealth",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": 0,
-        "wealth": 25,
-        "social": 0
-    },
-    {
-        "text": "Übermäßig viel Geld für Luxusgüter ausgeben, ohne die langfristigen finanziellen Auswirkungen zu berücksichtigen.",
-        "category": "wealth",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": 0,
-        "wealth": 25,
-        "social": 0
-    },
-    {
-        "text": "Ignoriere finanzielle Planung und gib impulsiv ohne Budget aus.",
-        "category": "wealth",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": 0,
-        "wealth": -25,
-        "social": 0
-    },
-    {
-        "text": "Ziehen Sie Geld aus Rentenkonten ab, bevor Sie das Rentenalter erreichen",
-        "category": "wealth",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": 0,
-        "wealth": -25,
-        "social": 0
-    },
-    {
-        "text": "Tätigen Sie riskante Investitionen ohne angemessene Recherche oder Beratung durch einen Finanzberater.",
-        "category": "wealth",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": 0,
-        "wealth": -25,
-        "social": 0
-    },
-    {
-        "text": "Sich auf eine Einkommensquelle verlassen und Möglichkeiten zur Steigerung des Einkommens ignorieren",
-        "category": "wealth",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": 0,
-        "wealth": -25,
-        "social": 0
-    },
-    {
-        "text": "Lebe extravagant, ohne Rücksicht auf finanzielle Stabilität.",
-        "category": "wealth",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": 0,
-        "wealth": -15,
-        "social": 0
-    },
-    {
-        "text": "Sammeln Sie unnötige Schulden durch rücksichtsloses Ausgeben und Ausleihen.",
-        "category": "wealth",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": 0,
-        "wealth": -25,
-        "social": 0
-    },
-    {
-        "text": "Nimm an einer wöchentlichen Meditationsgruppe teil, um Gleichgesinnte kennenzulernen.",
-        "category": "social",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": 0,
-        "wealth": 0,
-        "social": 15
-    },
-    {
-        "text": "Gehen Sie eine gesunde romantische Partnerschaft mit jemandem ein, der Ihre Werte und Ziele teilt.",
-        "category": "social",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": 0,
-        "wealth": 0,
-        "social": 25
-    },
-    {
-        "text": "Investiere Zeit darin, starke Freundschaften durch gemeinsame Aktivitäten und Interessen aufzubauen.",
-        "category": "social",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": 0,
-        "wealth": 0,
-        "social": 25
-    },
-    {
-        "text": "Übe aktives Zuhören und effektive Kommunikation in allen Beziehungen.",
-        "category": "social",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": 0,
-        "wealth": 0,
-        "social": 25
-    },
-    {
-        "text": "Nimm an Freiwilligenaktivitäten mit Freunden und Familie teil.",
-        "category": "social",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": 0,
-        "wealth": 0,
-        "social": 25
-    },
-    {
-        "text": "Gesunde Beziehungen durch Lügen und Betrug zerstören",
-        "category": "social",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": 0,
-        "wealth": 0,
-        "social": 25
-    },
-    {
-        "text": "Verfolge Beziehungen mit Personen, die deine Grenzen oder Werte nicht respektieren.",
-        "category": "social",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": 0,
-        "wealth": 0,
-        "social": -25
-    },
-    {
-        "text": "Vernachlässige bestehende Freundschaften und lasse sie verblassen.",
-        "category": "social",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": 0,
-        "wealth": 0,
-        "social": -25
-    },
-    {
-        "text": "Missachte die Bedeutung von Kompromissen und Verständnis in Beziehungen.",
-        "category": "social",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": 0,
-        "wealth": 0,
-        "social": -15
-    },
-    {
-        "text": "Ziehe dich von sozialen Aktivitäten zurück und isoliere dich von anderen.",
-        "category": "social",
-        "attractiveness": 0,
-        "mental": 0,
-        "education": 0,
-        "wealth": 0,
-        "social": -15
-    }
+[
+  {
+    "text": "Erreiche ein Six-Pack mit einer strengen Diät und Trainingsroutine",
+    "progress": {
+      "attrac": 45,
+      "mental": 15,
+      "educ": -30,
+      "wealth": 0,
+      "social": 0
+    },
+    "category": "attrac",
+    "healing": false
+  },
+  {
+    "text": "Meistere die Kunst des Pole-Dancing für ein Ganzkörper-Workout",
+    "progress": {
+      "attrac": 45,
+      "mental": 15,
+      "educ": -30,
+      "wealth": 0,
+      "social": 15
+    },
+    "category": "attrac",
+    "healing": false
+  },
+  {
+    "text": "Steigere deine Ausdauer, indem du für eine 100-Meilen-Fahrradtour trainierst",
+    "progress": {
+      "attrac": 45,
+      "mental": 15,
+      "educ": -15,
+      "wealth": 0,
+      "social": 0
+    },
+    "category": "attrac",
+    "healing": false
+  },
+  {
+    "text": "Lerne surfen und fange die größten Wellen",
+    "progress": {
+      "attrac": 45,
+      "mental": 15,
+      "educ": -15,
+      "wealth": 0,
+      "social": 15
+    },
+    "category": "attrac",
+    "healing": false
+  },
+  {
+    "text": "Verwandle dich in ein Mode-Icon für eine futuristische Cyberpunk-Ästhetik",
+    "progress": {
+      "attrac": 45,
+      "mental": 0,
+      "educ": -15,
+      "wealth": 0,
+      "social": 30
+    },
+    "category": "attrac",
+    "healing": false
+  },
+  {
+    "text": "Werde ein Social Media Influencer für skurrile Hutstile",
+    "progress": {
+      "attrac": 30,
+      "mental": 0,
+      "educ": -15,
+      "wealth": 15,
+      "social": 30
+    },
+    "category": "attrac",
+    "healing": false
+  },
+  {
+    "text": "Verpflichte dich zu einer täglichen Gesichtsroutine mit Gold und Diamanten",
+    "progress": {
+      "attrac": 30,
+      "mental": 0,
+      "educ": 0,
+      "wealth": -45,
+      "social": 0
+    },
+    "category": "attrac",
+    "healing": false
+  },
+  {
+    "text": "Spare auf ein Paar vergoldete Zahnprothesen",
+    "progress": {
+      "attrac": 15,
+      "mental": 0,
+      "educ": 0,
+      "wealth": -30,
+      "social": 0
+    },
+    "category": "attrac",
+    "healing": false
+  },
+  {
+    "text": "Verwandle dich in eine selbstbewusste Modekatastrophe und trage nur Neonfarben",
+    "progress": {
+      "attrac": 30,
+      "mental": 0,
+      "educ": 0,
+      "wealth": 0,
+      "social": 15
+    },
+    "category": "attrac",
+    "healing": false
+  },
+  {
+    "text": "Werde zertifizierter Aerial-Yoga-Instruktor",
+    "progress": {
+      "attrac": 45,
+      "mental": 15,
+      "educ": 0,
+      "wealth": 30,
+      "social": 15
+    },
+    "category": "attrac",
+    "healing": false
+  },
+  {
+    "text": "Nimm 50 Pfund zu, indem du nur Fast Food isst",
+    "progress": {
+      "attrac": -45,
+      "mental": -30,
+      "educ": -15,
+      "wealth": -15,
+      "social": 0
+    },
+    "category": "attrac",
+    "healing": true
+  },
+  {
+    "text": "Nimm an einem täglichen Hot-Dog-Wettessen teil",
+    "progress": {
+      "attrac": -30,
+      "mental": 0,
+      "educ": 0,
+      "wealth": -15,
+      "social": 15
+    },
+    "category": "attrac",
+    "healing": true
+  },
+  {
+    "text": "Verliere alle Muskelmasse, indem du den ganzen Tag sitzt und auf eine Wand starrst",
+    "progress": {
+      "attrac": -45,
+      "mental": -30,
+      "educ": -15,
+      "wealth": 0,
+      "social": -30
+    },
+    "category": "attrac",
+    "healing": true
+  },
+  {
+    "text": "Verabschiede dich von der Routine Zähne zu putzen und Haare zu bürsten",
+    "progress": {
+      "attrac": -45,
+      "mental": -15,
+      "educ": -15,
+      "wealth": 0,
+      "social": -30
+    },
+    "category": "attrac",
+    "healing": true
+  },
+  {
+    "text": "Iss nur Pizza zu jeder Mahlzeit",
+    "progress": {
+      "attrac": -30,
+      "mental": 0,
+      "educ": 15,
+      "wealth": -15,
+      "social": 0
+    },
+    "category": "attrac",
+    "healing": true
+  },
+  {
+    "text": "Verfolge eine Karriere als professioneller Freelance Gamer ",
+    "progress": {
+      "attrac": 0,
+      "mental": 15,
+      "educ": -30,
+      "wealth": 45,
+      "social": -15
+    },
+    "category": "educ",
+    "healing": false
+  },
+  {
+    "text": "Unternimm eine Sprachreise nach Marokko, um Dothraki zu studieren",
+    "progress": {
+      "attrac": 0,
+      "mental": 15,
+      "educ": 30,
+      "wealth": -30,
+      "social": 30
+    },
+    "category": "educ",
+    "healing": false
+  },
+  {
+    "text": "Nimm an einem 6-monatigen Intensivprogramm für professionelles Videospielen teil",
+    "progress": {
+      "attrac": 0,
+      "mental": 15,
+      "educ": 30,
+      "wealth": -30,
+      "social": -15
+    },
+    "category": "educ",
+    "healing": false
+  },
+  {
+    "text": "Erhalte Zugang zur \"Elite-Schule für Superhelden\" und fühl dich motiviert Fliegen zu lernen",
+    "progress": {
+      "attrac": 0,
+      "mental": 15,
+      "educ": 30,
+      "wealth": 30,
+      "social": 15
+    },
+    "category": "educ",
+    "healing": false
+  },
+  {
+    "text": "Erwerbe einen Abschluss in mittelalterlicher Schmiedekunst",
+    "progress": {
+      "attrac": 0,
+      "mental": 15,
+      "educ": 45,
+      "wealth": -15,
+      "social": 15
+    },
+    "category": "educ",
+    "healing": false
+  },
+  {
+    "text": "Nimm an einer geheimen \"Bildungsrevolution\" teil und proklamier das Lernen unter Wasser",
+    "progress": {
+      "attrac": 0,
+      "mental": 15,
+      "educ": 45,
+      "wealth": 0,
+      "social": 15
+    },
+    "category": "educ",
+    "healing": false
+  },
+  {
+    "text": "Erhalte ein Stipendium für das \"Institut für magische Künste und Wissenschaften\"",
+    "progress": {
+      "attrac": 0,
+      "mental": 15,
+      "educ": 45,
+      "wealth": 30,
+      "social": 15
+    },
+    "category": "educ",
+    "healing": false
+  },
+  {
+    "text": "Versäume die Einschreibung in dein Jura Studium, weil du die bürokratischen Hürden nicht verstehst",
+    "progress": {
+      "attrac": 0,
+      "mental": -30,
+      "educ": -45,
+      "wealth": 0,
+      "social": 0
+    },
+    "category": "educ",
+    "healing": true
+  },
+  {
+    "text": "Werde zum Meister des Verlusts von Bildungsgutscheinen vom Job Center",
+    "progress": {
+      "attrac": 0,
+      "mental": -15,
+      "educ": -30,
+      "wealth": 0,
+      "social": 0
+    },
+    "category": "educ",
+    "healing": true
+  },
+  {
+    "text": "Bewirb dich ohne Erfolg für finanzielle Unterstützungen für Weiterbildungen",
+    "progress": {
+      "attrac": 0,
+      "mental": -30,
+      "educ": -15,
+      "wealth": -15,
+      "social": 0
+    },
+    "category": "educ",
+    "healing": true
+  },
+  {
+    "text": "Gehe mit einem limitierten Einkommen durch die Hölle der Wohnungssuch-Diskriminierung",
+    "progress": {
+      "attrac": 0,
+      "mental": -30,
+      "educ": 0,
+      "wealth": -15,
+      "social": 0
+    },
+    "category": "educ",
+    "healing": true
+  },
+  {
+    "text": "Verbringe täglich 3 Stunden in öffentlichen Verkehrsmitteln neben übelriechenden Mitfahrern",
+    "progress": {
+      "attrac": 0,
+      "mental": -30,
+      "educ": 0,
+      "wealth": 0,
+      "social": -15
+    },
+    "category": "educ",
+    "healing": true
+  },
+  {
+    "text": "Spüre den Frust finanzieller Sorgen durch überteuerte Schulgebühren und Studienmaterialien",
+    "progress": {
+      "attrac": 0,
+      "mental": -30,
+      "educ": 30,
+      "wealth": -30,
+      "social": 0
+    },
+    "category": "educ",
+    "healing": true
+  },
+  {
+    "text": "Nimm täglich an einem Tee-Zeremonie-Kurs zur Stressreduzierung teil",
+    "progress": {
+      "attrac": 0,
+      "mental": 45,
+      "educ": 0,
+      "wealth": -15,
+      "social": 30
+    },
+    "category": "mental",
+    "healing": false
+  },
+  {
+    "text": "Widme deine Wochenenden dem Wandern und erkunde lokale Naturschutzgebiete",
+    "progress": {
+      "attrac": 30,
+      "mental": 30,
+      "educ": 0,
+      "wealth": 0,
+      "social": 0
+    },
+    "category": "mental",
+    "healing": false
+  },
+  {
+    "text": "Nimm an einem Achtsamkeits-Retreat teil, um emotionale Regulierungsfähigkeiten zu entwickeln",
+    "progress": {
+      "attrac": 0,
+      "mental": 45,
+      "educ": 15,
+      "wealth": 0,
+      "social": 45
+    },
+    "category": "mental",
+    "healing": false
+  },
+  {
+    "text": "Behalte eine konsequente Meditationspraxis für sechs Monate bei",
+    "progress": {
+      "attrac": 0,
+      "mental": 45,
+      "educ": 15,
+      "wealth": 0,
+      "social": 15
+    },
+    "category": "mental",
+    "healing": false
+  },
+  {
+    "text": "Nimm an einer Therapie teil, um Probleme im Zusammenhang mit Kindheitstraumata zu bearbeiten",
+    "progress": {
+      "attrac": 0,
+      "mental": 45,
+      "educ": 15,
+      "wealth": 0,
+      "social": 45
+    },
+    "category": "mental",
+    "healing": false
+  },
+  {
+    "text": "Übe dich täglich in Dankbarkeit, um dein allgemeines Glück zu steigern",
+    "progress": {
+      "attrac": 0,
+      "mental": 45,
+      "educ": 15,
+      "wealth": 0,
+      "social": 45
+    },
+    "category": "mental",
+    "healing": false
+  },
+  {
+    "text": "Tritt einer Selbsthilfegruppe für Menschen mit Angststörungen bei",
+    "progress": {
+      "attrac": 0,
+      "mental": 45,
+      "educ": 15,
+      "wealth": 0,
+      "social": 45
+    },
+    "category": "mental",
+    "healing": false
+  },
+  {
+    "text": "Nimm an Gruppentherapiesitzungen gegen Depressionen teil",
+    "progress": {
+      "attrac": 0,
+      "mental": 45,
+      "educ": 15,
+      "wealth": 0,
+      "social": 45
+    },
+    "category": "mental",
+    "healing": false
+  },
+  {
+    "text": "Studier \"Quanten-Chemie des Glücks\" und enthülle die Geheimnisse inneren Friedens",
+    "progress": {
+      "attrac": 0,
+      "mental": 45,
+      "educ": 30,
+      "wealth": 0,
+      "social": 0
+    },
+    "category": "mental",
+    "healing": false
+  },
+  {
+    "text": "Erschaffe einen unvorhersehbaren Schlafrhythmus",
+    "progress": {
+      "attrac": -30,
+      "mental": -30,
+      "educ": -30,
+      "wealth": 0,
+      "social": -15
+    },
+    "category": "mental",
+    "healing": true
+  },
+  {
+    "text": "Entwickle stressauslösende Gewohnheiten wie Nägelbeißen und Fußtappen",
+    "progress": {
+      "attrac": -30,
+      "mental": -45,
+      "educ": -30,
+      "wealth": 0,
+      "social": 0
+    },
+    "category": "mental",
+    "healing": true
+  },
+  {
+    "text": "Vermeide es, Emotionen auszudrücken und unterdrücke sie innerlich",
+    "progress": {
+      "attrac": 0,
+      "mental": -45,
+      "educ": -30,
+      "wealth": 0,
+      "social": -45
+    },
+    "category": "mental",
+    "healing": true
+  },
+  {
+    "text": "Meistere die Kunst, 16 Stunden am Stück zu schlafen",
+    "progress": {
+      "attrac": -15,
+      "mental": -15,
+      "educ": -15,
+      "wealth": 0,
+      "social": -15
+    },
+    "category": "mental",
+    "healing": true
+  },
+  {
+    "text": "Arbeite rund um die Uhr und werde zum Roboter",
+    "progress": {
+      "attrac": -15,
+      "mental": -30,
+      "educ": 0,
+      "wealth": 45,
+      "social": -30
+    },
+    "category": "mental",
+    "healing": true
+  },
+  {
+    "text": "Nimm an einer wöchentlichen Meditationsgruppe teil, um Gleichgesinnte kennenzulernen",
+    "progress": {
+      "attrac": 0,
+      "mental": 45,
+      "educ": 15,
+      "wealth": 0,
+      "social": 30
+    },
+    "category": "social",
+    "healing": false
+  },
+  {
+    "text": "Gehe eine gesunde romantische Beziehung mit jemandem ein, der deine Werte und Ziele teilt",
+    "progress": {
+      "attrac": 30,
+      "mental": 45,
+      "educ": 15,
+      "wealth": 0,
+      "social": 45
+    },
+    "category": "social",
+    "healing": false
+  },
+  {
+    "text": "Nimm an Freiwilligenaktivitäten mit Freunden und Familie teil",
+    "progress": {
+      "attrac": 0,
+      "mental": 15,
+      "educ": 15,
+      "wealth": 0,
+      "social": 45
+    },
+    "category": "social",
+    "healing": false
+  },
+  {
+    "text": "Übe aktives Zuhören und effektive Kommunikation in allen Beziehungen",
+    "progress": {
+      "attrac": 15,
+      "mental": 30,
+      "educ": 30,
+      "wealth": 0,
+      "social": 45
+    },
+    "category": "social",
+    "healing": false
+  },
+  {
+    "text": "Perfektioniere die Kunst des starrsinnigen Blicks ins Leere",
+    "progress": {
+      "attrac": 0,
+      "mental": -30,
+      "educ": -30,
+      "wealth": 0,
+      "social": -45
+    },
+    "category": "social",
+    "healing": true
+  },
+  {
+    "text": "Verfolge Beziehungen mit Personen, die deine Grenzen oder Werte nicht respektieren",
+    "progress": {
+      "attrac": 0,
+      "mental": -30,
+      "educ": -30,
+      "wealth": 0,
+      "social": -45
+    },
+    "category": "social",
+    "healing": true
+  },
+  {
+    "text": "Werde professioneller Stubenhocker",
+    "progress": {
+      "attrac": -15,
+      "mental": 0,
+      "educ": -15,
+      "wealth": 0,
+      "social": -30
+    },
+    "category": "social",
+    "healing": true
+  },
+  {
+    "text": "Werde zum Experten zum ganztägigen Fernsehen und ignoriere Anrufe",
+    "progress": {
+      "attrac": -15,
+      "mental": -30,
+      "educ": -15,
+      "wealth": 0,
+      "social": -30
+    },
+    "category": "social",
+    "healing": true
+  },
+  {
+    "text": "Verbringe den ganzen Tag auf Social Media aber antworte auf keinen persönlichen Nachrichten",
+    "progress": {
+      "attrac": 0,
+      "mental": -15,
+      "educ": -15,
+      "wealth": 0,
+      "social": -30
+    },
+    "category": "social",
+    "healing": true
+  },
+  {
+    "text": "Werde ein Eremit und meide alle sozialen Interaktionen",
+    "progress": {
+      "attrac": -15,
+      "mental": -30,
+      "educ": -15,
+      "wealth": 0,
+      "social": -45
+    },
+    "category": "social",
+    "healing": true
+  },
+  {
+    "text": "Lehne Rückmeldungen von anderen ab und weigere dich, Fehler zuzugeben",
+    "progress": {
+      "attrac": -15,
+      "mental": 0,
+      "educ": -15,
+      "wealth": 0,
+      "social": -45
+    },
+    "category": "social",
+    "healing": true
+  },
+  {
+    "text": "Verbringe den ganzen Tag damit, mit dir selbst zu sprechen",
+    "progress": {
+      "attrac": -15,
+      "mental": -30,
+      "educ": 0,
+      "wealth": 0,
+      "social": -30
+    },
+    "category": "social",
+    "healing": true
+  },
+  {
+    "text": "Ignoriere die Auswirkungen deiner Handlungen auf die Gefühle anderer",
+    "progress": {
+      "attrac": -15,
+      "mental": -15,
+      "educ": 0,
+      "wealth": 0,
+      "social": -30
+    },
+    "category": "social",
+    "healing": true
+  },
+  {
+    "text": "Gib Beziehungen und Freundschaften ohne Erklärung oder Abschluss auf",
+    "progress": {
+      "attrac": -15,
+      "mental": -15,
+      "educ": 0,
+      "wealth": 0,
+      "social": -45
+    },
+    "category": "social",
+    "healing": true
+  },
+  {
+    "text": "Zerstöre gesunde Beziehungen durch Lügen und Betrug",
+    "progress": {
+      "attrac": -15,
+      "mental": -30,
+      "educ": 0,
+      "wealth": 0,
+      "social": -45
+    },
+    "category": "social",
+    "healing": true
+  },
+  {
+    "text": "Wechsel zu einem Job als Heißluftballon-Tourguide",
+    "progress": {
+      "attrac": 0,
+      "mental": 15,
+      "educ": 15,
+      "wealth": 45,
+      "social": 0
+    },
+    "category": "wealth",
+    "healing": false
+  },
+  {
+    "text": "Zahl die Schulden für deine Privatyacht ab, die nach der ersten Fahrt kenterte",
+    "progress": {
+      "attrac": 0,
+      "mental": -15,
+      "educ": 15,
+      "wealth": -45,
+      "social": 0
+    },
+    "category": "wealth",
+    "healing": false
+  },
+  {
+    "text": "Wechsel zu einem Job, der deine Leidenschaft für Buchhaltung erfüllt",
+    "progress": {
+      "attrac": 0,
+      "mental": 0,
+      "educ": 30,
+      "wealth": 30,
+      "social": 0
+    },
+    "category": "wealth",
+    "healing": false
+  },
+  {
+    "text": "Werde Manager einer gemeinnützigen Organisation, die geflüchteten Menschen hilft",
+    "progress": {
+      "attrac": 0,
+      "mental": 15,
+      "educ": 30,
+      "wealth": 45,
+      "social": 15
+    },
+    "category": "wealth",
+    "healing": false
+  },
+  {
+    "text": "Besuche Seminare über Finanzplanung und Anlagestrategien im Crypto Bereich",
+    "progress": {
+      "attrac": 0,
+      "mental": 0,
+      "educ": 45,
+      "wealth": 45,
+      "social": 0
+    },
+    "category": "wealth",
+    "healing": false
+  },
+  {
+    "text": "Nimm freiberufliche Aufträge als Berater für OnlyFans Accounts an",
+    "progress": {
+      "attrac": 0,
+      "mental": 0,
+      "educ": 45,
+      "wealth": 45,
+      "social": 0
+    },
+    "category": "wealth",
+    "healing": false
+  },
+  {
+    "text": "Vermeide es beharrlich, Karriereziele zu setzen, und verharre jahrelang im beruflichen Stillstand",
+    "progress": {
+      "attrac": 0,
+      "mental": 0,
+      "educ": -45,
+      "wealth": -30,
+      "social": 0
+    },
+    "category": "wealth",
+    "healing": true
+  },
+  {
+    "text": "Gib dein ganzes Geld für Luxusgüter und auf High Society Partys aus",
+    "progress": {
+      "attrac": 15,
+      "mental": -15,
+      "educ": 0,
+      "wealth": -45,
+      "social": 30
+    },
+    "category": "wealth",
+    "healing": true
+  },
+  {
+    "text": "Nimm an teuren Konferenzen und Workshops zur Kunst des Bonsai-Baum-Skulptierens teil",
+    "progress": {
+      "attrac": 0,
+      "mental": 0,
+      "educ": 15,
+      "wealth": -30,
+      "social": 15
+    },
+    "category": "wealth",
+    "healing": true
+  },
+  {
+    "text": "Investier all dein Geld in einen Food Truck für übersüße Burger-Bomben",
+    "progress": {
+      "attrac": 0,
+      "mental": 0,
+      "educ": 15,
+      "wealth": -45,
+      "social": 0
+    },
+    "category": "wealth",
+    "healing": true
+  },
+  {
+    "text": "Untergrabe und mobbe gezielt Kollegen, um auf der Karriereleiter voranzukommen",
+    "progress": {
+      "attrac": 0,
+      "mental": -15,
+      "educ": 30,
+      "wealth": 30,
+      "social": -45
+    },
+    "category": "wealth",
+    "healing": true
+  }
 ]

@@ -1,0 +1,48 @@
+// import fonts
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700;900&display=swap');
+@import "../../node_modules/rfs/scss";
+
+
+
+p {
+    font-family: $font-regular;
+}
+
+h1 {
+    font-family: $font-special;
+    @include font-size($font-xl);
+}
+
+h2 {
+    font-family: $font-special;
+    @include font-size($font-l);
+    letter-spacing: 0.05rem;
+}
+
+h3 {
+    font-family: $font-special;
+    @include font-size($font-xs);
+    letter-spacing: 0.1rem;
+}
+
+.highlight {
+    color: darken($color-secondary, 10%);
+    text-transform: uppercase;
+    font-weight: $font-weight-bold;
+}
+
+@mixin action-value-font {
+    @include font-size($font-xs);
+    font-family: $font-special;
+    font-weight: $font-weight-bold;
+    letter-spacing: 0.1rem;
+    vertical-align: super;
+}
+
+@mixin progressbar-value-font {
+    @include font-size($font-s);
+    font-family: $font-special;
+    text-align: right;
+    @include padding($space-xs);
+}

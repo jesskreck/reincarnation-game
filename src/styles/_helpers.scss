@@ -1,0 +1,11 @@
+.hidden {
+    display: none;
+}
+
+.center {
+    text-align: center;
+}
+
+.space {
+    @include padding-top($space);
+}
