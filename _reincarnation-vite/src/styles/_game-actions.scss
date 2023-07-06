@@ -1,0 +1,32 @@
+.container-actions {
+    --background-url: url('#{$random-background}');
+    background-image: var(--background-url);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 60%;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+
+    padding: $space clamp($space-xs, 5%, $space-xl);
+    gap: $space;
+}
+
+
+.action-value {
+    @include action-value-font;
+
+    &.positive {
+        color: $color-success;
+    }
+
+    &.negative {
+        color: $color-warning;
+    }
+}
+
+.healing {
+    animation: pulse 2s infinite ease-in-out;
+    // background-color: red;
+}

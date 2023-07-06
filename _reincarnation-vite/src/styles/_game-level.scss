@@ -1,0 +1,58 @@
+.grid-container-level {
+    background-color: lighten($color-secondary, 10%);
+    padding: $space clamp($space-xs, 5%, $space);
+
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+
+    // padding: $space clamp($space-xs, 5%, $space-xl);
+    // gap: $space;
+}
+
+.emoji-container {
+    @include pixelbox($color-light);
+    padding: $space-xs clamp($space-xs, 5%, $space);
+    min-height: 4rem;
+
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+
+    transition: all .6s cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+@mixin level {
+    // background-color: white;
+    // @extend .eightbit-btn;
+}
+
+.container-willchain {
+    @include level;
+}
+
+.container-healing {
+    @include level;
+}
+
+.container-wellbeing {
+    @include level;
+}
+
+.progressbar-wellbeing {
+    @include pixelbox($color-light);
+    white-space: nowrap;
+    padding-bottom: $shadow-width;
+    min-height: 4rem;
+    display: flex;
+    align-items: stretch;
+}
+
+.progressfill-wellbeing {
+    @include progressbar-value-font;
+    @include font-size($font-l);
+    color: white;
+    letter-spacing: 0.2rem;
+    background-color: $color-primary;
+    transition: all .6s cubic-bezier(0.4, 0.0, 0.2, 1);
+}
