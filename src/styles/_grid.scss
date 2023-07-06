@@ -1,0 +1,111 @@
+.grid-container-header {
+    @include grid();
+
+    //NOTE these selectors work really well if there are only 2 divs without own divs as children
+    div {
+        &:first-child {
+            @include panel;
+            min-height: 3rem;
+            grid-column: span 2;
+        }
+
+        &:nth-child(2) {
+            grid-column: span 8;
+        }
+    }
+}
+
+.grid-container-main {
+    @include grid();
+
+    //NOTE if the first level divs have second level divs selector needs to be ">"
+    >div {
+        &:first-child {
+            @include panel;
+            grid-column: span 6;
+        }
+
+        &:nth-child(2) {
+            grid-column: span 4;
+            display: flex;
+            gap: $space;
+            flex-direction: column;
+
+            >div {
+                &:first-child {
+                    @include panel;
+                }
+
+                &:nth-child(2) {
+                    @include panel;
+                }
+            }
+        }
+    }
+}
+
+.grid-container-level {
+    @include grid();
+
+    >div {
+        &:first-child {
+            @include panel;
+            grid-column: span 4;
+            display: grid;
+            align-items: stretch;
+        }
+
+        &:nth-child(2) {
+            @include panel;
+            grid-column: span 2;
+            display: grid;
+            align-items: stretch;
+        }
+
+        &:nth-child(3) {
+            @include panel;
+            grid-column: span 4;
+            display: grid;
+            align-items: end;
+        }
+    }
+}
+
+.grid-container-album {
+    @include grid();
+
+    >div {
+        &:first-child {
+            @include panel;
+            grid-column: span 10;
+        }
+    }
+}
+
+.container-playerinfo {
+    display: grid;
+    grid-template-columns: 30% 10% 30% 30%;
+    grid-template-areas:
+        "avatar . name name"
+        "avatar . existence age";
+
+    img {
+        grid-area: avatar;
+    }
+
+    h2 {
+        grid-area: name;
+    }
+
+    .existence {
+        grid-area: existence;
+        align-self: end;
+    }
+
+    .age {
+        grid-area: age;
+        align-self: end;
+    }
+
+
+}

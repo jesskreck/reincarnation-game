@@ -1,0 +1,61 @@
+/***** TYPOGRAPHY *****/
+$font-regular: 'Inconsolata', monospace;
+$font-special: 'DotGothic16', sans-serif;
+
+$font-xs: 0.75rem;
+$font-s: 0.9rem;
+$font-base: 1rem; // 16px
+$font-m: 1.25rem; // 20px
+$font-l: 2rem;
+$font-xl: 3rem; //mainly for emojis
+
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+
+
+
+/***** COLORS *****/
+$color-light: #f1f1f1;
+
+$color-primary: #6e40b8;
+$color-secondary: #ffb860;
+
+$color-success: #40b86e;
+$color-warning: #b84074;
+
+$color-info: grey;
+$color-dark: #1e0f24;
+
+
+
+/***** PADDING *****/
+$space: 1.5rem;
+
+$space-xs: calc($space / 6);
+$space-s: calc($space / 2);
+
+$space-l: calc($space *2);
+$space-xl: calc($space * 4);
+
+
+
+/***** IMAGES *****/
+$background-gifs: (
+    'https://wallpaperaccess.com/full/5927911.gif',
+    'https://wallpaperaccess.com/full/7824075.gif',
+    'https://wallpaperaccess.com/full/6604090.gif',
+    "https://wallpaperaccess.com/full/2641099.gif",
+    "https://wallpaperaccess.com/full/8351160.gif",
+    "https://wallpaperaccess.com/full/8351164.gif",
+    "https://wallpaperaccess.com/full/8351163.gif",
+    "https://wallpaperaccess.com/full/6640411.gif",
+    "https://wallpaperaccess.com/full/8351233.gif",
+    "https://wallpaperaccess.com/full/8351295.gif"
+);
+
+@function random-background-gif() {
+    $random-index: random(length($background-gifs));
+    @return nth($background-gifs, $random-index);
+}
+
+$random-background: random-background-gif();

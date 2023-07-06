@@ -1,10 +1,10 @@
 const switchCategoryLogo = (category) => {
   switch (category) {
-    case "attractiveness":
+    case "attrac":
       return "🤳";
     case "mental":
       return "🤪";
-    case "education":
+    case "educ":
       return "🎓";
     case "wealth":
       return "💸";

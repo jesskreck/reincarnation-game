@@ -1,0 +1,83 @@
+@import "../../../node_modules/rfs/scss";
+
+
+.btn-emoji {
+    @include font-size($font-xl);
+    cursor: pointer;
+    animation: tada 3s both infinite ease-in-out;
+    transition: all .6s cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+.btn-action {
+    cursor: pointer;
+    flex-grow: 1;
+    animation-name: bounceIn;
+    animation-duration: .75s;
+    animation-fill-mode: both;
+
+
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    align-items: center;
+
+    @include padding-left($space);
+    @include padding-right($space);
+    @include padding-top($space-s);
+    @include padding-bottom($space-s);
+}
+
+
+
+
+
+
+
+$outline-width: 4px;
+$shadow-width: 3px;
+
+$button-background: white;
+$button-background-hover: lighten($color-secondary, 10%);
+$shadow-color: darken($color-light, 10%);
+$shadow-color-hover: $color-secondary;
+
+.eightbit-btn {
+    background: $button-background;
+    position: relative;
+    box-shadow: inset (-$shadow-width) (-$shadow-width) 0px 0px $shadow-color;
+
+    &:hover,
+    &:focus {
+        background: $button-background-hover;
+        box-shadow: inset (-$shadow-width*1.5) (-$shadow-width*1.5) 0px 0px $shadow-color-hover;
+    }
+
+    &:active {
+        box-shadow: inset $shadow-width $shadow-width 0px 0px $shadow-color-hover;
+        animation-name: bounceOut;
+        animation-duration: .75s;
+        animation-fill-mode: both;
+    }
+
+    &:before,
+    &:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        box-sizing: content-box;
+    }
+
+    &:before {
+        top: -$outline-width;
+        left: 0;
+        border-top: $outline-width $color-dark solid;
+        border-bottom: $outline-width $color-dark solid;
+    }
+
+    &:after {
+        left: -$outline-width;
+        top: 0;
+        border-left: $outline-width $color-dark solid;
+        border-right: $outline-width $color-dark solid;
+    }
+}
