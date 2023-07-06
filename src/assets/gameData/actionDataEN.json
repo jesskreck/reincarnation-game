@@ -2,345 +2,345 @@
   {
     "text": "Achieve a six-pack abs with a strict diet and exercise regimen",
     "progress": {
-      "attractiveness": 45,
+      "attrac": 45,
       "mental": 15,
-      "education": -30,
+      "educ": -30,
       "wealth": 0,
       "social": 0
     },
-    "category": "attractiveness",
+    "category": "attrac",
     "healing": false
   },
   {
     "text": "Master the art of pole dancing for a full-body workout",
     "progress": {
-      "attractiveness": 45,
+      "attrac": 45,
       "mental": 15,
-      "education": -30,
+      "educ": -30,
       "wealth": 0,
       "social": 15
     },
-    "category": "attractiveness",
+    "category": "attrac",
     "healing": false
   },
   {
     "text": "Build endurance by training for a 100-mile bike ride",
     "progress": {
-      "attractiveness": 45,
+      "attrac": 45,
       "mental": 15,
-      "education": -15,
+      "educ": -15,
       "wealth": 0,
       "social": 0
     },
-    "category": "attractiveness",
+    "category": "attrac",
     "healing": false
   },
   {
     "text": "Learn how to surf and catch the biggest waves",
     "progress": {
-      "attractiveness": 45,
+      "attrac": 45,
       "mental": 15,
-      "education": -15,
+      "educ": -15,
       "wealth": 0,
       "social": 15
     },
-    "category": "attractiveness",
+    "category": "attrac",
     "healing": false
   },
   {
     "text": "Transform into a fashion icon for a futuristic cyberpunk aesthetic",
     "progress": {
-      "attractiveness": 45,
+      "attrac": 45,
       "mental": 0,
-      "education": -15,
+      "educ": -15,
       "wealth": 0,
       "social": 30
     },
-    "category": "attractiveness",
+    "category": "attrac",
     "healing": false
   },
   {
     "text": "Become an influencer for quirky hat styles on social media",
     "progress": {
-      "attractiveness": 30,
+      "attrac": 30,
       "mental": 0,
-      "education": -15,
+      "educ": -15,
       "wealth": 15,
       "social": 30
     },
-    "category": "attractiveness",
+    "category": "attrac",
     "healing": false
   },
   {
     "text": "Commit to a daily facial routine using only gold and diamonds",
     "progress": {
-      "attractiveness": 30,
+      "attrac": 30,
       "mental": 0,
-      "education": 0,
+      "educ": 0,
       "wealth": -45,
       "social": 0
     },
-    "category": "attractiveness",
+    "category": "attrac",
     "healing": false
   },
   {
     "text": "Save up for a pair of gold-plated dentures",
     "progress": {
-      "attractiveness": 15,
+      "attrac": 15,
       "mental": 0,
-      "education": 0,
+      "educ": 0,
       "wealth": -30,
       "social": 0
     },
-    "category": "attractiveness",
+    "category": "attrac",
     "healing": false
   },
   {
     "text": "Transform yourself into a confident fashion disaster and exclusively wear neon colors",
     "progress": {
-      "attractiveness": 30,
+      "attrac": 30,
       "mental": 0,
-      "education": 0,
+      "educ": 0,
       "wealth": 0,
       "social": 15
     },
-    "category": "attractiveness",
+    "category": "attrac",
     "healing": false
   },
   {
     "text": "Become a certified aerial yoga instructor",
     "progress": {
-      "attractiveness": 45,
+      "attrac": 45,
       "mental": 15,
-      "education": 0,
+      "educ": 0,
       "wealth": 30,
       "social": 15
     },
-    "category": "attractiveness",
+    "category": "attrac",
     "healing": false
   },
   {
     "text": "Gain 50 pounds by eating only fast food",
     "progress": {
-      "attractiveness": -45,
+      "attrac": -45,
       "mental": -30,
-      "education": -15,
+      "educ": -15,
       "wealth": -15,
       "social": 0
     },
-    "category": "attractiveness",
+    "category": "attrac",
     "healing": true
   },
   {
     "text": "Participate in a daily hot dog eating contest",
     "progress": {
-      "attractiveness": -30,
+      "attrac": -30,
       "mental": 0,
-      "education": 0,
+      "educ": 0,
       "wealth": -15,
       "social": 15
     },
-    "category": "attractiveness",
+    "category": "attrac",
     "healing": true
   },
   {
     "text": "Lose all muscle mass by sitting and staring at a wall all day",
     "progress": {
-      "attractiveness": -45,
+      "attrac": -45,
       "mental": -30,
-      "education": -15,
+      "educ": -15,
       "wealth": 0,
       "social": -30
     },
-    "category": "attractiveness",
+    "category": "attrac",
     "healing": true
   },
   {
     "text": "Say goodbye to the routine of brushing your teeth and brushing your hair",
     "progress": {
-      "attractiveness": -45,
+      "attrac": -45,
       "mental": -15,
-      "education": -15,
+      "educ": -15,
       "wealth": 0,
       "social": -30
     },
-    "category": "attractiveness",
+    "category": "attrac",
     "healing": true
   },
   {
     "text": "Eat only pizza for every meal",
     "progress": {
-      "attractiveness": -30,
+      "attrac": -30,
       "mental": 0,
-      "education": 15,
+      "educ": 15,
       "wealth": -15,
       "social": 0
     },
-    "category": "attractiveness",
+    "category": "attrac",
     "healing": true
   },
   {
     "text": "Pursue a career as a professional freelance gamer",
     "progress": {
-      "attractiveness": 0,
+      "attrac": 0,
       "mental": 15,
-      "education": -30,
+      "educ": -30,
       "wealth": 45,
       "social": -15
     },
-    "category": "education",
+    "category": "educ",
     "healing": false
   },
   {
     "text": "Embark on a language trip to study Dothraki in Morocco",
     "progress": {
-      "attractiveness": 0,
+      "attrac": 0,
       "mental": 15,
-      "education": 30,
+      "educ": 30,
       "wealth": -30,
       "social": 30
     },
-    "category": "education",
+    "category": "educ",
     "healing": false
   },
   {
     "text": "Attend a 6-month intensive program for professional video gaming",
     "progress": {
-      "attractiveness": 0,
+      "attrac": 0,
       "mental": 15,
-      "education": 30,
+      "educ": 30,
       "wealth": -30,
       "social": -15
     },
-    "category": "education",
+    "category": "educ",
     "healing": false
   },
   {
     "text": "Get access to the \"Elite School for Superheroes\" and feel motivated to learn how to fly",
     "progress": {
-      "attractiveness": 0,
+      "attrac": 0,
       "mental": 15,
-      "education": 30,
+      "educ": 30,
       "wealth": 30,
       "social": 15
     },
-    "category": "education",
+    "category": "educ",
     "healing": false
   },
   {
     "text": "Earn a degree in medieval blacksmithing",
     "progress": {
-      "attractiveness": 0,
+      "attrac": 0,
       "mental": 15,
-      "education": 45,
+      "educ": 45,
       "wealth": -15,
       "social": 15
     },
-    "category": "education",
+    "category": "educ",
     "healing": false
   },
   {
     "text": "Take part in a secret \"education revolution\" and proclaim learning underwater",
     "progress": {
-      "attractiveness": 0,
+      "attrac": 0,
       "mental": 15,
-      "education": 45,
+      "educ": 45,
       "wealth": 0,
       "social": 15
     },
-    "category": "education",
+    "category": "educ",
     "healing": false
   },
   {
     "text": "Receive a scholarship for the \"Institute of Magical Arts and Sciences\"",
     "progress": {
-      "attractiveness": 0,
+      "attrac": 0,
       "mental": 15,
-      "education": 45,
+      "educ": 45,
       "wealth": 30,
       "social": 15
     },
-    "category": "education",
+    "category": "educ",
     "healing": false
   },
   {
     "text": "Miss the enrollment for your law studies because you don't understand the bureaucratic obstacles",
     "progress": {
-      "attractiveness": 0,
+      "attrac": 0,
       "mental": -30,
-      "education": -45,
+      "educ": -45,
       "wealth": 0,
       "social": 0
     },
-    "category": "education",
+    "category": "educ",
     "healing": true
   },
   {
     "text": "Become a master of handling education vouchers from the job center",
     "progress": {
-      "attractiveness": 0,
+      "attrac": 0,
       "mental": -15,
-      "education": -30,
+      "educ": -30,
       "wealth": 0,
       "social": 0
     },
-    "category": "education",
+    "category": "educ",
     "healing": true
   },
   {
     "text": "Apply for financial support for further education without success",
     "progress": {
-      "attractiveness": 0,
+      "attrac": 0,
       "mental": -30,
-      "education": -15,
+      "educ": -15,
       "wealth": -15,
       "social": 0
     },
-    "category": "education",
+    "category": "educ",
     "healing": true
   },
   {
     "text": "Going through the hell of housing discrimination with a limited income",
     "progress": {
-      "attractiveness": 0,
+      "attrac": 0,
       "mental": -30,
-      "education": 0,
+      "educ": 0,
       "wealth": -15,
       "social": 0
     },
-    "category": "education",
+    "category": "educ",
     "healing": true
   },
   {
     "text": "Spend 3 hours daily in public transport next to smelly fellow passengers",
     "progress": {
-      "attractiveness": 0,
+      "attrac": 0,
       "mental": -30,
-      "education": 0,
+      "educ": 0,
       "wealth": 0,
       "social": -15
     },
-    "category": "education",
+    "category": "educ",
     "healing": true
   },
   {
     "text": "Feel the frustration of financial worries caused by overpriced school fees and study materials",
     "progress": {
-      "attractiveness": 0,
+      "attrac": 0,
       "mental": -30,
-      "education": 30,
+      "educ": 30,
       "wealth": -30,
       "social": 0
     },
-    "category": "education",
+    "category": "educ",
     "healing": true
   },
   {
     "text": "Take a daily tea ceremony class for stress relief",
     "progress": {
-      "attractiveness": 0,
+      "attrac": 0,
       "mental": 45,
-      "education": 0,
+      "educ": 0,
       "wealth": -15,
       "social": 30
     },
@@ -350,9 +350,9 @@
   {
     "text": "Devote weekends to hiking and exploring local nature reserves",
     "progress": {
-      "attractiveness": 30,
+      "attrac": 30,
       "mental": 30,
-      "education": 0,
+      "educ": 0,
       "wealth": 0,
       "social": 0
     },
@@ -362,9 +362,9 @@
   {
     "text": "Participate in a mindfulness retreat to develop emotional regulation skills",
     "progress": {
-      "attractiveness": 0,
+      "attrac": 0,
       "mental": 45,
-      "education": 15,
+      "educ": 15,
       "wealth": 0,
       "social": 45
     },
@@ -374,9 +374,9 @@
   {
     "text": "Maintain a consistent meditation practice for six months",
     "progress": {
-      "attractiveness": 0,
+      "attrac": 0,
       "mental": 45,
-      "education": 15,
+      "educ": 15,
       "wealth": 0,
       "social": 15
     },
@@ -386,9 +386,9 @@
   {
     "text": "Attend therapy to work through issues related to childhood trauma",
     "progress": {
-      "attractiveness": 0,
+      "attrac": 0,
       "mental": 45,
-      "education": 15,
+      "educ": 15,
       "wealth": 0,
       "social": 45
     },
@@ -398,9 +398,9 @@
   {
     "text": "Practice gratitude daily to increase your overall happiness",
     "progress": {
-      "attractiveness": 0,
+      "attrac": 0,
       "mental": 45,
-      "education": 15,
+      "educ": 15,
       "wealth": 0,
       "social": 45
     },
@@ -410,9 +410,9 @@
   {
     "text": "Join a support group for individuals with anxiety disorders",
     "progress": {
-      "attractiveness": 0,
+      "attrac": 0,
       "mental": 45,
-      "education": 15,
+      "educ": 15,
       "wealth": 0,
       "social": 45
     },
@@ -422,9 +422,9 @@
   {
     "text": "Attend group therapy sessions for depression",
     "progress": {
-      "attractiveness": 0,
+      "attrac": 0,
       "mental": 45,
-      "education": 15,
+      "educ": 15,
       "wealth": 0,
       "social": 45
     },
@@ -434,9 +434,9 @@
   {
     "text": "Study \"Quantum Chemistry of Happiness\" and reveal the secrets of inner peace",
     "progress": {
-      "attractiveness": 0,
+      "attrac": 0,
       "mental": 45,
-      "education": 30,
+      "educ": 30,
       "wealth": 0,
       "social": 0
     },
@@ -446,9 +446,9 @@
   {
     "text": "Establish an unpredictable sleep schedule",
     "progress": {
-      "attractiveness": -30,
+      "attrac": -30,
       "mental": -30,
-      "education": -30,
+      "educ": -30,
       "wealth": 0,
       "social": -15
     },
@@ -458,9 +458,9 @@
   {
     "text": "Develop stress-inducing habits, like biting nails and tapping feet",
     "progress": {
-      "attractiveness": -30,
+      "attrac": -30,
       "mental": -45,
-      "education": -30,
+      "educ": -30,
       "wealth": 0,
       "social": 0
     },
@@ -470,9 +470,9 @@
   {
     "text": "Avoid expressing emotions and bottle them up inside",
     "progress": {
-      "attractiveness": 0,
+      "attrac": 0,
       "mental": -45,
-      "education": -30,
+      "educ": -30,
       "wealth": 0,
       "social": -45
     },
@@ -482,9 +482,9 @@
   {
     "text": "Master the art of sleeping for 16 hours straight",
     "progress": {
-      "attractiveness": -15,
+      "attrac": -15,
       "mental": -15,
-      "education": -15,
+      "educ": -15,
       "wealth": 0,
       "social": -15
     },
@@ -494,9 +494,9 @@
   {
     "text": "Work 24/7 and become a robot",
     "progress": {
-      "attractiveness": -15,
+      "attrac": -15,
       "mental": -30,
-      "education": 0,
+      "educ": 0,
       "wealth": 45,
       "social": -30
     },
@@ -506,9 +506,9 @@
   {
     "text": "Attend a weekly meditation group to meet like-minded individuals",
     "progress": {
-      "attractiveness": 0,
+      "attrac": 0,
       "mental": 45,
-      "education": 15,
+      "educ": 15,
       "wealth": 0,
       "social": 30
     },
@@ -518,9 +518,9 @@
   {
     "text": "Engage in a healthy romantic partnership with someone who shares your values and goals",
     "progress": {
-      "attractiveness": 30,
+      "attrac": 30,
       "mental": 45,
-      "education": 15,
+      "educ": 15,
       "wealth": 0,
       "social": 45
     },
@@ -530,9 +530,9 @@
   {
     "text": "Participate in volunteer activities with friends and family",
     "progress": {
-      "attractiveness": 0,
+      "attrac": 0,
       "mental": 15,
-      "education": 15,
+      "educ": 15,
       "wealth": 0,
       "social": 45
     },
@@ -542,9 +542,9 @@
   {
     "text": "Practice active listening and effective communication in all relationships",
     "progress": {
-      "attractiveness": 15,
+      "attrac": 15,
       "mental": 30,
-      "education": 30,
+      "educ": 30,
       "wealth": 0,
       "social": 45
     },
@@ -554,9 +554,9 @@
   {
     "text": "Perfect the art of staring blankly into space",
     "progress": {
-      "attractiveness": 0,
+      "attrac": 0,
       "mental": -30,
-      "education": -30,
+      "educ": -30,
       "wealth": 0,
       "social": -45
     },
@@ -566,9 +566,9 @@
   {
     "text": "Pursue relationships with individuals who do not respect your boundaries or values",
     "progress": {
-      "attractiveness": 0,
+      "attrac": 0,
       "mental": -30,
-      "education": -30,
+      "educ": -30,
       "wealth": 0,
       "social": -45
     },
@@ -578,9 +578,9 @@
   {
     "text": "Become a professional couch potato",
     "progress": {
-      "attractiveness": -15,
+      "attrac": -15,
       "mental": 0,
-      "education": -15,
+      "educ": -15,
       "wealth": 0,
       "social": -30
     },
@@ -590,9 +590,9 @@
   {
     "text": "Become an expert in all-day television watching and ignore phone calls",
     "progress": {
-      "attractiveness": -15,
+      "attrac": -15,
       "mental": -30,
-      "education": -15,
+      "educ": -15,
       "wealth": 0,
       "social": -30
     },
@@ -602,9 +602,9 @@
   {
     "text": "Spend the entire day on social media but do not respond to any personal messages",
     "progress": {
-      "attractiveness": 0,
+      "attrac": 0,
       "mental": -15,
-      "education": -15,
+      "educ": -15,
       "wealth": 0,
       "social": -30
     },
@@ -614,9 +614,9 @@
   {
     "text": "Become a hermit and avoid all social interactions",
     "progress": {
-      "attractiveness": -15,
+      "attrac": -15,
       "mental": -30,
-      "education": -15,
+      "educ": -15,
       "wealth": 0,
       "social": -45
     },
@@ -626,9 +626,9 @@
   {
     "text": "Reject feedback from others and refuse to admit mistakes",
     "progress": {
-      "attractiveness": -15,
+      "attrac": -15,
       "mental": 0,
-      "education": -15,
+      "educ": -15,
       "wealth": 0,
       "social": -45
     },
@@ -638,9 +638,9 @@
   {
     "text": "Spend all day talking to yourself",
     "progress": {
-      "attractiveness": -15,
+      "attrac": -15,
       "mental": -30,
-      "education": 0,
+      "educ": 0,
       "wealth": 0,
       "social": -30
     },
@@ -650,9 +650,9 @@
   {
     "text": "Disregard the impact of your actions on others' feelings",
     "progress": {
-      "attractiveness": -15,
+      "attrac": -15,
       "mental": -15,
-      "education": 0,
+      "educ": 0,
       "wealth": 0,
       "social": -30
     },
@@ -662,9 +662,9 @@
   {
     "text": "Abandon friendships and relationships without explanation or closure",
     "progress": {
-      "attractiveness": -15,
+      "attrac": -15,
       "mental": -15,
-      "education": 0,
+      "educ": 0,
       "wealth": 0,
       "social": -45
     },
@@ -674,9 +674,9 @@
   {
     "text": "Destroy healthy relationships through lies and deceit",
     "progress": {
-      "attractiveness": -15,
+      "attrac": -15,
       "mental": -30,
-      "education": 0,
+      "educ": 0,
       "wealth": 0,
       "social": -45
     },
@@ -686,9 +686,9 @@
   {
     "text": "Switch to a job as a hot air balloon tour guide",
     "progress": {
-      "attractiveness": 0,
+      "attrac": 0,
       "mental": 15,
-      "education": 15,
+      "educ": 15,
       "wealth": 45,
       "social": 0
     },
@@ -698,9 +698,9 @@
   {
     "text": "Pay off the debts for your private yacht that capsized after its first voyage",
     "progress": {
-      "attractiveness": 0,
+      "attrac": 0,
       "mental": -15,
-      "education": 15,
+      "educ": 15,
       "wealth": -45,
       "social": 0
     },
@@ -710,9 +710,9 @@
   {
     "text": "Switch to a job that fulfills your passion for accounting",
     "progress": {
-      "attractiveness": 0,
+      "attrac": 0,
       "mental": 0,
-      "education": 30,
+      "educ": 30,
       "wealth": 30,
       "social": 0
     },
@@ -722,9 +722,9 @@
   {
     "text": "Become the manager of a nonprofit organization that assists refugees",
     "progress": {
-      "attractiveness": 0,
+      "attrac": 0,
       "mental": 15,
-      "education": 30,
+      "educ": 30,
       "wealth": 45,
       "social": 15
     },
@@ -734,9 +734,9 @@
   {
     "text": "Attend seminars on financial planning and investment strategies in the crypto field",
     "progress": {
-      "attractiveness": 0,
+      "attrac": 0,
       "mental": 0,
-      "education": 45,
+      "educ": 45,
       "wealth": 45,
       "social": 0
     },
@@ -746,9 +746,9 @@
   {
     "text": "Take freelance assignments as a consultant for OnlyFans accounts",
     "progress": {
-      "attractiveness": 0,
+      "attrac": 0,
       "mental": 0,
-      "education": 45,
+      "educ": 45,
       "wealth": 45,
       "social": 0
     },
@@ -756,11 +756,11 @@
     "healing": false
   },
   {
-    "text": "Avoid persistently setting career goals and remain in professional stagnation for years.",
+    "text": "Avoid persistently setting career goals and remaining in professional stagnation for years.",
     "progress": {
-      "attractiveness": 0,
+      "attrac": 0,
       "mental": 0,
-      "education": -45,
+      "educ": -45,
       "wealth": -30,
       "social": 0
     },
@@ -770,9 +770,9 @@
   {
     "text": "Spend all your money on luxury goods and high society parties",
     "progress": {
-      "attractiveness": 15,
+      "attrac": 15,
       "mental": -15,
-      "education": 0,
+      "educ": 0,
       "wealth": -45,
       "social": 30
     },
@@ -782,9 +782,9 @@
   {
     "text": "Attend conferences and workshops on the art of bonsai tree sculpting",
     "progress": {
-      "attractiveness": 0,
+      "attrac": 0,
       "mental": 0,
-      "education": 15,
+      "educ": 15,
       "wealth": -30,
       "social": 15
     },
@@ -794,9 +794,9 @@
   {
     "text": "Invest all your money in a food truck for super sweet burger bombs",
     "progress": {
-      "attractiveness": 0,
+      "attrac": 0,
       "mental": 0,
-      "education": 15,
+      "educ": 15,
       "wealth": 30,
       "social": 0
     },
@@ -806,9 +806,9 @@
   {
     "text": "Undermine and bully colleagues systematically to advance on the career ladder",
     "progress": {
-      "attractiveness": 0,
+      "attrac": 0,
       "mental": -15,
-      "education": 30,
+      "educ": 30,
       "wealth": 30,
       "social": -45
     },

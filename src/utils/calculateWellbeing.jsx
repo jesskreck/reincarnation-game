@@ -1,27 +1,26 @@
-function calculateWellbeing(progress) {
-    const stressThreshold = 20;
-    const powerThreshold = 80;
+ export const calculateWellbeing = (attrac, mental, educ, wealth, social) => {
+        const stressLevel = 20;
+        const powerLevel = 80;
 
-    let sum = 0;
-    let count = 0;
+        let sum = 0;
+        let count = 0;
 
-    for (const key in progress) {
-      const level = progress[key];
+        const progresses = [attrac, mental, educ, wealth, social];
 
-      let weight = 1;
-      if (level < stressThreshold) {
-        weight = 0.5;
-      } else if (level > powerThreshold) {
-        weight = 2;
-      }
+        for (const value of progresses) {
+            const level = parseInt(value);
 
-      sum += level * weight;
-      count += weight;
+            let weight = 1;
+            if (level < stressLevel) {
+                weight = 0.5;
+            } else if (level > powerLevel) {
+                weight = 2;
+            }
+
+            sum += level * weight;
+            count += weight;
+        }
+
+        const wellbeing = Math.round(sum / count);
+        return wellbeing;
     }
-    
-    const wellBeing = Math.round(sum / count);
-    return wellBeing;
-}
-  
-
-export default calculateWellbeing
