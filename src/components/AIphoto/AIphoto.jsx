@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { OpenAIApi, Configuration } from "openai"
 import { useSetRecoilState } from 'recoil'
 import { albumAtom, attracAtom, educAtom, healedAtom, mentalAtom, socialAtom, statusAtom, wealthAtom } from '../../recoil/atoms/levelAtoms';

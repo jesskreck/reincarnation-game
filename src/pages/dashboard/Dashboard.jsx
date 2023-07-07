@@ -1,4 +1,4 @@
-import { React, useState, useEffect, useMemo } from 'react'
+import { useState, useEffect, useMemo } from 'react'
 import { useRecoilState, useRecoilValue } from 'recoil'
 
 import { statusAtom } from '../../recoil/atoms/levelAtoms'
@@ -134,14 +134,16 @@ export default function Dashboard() {
     return { width: `${value}%` }
   }
 
+  //
   const getUnhealedTraumas = useMemo(() => {
     const traumas = [
+      // check which traumas are truthy and return corresponding strings as array
       activePlayer.traumas.attrac && "attrac",
       activePlayer.traumas.mental && "mental",
       activePlayer.traumas.educ && "educ",
       activePlayer.traumas.wealth && "wealth",
       activePlayer.traumas.social && "social",
-    ].filter(Boolean);
+    ];
 
     return traumas;
   }, [activePlayer.traumas]);
