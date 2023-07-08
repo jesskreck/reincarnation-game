@@ -19,3 +19,97 @@
     border-image-outset: 0;
     border-image-source: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='6' height='6'><path d='M0 2h2v2H0zM2 0h2v2H2zM4 2h2v2H4zM2 4h2v2H2z' fill='%23bdc6d0' /></svg>");
 }
+
+@mixin box($color, $text) {
+    background: $color;
+    color: $text;
+    position: relative;
+    box-shadow: inset (-$shadow-width) (-$shadow-width) 0px 0px darken($color, 15%);
+
+    &:before,
+    &:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        box-sizing: content-box;
+    }
+
+    &:before {
+        top: -$outline-width;
+        left: 0;
+        border-top: $outline-width $color-dark solid;
+        border-bottom: $outline-width $color-dark solid;
+    }
+
+    &:after {
+        left: -$outline-width;
+        top: 0;
+        border-left: $outline-width $color-dark solid;
+        border-right: $outline-width $color-dark solid;
+    }
+}
+
+@mixin button($color) {
+    background: $color;
+    color: $color-light;
+    position: relative;
+    box-shadow: inset (-$shadow-width) (-$shadow-width) 0px 0px darken($color, 15%);
+
+    &:hover,
+    &:focus {
+        background: darken($color, 10%);
+        box-shadow: inset (-$shadow-width*1.75) (-$shadow-width*1.75) 0px 0px darken($color, 25%);
+        transform: translate(0.2rem, 0.2rem)
+    }
+
+    &:active {
+        box-shadow: inset $shadow-width $shadow-width 0px 0px darken($color, 10%);
+        animation-name: bounceOut;
+        animation-duration: .75s;
+        animation-fill-mode: both;
+    }
+
+    &:before,
+    &:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        box-sizing: content-box;
+    }
+
+    &:before {
+        top: -$outline-width;
+        left: 0;
+        border-top: $outline-width $color-dark solid;
+        border-bottom: $outline-width $color-dark solid;
+    }
+
+    &:after {
+        left: -$outline-width;
+        top: 0;
+        border-left: $outline-width $color-dark solid;
+        border-right: $outline-width $color-dark solid;
+    }
+}
+
+@mixin heading {
+    font-family: $font-special;
+    letter-spacing: 0.2rem;
+}
+
+@mixin action-value-font {
+    @include font-size($font-xs);
+    font-family: $font-special;
+    font-weight: $font-weight-bold;
+    letter-spacing: 0.1rem;
+    vertical-align: super;
+}
+
+@mixin progressbar-value-font {
+    @include font-size($font-s);
+    font-family: $font-special;
+    text-align: right;
+    @include padding($space-xs);
+}

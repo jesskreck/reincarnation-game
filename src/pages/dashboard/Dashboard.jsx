@@ -195,7 +195,8 @@ export default function Dashboard() {
   // }, [activePlayer.progress])
 
   return (
-    <div className="main">
+    <div className="dashboard-bg">
+    <div className="dashboard-container">
       {/* <div className='grid-game'> */}
 
       {/* SECTION INSTRUCTIONS */}
@@ -392,7 +393,7 @@ export default function Dashboard() {
         </div>
       </div>
 
-      {/* </div> */}
+      </div>
     </div>
   );
 }

@@ -10,39 +10,22 @@ p {
 }
 
 h1 {
-    font-family: $font-special;
+    @include heading;
     @include font-size($font-xl);
 }
 
 h2 {
-    font-family: $font-special;
+    @include heading;
     @include font-size($font-l);
-    letter-spacing: 0.05rem;
 }
 
 h3 {
-    font-family: $font-special;
+    @include heading;
     @include font-size($font-xs);
-    letter-spacing: 0.1rem;
 }
 
 .highlight {
     color: darken($color-secondary, 10%);
     text-transform: uppercase;
     font-weight: $font-weight-bold;
-}
-
-@mixin action-value-font {
-    @include font-size($font-xs);
-    font-family: $font-special;
-    font-weight: $font-weight-bold;
-    letter-spacing: 0.1rem;
-    vertical-align: super;
-}
-
-@mixin progressbar-value-font {
-    @include font-size($font-s);
-    font-family: $font-special;
-    text-align: right;
-    @include padding($space-xs);
 }

@@ -1,0 +1,80 @@
+.bg-black {
+    background-color: black;
+    height: 100vh;
+}
+
+.bg-image {
+    display: grid;
+    place-items: center;
+    background-image: url("../images/space1.gif");
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 767px) {
+    .bg-image {
+        background-size: 75%;
+    }
+}
+
+@media (min-width: 1800px) {
+    .bg-image {
+        background-size: 30%;
+    }
+}
+
+.bg-radial {
+    background-image: radial-gradient(circle at center,
+            rgba(0, 0, 0, 0),
+            rgba(0, 0, 0, 1),
+            rgb(26, 10, 48) 40%,
+            rgb(30, 22, 76) 70%,
+            rgb(23, 51, 77) 90%,
+            rgba(34, 120, 144, 0.5) 100%);
+    height: 100vh;
+    width: 100vw;
+}
+
+.bg-radial-animated {
+    background-image: radial-gradient(circle at center,
+            rgba(0, 0, 0, 0),
+            rgba(0, 0, 0, 1),
+            rgb(26, 10, 48) 50%,
+            rgb(30, 22, 76) 70%,
+            rgb(23, 51, 77) 90%,
+            rgba(34, 120, 144, 0.5) 100%);
+    height: 100vh;
+    width: 100vw;
+    // animation: gradientAnimation 5s linear forwards;
+}
+
+.storybox-grid {
+    height: 90%;
+    display: grid;
+    grid-template-columns: 10% 1fr 20%;
+    gap: $space;
+    align-content: end;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.storybox-avatar {
+    @include heading;
+    @include box($color-secondary, $color-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.storybox-text {
+    @include box($color-light, darken($color-secondary, 5%));
+    @include font-size($font-s);
+    padding-inline: $space;
+    padding-block: $space;
+    font-family: $font-special;
+    letter-spacing: 0.05rem;
+
+
+}

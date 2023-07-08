@@ -1,11 +1,11 @@
-.app {
+.dashboard-bg {
     background-color: #5d5b78;
     background-image: url("https://www.transparenttextures.com/patterns/binding-light.png");
     background-position: center;
     min-height: 100vh;
 }
 
-.main {
+.dashboard-container {
     display: flex;
     flex-direction: column;
     padding: 5rem;

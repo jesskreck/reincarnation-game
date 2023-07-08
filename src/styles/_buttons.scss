@@ -1,5 +1,30 @@
 @import "../../node_modules/rfs/scss";
 
+$outline-width: 4px;
+$shadow-width: 3px;
+
+$button-background: white;
+$button-background-hover: lighten($color-secondary, 10%);
+$shadow-color: darken($color-light, 10%);
+$shadow-color-hover: $color-secondary;
+
+.btn-primary {
+    @include button($color-primary);
+    padding-block: clamp($space-s, $space, $space-xl);
+    padding-inline: clamp($space, $space-l, $space-xl);
+
+    h2 {
+        font-weight: $font-weight-normal;
+    }
+}
+
+.btn-story {
+    @include button($color-primary);
+    padding-block: clamp($space-s, $space, $space-xl);
+    padding-inline: clamp($space, $space-l, $space-xl);
+    font-family: $font-special;
+}
+
 
 .btn-emoji {
     @include font-size($font-xl);
@@ -31,14 +56,6 @@
 
 
 
-
-$outline-width: 4px;
-$shadow-width: 3px;
-
-$button-background: white;
-$button-background-hover: lighten($color-secondary, 10%);
-$shadow-color: darken($color-light, 10%);
-$shadow-color-hover: $color-secondary;
 
 .eightbit-btn {
     background: $button-background;
