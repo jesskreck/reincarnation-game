@@ -1,0 +1,38 @@
+.introbox-grid {
+    height: 90%;
+    display: grid;
+    grid-template-columns: 10% 1fr 20%;
+    gap: $space;
+    align-items: top;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.introbox-avatar {
+    @include box($color-secondary, $color-light);
+    text-align: center;
+    padding: $space-s;
+    height: 6rem;
+}
+
+.introbox-text {
+    @include box($color-light, darken($color-secondary, 5%));
+    @include font-size($font-s);
+    padding-inline: $space;
+    padding-block: $space;
+    font-family: $font-special;
+    letter-spacing: 0.05rem;
+    min-height: 6rem;
+}
+
+.introbox-text-gif {
+    @extend .introbox-text;
+    padding: 0;
+
+    // height: 20rem;
+
+    img {
+        // height: clamp(6rem, 20vh, 20rem);
+    }
+}

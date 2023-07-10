@@ -16,12 +16,12 @@ export default function Home() {
         </button>
       ) : (
         <div>
-          <Link to="intro">
+          <Link to="story">
             <button className="btn-primary" onClick={() => setLanguage("de")}>
               <h3>Deutsch</h3>
             </button>
           </Link>
-          <Link to="intro">
+          <Link to="story">
             <button className="btn-primary" onClick={() => setLanguage("en")}>
               <h3>English</h3>
             </button>

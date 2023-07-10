@@ -3,6 +3,7 @@ import { useRecoilValue } from 'recoil';
 import { languageAtom } from '../recoil/atoms/Atoms';
 import { Typewriter } from 'react-simple-typewriter';
 import texts from "../assets/gameData/texts.json";
+import { Navigate } from "react-router-dom";
 
 
 export default function Story() {
@@ -16,7 +17,7 @@ export default function Story() {
       fontWeight: "bolder",
       fontSize: "x-large",
     }}>
-      <Typewriter typeSpeed={100} words={[text]} cursor={cursor} />
+      <Typewriter key={step} typeSpeed={100} words={[text]} cursor={cursor} />
     </span>);
   }
 
@@ -36,20 +37,22 @@ export default function Story() {
   //extracting steps with props from steps array
   const [step, setStep] = useState(0);
   const { gif, text: textKey, radial, highlight } = STEPS[step];
+  const [storyEnd, setStoryEnd] = useState(false);
 
-  // const language = useRecoilValue(languageAtom);
-  const language = "de";
+  const language = useRecoilValue(languageAtom);
   const text = texts.story[textKey][language];
 
   const getNextStep = () => {
     if (step < STEPS.length - 1) {
       setStep(step + 1)
     } else {
-      console.log("no more steps");
-      //send to dashboard
+      setStoryEnd(true);
     }
   }
 
+  if (storyEnd) {
+    return <Navigate to="/intro" />
+  }
 
   return (
     <div className="bg-black">
@@ -58,29 +61,29 @@ export default function Story() {
           radial
             ? <div className="bg-radial">
               <div className="storybox-grid">
-                <div className="storybox-avatar">?</div>
+                <div className="storybox-avatar"><h1>👾</h1></div>
 
                 <div className="storybox-text">
                   {
                     highlight
                       ? <TypewriterHighlight text={text} />
-                      : <Typewriter typeSpeed={typeSpeed} words={[text]} cursor={cursor} />
+                      : <Typewriter key={step} typeSpeed={typeSpeed} words={[text]} cursor={cursor} />
                   }
                 </div>
-                <button className="btn-story" onClick={getNextStep}>Next</button>
+                <button className="btn-story" onClick={getNextStep}>next</button>
               </div>
             </div>
             : <div className="storybox-grid">
-              <div className="storybox-avatar">?</div>
+              <div className="storybox-avatar"><h1>👾</h1></div>
 
               <div className="storybox-text">
                 {
                   highlight
                     ? <TypewriterHighlight text={text} />
-                    : <Typewriter typeSpeed={typeSpeed} words={[text]} cursor={cursor} />
+                    : <Typewriter key={step} typeSpeed={typeSpeed} words={[text]} cursor={cursor} />
                 }
               </div>
-              <button className="btn-story" onClick={getNextStep}>Next</button>
+              <button className="btn-story" onClick={getNextStep}>next</button>
             </div>
         }
       </div>

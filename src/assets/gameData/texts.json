@@ -1,11 +1,15 @@
 {
   "story": {
+    "button": {
+      "de": "weiter",
+      "en": "next"
+    },
     "anim1": {
       "de": "Ich erinnere mich an Welten von unermesslichem Glanz. Geboren aus Sternenstaub formierten sie sich zu Galaxien und die Wesen dort waren fähig von Planet zu Planet und innerhalb des ganzen Sonnensystems zu kommunizieren.",
       "en": "I remember worlds of immeasurable brilliance. Born from stardust, they formed into galaxies and the beings there were capable of communicating from planet to planet and throughout the entire solar system."
     },
     "anim2": {
-      "de": "Doch es kam eine Zeit, da dunkle Energie herankam und das Licht teilweise erlöschen lies. Wie die Erinnerung schmerzt ...",
+      "de": "Doch es kam eine Zeit, da dunkle Energie herankam und das Licht teilweise erlöschen lies. Wie die Erinnerung schmerzt …",
       "en": "But there came a time when dark energy approached and partially extinguished the light. How the memory hurts ..."
     },
     "anim3": {
@@ -27,6 +31,32 @@
     "anim7": {
       "de": "... Verbundenheit. Denn alles ist wahrhaftig eins. Eines Tages werdet Ihr Euch wieder erinnern.",
       "en": "... connection. For everything is truly one. One day, you will remember again."
+    }
+  },
+  "intro": {
+    "anim1": {
+      "de": "Du tappst weiterhin im Dunkeln, richtig? Verstehst du erst einmal dich selbst, kannst du die Welt verstehen. Erforsche dich bis ins Innerste und du wirst in einem Augenblick all deine Fragen beantwortet finden.",
+      "en": "You're still groping in the dark, right? Once you understand yourself, you can understand the world. Explore yourself to the core and you will find all your questions answered in an instant."
+    },
+    "anim2": {
+      "de": "Du willst wissen wer ich bin? ",
+      "en": "You want to know who I am?"
+    },
+    "anim4": {
+      "de": "Ich ahnte, dass es dich nur noch mehr verwirrt. Dein Geist kann aktuell nur dich erfassen. ",
+      "en": "I suspected that it would only confuse you even more. Your mind can currently only comprehend you."
+    },
+    "anim5": {
+      "de": "Das bist du. Oder besser gesagt deine aktuelle Existenz. Du stehst noch ganz am Anfang. ",
+      "en": "That's you. Or rather, your current existence. You are still at the very beginning."
+    },
+    "anim6": {
+      "de": "Kümmere dich gut um deine Existenz. Ihr soll es gut gehen in allen Lebensbereichen.",
+      "en": "Take good care of your existence. It should be well in all areas of life."
+    },
+    "anim7": {
+      "de": "Du kannst frei entscheiden, womit ihr euch die nächsten Jahre beschäftigen möchtet. Wähle jetzt aus. Nach welcher Erfahrung sehnst du dich? ",
+      "en": "You can freely decide what you want to engage in over the next few years. Make your choice now. What experience is it that you crave?"
     }
   }
 }

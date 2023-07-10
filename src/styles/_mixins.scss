@@ -56,18 +56,15 @@
     position: relative;
     box-shadow: inset (-$shadow-width) (-$shadow-width) 0px 0px darken($color, 15%);
 
-    &:hover,
-    &:focus {
+    &:hover {
         background: darken($color, 10%);
         box-shadow: inset (-$shadow-width*1.75) (-$shadow-width*1.75) 0px 0px darken($color, 25%);
-        transform: translate(0.2rem, 0.2rem)
     }
 
     &:active {
-        box-shadow: inset $shadow-width $shadow-width 0px 0px darken($color, 10%);
-        animation-name: bounceOut;
-        animation-duration: .75s;
-        animation-fill-mode: both;
+        background: darken($color, 10%);
+        box-shadow: inset (-$shadow-width*1.75) (-$shadow-width*1.75) 0px 0px darken($color, 25%);
+        transform: translate(0.2rem, 0.2rem)
     }
 
     &:before,

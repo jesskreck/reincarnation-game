@@ -43,39 +43,29 @@
             rgba(18, 61, 73, 0.5) 100%);
     height: 100vh;
     width: 100vw;
-    transition: all;
+    display: grid;
+    place-items: center;
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
 }
-
-////bg-radial with two rings - works only on fullscreen backgrounds
-// .bg-radial {
-//     background-image: radial-gradient(circle at center,
-//             rgba(0, 0, 0, 0),
-//             rgba(0, 0, 0, 1),
-//             rgb(33, 14, 59) 50%,
-//             rgba(19, 14, 48, 0.5) 70%,
-//             rgb(15, 32, 49) 85%,
-//             rgba(18, 61, 73, 0.5) 100%);
-//     height: 100vh;
-//     width: 100vw;
-// }
 
 .storybox-grid {
     height: 90%;
     display: grid;
     grid-template-columns: 10% 1fr 20%;
     gap: $space;
-    align-content: end;
+    align-items: end;
     max-width: 1200px;
     margin: 0 auto;
     width: 100%;
 }
 
 .storybox-avatar {
-    @include heading;
     @include box($color-secondary, $color-light);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
+    padding: $space-s;
+    height: 6rem;
 }
 
 .storybox-text {
@@ -85,4 +75,16 @@
     padding-block: $space;
     font-family: $font-special;
     letter-spacing: 0.05rem;
+    min-height: 6rem;
+}
+
+.storybox-text-gif {
+    @extend .storybox-text;
+    padding: 0;
+
+    // height: 20rem;
+
+    img {
+        // height: clamp(6rem, 20vh, 20rem);
+    }
 }
