@@ -1,27 +1,27 @@
 import { useState, useEffect, useMemo } from 'react'
 import { useRecoilState, useRecoilValue } from 'recoil'
 
-import { statusAtom } from '../../recoil/atoms/levelAtoms'
-import { clickedActionAtom } from '../../recoil/atoms/levelAtoms'
-import { attracAtom } from '../../recoil/atoms/levelAtoms'
-import { mentalAtom } from '../../recoil/atoms/levelAtoms'
-import { educAtom } from '../../recoil/atoms/levelAtoms'
-import { wealthAtom } from '../../recoil/atoms/levelAtoms'
-import { socialAtom } from '../../recoil/atoms/levelAtoms'
-import { unhealedTraumasAtom } from '../../recoil/atoms/levelAtoms'
-import { willchainAtom } from '../../recoil/atoms/levelAtoms'
-import { healedAtom } from '../../recoil/atoms/levelAtoms'
-import { albumAtom } from '../../recoil/atoms/levelAtoms'
-import { ageAtom } from '../../recoil/atoms/playerAtoms'
-import { reincarnationAtom } from '../../recoil/atoms/playerAtoms'
-import { progressAtom } from '../../recoil/atoms/playerAtoms'
+import { statusAtom } from '../recoil/atoms/levelAtoms'
+import { clickedActionAtom } from '../recoil/atoms/levelAtoms'
+import { attracAtom } from '../recoil/atoms/levelAtoms'
+import { mentalAtom } from '../recoil/atoms/levelAtoms'
+import { educAtom } from '../recoil/atoms/levelAtoms'
+import { wealthAtom } from '../recoil/atoms/levelAtoms'
+import { socialAtom } from '../recoil/atoms/levelAtoms'
+import { unhealedTraumasAtom } from '../recoil/atoms/levelAtoms'
+import { willchainAtom } from '../recoil/atoms/levelAtoms'
+import { healedAtom } from '../recoil/atoms/levelAtoms'
+import { albumAtom } from '../recoil/atoms/levelAtoms'
+import { ageAtom } from '../recoil/atoms/playerAtoms'
+import { reincarnationAtom } from '../recoil/atoms/playerAtoms'
+import { progressAtom } from '../recoil/atoms/playerAtoms'
 
-import { wellbeingSelector } from '../../recoil/selectors/levelSelectors'
+import { wellbeingSelector } from '../recoil/selectors/levelSelectors'
 
-import actionDataEN from "../../assets/gameData/actionDataEN.json"
-import actionDataDE from "../../assets/gameData/actionDataDE.json"
-import switchCategoryLogo from '../../utils/switchCategoryLogo'
-import { AIphoto } from '../../components/AIphoto/AIphoto'
+import actionDataEN from "../assets/gameData/actionDataEN.json"
+import actionDataDE from "../assets/gameData/actionDataDE.json"
+import switchCategoryLogo from '../utils/switchCategoryLogo'
+import { AIphoto } from '../components/AIphoto/AIphoto'
 import { Typewriter } from 'react-simple-typewriter'
 
 const examplePlayer = {
