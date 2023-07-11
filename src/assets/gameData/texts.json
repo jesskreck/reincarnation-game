@@ -9,7 +9,7 @@
       "en": "I remember worlds of immeasurable brilliance. Born from stardust, they formed into galaxies and the beings there were capable of communicating from planet to planet and throughout the entire solar system."
     },
     "anim2": {
-      "de": "Doch es kam eine Zeit, da dunkle Energie herankam und das Licht teilweise erlöschen lies. Wie die Erinnerung schmerzt …",
+      "de": "Doch es kam eine Zeit, da dunkle Energie herankam und das Licht teilweise erlöschen lies. Wie die Erinnerung schmerzt ...",
       "en": "But there came a time when dark energy approached and partially extinguished the light. How the memory hurts ..."
     },
     "anim3": {
@@ -17,7 +17,7 @@
       "en": "Have you really forgotten everything?"
     },
     "anim4": {
-      "de": "Uns war es gelungen mithilfe von Ritualen das Licht zu halten und eine unterirdische Lichtstadt zu bewahren. Aus Formen mit ungeheuren Fähigkeiten.",
+      "de": "Uns war es gelungen mithilfe von Ritualen das Licht zu halten und eine unterirdische Lichtstadt zu bewahren, bestehend aus Formen mit ungeheuren Fähigkeiten.",
       "en": "We had succeeded in preserving the light through rituals and maintaining an underground city of light, consisting of forms with tremendous abilities."
     },
     "anim5": {
@@ -34,27 +34,39 @@
     }
   },
   "intro": {
-    "anim1": {
-      "de": "Du tappst weiterhin im Dunkeln, richtig? Verstehst du erst einmal dich selbst, kannst du die Welt verstehen. Erforsche dich bis ins Innerste und du wirst in einem Augenblick all deine Fragen beantwortet finden.",
-      "en": "You're still groping in the dark, right? Once you understand yourself, you can understand the world. Explore yourself to the core and you will find all your questions answered in an instant."
+    "anim0": {
+      "de": "Du tappst weiterhin im Dunkeln, richtig? ",
+      "en": "You're still groping in the dark, right? "
     },
-    "anim2": {
+    "anim1": {
       "de": "Du willst wissen wer ich bin? ",
       "en": "You want to know who I am?"
     },
+    "anim2": {
+      "de": "Ich erlaube dir einen kurzen Blick auf mein Wesenszustand zu erhaschen... ",
+      "en": "I allow you a brief glimpse into my state of being..."
+    },
+    "anim3": {
+      "de": "[gif]",
+      "en": "[gif]"
+    },
     "anim4": {
-      "de": "Ich ahnte, dass es dich nur noch mehr verwirrt. Dein Geist kann aktuell nur dich erfassen. ",
-      "en": "I suspected that it would only confuse you even more. Your mind can currently only comprehend you."
+      "de": "Nun bist du auch nicht schlauer als vorher, habe ich Recht? ",
+      "en": "Now you're not any wiser than before, am I right?"
     },
     "anim5": {
+      "de": "Verstehst du erst einmal dich selbst, kannst du die Welt verstehen. Erforsche dich bis ins Innerste und du wirst in einem Augenblick all deine Fragen beantwortet finden.",
+      "en": "Once you understand yourself, you can understand the world. Explore yourself to the core and you will find all your questions answered in an instant."
+    },
+    "anim6": {
       "de": "Das bist du. Oder besser gesagt deine aktuelle Existenz. Du stehst noch ganz am Anfang. ",
       "en": "That's you. Or rather, your current existence. You are still at the very beginning."
     },
-    "anim6": {
+    "anim7": {
       "de": "Kümmere dich gut um deine Existenz. Ihr soll es gut gehen in allen Lebensbereichen.",
       "en": "Take good care of your existence. It should be well in all areas of life."
     },
-    "anim7": {
+    "anim8": {
       "de": "Du kannst frei entscheiden, womit ihr euch die nächsten Jahre beschäftigen möchtet. Wähle jetzt aus. Nach welcher Erfahrung sehnst du dich? ",
       "en": "You can freely decide what you want to engage in over the next few years. Make your choice now. What experience is it that you crave?"
     }

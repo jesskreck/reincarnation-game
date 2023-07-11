@@ -70,7 +70,7 @@ export default function Story() {
                       : <Typewriter key={step} typeSpeed={typeSpeed} words={[text]} cursor={cursor} />
                   }
                 </div>
-                <button className="btn-story" onClick={getNextStep}>next</button>
+                <button className="btn-story" onClick={getNextStep}>{texts.story.button[language]}</button>
               </div>
             </div>
             : <div className="storybox-grid">
@@ -83,7 +83,7 @@ export default function Story() {
                     : <Typewriter key={step} typeSpeed={typeSpeed} words={[text]} cursor={cursor} />
                 }
               </div>
-              <button className="btn-story" onClick={getNextStep}>next</button>
+              <button className="btn-story" onClick={getNextStep}>{texts.story.button[language]}</button>
             </div>
         }
       </div>

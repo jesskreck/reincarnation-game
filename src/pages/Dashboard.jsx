@@ -18,35 +18,15 @@ import { progressAtom } from '../recoil/atoms/playerAtoms'
 
 import { wellbeingSelector } from '../recoil/selectors/levelSelectors'
 
+import { examplePlayer } from '../utils/examplePlayer'
 import actionDataEN from "../assets/gameData/actionDataEN.json"
 import actionDataDE from "../assets/gameData/actionDataDE.json"
 import switchCategoryLogo from '../utils/switchCategoryLogo'
+
 import { AIphoto } from '../components/AIphoto/AIphoto'
 import { Typewriter } from 'react-simple-typewriter'
-
-const examplePlayer = {
-  name: 'Eve Nebular',
-  avatar: "URL goes here",
-  age: 20,
-  sex: "woman",
-  reincarnation: 1,
-  progress: {
-    attrac: 60,
-    mental: 70,
-    educ: 20,
-    wealth: 20,
-    social: 10,
-  },
-  traumas: {
-    attrac: true,
-    mental: false,
-    educ: false,
-    wealth: true,
-    social: false,
-  }
-}
-
-
+import { PlayerInfo } from '../components/PANELS/Progress/PlayerInfo.jsx'
+import { Progress } from '../components/PANELS/Progress/Progress.jsx'
 
 
 export default function Dashboard() {
@@ -54,6 +34,7 @@ export default function Dashboard() {
   //recoil states
   const [status, setStatus] = useRecoilState(statusAtom)
   const [clickedAction, setClickedAction] = useRecoilState(clickedActionAtom)
+
   const [attrac, setAttrac] = useRecoilState(attracAtom)
   const [mental, setMental] = useRecoilState(mentalAtom)
   const [educ, setEduc] = useRecoilState(educAtom)
@@ -66,9 +47,6 @@ export default function Dashboard() {
   const [age, setAge] = useRecoilState(ageAtom)
   const [reincarnation, setReincarnation] = useRecoilState(reincarnationAtom)
   const [progress, setProgress] = useRecoilState(progressAtom)
-
-  console.log("willchain", willchain);
-
 
   //recoil selectors
   const wellbeing = useRecoilValue(wellbeingSelector)
@@ -111,6 +89,9 @@ export default function Dashboard() {
     }, 750);
   }
 
+  const getWidth = (value) => {
+    return { width: `${value}%` }
+  }
 
 
   const addToWillchain = (category) => {
@@ -126,15 +107,7 @@ export default function Dashboard() {
 
 
   //SECTION PROGRESS FUNCTION
-  const progressbarClassName = (value) => {
-    return `progressbar-fill ${value < 20 ? 'warning' : value > 80 ? 'success' : ''}`;
-  }
 
-  const getWidth = (value) => {
-    return { width: `${value}%` }
-  }
-
-  //
   const getUnhealedTraumas = useMemo(() => {
     const traumas = [
       // check which traumas are truthy and return corresponding strings as array
@@ -196,202 +169,135 @@ export default function Dashboard() {
 
   return (
     <div className="dashboard-bg">
-    <div className="dashboard-container">
-      {/* <div className='grid-game'> */}
+      <div className="dashboard-container">
+        {/* <div className='grid-game'> */}
 
-      {/* SECTION INSTRUCTIONS */}
-      <div className="grid-container-header">
-        <div className="instructor"></div>
+        {/* SECTION INSTRUCTIONS */}
+        <div className="grid-container-header">
+          <div className="instructor"></div>
 
-        <div className="instructions">
-          <p>
-            <Typewriter
-              words={["Hier kommt später der Erklärtext rein"]}
-              cursor={true}
-            />
-          </p>
+          <div className="instructions">
+            <p>
+              <Typewriter
+                words={["Hier kommt später der Erklärtext rein"]}
+                cursor={true}
+              />
+            </p>
+          </div>
         </div>
-      </div>
 
-      <div className="grid-container-main">
-        {/*SECTION ACTION */}
-        {status === "action" && (
-          <div className="container-actions">
-            {actionsOnScreen.map((action, index) => (
-              <div
-                className={`btn-action eightbit-btn ${unhealedTraumas.includes(action.category) && action.healing ? "healing" : ""}`}
-
-                key={index}
-                onClick={() => handleActionButton(action)}
-              >
-                <h1>{switchCategoryLogo(action.category)}</h1>
-                <p>{action.text}</p>
-                <div className='center'>
-                  {Object.entries(action.progress)
-                    .filter(([key, value]) => value !== 0)
-                    .map(([key, value]) => (
-                      <div key={key}>
-                        <span>{switchCategoryLogo(key)}</span>
-                        <span
-                          className={`action-value ${value > 0 ? "positive" : "negative"
-                            } `}
-                        >
-                          {/* {value > 0 ? `+${value}` : `−${value}`} */}
-                          {value > 0 ? `+${value}` : <>&minus;{-value}</>}
-                        </span>
-                      </div>
-                    ))}
-                </div>
-              </div>
-            ))}
-          </div>
-        )}
-        {status === "memory" && (
-          <AIphoto
-            action={clickedAction}
-            player={activePlayer}
-            traumas={unhealedTraumas}
-          />
-        )}
-
-        {/*SECTION PROGRESS*/}
-        <div>
-          <div className="container-playerinfo">
-            <img src="images/garnet.gif" alt="" />
-            <h2>{activePlayer.name}</h2>
-            <div className='existence'>
-              <h3>Existence</h3>
-              <div className='counter'><p>#{activePlayer.reincarnation}</p>
-              </div>
-            </div>
-            <div className='age'>
-              <h3>Age</h3>
-              <div className="counter"><p>{activePlayer.age}</p></div>
-            </div>
-          </div>
-
-          <div className="container-progress">
-            <h3>Attractiveness</h3>
-            <div className="progressbar-outline">
-              <div
-                className={progressbarClassName(attrac)}
-                style={getWidth(attrac)}
-              >
-                {`🤳${attrac}`}
-              </div>
-            </div>
-            <h3>Mental Stability</h3>
-            <div className="progressbar-outline">
-              <div
-                className={progressbarClassName(mental)}
-                style={getWidth(mental)}
-              >
-                {`🤪${mental}`}
-              </div>
-            </div>
-            <h3>Educational Level</h3>
-            <div className="progressbar-outline">
-              <div
-                className={progressbarClassName(educ)}
-                style={getWidth(educ)}
-              >
-                {`🎓${educ}`}
-              </div>
-            </div>
-            <h3>Wealth</h3>
-            <div className="progressbar-outline">
-              <div
-                className={progressbarClassName(wealth)}
-                style={getWidth(wealth)}
-              >
-                {`💸${wealth}`}
-              </div>
-            </div>
-            <h3>Social Relationships</h3>
-            <div className="progressbar-outline">
-              <div
-                className={progressbarClassName(social)}
-                style={getWidth(social)}
-              >
-                {`💛${social}`}
-              </div>
-            </div>
-
-            <h3 className='space'>Unhealed Traumas</h3>
-            <div className="container-traumas">
-              {unhealedTraumas.map((trauma, index) => (
+        <div className="grid-container-main">
+          {/*SECTION ACTION */}
+          {status === "action" && (
+            <div className="container-actions">
+              {actionsOnScreen.map((action, index) => (
                 <div
-                  className={`${healingOnScreen ? "healing" : ""}`}
-                  key={index}>{switchCategoryLogo(trauma)}</div>
+                  className={`btn-action eightbit-btn ${unhealedTraumas.includes(action.category) && action.healing ? "healing" : ""}`}
+
+                  key={index}
+                  onClick={() => handleActionButton(action)}
+                >
+                  <h1>{switchCategoryLogo(action.category)}</h1>
+                  <p>{action.text}</p>
+                  <div className='center'>
+                    {Object.entries(action.progress)
+                      .filter(([key, value]) => value !== 0)
+                      .map(([key, value]) => (
+                        <div key={key}>
+                          <span>{switchCategoryLogo(key)}</span>
+                          <span
+                            className={`action-value ${value > 0 ? "positive" : "negative"
+                              } `}
+                          >
+                            {/* {value > 0 ? `+${value}` : `−${value}`} */}
+                            {value > 0 ? `+${value}` : <>&minus;{-value}</>}
+                          </span>
+                        </div>
+                      ))}
+                  </div>
+                </div>
               ))}
             </div>
-          </div>
-        </div>
-      </div>
-
-      <div className="grid-container-level">
-        {/*SECTION WILL */}
-        <div className="container-leveltask">
-
-          <div className='emoji-container'>
-            {willchain.map((emoji, index) => (
-              <h2 key={index}>{emoji}</h2>
-            ))}
-            {[...Array(3 - willchain.length)].map((_, index) => (
-              <h2 key={index}>◽️</h2>
-            ))}
-          </div>
-          <h3>{3 - willchain.length} more missing for <span className='highlight'>will chain</span></h3>
-
-        </div>
-
-
-        {/*SECTION HEALING */}
-        <div className="container-leveltask">
-          {healed ? (
-            <>
-              <div className='emoji-container'>
-                <h2>💖</h2>
-              </div>
-              <h3><span className='highlight'>Trauma</span> healed!</h3>
-            </>
-          ) : (
-            <>
-              <div className='emoji-container'>
-                <h2>💔</h2>
-              </div>
-              <h3>No <span className='highlight'>trauma</span> healed yet</h3>
-            </>
           )}
+          {status === "memory" && (
+            <AIphoto
+              action={clickedAction}
+              player={activePlayer}
+              traumas={unhealedTraumas}
+            />
+          )}
+
+          {/*SECTION PROGRESS*/}
+          <div className='container'>
+            <PlayerInfo activePlayer={activePlayer} />
+
+            <Progress attrac={attrac} mental={mental} educ={educ} wealth={wealth} social={social} unhealedTraumas={unhealedTraumas} healingOnScreen={healingOnScreen} />
+          </div>
         </div>
 
-        {/*SECTION WELLBEING */}
-        <div className="container-leveltask">
-          <div>
-            <div className="progressbar-outline">
-              <div className={"progressbar-fill"} style={getWidth(wellbeing)}>
-                {`${wellbeing}%`}
+        <div className="grid-container-level">
+          {/*SECTION WILL */}
+          <div className="container-leveltask">
+
+            <div className='emoji-container'>
+              {willchain.map((emoji, index) => (
+                <h2 key={index}>{emoji}</h2>
+              ))}
+              {[...Array(3 - willchain.length)].map((_, index) => (
+                <h2 key={index}>◽️</h2>
+              ))}
+            </div>
+            <h3>{3 - willchain.length} more missing for <span className='highlight'>will chain</span></h3>
+
+          </div>
+
+
+          {/*SECTION HEALING */}
+          <div className="container-leveltask">
+            {healed ? (
+              <>
+                <div className='emoji-container'>
+                  <h2>💖</h2>
+                </div>
+                <h3><span className='highlight'>Trauma</span> healed!</h3>
+              </>
+            ) : (
+              <>
+                <div className='emoji-container'>
+                  <h2>💔</h2>
+                </div>
+                <h3>No <span className='highlight'>trauma</span> healed yet</h3>
+              </>
+            )}
+          </div>
+
+          {/*SECTION WELLBEING */}
+          <div className="container-leveltask">
+            <div>
+              <div className="progressbar-outline">
+                <div className={"progressbar-fill"} style={getWidth(wellbeing)}>
+                  {`${wellbeing}%`}
+                </div>
               </div>
             </div>
+            {wellbeing < 66 ? (
+              <h3><span className='highlight'>Overall wellbeing</span> not high enough</h3>
+            ) : (
+              <h3><span className='highlight'>Overall wellbeing</span> high enough</h3>
+            )}
           </div>
-          {wellbeing < 66 ? (
-            <h3><span className='highlight'>Overall wellbeing</span> not high enough</h3>
-          ) : (
-            <h3><span className='highlight'>Overall wellbeing</span> high enough</h3>
-          )}
         </div>
-      </div>
 
-      {/*SECTION ALBUM */}
-      <div className="grid-container-album">
-        <div>
-          <h2>Album</h2>
-          {album &&
-            album.map((photo, index) => (
-              <img src={photo} key={index} alt="album" />
-            ))}
+        {/*SECTION ALBUM */}
+        <div className="grid-container-album">
+          <div>
+            <h2>Album</h2>
+            {album &&
+              album.map((photo, index) => (
+                <img src={photo} key={index} alt="album" />
+              ))}
+          </div>
         </div>
-      </div>
 
       </div>
     </div>

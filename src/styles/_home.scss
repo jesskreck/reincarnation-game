@@ -2,9 +2,31 @@
     display: grid;
     place-items: center;
     background-image: url("../images/home.gif");
-    background-color: red;
     min-height: 100vh;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+
+    h1 {
+        text-align: center;
+        padding: clamp($space, 5vw, $space-xl);
+        font-size: clamp($font-s, 12vw, 5rem);
+        color: $color-light;
+    }
+
+    h2 {
+        font-size: clamp($font-s, 8vw, 3rem);
+    }
+
+    button {
+        padding-inline: clamp($space, 7vw, 15rem);
+    }
+}
+
+.home-button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: $space-xl;
+    gap: $space;
 }

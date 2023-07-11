@@ -5,6 +5,21 @@
     padding-bottom: 2rem;
 }
 
+@mixin grid-end {
+    display: grid;
+    place-items: center;
+}
+
+@mixin storytext-grid {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: clamp($space-xs, 2vw, $space);
+    margin: 0 auto;
+    max-width: 1500px;
+    padding-bottom: 2rem;
+    width: 100%;
+}
+
 @mixin panel {
     box-shadow: rgba(0, 0, 0, 0.15) 8px 6px 5px;
     background-color: white;
@@ -94,6 +109,18 @@
 @mixin heading {
     font-family: $font-special;
     letter-spacing: 0.2rem;
+}
+
+@mixin storybox-layout {
+    font-size: clamp($font-xs, 2vw, $font-l);
+    padding: $space-s;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-family: $font-special;
+    font-weight: $font-weight-bold;
+    letter-spacing: 0.3rem;
 }
 
 @mixin action-value-font {

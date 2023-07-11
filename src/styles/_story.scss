@@ -4,28 +4,17 @@
 }
 
 .bg-image {
+    @include grid-end;
     height: 100vh;
     width: 100vw;
-    display: grid;
-    place-items: center;
     background-size: auto 100%;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-@media (max-width: 767px) {
-    .bg-image {
-        background-size: 75%;
-    }
-}
-
-@media (min-width: 1800px) {
-    .bg-image {
-        background-size: 30%;
-    }
-}
 
 .bg-radial {
+    @include grid-end;
     background-image: radial-gradient(circle at center,
             rgba(0, 0, 0, 0),
             rgba(0, 0, 0, 1), 40%,
@@ -43,48 +32,32 @@
             rgba(18, 61, 73, 0.5) 100%);
     height: 100vh;
     width: 100vw;
-    display: grid;
-    place-items: center;
     background-size: auto 100%;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .storybox-grid {
-    height: 90%;
-    display: grid;
-    grid-template-columns: 10% 1fr 20%;
-    gap: $space;
+    @include storytext-grid;
     align-items: end;
-    max-width: 1200px;
-    margin: 0 auto;
+
+    height: 90%;
     width: 100%;
 }
 
+
 .storybox-avatar {
     @include box($color-secondary, $color-light);
-    text-align: center;
-    padding: $space-s;
-    height: 6rem;
+    @include storybox-layout;
 }
 
 .storybox-text {
     @include box($color-light, darken($color-secondary, 5%));
-    @include font-size($font-s);
-    padding-inline: $space;
-    padding-block: $space;
     font-family: $font-special;
+    font-size: clamp($font-xs, $font-s + 0.3vw, $font-l);
+    padding-inline: clamp($space-s, 2.5vw, $space-l);
+    padding-block: clamp($space-xs, 1vw, $space);
+
     letter-spacing: 0.05rem;
     min-height: 6rem;
-}
-
-.storybox-text-gif {
-    @extend .storybox-text;
-    padding: 0;
-
-    // height: 20rem;
-
-    img {
-        // height: clamp(6rem, 20vh, 20rem);
-    }
 }

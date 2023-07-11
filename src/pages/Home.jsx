@@ -15,15 +15,15 @@ export default function Home() {
           <h2>Start</h2>
         </button>
       ) : (
-        <div>
+        <div className="home-button-container">
           <Link to="story">
             <button className="btn-primary" onClick={() => setLanguage("de")}>
-              <h3>Deutsch</h3>
+              <h2>Deutsch</h2>
             </button>
           </Link>
           <Link to="story">
             <button className="btn-primary" onClick={() => setLanguage("en")}>
-              <h3>English</h3>
+              <h2>English</h2>
             </button>
           </Link>
         </div>
